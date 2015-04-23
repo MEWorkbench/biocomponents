@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+<model id="Ec_iAF1260" name="Ec_iAF1260">
+<listOfUnitDefinitions>
+	<unitDefinition id="mmol_per_gDW_per_hr">
+		<listOfUnits>
+			<unit kind="mole" scale="-3"/>
+			<unit kind="gram" exponent="-1"/>
+			<unit kind="second" multiplier=".00027777" exponent="-1"/>
+		</listOfUnits>
+	</unitDefinition>
+</listOfUnitDefinitions>
+<listOfCompartments>
+	<compartment id="E^xtra_organism"/>
+	<compartment id="Extra_organism"/>
+	<compartment id="P`eriplasm" outside="Extra_organism"/>
+	<compartment id="Cºytosol" outside="Periplasm"/>
+</listOfCompartments>
+<listOfSpecies>
+	<species id="M|_10fthf_c" name="M_10_Formyltetrahydrofolate_C20H21N7O7" compartment="Cºytosol" charge="-2" boundaryCondition="false"/>
+	<species id="M;_12dgr120_p" name="M_1_2_Diacyl_sn_glycerol__didodecanoyl__n_C120__C27H52O5" compartment="P`eriplasm" charge="0" boundaryCondition="false"/>
+	<species id="M£_12dgr140_c" name="M_1_2_Diacyl_sn_glycerol__ditetradecanoyl__n_C140__C31H60O5" compartment="Cºytosol" charge="0" boundaryCondition="false"/>
+	<species id="M=_12ppd_R_e" name="M__R__Propane_1_2_diol_C3H8O2" compartment="E^xtra_organism" charge="0" boundaryCondition="false"/>
+	<species id="M_|12ppd_R_p" name="M__R__Propane_1_2_diol_C3H8O2" compartment="P`eriplasm" charge="0" boundaryCondition="false"/>
+	<species id="M«_12ppd_S_e" name="M__S__Propane_1_2_diol_C3H8O2" compartment="E^xtra_organism" charge="0" boundaryCondition="false"/>
+	<species id="M»_12ppd_R_e" name="M__R__Propane_1_2_diol_C3H8O2" compartment="Extra_organism" charge="0" boundaryCondition="false"/>
+	<species id="M_12ppd_S_e" name="M__S__Propane_1_2_diol_C3H8O2" compartment="Extra_organism" charge="0" boundaryCondition="false"/>
+	<species id="M|_10fthf_cEXTRA" name="M_10_Formyltetrahydrofolate_C20H21N7O7" compartment="newCompartment" charge="-2" boundaryCondition="false"/>
+</listOfSpecies>
+<listOfReactions>
+	<reaction id="R_12DGR120tipp" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C120_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<listOfReactants>
+			<speciesReference species="M|_10fthf_c" stoichiometry="1.000000"/>
+			<speciesReference species="M_12ppd_S_e" stoichiometry="1.000000"/>
+		</listOfReactants>
+		<listOfProducts>
+			<speciesReference species="M;_12dgr120_p" stoichiometry="1.000000"/>
+			<speciesReference species="M_12ppd_S_e" stoichiometry="1.000000"/>
+			<speciesReference species="M_NEW_SPECIE" stoichiometry="1.000000"/>
+		</listOfProducts>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+	<reaction id="R_12DGR120tippTEST" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C120_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+	<reaction id="R_12DGR140tipp" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C140_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<listOfReactants>
+			<speciesReference species="M£_12dgr140_c" stoichiometry="1.000000"/>
+		</listOfReactants>
+		<listOfProducts>
+			<speciesReference species="M=_12ppd_R_e" stoichiometry="1.000000"/>
+		</listOfProducts>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+	<reaction id="R_12DGR141tipp" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C141_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<listOfReactants>
+			<speciesReference species="M;_12dgr120_p" stoichiometry="1.000000"/>
+		</listOfReactants>
+		<listOfProducts>
+			<speciesReference species="M_12ppd_S_e" stoichiometry="1.000000"/>
+		</listOfProducts>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+	<reaction id="R_HGREACTION" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C120_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<listOfReactants>
+			<speciesReference species="M=_12ppd_R_e" stoichiometry="1.000000"/>
+		</listOfReactants>
+		<listOfProducts>
+			<speciesReference species="M_12ppd_S_e" stoichiometry="1.000000"/>
+		</listOfProducts>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+	<reaction id="R_HGREACTION\" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C120_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<listOfReactants>
+			<speciesReference species="M»_12ppd_R_e" stoichiometry="1.000000"/>
+		</listOfReactants>
+		<listOfProducts>
+			<speciesReference species="M_12ppd_S_e" stoichiometry="1.000000"/>
+		</listOfProducts>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+	<reaction id="R_HGREACTION\" name="R_1_2_diacylglycerol_transport_via_flipping__periplasm_to_cytoplasm__n_C120_" reversible="false">
+		<notes>
+			<html:p>GENE_ASSOCIATION: </html:p>
+			<html:p>PROTEIN_ASSOCIATION: </html:p>
+			<html:p>SUBSYSTEM: S_Transport__Inner_Membrane</html:p>
+			<html:p>PROTEIN_CLASS: </html:p>
+		</notes>
+		<listOfReactants>
+			<speciesReference species="M»_12ppd_R_e" stoichiometry="1.000000"/>
+		</listOfReactants>
+		<listOfProducts>
+			<speciesReference species="M_12ppd_S_e" stoichiometry="1.000000"/>
+		</listOfProducts>
+		<kineticLaw>
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+				<ci> FLUX_VALUE </ci>
+			</math>
+			<listOfParameters>
+				<parameter id="LOWER_BOUND" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="UPPER_BOUND" value="999999.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="OBJECTIVE_COEFFICIENT" value="0.000000"/>
+				<parameter id="FLUX_VALUE" value="0.000000" units="mmol_per_gDW_per_hr"/>
+				<parameter id="REDUCED_COST" value="0.000000"/>
+			</listOfParameters>
+		</kineticLaw>
+	</reaction>
+</listOfReactions>
+</model>
+</sbml>

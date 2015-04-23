@@ -1,0 +1,5 @@
+Abbreviation	Name	Reaction	GPR	Protein	Subsystem	EC. Number
+R002	ATP Maintenance	10F_THF[c] + 13BPG[c] -> 2K3M_BUT[c] 			Uassigned	
+R001	Biomass reaction (70 C)	0.1582 10F_THF[c] + 0.2696 13BPG[c] -> 59.81 2K3M_BUT[c] 			Exchange Reactions	
+R003	ATP:D-glucose 6-phosphotransferase	2K3M_BUT[c]  -> 2HYBUTNA[c] 	TTC1688	glk	Glycolysis/Gluconeogenesis	2.7.1.2
+R004	ATP:D-glucose 6-phosphotransferase	13BPG[c] + 2K3DO_GLCN[c] -> 10F_THF[c] 	TTC1688	glk	Glycolysis/Gluconeogenesis	2.7.1.2

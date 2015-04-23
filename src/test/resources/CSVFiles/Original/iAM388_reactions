@@ -1,0 +1,539 @@
+Reaction abbreviation	Reaction name	Equation
+ALAR	Alanine racemase	[c] : ala-L <==> ala-D
+ALATA_L	L-alanine transaminase	[c]: akg + ala-L <==> glu-L + pyr
+G1PACT	Glucosamine-1-phosphate N-acetyltransferase	[c] : accoa + gam1p --> acgam1p + coa + h
+GF6PTA	Glutamine-fructose-6-phosphate transaminase	[c] : f6p + gln-L --> gam6p + glu-L
+PGAMT	Phosphoglucosamine mutase	[c] : gam1p <==> gam6p
+UAGCVT	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	[c] : pep + uacgam --> pi + uaccg
+UAGDP	UDP-N-acetylglucosamine diphosphorylase	[c] : acgam1p + h + utp --> ppi + uacgam
+UAGDP2	UDP-glucosamine diphosphorylase	[c] : gam1p + h + utp --> ppi + ugam
+UAPGR	UDP-N-acetylenolpyruvoylglucosamine reductase	[c] : h + nadph + uaccg --> nadp + uamr
+ACGK	Acetylglutamate kinase	[c] : acglu + atp --> acg5p + adp
+ACGS	N-acetylglutamate synthase	[c] : accoa + glu-L --> acglu + coa + h
+ACOTA	Acetylornithine transaminase	[c] : acorn + akg <==> acg5sa + glu-L
+AGMH	Agmatine iminohydrolase	[c] : agm + h2o + h --> cbptrc + nh4
+AGPR	N-acetyl-g-glutamyl-phosphate reductase	[c] : acg5sa + nadp + pi <==> acg5p + h + nadph
+ARGDC	Arginine decarboxylase	[c] : arg-L + h --> agm + co2
+CBPTRCH	N-carbomoylputrescine amidohydrolase	[c]: cbptrc + h2o + h <==> ptrc + nh4 + co2
+CBSPDC	Carboxyspermidine decarboxylase	[c] : cbspmd + h --> spmd + co2
+CBSPDH	Carboxyspermidine dehydrogenase	[c]: ptrc + aspsa + h + nadh  --> cbspmd + h2o + nad
+METAT	Methionine adenosyltransferase	[c] : atp + h2o + met-L --> amet + pi + ppi
+ORNDE	Ornithine deacetylase	[c] : acorn + h2o <==> ac + orn
+ASNN	L-Asparaginase	[c] : asn-L + h2o --> asp-L + nh4
+ASNS2	Asparagine synthetase	[c] : asp-L + atp + nh4 --> amp + asn-L + h + ppi
+ASAD	Aspartate-semialdehyde dehydrogenase	[c] : aspsa + nadp + pi <==> 4pasp + h + nadph
+ASPK	Aspartate kinase	[c] : asp-L + atp <==> 4pasp + adp
+ASPT	L-Aspartase	[c] : asp-L --> fum + nh4
+ASPTA	Aspartate transaminase	[c] : akg + asp-L <==> glu-L + oaa
+AMAOTr	Adenosylmethionine-8-amino-7-oxononanoate transaminase	[c] : 8aonn + amet <==> amob + dann
+AOXSr	8-Amino-7-oxononanoate synthase	[c] : ala-L + h + pmcoa <==> 8aonn + co2 + coa
+BTS2	Biotin synthase (ala-L producing)	[c] : cys-L + dtbt <==> ala-L + btn + (2) h
+CHCOAL	6-Carboxyhexanoate-CoA ligase	[c] : atp + coa + pime --> amp + pmcoa + ppi
+DBTSr	Dethiobiotin synthase	[c] : atp + co2 + dann <==> adp + dtbt + (3) h + pi
+CHORS	Chorismate synthase	[c] : 3psme --> chor + pi
+DDPA	3-Deoxy-D-arabino-heptulosonate 7-phosphate synthetase	[c] : e4p + h2o + pep --> 2dda7p + pi
+DHQD	3-dehydroquinate dehydratase	[c] : 3dhq <==> 3dhsk + h2o
+DHQS	3-dehydroquinate synthase	[c] : 2dda7p --> 3dhq + pi
+PSCVT	3-Phosphoshikimate 1-carboxyvinyltransferase	[c] : pep + skm5p <==> 3psme + pi
+SHK3Dr	Shikimate dehdrogenase	[c] : 3dhsk + h + nadph <==> nadp + skm
+SHKK	Shikimate kinase	[c] : atp + skm --> adp + h + skm5p
+CAT	Catalase	[c] : (2) h2o2 --> (2) h2o + o2
+CCP	Cytochrome c peroxidase	[c] : (2) focytcc553 + (2) h + h2o2 --> (2) ficytcc553 + (2) h2o
+NTRARz	Nitrate reductase (TRDRD)	[c] : no3 + trdrd --> h2o + no2 + trdox
+SPODM	Superoxide dismutase	[c] : (2) h + (2) o2- --> h2o2 + o2
+EX_ac(e)	Acetate exchange	[e]: ac <==>
+EX_adn(e)	Adenosine exchange	[e] : adn <==>
+EX_akg(e)	2-Oxoglutarate exchange	[e] : akg <==>
+EX_ala-D(e)	D-Alanine exchange	[e] : ala-D <==>
+EX_ala-L(e)	L-Alanine exchange	[e] : ala-L <==>
+EX_arg-L(e)	L-Arginine exchange	[e] : arg-L <==>
+EX_asn-L(e)	L-Asparagine exchange	[e] : asn-L <==>
+EX_asp-L(e)	L-Aspartate exchange	[e] : asp-L <==>
+EX_cit(e)	Citrate exchange	[e] : cit <==>
+EX_co2(e)	CO2 exchange	[e] : co2 <==>
+EX_cys-L(e)	L-Cysteine exchange	[e] : cys-L <==>
+EX_dms(e)	Dimethyl-sulfide exchange	[e] : dms <==>
+EX_dmso(e)	Dimethyl-sulfoxide exchange	[e] : dmso <==>
+EX_fe2(e)	Fe2+ exchange	[e] : fe2 <==>
+EX_fe3(e)	Fe3+ exchange	[e] : fe3 <==>
+EX_for(e)	Formate exchange	[e] : for <==>
+EX_fum(e)	Fumarate exchange	[e] : fum <==>
+EX_gal(e)	D-Galactose exchange	[e] : gal <==>
+EX_glc(e)	D-Glucose exchange	[e] : glc-D <==>
+EX_gln-L(e)	L-Glutamine exchange	[e] : gln-L <==>
+EX_glu-L(e)	L-Glutamate exchange	[e] : glu-L <==>
+EX_gly(e)	Glycine exchange	[e] : gly <==>
+EX_h(e)	H+ exchange	[e] : h <==>
+EX_h2(e)	H2 exchange	[e] : h2 <==>
+EX_h2co3(e)	carbonic acid exchange	[e] : h2co3 <==>
+EX_h2o(e)	H2O exchange	[e] : h2o <==>
+EX_his-L(e)	L-Histidine exchange	[e] : his-L <==>
+EX_hxan(e)	Hypoxanthine exchange	[e] : hxan <==>
+EX_ile-L(e)	L-Isoleucine exchange	[e] : ile-L <==>
+EX_lac-L(e)	L-Lactate exchange	[e] : lac-L <==>
+EX_leu-L(e)	L-Leucine exchange	[e] : leu-L <==>
+EX_lys-L(e)	L-Lysine exchange	[e] : lys-L <==>
+EX_mal-D(e)	D-Malate exchange	[e] : mal-D <==> 
+EX_mal-L(e)	L-Malate exchange	[e] : mal-L <==>
+EX_met-L(e)	L-Methionine exchange	[e] : met-L <==>
+EX_na1(e)	Sodium exchange	[e] : na1 <==>
+EX_nh4(e)	Ammonia exchange	[e] : nh4 <==>
+EX_no(e)	Nitric oxide exchange	[e] : no <==>
+EX_no2(e)	Nitrite exchange	[e] : no2 <==>
+EX_no3(e)	Nitrate exchange	[e] : no3 <==>
+EX_o2(e)	O2 exchange	[e] : o2 <==>
+EX_phe-L(e)	L-Phenylalanine exchange	[e] : phe-L <==>
+EX_pi(e)	Phosphate exchange	[e] : pi <==>
+EX_pime(e)	Pimelate exchange	[e] : pime <==>
+EX_pro-L(e)	L-Proline exchange	[e] : pro-L <==>
+EX_pyr(e)	Pyruvate exchange	[e] : pyr <==>
+EX_ribflv(e)	Riboflavin exchange	[e] : ribflv <==>
+EX_ser-D(e)	D-Serine exchange	[e] : ser-D <==>
+EX_ser-L(e)	L-Serine exchange	[e] : ser-L <==>
+EX_so4(e)	Sulfate exchange	[e] : so4 <==>
+EX_succ(e)	Succinate exchange	[e] : succ <==>
+EX_thr-L(e)	L-Threonine exchange	[e] : thr-L <==>
+EX_tma(e)	Trimethylamine exchange	[e] : tma <==>
+EX_tmao(e)	Trimethylamine-N-oxide exchange	[e] : tmao <==>
+EX_trp-L(e)	L-Tryptophan exchange	[e] : trp-L <==>
+EX_tyr-L(e)	L-Tyrosine exchange	[e] : tyr-L <==>
+EX_ura(e)	Uracil exchange	[e] : ura <==>
+Ex_urea(e)	Urea exchange	[e] : urea <==>
+EX_val-L(e)	L-Valine exchange	[e] : val-L <==>
+ACCOACr	Acetyl-CoA carboxylase, reversible reaction	[c] : accoa + atp + hco3 <==> adp + h + malcoa + pi
+ACOATA	Acetyl-CoA ACP transacylase	[c] : ACP + accoa <==> acACP + coa
+C140SN	Fatty acid biosynthesis (n-C14:0)	[c] : actACP + (17) h + (5) malACP + (12) nadph --> (5) ACP + (5) co2 + (6) h2o + myrsACP + (12) nadp
+C160SN	Fatty acid biosynthesis (n-C16:0)	[c] : actACP + (20) h + (6) malACP + (14) nadph --> (6) ACP + (6) co2 + (7) h2o + (14) nadp + palmACP
+C180SN	Fatty acid biosynthesis (n-C18:0)	[c] : actACP + (23) h + (7) malACP + (16) nadph --> (7) ACP + (7) co2 + (8) h2o + (16) nadp + ocdcaACP
+C181SN	Fatty acid biosynthesis (n-C18:1)	[c] : actACP + (22) h + (7) malACP + (15) nadph --> (7) ACP + (7) co2 + (8) h2o + (15) nadp + octeACP
+C190cSN	Fatty acid biosynthesis (C19:0cSN)	[c] : amet + octeACP --> ahcys + c190cACP + h
+KAS	β-ketoacyl synthase	[c] : acACP + h + malACP --> ACP + actACP + co2
+KAS14	3-hydroxy-palmetoyl-ACP synthesis	[c] : (2) h + malACP + myrsACP + nadph --> 3hpalmACP + ACP + co2 + nadp
+KAS15	3-hydroxy-octadecanoyl-ACP synthesis	[c] : (2) h + malACP + nadph + palmACP --> 3hoctaACP + ACP + co2 + nadp
+KAS-HP2	B-ketoacyl synthase	[c] : accoa + h + malACP --> actACP + co2 + coa
+MCOATA	Malonyl-CoA-ACP transacylase	[c] : ACP + malcoa <==> coa + malACP
+ADCL	4-Aminobenzoate synthase	[c] : 4adcho --> 4abz + h + pyr
+DHFRi	Dihydrofolate reductase (irreversible)	[c] : dhf + h + nadph --> nadp + thf
+DHFS 	Dihydrofolate synthase	[c] : atp + dhpt + glu-L --> adp + dhf + pi +h 
+DHNPA	Dihydroneopterin aldolase	[c] : dhnpt --> 2ahhmp + gcald + h
+DHPS	Dihydropteroate synthase (PPi)	[c] : 2ahhmp + 4abz --> dhpt + h2o
+DNMPPA	Dihydroneopterin monophosphate dephosphorylase	[c] : dhpmp + h2o --> dhnpt + pi
+DNTPPA	Dihydroneopterin triphosphate pyrophosphatase	[c] : ahdt + h2o --> dhpmp + h + ppi
+FOLD3	Dihydropteroate synthase (H2O)	[c] : 2ahhmd + 4abz --> dhpt + ppi
+GTPCI 	GTP cyclohydrolase I	[c] : gtp + h2o --> ahdt + for
+HPPK	2-Amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase	[c] : 2ahhmp + atp --> 2ahhmd + amp + h
+PABB	Aminodeoxychorismate synthase	[c] : chor + nh4 --> 4adcho + h2o
+GFUCS	GDP-L-fucose synthase	[c] : gdpddman + h + nadph --> gdpfuc + nadp
+GMAND	GDP-D-mannose dehydratase	[c] : gdpmann --> gdpddman + h2o
+MAN1PT2r	Mannose-1-phosphate guanylyltransferase (GDP)	[c] : gdp + h + man1p <==> gdpmann + pi
+MAN6PI	Mannose-6-phosphate isomerase	[c] : man6p <==> f6p
+PMANM	Phosphomannomutase	[c] : man1p <==> man6p
+ENO	Enolase	[c] : 2pg <==> h2o + pep
+FBA	Fructose-bisphosphate aldolase	[c] : fdp <==> dhap + g3p
+FBP	Fructose-bisphosphatase	[c] : fdp + h2o --> f6p + pi
+GAPA	Glyceraldehyde-3-phosphate dehydrogenase	[c] : g3p + nad + pi <==> 13dpg + h + nadh
+PEPC	Phosphoenolpyruvate carboxykinase (ATP)	[c] : atp + oaa --> adp + pep + co2
+PGI	Glucose-6-phosphate isomerase	[c] : g6p <==> f6p
+PGK	Phosphoglycerate kinase	[c] : 3pg + atp <==> 13dpg + adp
+PGM	Phosphoglycerate mutase	[c] : 2pg <==> 3pg
+PYC	Pyruvate caxrboxylase	[c]: atp + pyr + hco3 --> adp + pi + oaa + h
+TPI	Triose-phosphate isomerase	[c] : dhap <==> g3p
+G5SD2	Glutamate-5-semialdehyde dehydrogenase	[c] : glu5p + h + nadh --> glu5sa + nad + pi
+GLU5K	Glutamate 5-kinase	[c] : atp + glu-L --> adp + glu5p
+GLUSy	Glutamate synthase (NADPH)	[c] : akg + gln-L + h + nadph --> (2) glu-L + nadp
+ORNTA	Ornithine aminotransferase	[c] : akg + orn --> glu-L + glu5sa
+P5CD	1-Pyrroline-5-carboxylate dehydrogenase	[c] : 1pyr5c + (2) h2o + nad --> glu-L + h + nadh
+PUTA3	1-Pyrroline-5-carboxylate dehydrogenase	[c] : glu5sa + h2o + nad --> glu-L + (2) h + nadh
+GLNS	Glutamine synthetase	[c] : atp + glu-L + nh4 --> adp + gln-L + h + pi
+CLPNS-HP	Cardiolipin Synthase (Hpi)	[c] : (2) pg_HP <==> clpn_HP + glyc
+DAGK-HP	Diacylglycerol kinase Hp specific	[c] : 12dgr_HP + atp --> adp + h + pa_Hp
+DASYN-HP	CDP-Diacylglycerol synthetase Hp specific	[c] : ctp + h + pa_Hp <==> cdpdag_HP + ppi
+G3PD2	Glycerol-3-phosphate dehydrogenase (NADP)	[c] : glyc3p + nadp <==> dhap + h + nadph
+GLYK	Glycerol kinase	[c] : atp + glyc --> adp + glyc3p + h
+PASYN-HP	Phosphatidic acid synthase Hp specific	[c] : c190cACP + glyc3p + myrsACP --> (2) ACP + pa_Hp
+PGPP-HP	Phosphatidylglycerol phosphate phosphatase Hp specific	[c] : h2o + pgp_HP --> pg_HP + pi
+PGSA-HP	Phosphatidylglycerol synthase Hp specific	[c] : cdpdag_HP + glyc3p <==> cmp + h + pgp_HP
+PSD-HP	Phosphatidylserine decarboxylase Hp specific	[c] : h + ps_HP --> co2 + pe_HP
+PSSA-HP	Phosphatidylserine synthase Hp specific	[c] : cdpdag_HP + ser-L <==> cmp + h + ps_HP
+4HGLSD	L-4-Hydroxyglutamate semialdehyde dehydrogenase, mitochondrial	[c] : 4hglusa + h2o + nad <==> e4hglu + (2) h + nadh
+EHGLAT	L-erythro-4-Hydroxyglutamate:2-oxoglutarate aminotransferase	[c] : akg + e4hglu --> 4h2oglt + glu-L
+HPROa	L-Hydroxyproline reductase (NAD)	[c] : 1p3h5c + (2) h + nadh --> 4hpro-LT + nad
+HPROx	L-Hydroxyproline oxidase (NAD)	[c] : 4hpro-LT + nad --> 1p3h5c + (2) h + nadh
+PHCD	L-1-Pyrroline-3-hydroxy-5-carboxylate dehydrogenase	[c] : 1p3h5c + (2) h2o + nad --> e4hglu + h + nadh
+PHCHGS	L-1-Pyrroline-3-hydroxy-5-carboxylate spontaneous conversion to L-4-Hydroxyglutamate semialdehyde	[c] : 1p3h5c + h + h2o <==> 4hglusa
+CPPPGO	Coproporphyrinogen oxidase (O2 required)	[c] : cpppg3 + (2) h + o2 --> (2) co2 + (2) h2o + pppg9
+FCLT	Ferrochelatase	[c] : fe2 + ppp9 --> (2) h + pheme
+G1SATi	Glutamate-1-semialdehyde aminotransferase	[c] : glu1sa --> 5aop
+GLUTRR	Glutamyl-tRNA reductase	[c] : glutrna + h + nadph --> glu1sa + nadp + trnaglu
+GLUTRS	Glutamyl-tRNA synthetase	[c] : atp + glu-L + trnaglu --> amp + glutrna + ppi
+HMBS	Hydroxymethylbilane synthase	[c] : h2o + (4) ppbng --> hmbil + (4) nh4
+PPBNGS	Porphobilinogen synthase	[c] : (2) 5aop --> h + (2) h2o + ppbng
+PPPGO	Protoporphyrinogen oxidase	[c] : (1.5) o2 + pppg9 --> (3) h2o + ppp9
+UPP3S	Uroporphyrinogen-III synthase	[c] : hmbil --> h2o + uppg3
+UPPDC1	Uroporphyrinogen decarboxylase (uroporphyrinogen III)	[c] : (4) h + uppg3 --> (4) co2 + cpppg3
+UPPDC2	Uroporphyrinogen decarboxylase (uroporphyrinogen I)	[c] : (4) h + uppg1 --> (4) co2 + cpppg1
+ATPPRT	ATP phosphoribosyltransferase	[c] : atp + prpp --> ppi + prbatp
+HISTD	Histidinol dehydrogenase	[c] : h2o + histd + (2) nad --> (3) h + his-L + (2) nadh
+HISTP	Histidinol-phosphatase	[c] : h2o + hisp --> histd + pi
+HSTPT	Histidinol-phosphate transaminase	[c] : glu-L + imacp --> akg + hisp
+IG3PS	Imidazole-glycerol-3-phosphate synthase	[c] : gln-L + prlp --> aicar + eig3p + glu-L + h
+IGPDH	Imidazoleglycerol-phosphate dehydratase	[c] : eig3p --> h2o + imacp
+PRAMPC	Phosphoribosyl-AMP cyclohydrolase	[c] : h2o + prbamp --> prfp
+PRATPP	Phosphoribosyl-ATP pyrophosphatase	[c] : h2o + prbatp --> h + ppi + prbamp
+PRMICIi	1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide isomerase (irreversible)	[c] : prfp --> prlp
+ACHBS	2-aceto-2-hydroxybutanoate synthase	[c] : 2obut + h + pyr --> 2ahbut + co2
+DHAD2	Dihydroxy acid dehydratase (2,3-dihydroxy-3-methylpentanoate)	[c] : 23dhmp --> 3mop + h2o
+ILETA	Isoleucine transaminase	[c] : akg + ile-L <==> 3mop + glu-L
+KARA2i	Ketol-acid reductoisomerase (2-Aceto-2-hydroxybutanoate)	[c] : 2ahbut + h + nadph --> 23dhmp + nadp
+CDPMEK	4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase	[c] : 4c2me + atp --> 2p4c2me + adp + h
+DMPPS	1-Hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)	[c] : h + h2mb4p + nadh --> dmpp + h2o + nad
+DXPRIi	1-deoxy-D-xylulose reductoisomerase	[c] : dxyl5p + h + nadph --> 2me4p + nadp
+DXPS	1-Deoxy-D-xylulose 5-phosphate synthase	[c] : g3p + h + pyr --> co2 + dxyl5p
+IPDPS	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)	[c] : h + h2mb4p + nadh --> h2o + ipdp + nad
+MECDPDH	2C-Methyl-D-erythritol 2,4 cyclodiphosphate dehydratase	[c] : 2mecdp + h --> h2mb4p + h2o
+MECDPS	2-C-Methyl-D-erythritol 2,4-cyclodiphosphate synthase	[c] : 2p4c2me --> 2mecdp + cmp
+MEPCT	2-C-Methyl-D-erythritol 4-phosphate cytidylyltransferase	[c] : 2me4p + ctp + h --> 4c2me + ppi
+IPMD	3-isopropylmalate dehydrogenase	[c] : 3c2hmp + nad --> 3c4mop + h + nadh
+IPPMIa	3-isopropylmalate dehydratase	[c] : 3c2hmp <==> 2ippm + h2o
+IPPMIb	2-isopropylmalate hydratase	[c] : 2ippm + h2o <==> 3c3hmp
+IPPS	2-isopropylmalate synthase	[c] : 3mob + accoa + h2o --> 3c3hmp + coa + h
+LEUTA	Leucine transaminase	[c] : akg + leu-L <==> 4mop + glu-L
+OMCDC	2-Oxo-4-methyl-3-carboxypentanoate decarboxylation	[c] : 3c4mop + h --> 4mop + co2
+A5PISO	Arabinose-5-phosphate isomerase	[c] : ru5p-D <==> ara5p
+AGMHE	ADP-D-glycero-D-manno-heptose epimerase	[c] : adphep-D,D --> adphep-L,D
+GALK	Galactokinase	[c] : atp + gal --> adp + gal1p + h
+GALTi	Galactose-1-phosphate uridylyltransferase (irreversible)	[c] : gal1p + h + utp --> ppi + udpgal
+GALU	UTP-glucose-1-phosphate uridylyltransferase	[c] : g1p + h + utp <==> ppi + udpg
+GMHEPAT	D-Glycero-D-manno-hepose 1-phosphate adenyltransferase	[c] : atp + gmhep1p + h --> adphep-D,D + ppi
+GMHEPK	D-Glycero-D-manno-heptose 7-phosphate kinase	[c] : atp + gmhep7p --> adp + gmhep17bp + h
+GMHEPPA	D-Glycero-D-manno-heptose 1,7-bisphosphate phosphatase	[c] : gmhep17bp + h2o --> gmhep1p + pi
+KDOCT	3-deoxy-manno-octulosonate cytidylyltransferase	[c] : ctp + kdo --> cmpkdo + ppi
+KDOPP	3-deoxy-manno-octulosonate-8-phosphatase	[c] : h2o + kdo8p --> kdo + pi
+KDOPS	3-deoxy -D-manno-octulosonic -acid 8-phosphate	[c] : ara5p + h2o + pep --> kdo8p + pi
+LPADSS-HP	LipidA_HP disaccaride synthase	[c] : lipidX_HP + u2ga_HP --> (2) h + lipidA_HP + udp
+LPSSYN-HP	Formation for LPS from Core oligosaccharide-Lipid A and O-chain	[c] : adphep-D,D + core_lps_hp + (3) gdpfuc + (2) uacgam + udpg + (2) udpgal --> adp + (3) gdp + lps_HP + (5) udp
+MOAT-HP	Kdo-Lipid IV (A) formation	[c] : cmpkdo + lipidA_HP --> cmp + h + kdolipid4_HP
+RFAC-HP	Formation of lipidA and sugar core for Hpylori LPS	[c] : adphep-D,D + adphep-L,D + adphep7p-L,D + kdolipid4_HP + (2) udpg + udpgal --> (3) adp + core_lps_hp + (3) udp
+RFA-HP	Adphep7p-L,D formation	[c] : adphep-L,D + atp --> adp + adphep7p-L,D + h
+S7PI	Sedoheptulose 7-phosphate isomerase	[c] : s7p --> gmhep7p
+U23GAAT-HP	UDP-3-O-(3-hydroxypalmetoyl)glycosamine acyltransferase	[c] : 3hoctaACP + u3hga_HP --> ACP + h + u23ga_HP
+U2GAAT	U2hga_Hp formation	[c] : 3hoctaACP + ugam --> ACP + u2hga_HP
+U2GAAT2	U2ga_Hp formation	[c] : ocdcaACP + u2hga_HP --> ACP + u2ga_HP
+UAGAAT-HP	UDP-N-acetylglucosamine acyltransferase	[c] : 3hpalmACP + uacgam <==> ACP + u3aga_HP
+UDPG4E	UDPglucose 4-epimerase	[c] : udpg <==> udpgal
+UHGADA-HP	UDP-3-O-acetylglucosamine deacetylase	[c] : h2o + u3aga_HP --> ac + u3hga_HP
+USHD-HP	UDP-sugar hydrolase	[c] : h2o + u23ga_HP --> (2) h + lipidX_HP + ump
+DAPDC	Diaminopimelate decarboxylase	[c] : 26dap-M + h --> co2 + lys-L
+DAPE	Diaminopimelate epimerase	[c] : 26dap-LL <==> 26dap-M
+DHDPRy	Dihydrodipicolinate reductase (NADPH)	[c] : 23dhdp + h + nadph --> nadp + thdp
+DHDPS	Dihydrodipicolinate synthase	[c] : aspsa + pyr --> 23dhdp + h + (2) h2o
+SDPDS	Succinyl-diaminopimelate desuccinylase	[c] : h2o + sl26da --> 26dap-LL + succ
+SDPTA	Succinyldiaminopimelate transaminase	[c] : akg + sl26da <==> glu-L + sl2a6o
+THDPS	Tetrahydrodipicolinate succinylase	[c] : h2o + succoa + thdp --> coa + sl2a6o
+AMMQT6	S-Adenosylmethionine methyltransferase 	[c] : 2dmmq6 + amet --> ahcys + h + mqn6
+DHNAOT2	1,4-Dihydroxy-2-naphthoate octaprenyltransferase	[c] : dhna + octdp --> 2dmmq6 + co2 + h + ppi
+ICHORSi	Isochorismate Synthase	[c] : chor --> ichor
+NPHS	Naphthoate synthase	[c] : sbzcoa --> coa + dhna
+OXGDC2	2-Oxoglutarate decarboxylase	[c] : akg + h + thmpp --> co2 + ssaltpp
+SHCHCS2	2-Succinyl-6-hydroxy-2,4-cyclohexadiene 1-carboxylate synthase	[c] : ichor + ssaltpp --> 2shchc + pyr + thmpp
+SUCBZL	O-Succinylbenzoate-CoA ligase	[c] : atp + coa + sucbz --> amp + ppi + sbzcoa
+SUCBZS	O-Succinylbenzoate-CoA synthase	[c] : 2shchc --> h2o + sucbz
+CYSS	Cysteine synthase	[c] : acser + h2s --> ac + cys-L + h
+CYSTL	Cystathionine beta-lyase	[c] : cyst-L + h2o --> nh4 + hcys-L + pyr
+HSERTA	Homoserine O-succinyltransferase	[c] : succoa + hom-L <==> suchms + coa
+METB1r	Cystathionine gamma-synthase	[c] : achms + cys-L <==> ac + cyst-L + h
+METS	Methionine synthase	[c]: 5mthf + hcys-L --> met-L + thf
+OHSL	O-acetylhomoserine (thiol)-lyase	[c]: achms + h2s  <==> ac + hcys-L + h
+SERAT	Serine O-acetyltransferase	[c] : accoa + ser-L <==> acser + coa
+SHSL1r	O-Succinylhomoserine lyase reversible	[c] : cys-L + suchms <==> cyst-L + h + succ
+SHSL4r	O-Succinylhomoserine lyase (elimination), reversible	[c] : h2o + suchms <==> 2obut + h + nh4 + succ
+ASPO2	L-Aspartate oxidase	[c] : asp-L + nad --> h + iasp + nadh
+NADK	NAD kinase	[c] : atp + nad --> adp + h + nadp
+NADS1	NAD synthase (nh3)	[c] : atp + dnad + nh4 --> amp + h + nad + ppi
+NMNAT	Nicotinamide-nucleotide adenylyltransferase	[c] : atp + h + nmn --> nad + ppi
+NNAT	Nicotinate-nucleotide adenylyltransferase	[c] : atp + h + nicrnt --> dnad + ppi
+NNDPR	Nicotinate-nucleotide diphosphorylase (carboxylating)	[c] : (2) h + prpp + quln --> co2 + nicrnt + ppi
+QULNS	Quinolinate synthase	[c] : dhap + iasp --> (2) h2o + h+  pi + quln
+CYTK1	Cytidylate kinase (CMP)	[c] : atp + cmp <==> adp + cdp
+ADPT1	Adenine phosphoribosyltransferase	[c] : ade + prpp --> amp + ppi
+DADK	ATP:dAMP phosphotransferase	[c] : damp + atp <==> adp + dadp
+DCTPD	DCTP deaminase	[c] : dctp + h + h2o --> dutp + nh4
+DCTPD2	CTP deaminase	[c] : ctp + h + h2o --> nh4 + utp
+DGK1	Deoxyguanylate kinase (dGMP:ATP)	[c] : atp + dgmp <==> adp + dgdp
+DTMPK	DTMP kinase	[c] : atp + dtmp <==> adp + dtdp
+DUTPDP	DUTP diphosphatase	[c] : dutp + h2o --> dump + h + ppi
+GUAPRT	Guanine phosphoribosyltransferase	[c] : gua + prpp --> gmp + ppi
+HXPRT	Hypoxanthine phosphoribosyltransferase (Hypoxanthine)	[c] : hxan + prpp --> imp + ppi
+NDPK3	Nucleoside-diphosphate kinase (ATP:CDP)	[c] : atp + cdp <==> adp + ctp
+NDPK4	Nucleoside-diphosphate kinase (ATP:dTDP)	[c] : atp + dtdp <==> adp + dttp
+NDPK5	Nucleoside-diphosphate kinase (ATP:dGDP)	[c] : atp + dgdp <==> adp + dgtp
+NDPK6	Nucleoside-diphosphate kinase (ATP:dUDP)	[c] : atp + dudp <==> adp + dutp
+NDPK7	Nucleoside-diphosphate kinase (ATP:dCDP)	[c] : atp + dcdp <==> adp + dctp
+NDPK8	Nucleoside-diphosphate kinase (ATP:dADP)	[c] : atp + dadp <==> adp + datp
+RNDR1	Ribonucleoside-diphosphate reductase (ADP)	[c] : adp + trdrd --> dadp + h2o + trdox
+RNDR2	Ribonucleoside-diphosphate reductase (GDP)	[c] : gdp + trdrd --> dgdp + h2o + trdox
+RNDR3	Ribonucleoside-diphosphate reductase (CDP)	[c] : cdp + trdrd --> dcdp + h2o + trdox
+RNDR4	Ribonucleoside-diphosphate reductase (UDP)	[c] : trdrd + udp --> dudp + h2o + trdox
+TMDSf	Thymidylate synthase  (Flavin-dependent)	[c] : dump + fmnh2 + mlthf --> dtmp + fmn + thf
+TRDR	Thioredoxin reductase (NADPH)	[c] : h + nadph + trdox --> nadp + trdrd
+UPPRT	Uracil phosphoribosyltransferase	[c] : prpp + ura --> ppi + ump
+URIDK2r	Uridylate kinase (dUMP)	[c] : atp + dump <==> adp + dudp
+XPPT	Xanthine phosphoribosyltransferase	[c] : prpp + xan --> ppi + xmp
+NTD1	5 nucleotidase dUMP 	[c] : dump + h2o  --> duri + pi
+NTD10	5 nucleotidase XMP 	[c] : h2o + xmp  --> pi + xtsn
+NTD11	5 nucleotidase IMP 	[c] : h2o + imp  --> ins + pi
+NTD2	5 nucleotidase UMP 	[c] : h2o + ump  --> pi + uri 
+NTD3	5 nucleotidase dCMP 	[c] : dcmp + h2o  --> dcyt + pi
+NTD4	5 nucleotidase CMP 	[c] : cmp + h2o --> cytd + pi
+NTD5	5 nucleotidase dTMP 	[c] : dtmp + h2o  --> pi + thymd 
+NTD6	5 nucleotidase dAMP 	[c] : damp + h2o  --> dad-2 + pi 
+NTD7	5 nucleotidase AMP 	[c] : amp + h2o  --> adn + pi
+NTD8	5 nucleotidase dGMP 	[c] : dgmp + h2o  --> dgsn + pi 
+NTD9	5 nucleotidase GMP 	[c] : gmp + h2o  --> gsn + pi 
+AHCYSNS	S-Adenosylhomocysteine nucleosidase	[c] : ahcys + h2o --> ade + rhcys
+ALCD2y	Alcohol dehydrogenase (ethanol, NADP)	[c] : etoh + nadp <==> acald + h + nadph
+DHPTDC	4,5-Dihydroxy-2,3-pentanedione cyclization 	[c] : dhptd --> h2o + hmfurn
+DMATT	Dimethylallyltranstransferase	[c] : dmpp + ipdp --> grdp + ppi
+FBA2	D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase	[c] : f1p <==> dhap + glyald
+GCALDDr	Glycolaldehyde dehydrogenase	[c] : gcald + h2o + nad <==> glyclt + (2) h + nadh
+GLUR	Glutamate racemase	[c] : glu-D <==> glu-L
+GLYCTO1	Glycolate oxidase	[c] : glyclt + o2 --> glx + h2o2
+GRTT	Geranyltranstransferase	[c] : grdp + ipdp --> frdp + ppi
+H2CO3D	Carboxylic acid dissociation	[c] : co2 + h2o <==> h2co3
+H2CO3D2	Carboxylic acid dissociation	[c] : h + hco3 <==> h2co3
+MTAN	Methylthioadenosine nucleosidase	[c] : 5mta + h2o --> 5mtr + ade
+NO	Peroxynitrite formation (spontanous)	[c] : no + o2- --> no3
+OCTDPS	Octaprenyl pyrophosphate synthase	[c] : frdp + (5) ipdp --> octdp + (5) ppi
+PGMT	Phosphoglucomutase	[c] : g1p <==> g6p
+PPA	Inorganic diphosphatase	[c] : h2o + ppi --> h + (2) pi
+PYK	Pyruvate kinase	[c] : adp + pep + h --> atp + pyr
+RHCCE	S-Ribosylhomocysteine cleavage enzyme	[c] : rhcys --> dhptd + hcys-L
+sink-4hba	sink 4-Hydroxy-benzyl alcohol	[c] : 4hba <==>
+sink-amob	sink S-Adenosyl-4-methylthio-2-oxobutanoate	[c] : amob <==>
+sink-hmfurn	sink 4-Hhydroxy-5-methyl-3-2H-furanone	[c] : hmfurn <==>
+UDCPDPS	Undecaprenyl diphosphate synthase	[c] : frdp + (8) ipdp --> (8) ppi + udcpdp
+ACPS	Acyl Carrier Protein Synthase	[c] : coa + h2o --> (2) h + pan4p + pap
+ASP1DC	Aspartate 1-decarboxylase	[c] : asp-L + h --> ala-B + co2
+BPNT	3',5'-Bisphosphate nucleotidase	[c] : h2o + pap --> amp + pi
+DPCOAK	Dephospho-CoA kinase	[c] : atp + dpcoa --> adp + coa + h
+DPR	2-Dehydropantoate 2-reductase	[c] : 2dhp + h + nadph --> nadp + pant-R
+MOHMT	3-Methyl-2-oxobutanoate hydroxymethyltransferase	[c] : 3mob + h2o + mlthf --> 2dhp + thf
+PANTS	Pantothenate synthase	[c] : ala-B + atp + pant-R --> amp + h + pnto-R + ppi
+PNTK	Pantothenate kinase	[c] : atp + pnto-R --> 4ppan + adp + h
+PPCDC	Phosphopantothenoylcysteine decarboxylase	[c] : 4ppcys + h --> co2 + pan4p
+PPNCL2	Phosphopantothenate-cysteine ligase	[c] : 4ppan + ctp + cys-L --> 4ppcys + cmp + h + ppi 
+PTPATi	Pantetheine-phosphate adenylyltransferase	[c] : atp + h + pan4p --> dpcoa + ppi
+RPE	Ribulose 5-phosphate 3-epimerase	[c] : ru5p-D <==> xu5p-D
+RPI	Ribose-5-phosphate isomerase	[c] : r5p <==> ru5p-D
+TALA	Transaldolase	[c] : g3p + s7p <==> e4p + f6p
+TKT1	Transketolase	[c] : r5p + xu5p-D <==> g3p + s7p
+TKT2	Transketolase	[c] : e4p + xu5p-D <==> f6p + g3p
+ALAALAr	D-Alanine-D-alanine ligase  	[c] : (2) ala-D + atp <==> adp + alaala + h + pi
+AMAA	N-acetylmuramoyl-L-alanine amidase	[c] : acmama + h2o --> acmam + ala-L
+PAPPT3	Phospho-N-acetylmuramoyl-pentapeptide-transferase (meso-2,6-diaminopimelate)	[c] : udcpp + ugmda --> uagmda + ump
+PPTGS	Peptidoglycan subunit synthesis	[c] : uaagmda --> h + peptido_EC + udcpdp
+UAAGDS	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase	[c] : 26dap-M + atp + uamag --> adp + h + pi + ugmd
+UAGPT3	UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	[c] : uacgam + uagmda --> h + uaagmda + udp
+UAMAGS	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase	[c] : atp + glu-D + uama --> adp + h + pi + uamag
+UAMAS	UDP-N-acetylmuramoyl-L-alanine synthetase	[c] : ala-L + atp + uamr --> adp + h + pi + uama
+UDCPDP	Undecaprenyl-diphosphatase	[c] : h2o + udcpdp --> h + pi + udcpp
+UGMDDS	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine synthetase	[c] : alaala + atp + ugmd --> adp + h + pi + ugmda
+CHORM	Chorismate mutase	[c] : chor --> pphn
+PHETA1	Phenylalanine transaminase	[c] : akg + phe-L <==> glu-L + phpyr
+PPNDH	Prephenate dehydratase	[c] : h + pphn --> co2 + h2o + phpyr
+G5SADr	L-Glutamate 5-semialdehyde dehydratase, reversible	[c] : glu5sa <==> 1pyr5c + h + h2o
+P5CR	Pyrroline-5-carboxylate reductase	[c] : 1pyr5c + (2) h + nadph --> nadp + pro-L
+PROD2	Proline dehydrogenase	[c] : fad + pro-L --> 1pyr5c + fadh2 + h
+ADK1	Adenylate kinase	[c] : amp + atp <==> (2) adp
+ADSL1r	Adenylsuccinate lyase	[c] : dcamp <==> amp + fum
+ADSL2r	Adenylosuccinate lyase	[c] : 25aics <==> aicar + fum
+ADSS	Adenylosuccinate synthase	[c] : asp-L + gtp + imp --> dcamp + gdp + (2) h + pi
+AICART	Phosphoribosylaminoimidazolecarboxamide formyltransferase	[c] : 10fthf + aicar <==> fprica + thf
+AIRC2	Phosphoribosylaminoimidazole carboxylase	[c]: air + atp + hco3  --> 5caiz + adp + h + pi
+AIRC3	Phosphoribosylaminoimidazole carboxylase mutase rxn 	5aizc[c]  <==> 5caiz[c] 
+GARFT	Phosphoribosylglycinamide formyltransferase	[c] : 10fthf + gar <==> fgam + h + thf
+GK1	Guanylate kinase (GMP:ATP)	[c] : atp + gmp <==> adp + gdp
+GLUPRT	Amidophosphoribosyltransferase	[c] : gln-L + h2o + prpp --> glu-L + ppi + pram
+GMPS2	GMP synthase	[c] : atp + gln-L + h2o + xmp --> amp + glu-L + gmp + (2) h + ppi
+IMPC	IMP cyclohydrolase	[c] : h2o + imp <==> fprica
+IMPD	IMP dehydrogenase	[c] : h2o + imp + nad --> h + nadh + xmp
+NDPK1	Nucleoside-diphosphate kinase (ATP:GDP)	[c] : atp + gdp <==> adp + gtp
+PRAGSr	Phosphoribosylglycinamide synthase	[c] : atp + gly + pram <==> adp + gar + h + pi
+PRAIS	Phosphoribosylaminoimidazole synthase	[c] : atp + fpram --> adp + air + (2) h + pi
+PRASCS	Phosphoribosylaminoimidazolesuccinocarboxamide synthase	[c] : 5aizc + asp-L + atp <==> 25aics + adp + h + pi
+PRFGS	Phosphoribosylformylglycinamidine synthase	[c] : atp + fgam + gln-L + h2o --> adp + fpram + glu-L + h + pi
+PRPPS	Phosphoribosylpyrophosphate synthetase	[c] : atp + r5p <==> amp + h + prpp
+E4PD	Erythrose 4 phosphate dehydrogenase	[c]: e4p + h2o + nad  <==> 4per + (2) h + nadh 
+OHPBAT	O-Phospho-4-hydroxy-L-threonine2 oxoglutarate aminotransferase	[c]: glu-L + ohpb  <==> akg + phthr 
+PDX5PO	Pyridoxine 5 phosphate oxidase	[c]: o2 + pdx5p  <==> h2o2 + pydx5p 
+PDX5PS2	Pyridoxine 5'-phosphate synthase	[c] : aopp + dxyl5p --> h + (2) h2o + pdx5p + pi
+PERD	Erythronate 4 phosphate 4per dehydrogenase	[c]: 4per + nad  <==> h + nadh + ohpb 
+SPONT1	3-amino-2-oxopropyl phophate synthatse, Spontaneous Reaction	[c] : amopbut-L + h --> aopp + co2
+THPDH	NAD-dependent threonine 4-phosphate dehydrogenase	[c] : nad + phthr --> amopbut-L + h + nadh
+ASPCT	Aspartate carbamoyltransferase	[c] : asp-L + cbp --> cbasp + h + pi
+CBPS	Carbamoyl-phosphate synthase (glutamine-hydrolysing)	[c] : (2) atp + gln-L + h2o + hco3 --> (2) adp + cbp + glu-L + (2) h + pi
+CTPS1	CTP synthase (NH3)	[c] : atp + nh4 + utp --> adp + ctp + (2) h + pi
+DHORD3	Dihydroorotic acid dehydrogenase (menaquinone 6)	[c] : dhor-S + mqn6 <==> mql6 + orot
+DHORTS	Dihydroorotase	[c] : dhor-S + h2o <==> cbasp + h
+NDPK2	Nucleoside-diphosphate kinase (ATP:UDP)	[c] : atp + udp <==> adp + utp
+OMPDC	Orotidine-5'-phosphate decarboxylase	[c] : h + orot5p --> co2 + ump
+ORPT	Orotate phosphoribosyltransferase	[c] : orot5p + ppi <==> orot + prpp
+UMPK	UMP kinase	[c] : atp + ump <==> adp + udp
+ACKr	Acetate kinase	[c] : ac + atp <==> actp + adp
+ACS	Acetyl-CoA synthetase	[c] : ac + atp + coa --> accoa + amp + ppi
+LACR	Lactate racemase	[c] : lac-L <==> lac-D
+LDH_D	D-lactate dehydrogenase	[c]: lac-D + nad  <==> h + nadh + pyr 
+MALDDH	Malate decarboxylating oxidoreductase decarboxylating 	[c]: mal-D + nad  --> co2 + nadh + pyr 
+MDH	Malate hydrogenase (decarboxylating, nadp)	[c] : mal-L + nadp <==> co2 + nadph + pyr
+PTAr	Phosphotransacetylase	[c] : accoa + pi <==> actp + coa
+ATPS4r	ATP synthase (four protons for one ATP)	adp[c] + (4) h[e] + pi[c] <==> atp[c] + (3) h[c] + h2o[c]
+BC10	Cytochrome bc1 complex (complex III)	(2) ficytcc553[c] + (2) h[c] + mql6[c] --> (2) focytcc553[c] + (4) h[e] + mqn6[c]
+CCG	Gluconate dehydrogenase cytochrome c	(2) ficytcc553[c] +glcn[c] --> (2) focytcc553[c] + 2dhglcn[c] + (2)h[e]
+CCS	Sulfite:cytochrome c oxidoreductase	(2) ficytcc553[c] +so3[c] + h2o[c] --> (2) focytcc553[c] + so4[c] + (2) h[e]
+CYOO-HP	Cytochrome c 553 oxidase, by analogy to Hpylori	(4) focytcc553[c] + (5.98) h[c] + o2[c] --> (4) ficytcc553[c] + (2) h[e] + (1.99) h2o[c] + (0.0050) o2-[c]
+CYTBD	Cyanide insensitive oxidase, cytochrome cb type	(4) h[c] + o2[c] + (2) mql6[c]  --> (2) h2o[c] + (4) h[e] + (2) mqn6[c] 
+DMSORe	Dimethyl sulfoxide reductase Menaquinol 6	dmso[e] + mql6[c]  --> dms[e] + h2o[e] + mqn6[c] 
+FADOX	Flavodoxin oxidase (Menaquinone)	[c] : fadh2 + mqn6 --> fad + mql6
+FDHC	Formate Dehydrogenase nad	[c]: for + nad  <==> co2 + nadh 
+FDHM	Formate Dehydrogenase menaquinone	for[e] + (2) h[c] + mqn6[c]  --> co2[e] + h[e] + mql6[c] 
+FLDO	NAD(P)H-flavin oxidoreductase	[c] : fmnh2 + nadp --> fmn + h + nadph
+HYDA1	Hydrogenase (Menaquinone)	(2) h[c] + h2[e] + mqn6[c] --> (2) h[e] + mql6[c]
+LDH	L-lactate dehydrogenase	[c]: lac-L + mqn6  --> pyr + mql6
+NADPHQR	NADPH Quinone Reductase	[c] : h + mqn6 + nadph --> mql6 + nadp
+NDH-1	NADH dehydrogenase (menaquinone) (complex I)	(3) h[c] + mqn6[c] + nadph[c] --> (2) h[e] + mql6[c] + nadp[c]
+NO2R	Nitrite Reductase Menaquinol 6	(2) h[c] + (3) mql6[c] + no2[c]  --> (2) h2o[c] + (3) mqn6[c] + nh4[c] 
+NO3R	Nitrate reductase Menaquinol 6	(2) h[c] + mql6[c] + no3[c]  --> h2o[c] + (2) h[e] + mqn6[c] + no2[c] 
+TMSORe	Dimethyl sulfoxide reductase Menaquinol 6	tmao[e] + mql6[c]  --> tma[e] + h2o[e] + mqn6[c] 
+APRAUR	5-Amino-6-(5-phosphoribosylamino)uracil reductase	[c] : 5apru + h + nadph --> 5aprbu + nadp
+DB4PS	3,4-Dihydroxy-2-butanone 4-phosphate synthase	[c] : ru5p-D --> db4p + for + h
+DHPPDA	Diaminohydroxyphosphoribosylaminopyrimidine deaminase	[c] : 25dhpp + h + h2o --> 5apru + nh4
+FMNAT	FMN adenylyltransferase	[c] : atp + fmn + h --> fad + ppi
+GTPCII	GTP cyclohydrolase II	[c] : gtp + (3) h2o --> 25dhpp + for + (2) h + ppi
+PMDPHT	Pyrimidine phosphatase	[c] : 5aprbu + h2o --> 4r5au + pi
+RBFK	Riboflavin kinase	[c] : atp + ribflv --> adp + fmn + h
+RBFSa	Riboflavin synthase	[c] : 4r5au + db4p --> dmlz + (2) h2o + pi
+RBFSb	Riboflavin synthase	[c] : (2) dmlz --> 4r5au + ribflv
+GHMT2r	Glycine hydroxymethyltransferase, reversible	[c] : ser-L + thf <==> gly + h2o + mlthf
+PGCD	Phosphoglycerate dehydrogenase	[c] : 3pg + nad --> 3php + h + nadh
+PSERT	Phosphoserine transaminase	[c] : 3php + glu-L --> akg + pser-L
+PSP-D	Phosphoserine phosphatase (D-serine)	[c] : h2o + pser-D --> pi + ser-D
+PSP-L	Phosphoserine phosphatase (L-serine)	[c] : h2o + pser-L --> pi + ser-L
+SERD-L	L-Serine deaminase	[c] : ser-L --> nh4 + pyr
+ADSK	Adenylyl-sulfate kinase	[c] : aps + atp --> adp + h + paps
+ADST	Sulfate adenyl transferase	[c] : so4 + atp + h --> aps + ppi
+PAPSR	Phosphoadenylyl-sulfate reductase (thioredoxin)	[c] : paps + trdrd --> (2) h + pap + so3 + trdox
+SULR	Sulfite reductase (NADPH2)	[c] : (3) h2o + h2s + (3) nadp <==> (5) h + (3) nadph + so3
+ACONT	Aconitase	[c] : cit <==> icit
+CS	Citrate synthase	[c] : accoa + h2o + oaa --> cit + coa + h
+FRD	Fumarate reductase	[c] : fum + mql6 --> mqn6 + succ
+FUM	Fumarase	[c] : fum + h2o <==> mal-L
+ICDHyr	Isocitrate dehydrogenase (NADP)	[c] : icit + nadp <==> akg + co2 + nadph
+MALS	Malate synthase	[c] : accoa + glx + h2o --> coa + h + mal-L
+MDH4	Malate dehydrogenase (menaquinone 6 as acceptor)	[c] : mal-L + mqn6 --> mql6 + oaa
+MDH-L	Malate dehydrogenase 	[c] : mal-L + nad --> nadh + oaa + h
+OOR	Ferredoxin oxidoreductase	[c] : akg + coa + fmn + h --> co2 + fmnh2 + succoa
+PDH2	Pyruvate dehydrogenase - FMN dependent	[c] : coa + fmn + h + pyr --> accoa + co2 + fmnh2
+SUC	Succinyl-CoA synthetase	[c]: succoa + adp + pi <==> succ + atp + coa
+SUCDH	Succinate dehydrogenase	[c] : mqn6 + succ --> fum + mql6
+FTHFD	Formyltetrahydrofolate deformylase	[c] : 10fthf + h2o --> for + h + thf
+FTHFLi	Formate-tetrahydrofolate ligase	[c] : atp + for + thf --> 10fthf + adp + pi
+MTHFC	Methenyltetrahydrofolate cyclohydrolase	[c] : h2o + methf <==> 10fthf + h
+MTHFD	Methylenetetrahydrofolate dehydrogenase (NADP)	[c] : mlthf + nadp <==> methf + nadph
+MTHFR2	5,10-Methylenetetrahydrofolate reductase (NADH)	[c] : (2) h + mlthf + nadh --> 5mthf + nad
+AHMMPS	4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase	[c] : (2) air + (2) h2o --> (2) 4ahmmp + (2) gcald + o2 + (2) pi
+HMPK1	Hydroxymethylpyrimidine kinase (ATP)	[c] : 4ahmmp + atp --> 4ampm + adp + h
+PMPK	Phosphomethylpyrimidine kinase	[c] : 4ampm + atp --> 2mahmp + adp
+THZPSN	Thiazole phosphate synthesis	[c]: atp + cys-L + dxyl5p + tyr-L  --> 4hba + 4mpetz + ala-L + amp + co2 + h2o + h + ppi 
+TMPKr	Thiamine-phosphate kinase	[c] : atp + thmmp <==> adp + thmpp
+TMPPP	Thiamine-phosphate diphosphorylase	[c] : 2mahmp + 4mpetz + h --> ppi + thmmp
+HSDy	Homoserine dehydrogenase (NADPH)	[c] : hom-L + nadp <==> aspsa + h + nadph
+HSK	Homoserine kinase	[c] : atp + hom-L --> adp + h + phom
+THRD-L	L-Threonine deaminase	[c] : thr-L --> 2obut + nh4
+THRS	Threonine synthase	[c] : h2o + phom --> pi + thr-L
+ACt2r	Acetate reversible transport via proton symport	ac[e] + h[e]  <==> ac[c] + h[c] 
+ADNt2	Adenosine transport in via proton symport	adn[e] + h[e] --> adn[c] + h[c]
+AKGt2r	2-Oxoglutarate reversible transport via symport	akg[e] + h[e] <==> akg[c] + h[c]
+ALAt2	L-Alanine transport in via proton symport	ala-L[e] + h[e] --> ala-L[c] + h[c]
+ALAt4	L-alanine-Sodium symporter	ala-L[e] + na1[e] --> ala-L[c] + na1[c]
+ARGt2r	L-Arginine reversible transport via proton symport	arg-L[e] + h[e] <==> arg-L[c] + h[c]
+ASNt2	L-Asparagine transport in via proton symport	asn-L[e] + h[e] --> asn-L[c] + h[c]
+ASPabc	L-Aspartate transport via ABC system	atp[c] + asp-L[e] + h2o[c] --> adp[c] + asp-L[c]+ h[c] + pi[c]
+ASPt2_2	L-Aspartate transport via proton symport (2 H)	asp-L[e] + (2) h[e] --> asp-L[c] + (2) h[c]
+ASPt2r	L-Aspartate reversible transport via proton symport	asp-L[e] + h[e] <==> asp-L[c] + h[c]
+CITt7	Citrate transport via succinate antiport	cit[e] + succ[c]  --> cit[c] + succ[e] 
+CO2t	CO2 transporter via diffusion	co2[e] <==> co2[c]
+CYSabc	L-Cysteine transport via ABC system	atp[c] + cys-L[e] + h2o[c] --> adp[c] + cys-L[c] + h[c] + pi[c]
+DALAt2	D-Alanine transport via proton symport	ala-D[e] + h[e] --> ala-D[c] + h[c]
+DSERt2	D-serine transport via proton symport	h[e] + ser-D[e] --> h[c] + ser-D[c]
+FE2abc	Iron (II) transport via ABC system	atp[c] + fe2[e] + h2o[c] --> adp[c] + fe2[c] + h[c] + pi[c]
+FE3abc	iron (III) transport via ABC system	atp[c] + fe3[e] + h2o[c] --> adp[c] + fe3[c] + h[c] + pi[c]
+FEDCabc	Iron (III) dicitrate transport via ABC system	atp[c] + (2) cit[e] + fe3[e] + h2o[c] --> adp[c] + (2) cit[c] + fe3[c] + h[c] + pi[c]
+FORt	Formate transport via diffusion	for[e] <==> for[c]
+FUMt2_2	Fumarate transport via proton symport (2 H)	fum[e] + (2) h[e] --> fum[c] + (2) h[c]
+GALt2	D-Galactose transport in via proton symport	gal[e] + h[e] --> gal[c] + h[c]
+GLCt2	D-Glucose transport in via proton symport	glc-D[e] + h[e] --> glc-D[c] + h[c]
+GLNabc	L-Glutamine transport via ABC system	atp[c] + gln-L[e] + h2o[c] --> adp[c] + gln-L[c] + h[c] + pi[c]
+GLUabc	L-Glutamate transport via ABC system	atp[c] + glu-L[e] + h2o[c] --> adp[c] + glu-L[c] + h[c] + pi[c]
+GLYt2	Glycine transport in via proton symport	gly[e] + h[e] --> gly[c] + h[c]
+H2CO3TP	H2CO3 transport	h2co3[e] <==> h2co3[c]
+H2Ot	H2O transport via diffusion	h2o[e] <==> h2o[c]
+HISabc	L-Histidine transport via ABC system	atp[c] + h2o[c] + his-L[e] --> adp[c] + h[c] + his-L[c] + pi[c]
+HYXNt	Hypoxanthine transport	hxan[e]  <==> hxan[c] 
+ILEabc	L-Isoleucine transport via ABC system	atp[c] + h2o[c] + ile-L[e] --> adp[c] + h[c] + ile-L[c] + pi[c]
+LEUabc	L-Leucine transport via ABC system	atp[c] + h2o[c] + leu-L[e] --> adp[c] + h[c] + leu-L[c] + pi[c]
+L-LACt2r	L-Lactate reversible transport via proton symport	h[e] + lac-L[e] <==> h[c] + lac-L[c]
+LYSt2r	L-Lysine reversible transport via proton symport	h[e] + lys-L[e] <==> h[c] + lys-L[c]
+MALDt2	D-Malate transport via proton symport (2 H)	(2) h[e] + mal-D[e]  --> (2) h[c] + mal-D[c] 
+MALt2_2	L-Malate transport via proton symport (2 H)	(2) h[e] + mal-L[e] --> (2) h[c] + mal-L[c]
+MALt2r	L-Malate reversible transport via proton symport	h[e] + mal-L[e] <==> h[c] + mal-L[c]
+METabc	L-Methionine transport via ABC system	atp[c] + h2o[c] + met-L[e] --> adp[c] + h[c] + met-L[c] + pi[c]
+NARK	Nitrite transport	no2[c] --> no2[e]
+NAt3-1	Sodium proton antiporter (H:NA is 1:1)	h[e] + na1[c] <==> h[c] + na1[e]
+NH4t2r	Ammonia transport in via proton symport	nh4[e] <==> nh4[c]
+NO3t2	Nitrate transport in via proton symport, in	h[e] + no3[e] --> h[c] + no3[c]
+NO3t3	Nitrate transport out via proton antiport, out	h[e] + no3[c] --> h[c] + no3[e]
+NOt	Nitric oxide transport 	no[e] <==> no[c]
+O2t	O2 transport (diffusion)	o2[e] <==> o2[c]
+PHEt2r	L-Phenylalanine reversible transport via proton symport	h[e] + phe-L[e] <==> h[c] + phe-L[c]
+PIabc	Phosphate transport via ABC system	atp[c] + h2o[c] + pi[e] --> adp[c] + h[c] + (2) pi[c]
+PIMEtr	Pimelate transport, reversible	pime[e] <==> pime[c]
+PIt2r	Phosphate reversible transport via symport	h[e] + pi[e] <==> h[c] + pi[c]
+PROt2r	L-Proline reversible transport via proton symport	h[e] + pro-L[e] <==> h[c] + pro-L[c]
+PROt4	Proline transporter	na1[e] + pro-L[e] --> na1[c] + pro-L[c]
+PYRt2r	Pyruvate reversible transport via proton symport	h[e] + pyr[e] <==> h[c] + pyr[c]
+RIBFLVt2	Riboflavin transport in via proton symport	h[e] + ribflv[e] --> h[c] + ribflv[c]
+SERt2	L-Serine reversible transport via proton symport	h[e] + ser-L[e] <==> h[c] + ser-L[c]
+SERt4	L-Serine via sodium symport	na1[e] + ser-L[e]  --> na1[c] + ser-L[c] 
+SUCCt2	Succinate transport via proton symport	h[e] + succ[e] <==> h[c] + succ[c]
+SUCCt2_2	Succinate transport via proton symport (2 H)	(2) h[e] + succ[e] --> (2) h[c] + succ[c]
+SUCFUMti	Succinate:fumarate antiporter	fum[e] + succ[c] <==> fum[c] + succ[e]
+SULabc	Sulfate transport via ABC system	atp[c] + h2o[c] + so4[e] --> adp[c] + h[c] + pi[c] + so4[c]
+THRt4	L- threonine via sodium symport	na1[e] + thr-L[e]  --> na1[c] + thr-L[c] 
+TRPt2r	L-Tryptophan reversible transport via proton symport	h[e] + trp-L[e] <==> h[c] + trp-L[c]
+TYRt2r	L-Tyrosine reversible transport via proton symport	h[e] + tyr-L[e] <==> h[c] + tyr-L[c]
+URAt2	Uracil transport in via proton symport	h[e] + ura[e] --> h[c] + ura[c]
+UREAt	Urea transport via facilitate diffusion	urea[e]  <==> urea[c] 
+VALabc	L-Valine transport via ABC system	atp[c] + h2o[c] + val-L[e] --> adp[c] + h[c] + pi[c] + val-L[c]
+ANPRT	Anthranilate phosphoribosyltransferase	[c] : anth + prpp --> ppi + pran
+ANS	Anthranilate synthase	[c] : chor + gln-L --> anth + glu-L + h + pyr
+ANS2	Anthranilate synthase 2	[c] : chor + nh4 --> anth + h + h2o + pyr
+IGPS	Indole-3-glycerol-phosphate synthase	[c] : 2cpr5p + h --> 3ig3p + co2 + h2o
+PRAIi	Phosphoribosylanthranilate isomerase (irreversible)	[c] : pran --> 2cpr5p
+TRPS1	Tryptophan synthase (indoleglycerol phosphate)	[c] : 3ig3p + ser-L --> g3p + h2o + trp-L
+TRPS2	Tryptophan synthase (indole)	[c] : indole + ser-L --> h2o + trp-L
+TRPS3	Tryptophan synthase (indoleglycerol phosphate)	[c] : 3ig3p --> g3p + indole
+PPND	Prephenate dehydrogenase	[c] : nad + pphn --> 34hpp + co2 + nadh
+TYRTA	Tyrosine transaminase	[c] : akg + tyr-L <==> 34hpp + glu-L
+HBZOPT	Hydroxybenzoate octaprenyltransferase	[c] : 4hbz + octdp --> 3ophb + ppi
+OMBZLM	2-Octaprenyl-6-methoxy-benzoquinol methylase	[c] : 2ombzl + amet --> 2ommbl + ahcys + h
+OPHBDC	Octaprenyl-hydroxybenzoate decarboxylase	[c] : 3ophb + h --> 2oph + co2
+ARGSL	Argininosuccinate lyase	[c] : argsuc <==> arg-L + fum
+OCBTi	Ornithine carbamoyltransferase, irreversible	[c] : cbp + orn --> citr-L + h + pi
+UREAc	Urea carboxylase	[c]: urea + hco3 +atp --> adp + pi+ h + allo
+UREAh	Allophanate hydrolase	[c]: allo + (3) h2o + h  --> (2) nh4 + (2) hco3
+ARGSS	Argininosuccinate synthase	[c] : asp-L + atp + citr-L --> amp + argsuc + h + ppi
+ACLS	Acetolactate synthase	[c]: h + (2) pyr  --> alac-S + co2 
+DHAD1	Dihydroxy acid dehydratase (2,3-dihydroxy-3-methylbutanoate)	[c]: 23dhmb --> 3mob + h2o 
+KARA1i	Acetohydroxy acid isomeroreductase	[c] : alac-S + h + nadph --> 23dhmb + nadp
+VALTA	Valine transaminase	[c] : akg + val-L <==> 3mob + glu-L
+Biomass_HP	Biomass	(0.05) 5mthf[c] + (0.0084) lps_HP[c] + (0.00005) accoa[c] + (0.229) asn-L[c] + (0.00005) nadh[c] + (0.229) asp-L[c] + (0.00013) nadp[c] + (45.7318) atp[c] + (0.402) val-L[c] --> (41.6918) adp[c] + (41.691389) h[c] + (41.693631) pi[c] + (0.668191) ppi[c]

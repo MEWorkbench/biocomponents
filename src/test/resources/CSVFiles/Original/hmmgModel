@@ -1,0 +1,7 @@
+Rxn name	Rxn description	Formula	Gene-reaction association	Genes	Protein	Subsystem	Reversible	LB	UB	Objective	ConfidenceScore	E.C. number	Notes	References
+HGREACT	Hugo Reaction reversible transport	zymst[e]  => zymst[c] + hugometabX 				Transport Reaction	1			0				
+SuperReact		hugometabX <=> metaboliteY					0	-1000	1000					
+noName		nothing => HugometabX												
+compart	Compartment Reaction	[HG] : metab1 <=> metab2												
+REACTION9	Reaction nine	hugometabx[Z] => metabhg[A]												
+TEST		metab1 <=> metab2 + met[X]												

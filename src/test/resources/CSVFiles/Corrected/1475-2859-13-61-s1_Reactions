@@ -1,0 +1,870 @@
+Abbreviation	Name	Reaction	GPR	Protein	Subsystem	EC. Number
+R001	Biomass reaction (70 C)	0.1582 L_ASP[c] + 0.2696 L_GLU[c] + 0.2076 L_SER[c] + 0.0375 L_HIS[c] + 0.4716 L_GLY[c] + 0.1531 L_THR[c] + 0.3231 L_ARG[c] + 0.5434 L_ALA[c] + 0.1052 L_TYR[c] + 0.1668 L_VAL[c] + 0.1322 L_PHE[c] + 0.0593 L_ILE[c] + 0.3744 L_LEU[c] + 0.1337 L_LYS[c] + 0.2898 L_PRO[c] + 0.1582 L_ASN[c] + 0.0134 L_CYS[c] + 0.2714 L_GLN[c] + 0.0224 L_MET[c] + 0.0654 L_TRP[c] + 0.0110 UDP_ACMURM[c] + 0.0110 UDP_AGLUAM[c] + 0.0110 D_GLU[c] + 0.0110 ORT[c] + 0.0259 D_ALA[c] + 0.0098 dTTP[c] + 0.0223 dGTP[c] + 0.0223 dCTP[c] + 0.0098 dATP[c] + 0.0586 CTP[c] + 0.1455 GTP[c] + 0.0976 UTP[c] + 0.01095 MGDG[c] + 0.0091 DGDG[c] + 0.1113 tZXT[c] + 0.0031 PETHA[c] + 0.0022 PGLY[c] + 0.0066 PINS[c] + 0.0012 CDLPN[c] + 0.0404 PX[c] + 59.81 ATP[c] -> 59.81 ADP[c] + 59.81 Pi[c] + 0.3659 PPi[c] 			Exchange Reactions	
+R002	ATP Maintenance	ATP[c] + H2O[c]  -> ADP[c] + Pi[c] + H[c] 			Uassigned	
+R003	ATP:D-glucose 6-phosphotransferase	ATP[c] + D_GLC[c]  -> ADP[c] + H[c] + G6P[c] 	TTC1688	glk	Glycolysis/Gluconeogenesis	2.7.1.2
+R004	ATP:D-glucose 6-phosphotransferase	ATP[c] + D_MAN[c]  -> ADP[c] + H[c] + M6P[c] 	TTC1688	glk	Glycolysis/Gluconeogenesis	2.7.1.2
+R005	D-glucose-6-phosphate aldose-ketose-isomerase	G6P[c]  <=> F6P[c] 	TTC1710	pgI	Glycolysis/Gluconeogenesis	5.3.1.9
+R006	ATP:D-fructose-6-phosphate 1-phosphotransferase	ATP[c] + F6P[c]  -> ADP[c] + H[c] + FBP[c] 	TTC1597	pfkA	Glycolysis/Gluconeogenesis	2.7.1.11
+R007	D-fructose-1,6-bisphosphate D-glyceraldehyde-3-phosphate-lyase (glycerone-phosphate-forming)	FBP[c]  <=> DHAP[c] + GAP[c] 	TTC1414	fbaB	Glycolysis/Gluconeogenesis	4.1.2.13
+R008	D-glyceraldehyde-3-phosphate aldose-ketose-isomerase	GAP[c]  <=> DHAP[c] 	TTC0581	tpiA	Glycolysis/Gluconeogenesis	5.3.1.1
+R009	D-glyceraldehyde-3-phosphate:NAD+ oxidoreductase (phosphorylating)	NAD[c] + Pi[c] + GAP[c]  <=> H[c] + 13BPG[c] + NADH[c] 	TTC0549	gapA	Glycolysis/Gluconeogenesis	1.2.1.12
+R010	ATP:3-phospho-D-glycerate 1-phosphotransferase	ATP[c] + 3PG[c]  <=> ADP[c] + 13BPG[c] 	TTC0550	pgk	Glycolysis/Gluconeogenesis	2.7.2.3
+R011	2-Phospho-D-glycerate 2,3-phosphomutase	2PG[c]  <=> 3PG[c] 	(TTC1888 or TTC1618 or TTC1956 or TT_P0006)	gpmA	Glycolysis/Gluconeogenesis	5.4.2.1
+R012	2-phospho-D-glycerate hydro-lyase (phosphoenolpyruvate-forming)	H2O[c] + PEP[c]  <=> 2PG[c] 	TTC1610	eno	Glycolysis/Gluconeogenesis	4.2.1.11
+R013	ATP:pyruvate 2-O-phosphotransferase	ADP[c] + H[c] + PEP[c]  -> ATP[c] + PYR[c] 	TTC1611	pykA	Glycolysis/Gluconeogenesis	2.7.1.40
+R014	ATP:oxaloacetate carboxy-lyase (transphosphorylating;phosphoenolpyruvate-forming)	ATP[c] + OAC[c]  -> ADP[c] + PEP[c] + CO2[c] 	TTC1709	pckA	Glycolysis/Gluconeogenesis	4.1.1.49
+R015	(S)-Lactate:NAD+ oxidoreductase	H[c] + NADH[c] + PYR[c]  -> NAD[c] + LAC[c] 	TTC0748	ldh	Glycolysis/Gluconeogenesis	1.1.1.27
+R016	Acetate:CoA ligase (AMP-forming)	ATP[c] + CoA[c] + AC[c]  -> PPi[c] + AMP[c] + ACoA[c] 	(TTC0884 and TTC0885 and TTC0886 and TTC0919)	acsA 	Glycolysis/Gluconeogenesis	6.2.1.1
+R017	Acetaldehyde:NAD+ oxidoreductase	NAD[c] + H2O[c] + AALD[c]  -> 2 H[c] + NADH[c] + AC[c] 	(TTC0513 or TTC0604)	ald	Glycolysis/Gluconeogenesis	1.2.1.3
+R018	ethanol:NAD+ oxidoreductase	NAD[c] + ETH[c]  <=> H[c] + NADH[c] + AALD[c] 	TTC1572	adh	Glycolysis/Gluconeogenesis	1.1.1.1
+R019	acetyl-CoA:oxaloacetate C-acetyltransferase (thioester-hydrolysing)	H2O[c] + OAC[c] + ACoA[c]  -> CoA[c] + H[c] + CIT[c] 	TTC0978	gltA	Citric Acid Cycle	2.3.3.1
+R020	citrate hydro-lyase (cis-aconitate-forming)	CIT[c]  <=> H2O[c] + cACO[c] 	TTC0374	acnA	Citric Acid Cycle	4.2.1.3
+R021	isocitrate hydro-lyase (cis-aconitate-forming)	ICIT[c]  <=> H2O[c] + cACO[c] 	TTC0374	acnB	Citric Acid Cycle	4.2.1.3
+R022	Isocitrate:NADP+ oxidoreductase	NADP[c] + ICIT[c]  -> H[c] + OXLSUCC[c] + NADPH[c] 	TTC1172	idh1	Citric Acid Cycle	1.1.1.42
+R023	oxalosuccinate carboxy-lyase (2-oxoglutarate-forming)	H[c] + OXLSUCC[c]  -> CO2[c] + AKG[c] 	TTC1172	idh2	Citric Acid Cycle	1.1.1.42
+R024	2-oxoglutarate:ferredoxin oxidoreductase (decarboxylating)	NAD[c] + CoA[c] + AKG[c]  -> NADH[c] + CO2[c] + SUCCoA[c] 	(TTC1591 and TTC1592)	korB	Citric Acid Cycle	1.2.7.3
+R025	Succinate:CoA ligase (ADP-forming)	ATP[c] + CoA[c] + SUCC[c]  <=> ADP[c] + Pi[c] + SUCCoA[c] 	(TTC0169 and TTC0170)	sco	Citric Acid Cycle	6.2.1.5
+R026	Succinate:(acceptor) oxidoreductase	SUCC[c] + FAD[c]  <=> FADH2[c] + FUM[c] 	(TTC1089 and TTC1090 and TTC1091 and TTC1092)	sdh	Citric Acid Cycle	1.3.99.1
+R027	(S)-malate hydro-lyase (fumarate-forming)	MAL[c]  <=> H2O[c] + FUM[c] 	TTC0190	fumC	Citric Acid Cycle	4.2.1.2
+R028	(S)-malate:NAD+ oxidoreductase	NAD[c] + MAL[c]  <=> H[c] + NADH[c] + OAC[c] 	TTC0168	mqo	Citric Acid Cycle	1.1.1.37
+R029	D-glucose:ubiquinone oxidoreductase	D_GLC[c] + MQ[c]  -> GLC_LACN[c] + MQL[c] 	TTC0202		Pentose Phosphate Pathway	1.1.5.2
+R030	D-Fructose 6-phosphate:D-glyceraldehyde-3-phosphate glycolaldehyde transferase	F6P[c] + GAP[c]  <=> E4P[c] + XYL5P[c] 	TTC1896	tktB	Pentose Phosphate Pathway	2.2.1.1
+R031	sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphate glyceronetransferase	GAP[c] + SEDHEP7P[c]  <=> F6P[c] + E4P[c] 	TTC0701	tal	Pentose Phosphate Pathway	2.2.1.2
+R032	Sedoheptulose-7-phosphate:D-glyceraldehyde-3-phosphate glycolaldehyde transferase	GAP[c] + SEDHEP7P[c]  <=> XYL5P[c] + R5P[c] 	TTC1896	tktA	Pentose Phosphate Pathway	2.2.1.1
+R033	D-Ribulose-5-phosphate 3-epimerase	RBL5P[c]  <=> XYL5P[c] 	TTC1898	rpe	Pentose Phosphate Pathway	5.1.3.1
+R034	D-ribose-5-phosphate aldose-ketose-isomerase	R5P[c]  <=> RBL5P[c] 	TTC0932	rpiA	Pentose Phosphate Pathway	5.3.1.6
+R035	ATP:D-ribose-5-phosphate diphosphotransferase	ATP[c] + R5P[c]  <=> H[c] + AMP[c] + PRPP[c] 	(TTC1184 or TTC1274)	hisG	Pentose Phosphate Pathway	2.7.6.1
+R036	D-Ribose 1,5-phosphomutase	R1P[c]  <=> R5P[c] 	(TTC1630 or TTC1659)	pgm	Pentose Phosphate Pathway	5.4.2.2 or 5.4.2.7
+R037	ATP:D-ribose 5-phosphotransferase	ATP[c] + D_RIB[c]  -> ADP[c] + H[c] + R5P[c] 	TTC0063		Pentose Phosphate Pathway	2.7.1.15
+R038	2-deoxy-D-ribose-5-phosphate acetaldehyde-lyase (D-glyceraldehyde-3-phosphate-forming)	dR5P[c]  -> GAP[c] + AALD[c] 	TTC0823		Pentose Phosphate Pathway	4.1.2.4
+R039	2-deoxy-D-ribose 1-phosphate 1,5-phosphomutase	dR1P[c]  <=> dR5P[c] 	TTC1659		Pentose Phosphate Pathway	5.4.2.7
+R040	glyceraldehyde ferredoxin oxidoreductase	NAD[c] + H2O[c] + GLYALD[c]  <=> 2 H[c] + NADH[c] + D_GLCT[c] 	TTC1834		Pentose Phosphate Pathway	1.2.7.5
+R041	2-dehydro-3-deoxy-D-gluconate-6-phosphate D-glyceraldehyde-3-phosphate-lyase	DHY_DOP_GLUCN[c]  -> GAP[c] + PYR[c] 	TT_P0030		Pentose Phosphate Pathway	4.1.2.14
+R042	2-Dehydro-3-deoxy-D-gluconate:NAD+ 5-oxidoreductase	NAD[c] + 2K3DO_GLCN[c]  <=> H[c] + NADH[c] + DHY_DOHEXNA[c] 	TT_P0037		Pentose Phosphate Pathway	1.1.1.125
+R043	D-fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase	F1P[c]  <=> DHAP[c] + GLYALD[c] 	TTC1414		Alternate Carbon Metabolism	4.1.2.13
+R044	L-Fuculose-1-phosphate lactaldehyde-lyase	FUCL1P[c]  <=> DHAP[c] + LALD[c] 	TTC1459		Alternate Carbon Metabolism	4.1.2.17
+R045	L-lactaldehyde:NAD+ oxidoreductase	LALD[c] + NAD[c] + H2O[c] <=> LAC[c] + NADH[c] + 2 H[c]	TTC0513		Alternate Carbon Metabolism	1.2.1.22
+R046	GDP-mannose:3-phosphoglycerate 3-a-D-mannosyltransferase	3PG[c] + GDP_MAN[c]  <=> GDP[c] + MANNPGLYCT[c] 	TTC0588		Alternate Carbon Metabolism	2.4.1.217
+R047	alpha-D-mannosyl-3-phosphoglycerate phosphohydrolase	H2O[c] + MANNPGLYCT[c]  <=> Pi[c] + AMANN_GLYCT[c] 	TTC0589		Alternate Carbon Metabolism	3.1.3.70
+R048	D-mannose 6-phosphate 1,6-phosphomutase	M6P[c]  <=> MAN1P[c] 	(TTC1630 or TTC0291 or TTC1063)		Alternate Carbon Metabolism	5.4.2.8
+R049	GDP:D-mannose-1-phosphate guanylyltransferase	H[c] + GDP[c] + MAN1P[c]  -> Pi[c] + GDP_MAN[c] 	TTC1388		Alternate Carbon Metabolism	2.7.7.22
+R050	ATP:D-fructose 6-phosphotransferase	ATP[c] + D_FRU[c]  -> ADP[c] + H[c] + F6P[c] 	TTC0630		Alternate Carbon Metabolism	2.7.1.4
+R051	D-mannose-6-phosphate aldose-ketose-isomerase	M6P[c]  <=> F6P[c] 	TTC0980		Alternate Carbon Metabolism	5.3.1.8
+R052	ATP:D-galactose 1-phosphotransferase	ATP[c] + D_GAL[c]  <=> ADP[c] + H[c] + GAL1P[c] 	TTC0226		Alternate Carbon Metabolism	2.7.1.6
+R053	UDP-glucose:alpha-D-galactose-1-phosphate uridylyltransferase	GAL1P[c] + UDP_GLU[c]  <=> G1P[c] + UDP_GAL[c] 	TT_P0071		Alternate Carbon Metabolism	2.7.7.12
+R054	UDP-glucose 4-epimerase	UDP_GLU[c]  <=> UDP_GAL[c] 	TTC0222		Alternate Carbon Metabolism	5.1.3.2
+R055	Galactan galactohydrolase	H2O[c] + GLCTN[c]  <=> 2 D_GAL[c] 	(TT_P0220 or TT_P0222)		Alternate Carbon Metabolism	3.2.1.23
+R056	Lactose galactohydrolase	H2O[c] + LACTS[c]  -> D_GLC[c] + D_GAL[c] 	(TT_P0220 or TT_P0222)		Alternate Carbon Metabolism	3.2.1.23
+R057	alpha-D-glucose 1,6-phosphomutase	G1P[c]  <=> G6P[c] 	(TTC1630 or TTC0291 or TTC1063)		Alternate Carbon Metabolism	5.4.2.2
+R058	Epimelibiose galactohydrolase	H2O[c] + EPMLBIOS[c]  <=> D_GAL[c] + D_MAN[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R059	3-O-alpha-D-Galactosyl-1D-myo-inositol galactohydrolase	H2O[c] + AGAL_INS[c]  <=> D_GAL[c] + M_INS[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R060	Melibiitol galactohydrolase	H2O[c] + MLBTL[c]  <=> D_GAL[c] + SORB[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R061	Galactosylglycerol galactohydrolase	H2O[c] + GALCS_GLYC[c]  <=> D_GAL[c] + GLYCRL[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R062	alkaline alpha-galactosidase	H2O[c] + STCYS[c]  <=> D_GAL[c] + RAFF[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R063	Manninotriose galactohydrolase	H2O[c] + MANNTRIS[c]  <=> D_GAL[c] + MLBIOS[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R064	Raffinose galactohydrolase	H2O[c] + RAFF[c]  <=> D_GAL[c] + SUC[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R065	melibiose galactohydrolase	H2O[c] + MLBIOS[c]  <=> D_GLC[c] + D_GAL[c] 	TT_P0072		Alternate Carbon Metabolism	3.2.1.22
+R066	sucrose glucohydrolase	H2O[c] + SUC[c]  -> D_GLC[c] + D_FRU[c] 	(TTC0107 or TTC1283 or TT_P0221)		Alternate Carbon Metabolism	3.2.1.20
+R067	palatinose glucohydrolase	H2O[c] + PALT[c]  -> D_GLC[c] + D_FRU[c] 	(TTC0107 or TTC1283 or TT_P0221)		Alternate Carbon Metabolism	3.2.1.20
+R068	octaprenyl-diphosphate synthase	ct_FARPPi[c] + 5 IPEN_PPi[c] <=> t_PPREPPi[c] + 5 PPi[c]	TTC1291		Cofactor and Prosthetic Group Biosynthesis	2.5.1.90
+R069	chorismate lyase	CORM[c]  -> HY_BNZA[c] + PYR[c]			Cofactor and Prosthetic Group Biosynthesis	4.1.3.40
+R070	Polyisopentenylpyrolinate:4-hydroxybenzoate nonaprenyltransferase	t_PPREPPi[c] + HY_BNZA[c]  <=> PPi[c] + HY_PPREBNZA[c] 	TTC0240 		Cofactor and Prosthetic Group Biosynthesis	2.5.1.39
+R071	4-hydroxy-3-polyprenylbenzoate carboxy-lyase	CO2[c] + PPRENPhOL[c]  <=> HY_PPREBNZA[c] 	TTC1553		Cofactor and Prosthetic Group Biosynthesis	4.1.1.-
+R072	polyprenylphenol hydroxylase	PPRENPhOL[c] + NADPH[c] + O2[c] + H[c] -> PBDIOL[c] + NADP[c] + H2O[c]			Cofactor and Prosthetic Group Biosynthesis	1.14.13.-
+R073	2-polyprenyl-6-hydroxyphenol methylase	PBDIOL[c] + SAM[c] <=> METPPHOL[c] + SAHC[c] + H[c]			Cofactor and Prosthetic Group Biosynthesis	2.1.1.222
+R074	2-methoxy-6-all-trans-polyprenylphenol hydroxylase	METPPHOL[c] + H[c] + NADPH[c] + O2[c] -> PPRE_MOX_BNZQ[c] + NADP[c] + H2O[c]			Cofactor and Prosthetic Group Biosynthesis	1.14.13.-
+R075	2-Polyprenyl-6-methoxy-1,4-benzoquinone hydroxylase	PPRE_MOX_BNZQ[c] + NADPH[c] + O2[c] -> DEMQH2[c] + NADP[c] + H2O[c]			Cofactor and Prosthetic Group Biosynthesis	1.14.13.-
+R076	3-Demethylubiquinol methylase	DEMQH2[c] + SAM[c] -> QH2[c] + SAHC[c] + H[c]			Cofactor and Prosthetic Group Biosynthesis	2.1.1.64
+R077	ubiquinone/menaquinone biosynthesis methyltransferase	PPRE_MOX_BNZQ[c] + SAM[c]  <=> PPRE_MMOX_BNZQ[c] + SAHC[c] 	TTC1503		Cofactor and Prosthetic Group Biosynthesis	2.1.1.201
+R078	2-Polyprenyl-3-methyl-6-methoxy-1,4-benzoquinone hydroxylase	PPRE_MMOX_BNZQ[c] + NADPH[c] + O2[c] -> DMMQ[c] + NADP[c] + H2O[c]			Cofactor and Prosthetic Group Biosynthesis	1.14.13.-
+R079	S-adenosyl-L-methione:demethylmenaquinone methyltransferase	SAM[c] + DMMQ[c]  <=> SAHC[c] + MQ[c] 	TTC1503		Cofactor and Prosthetic Group Biosynthesis	2.1.1.163
+R080	(1R,6R)-6-hydroxy-2-succinylcyclohexa-2,4-diene-1-carboxylate hydrolyase (2-succinylbenzoate-forming)	HY_SUCC_CYCHEXDE_CARBA[c]  -> H2O[c] + SUCC_BNZA[c] 	TTC0519		Cofactor and Prosthetic Group Biosynthesis	4.2.1.113
+R081	Acetyl-CoA:carbon-dioxide ligase (ADP-forming)	ACoA[c] + CBTN_CCP[c]  <=> MALCoA[c] + HCARB[c] 	(TTC0758 and TTC1408 and TTC1409)		Cell Envelope Biosynthesis	6.4.1.2
+R082	glutaryl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase (decarboxylating)	H[c] + FAD[c] + GLUTRCoA[c]  -> CO2[c] + FADH2[c] + CROCoA[c] 	TTC0435		Membrane Lipid Metabolism	1.3.8.6
+R083	NADH:ubiquinone oxidoreductase	4 H[c] + NADH[c] + MQ[c]  -> NAD[c] + MQL[c] + 3 H[e] 	(TTC1907 and TTC1908 and TTC1909 and TTC1910 and TTC1911 and TTC1912 and TTC1913 and TTC1914 and TTC1915 and TTC1916 and TTC1917 and TTC1918 and TTC1919 and TTC1920 and TT_P0054)		Oxidative Phosphorylation	1.6.5.3
+R084	Ubiquinol:ferricytochrome-c oxidoreductase	MQL[c] + 2 CYT_C3[c]  <=> MQ[c] + 2 CYT_C2[c] 			Oxidative Phosphorylation	1.10.2.2
+R085	diphosphate phosphohydrolase	PPi[c] + H2O[c]  -> 2 Pi[c] + H[c] 	TTC1600		Anaplerotic Reactions	3.6.1.1
+R086	ATP phosphohydrolase	ATP[c] + H2O[c]  -> ADP[c] + Pi[c] + H[c] 	(TT_P0081 or TT_P0211 or TTC1823 or TTC1844 or TTC1290)		Nucleotide Salvage Pathway	3.6.3.14
+R087	ADP-ribose ribophosphohydrolase	H2O[c] + ADP_RIB[c]  -> 2 H[c] + AMP[c] + R5P[c] 	(TTC0160 or TTC0511)		Nucleotide Salvage Pathway	3.6.1.13
+R088	5-phosphoribosylamine:diphosphate phospho-alpha-D-ribosyltransferase (glutamate-amidating)	L_GLN[c] + H2O[c] + PRPP[c]  -> L_GLU[c] + PPi[c] + PRIBSAMN[c] 	TTC1156		Nucleotide Salvage Pathway	2.4.2.14
+R089	5-Phospho-D-ribosylamine:glycine ligase (ADP-forming)	L_GLY[c] + ATP[c] + PRIBSAMN[c]  -> ADP[c] + Pi[c] + H[c] + GAR[c] 	TTC0460		Nucleotide Salvage Pathway	6.3.4.13
+R090	5'-Phosphoribosylformylglycinamide:L-glutamine amido-ligase (ADP-forming)	L_GLN[c] + ATP[c] + H2O[c] + FGAR[c]  -> L_GLU[c] + ADP[c] + Pi[c] + H[c] + FGAM[c] 	(TTC1152 or TTC1153 or TTC1155 or TTC1383)		Nucleotide Salvage Pathway	6.3.5.3
+R091	2-(Formamido)-N1-(5-phosphoribosyl)acetamidine cyclo-ligase (ADP-forming)	ATP[c] + FGAM[c]  -> ADP[c] + Pi[c] + 2 H[c] + AIR[c] 	TTC1619		Nucleotide Salvage Pathway	6.3.3.1
+R092	5-amino-1-(5-phospho-D-ribosyl)imidazole:carbon-dioxide ligase (ADP-forming)	ATP[c] + AIR[c] + HCO3[c]  -> ADP[c] + Pi[c] + H[c] + 5CAIZ[c] 	TTC0137		Nucleotide Salvage Pathway	6.3.4.18
+R093	5-carboxyamino-1-(5-phospho-D-ribosyl)imidazole carboxymutase	5CAIZ[c]  <=> CAIR[c] 	TTC0138		Nucleotide Salvage Pathway	5.4.99.18
+R094	1-(5-Phosphoribosyl)-5-amino-4-carboxyimidazole:L-aspartate ligase (ADP-forming)	L_ASP[c] + ATP[c] + CAIR[c]  <=> ADP[c] + Pi[c] + H[c] + SAICAR[c] 	TTC1151		Nucleotide Salvage Pathway	6.3.2.6
+R095	1-(5'-Phosphoribosyl)-5-amino-4-(N-succinocarboxamide)-imidazole AMP-lyase	SAICAR[c]  <=> FUM[c] + AICAR[c] 	TTC1149		Nucleotide Salvage Pathway	4.3.2.2
+R096	1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide:pyrophosphate phosphoribosyltransferase	PPi[c] + AICAR[c]  <=> PRPP[c] + 5A_4IMDZCARBA[c] 	(TTC1249 or TTC1250)		Nucleotide Salvage Pathway	2.4.2.7
+R097	10-Formyltetrahydrofolate:5'-phosphoribosyl-5-amino-4-imidazolecarboxamide formyltransferase	AICAR[c] + 10F_THF[c]  <=> THF[c] + FAICAR[c] 	TTC0561		Nucleotide Salvage Pathway	2.1.2.3
+R098	IMP 1,2-hydrolase (decyclizing)	H2O[c] + IMP[c]  <=> FAICAR[c] 	TTC0561		Nucleotide Salvage Pathway	3.5.4.10
+R099	P1,P4-bis(5'-adenosyl)-tetraphosphate adenylohydrolase	H2O[c] + BADNS_PPP[c]  -> ATP[c] + AMP[c] 	(TTC1519 or TTC1859)		Nucleotide Salvage Pathway	3.6.1.17
+R100	ATP:sulfate adenylyltransferase	ATP[c] + H[c] + SO4[c]  -> PPi[c] + APS[c] 	TTC0307		Nucleotide Salvage Pathway	2.7.7.4
+R101	ATP:dIDP phosphotransferase	ATP[c] + dIDP[c]  <=> ADP[c] + dITP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R102	2'-Deoxyinosine-5'-triphosphate pyrophosphohydrolase	H2O[c] + dITP[c]  -> PPi[c] + H[c] + dIMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R103	guanosine 3'-diphosphate 5'-triphosphate 5'-phosphohydrolase	H2O[c] + GUNS_3PPi_5TPi[c]  -> Pi[c] + H[c] + GUNSBP[c] 	TTC0636		Nucleotide Salvage Pathway	3.6.1.40
+R104	P1,P4-bis(5'-guanosyl)-tetraphosphate guanylylhydrolase	GTP[c] + GMP[c]  -> H2O[c] + 2 H[c] + BGUNS_PPP[c] 	(TTC1519 or TTC1859)		Nucleotide Salvage Pathway	3.6.1.17
+R105	dGTP triphosphohydrolase	dGTP[c] + H2O[c]  -> dGUNS[c] + TPi[c] 	TTC0044		Nucleotide Salvage Pathway	3.1.5.1
+R106	guanosine-3',5'-bis(diphosphate) 3'-diphosphohydrolase	H2O[c] + GUNSBP[c]  -> PPi[c] + GDP[c] 	TTC1355		Nucleotide Salvage Pathway	3.1.7.2
+R107	ATP:GDP phosphotransferase	ATP[c] + GDP[c]  -> GTP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R108	ATP:dGDP phosphotransferase	ATP[c] + dGDP[c]  <=> dGTP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R109	dGTP:pyruvate 2-O-phosphotransferase	PEP[c] + dGDP[c]  -> dGTP[c] + PYR[c] 	TTC1611		Nucleotide Salvage Pathway	2.7.1.40
+R110	2'-Deoxyguanosine 5'-triphosphate diphosphohydrolase	dGTP[c] + H2O[c]  -> PPi[c] + H[c] + dGMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R111	2'-Deoxyguanosine 5'-monophosphate phosphohydrolase	H2O[c] + dGMP[c]  -> Pi[c] + dGUNS[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R112	2'-Deoxyguanosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase	GDP[c] + R_TRED[c]  -> H2O[c] + dGDP[c] + O_TRED[c] 	(TTC1930 and TT_P0161 and TT_P0162)		Nucleotide Salvage Pathway	1.17.4.1
+R113	ATP:dGMP phosphotransferase	ATP[c] + dGMP[c]  <=> ADP[c] + dGDP[c] 	TTC1197		Nucleotide Salvage Pathway	2.7.4.8
+R114	Deoxyguanosine:orthophosphate ribosyltransferase	Pi[c] + dGUNS[c]  <=> dR1P[c] + GUN[c] 	((TTC0194 or TTC1070) or TTC1412)		Nucleotide Salvage Pathway	2.4.2.1 or 2.4.2.4
+R115	GTP diphosphohydrolase (diphosphate-forming)	GTP[c] + H2O[c]  -> PPi[c] + H[c] + GMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R116	ATP:GMP phosphotransferase	ATP[c] + GMP[c]  <=> ADP[c] + GDP[c] 	TTC1197		Nucleotide Salvage Pathway	2.7.4.8
+R117	Guanosine 5'-monophosphate phosphohydrolase	H2O[c] + GMP[c]  -> Pi[c] + GUNS[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R118	guanosine:phosphate alpha-D-ribosyltransferase	Pi[c] + GUNS[c]  <=> R1P[c] + GUN[c] 	(TTC0194 or TTC1070)		Nucleotide Salvage Pathway	2.4.2.1
+R119	GMP:diphosphate 5-phospho-alpha-D-ribosyltransferase	PRPP[c] + GUN[c]  <=> PPi[c] + GMP[c] 	((TTC1249 or TTC1250) or TTC1766)		Nucleotide Salvage Pathway	2.4.2.7 or 2.4.2.8
+R120	Xanthosine-5'-phosphate:ammonia ligase (AMP-forming)	ATP[c] + XMP[c] + NH4[c]  -> PPi[c] + 2 H[c] + AMP[c] + GMP[c] 	TTC1187		Nucleotide Salvage Pathway	6.3.5.2
+R121	P1,P4-Bis(5'-nucleosyl)-tetraphosphate nucleotidohydrolase	H2O[c] + XppppX[c]  -> XMP[c] + XTP[c] 	(TTC1519 or TTC1859)		Nucleotide Salvage Pathway	3.6.1.17
+R122	Inosine 5'-triphosphate pyrophosphohydrolase	H2O[c] + ITP[c]  -> PPi[c] + H[c] + IMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R123	ATP:IDP phosphotransferase	ATP[c] + IDP[c]  <=> ADP[c] + ITP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R124	XTP pyrophosphohydrolase	H2O[c] + XTP[c]  -> PPi[c] + H[c] + XMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R125	Xanthosine 5'-phosphate phosphohydrolase	H2O[c] + XMP[c]  -> Pi[c] + XNTHS[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R126	XMP:pyrophosphate phosphoribosyltransferase	PRPP[c] + XTHN[c]  -> PPi[c] + XMP[c] 	TTC1766		Nucleotide Salvage Pathway	2.4.2.22 or 2.4.2.8
+R127	Xanthosine:orthophosphate ribosyltransferase	Pi[c] + XNTHS[c]  <=> R1P[c] + XTHN[c] 	(TTC0194 or TTC1070)		Nucleotide Salvage Pathway	2.4.2.1
+R128	IMP:NAD+ oxidoreductase	NAD[c] + H2O[c] + IMP[c]  -> H[c] + NADH[c] + XMP[c] 	(TTC0064 or TTC1634)		Nucleotide Salvage Pathway	1.1.1.205
+R129	IMP:diphosphate phospho-D-ribosyltransferase	PRPP[c] + HXTHN[c]  <=> PPi[c] + IMP[c] 	TTC1766		Nucleotide Salvage Pathway	2.4.2.8
+R130	Inosine 5'-monophosphate phosphohydrolase	H2O[c] + IMP[c]  -> Pi[c] + INSN[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R131	inosine:phosphate alpha-D-ribosyltransferase	Pi[c] + INSN[c]  <=> R1P[c] + HXTHN[c] 	(TTC0194 or TTC1070)		Nucleotide Salvage Pathway	2.4.2.1
+R132	IMP:L-aspartate ligase (GDP-forming)	L_ASP[c] + GTP[c] + IMP[c]  -> Pi[c] + 2 H[c] + GDP[c] + ADN_SUCC[c] 	TTC1764		Nucleotide Salvage Pathway	6.3.4.4
+R133	N6-(1,2-dicarboxyethyl)AMP AMP-lyase (fumarate-forming)	ADN_SUCC[c]  -> AMP[c] + FUM[c] 	TTC1149		Nucleotide Salvage Pathway	4.3.2.2
+R134	Adenosine 5'-monophosphate phosphohydrolase	H2O[c] + AMP[c]  -> Pi[c] + ADSN[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R135	Adenosine:phosphate alpha-D-ribosyltransferase	Pi[c] + ADSN[c]  <=> R1P[c] + ADN[c] 	(TTC0194 or TTC1070)		Nucleotide Salvage Pathway	2.4.2.1
+R136	Deoxyinosine:orthophosphate ribosyltransferase	Pi[c] + zCARO[c]  -> dR1P[c] + HXTHN[c] 	((TTC0194 or TTC1070) or TTC1412)		Nucleotide Salvage Pathway	2.4.2.1 or 2.4.2.4
+R137	Deoxyadenosine:orthophosphate ribosyltransferase	Pi[c] + dADS[c]  <=> dR1P[c] + ADN[c] 	(TTC0194 or TTC1070)		Nucleotide Salvage Pathway	2.4.2.1
+R138	ATP:ADP phosphatransferase	ATP[c] + ADP[c]  <=> ATP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R139	ATP:AMP phosphotransferase	ATP[c] + AMP[c]  -> 2 ADP[c] 	TTC1307		Nucleotide Salvage Pathway	2.7.4.3
+R140	2'-Deoxyadenosine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase	ADP[c] + R_TRED[c]  <=> H2O[c] + O_TRED[c] + dADP[c] 	(TTC1930 and TT_P0161 and TT_P0162)		Nucleotide Salvage Pathway	1.17.4.1
+R141	ATP:dADP phosphotransferase	ATP[c] + dADP[c]  -> dATP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R142	ATP:dAMP phosphotransferase	ATP[c] + dAMP[c]  <=> ADP[c] + dADP[c] 	TTC1307		Nucleotide Salvage Pathway	2.7.4.3
+R143	2'-Deoxyadenosine 5'-monophosphate phosphohydrolase	H2O[c] + dAMP[c]  <=> Pi[c] + dADS[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R144	carbamoyl-phosphate:L-aspartate carbamoyltransferase	L_ASP[c] + CARB_Pi[c]  -> Pi[c] + H[c] + CARB_ASP[c] 	TTC0427		Nucleotide Salvage Pathway	2.1.3.2
+R145	hydrogen-carbonate:L-glutamine amido-ligase (ADP-forming, carbamate-phosphorylating)	L_GLN[c] + 2 ATP[c] + H2O[c] + HCO3[c]  -> L_GLU[c] + 2 ADP[c] + Pi[c] + 2 H[c] + CARB_Pi[c] 	(TTC0247 and TTC1706)		Nucleotide Salvage Pathway	6.3.5.5
+R146	(S)-dihydroorotate amidohydrolase	H2O[c] + DHY_ORTA[c]  <=> H[c] + CARB_ASP[c] 	TTC0426		Nucleotide Salvage Pathway	3.5.2.3
+R147	CTP aminohydrolase	CTP[c] + H2O[c]  -> UTP[c] + NH4[c] 	TTC1864		Nucleotide Salvage Pathway	3.5.4.13
+R148	NADPH:oxidized-thioredoxin oxidoreductase	H[c] + NADPH[c] + O_TRED[c]  -> NADP[c] + R_TRED[c] 	(TTC0096 or TTC0853 or TTC1555)		Oxidative Phosphorylation	1.8.1.9
+R149	UTP:ammonia ligase (ADP-forming)	L_GLN[c] + ATP[c] + UTP[c] + H2O[c]  -> L_GLU[c] + CTP[c] + ADP[c] + Pi[c] + 2 H[c] 	TTC1102		Nucleotide Salvage Pathway	6.3.4.2
+R150		L_GLN[c] + ATP[c] + UTP[c] + H2O[c]  -> L_GLU[c] + PPi[c] + 2 H[c] + AMP[c] + GMP[c] 			Nucleotide Salvage Pathway	
+R151	dCTP aminohydrolase	dCTP[c] + H2O[c] + H[c]  -> NH4[c] + dUTP[c] 	TTC1864		Nucleotide Salvage Pathway	3.5.4.13
+R152	Orotidine-5'-phosphate:diphosphate phospho-alpha-D-ribosyl-transferase	PPi[c] + ORTD5P[c]  <=> PRPP[c] + ORTA[c] 	TTC1380		Nucleotide Salvage Pathway	2.4.2.10
+R153	P1,P4-bis(5'-uridyl)-tetraphosphate uridylohydrolase	H2O[c] + UppppU[c]  -> UTP[c] + UMP[c] 	(TTC1519 or TTC1859)		Nucleotide Salvage Pathway	3.6.1.17
+R154	ATP:UDP phosphotransferase	ATP[c] + UDP[c]  <=> UTP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R155	ATP:CDP phosphotransferase	ATP[c] + CDP[c]  <=> CTP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R156	ATP:dCDP phosphotransferase	ATP[c] + dCDP[c]  <=> dCTP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R157	ATP:dUDP phosphotransferase	ATP[c] + dUDP[c]  <=> ADP[c] + dUTP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R158	ATP:dTDP phosphotransferase	ATP[c] + dTDP[c]  <=> dTTP[c] + ADP[c] 	TTC1798		Nucleotide Salvage Pathway	2.7.4.6
+R159	Uridine triphosphate pyrophosphohydrolase	UTP[c] + 2 H2O[c]  -> 2 Pi[c] + 2 H[c] + UMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R160	dUTP nucleotidohydrolase	H2O[c] + dUTP[c]  -> PPi[c] + H[c] + dUMP[c] 	(TTC1290 or TTC1583)		Nucleotide Salvage Pathway	3.6.1.19
+R161	2'-Deoxycytidine diphosphate:oxidized-thioredoxin 2'-oxidoreductase	R_TRED[c] + CDP[c]  -> H2O[c] + O_TRED[c] + dCDP[c] 	(TTC1930 and TT_P0161 and TT_P0162)		Nucleotide Salvage Pathway	1.17.4.1
+R162	2'-Deoxyuridine 5'-diphosphate:oxidized-thioredoxin 2'-oxidoreductase	R_TRED[c] + UDP[c]  -> H2O[c] + O_TRED[c] + dUDP[c] 	(TTC1930 and TT_P0161 and TT_P0162)		Nucleotide Salvage Pathway	1.17.4.1
+R163	orotidine-5'-phosphate carboxy-lyase (UMP-forming)	H[c] + ORTD5P[c]  -> CO2[c] + UMP[c] 	TTC1381		Nucleotide Salvage Pathway	4.1.1.23
+R164	ATP:UMP phosphotransferase	ATP[c] + UMP[c]  <=> ADP[c] + UDP[c] 	(TTC0089 or TTC0507)		Nucleotide Salvage Pathway	2.7.4.14 or 2.7.4.22
+R165	ATP:CMP phosphotransferase	ATP[c] + CMP[c]  <=> ADP[c] + CDP[c] 	TTC0089		Nucleotide Salvage Pathway	2.7.4.14
+R166	ATP:dCMP phosphotransferase	ATP[c] + dCMP[c]  <=> ADP[c] + dCDP[c] 	TTC0089		Nucleotide Salvage Pathway	2.7.4.15
+R167	ATP:dUMP phosphotransferase	ATP[c] + dUMP[c]  <=> ADP[c] + dUDP[c] 	TTC1243		Nucleotide Salvage Pathway	2.7.4.9
+R168	ATP:dTMP phosphotransferase	ATP[c] + dTMP[c]  <=> ADP[c] + dTDP[c] 	TTC1243		Nucleotide Salvage Pathway	2.7.4.9
+R169	ATP:uridine 5'-phosphotransferase	ATP[c] + URD[c]  <=> ADP[c] + H[c] + UMP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R170	ATP:cytidine 5'-phosphotransferase	ATP[c] + CYTD[c]  -> ADP[c] + H[c] + CMP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R171	GTP:cytidine 5'-phosphotransferase	GTP[c] + CYTD[c]  -> H[c] + GDP[c] + CMP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R172	guanosine nucleotides de novo biosynthesis	GTP[c] + FMN[c]  -> dGTP[c] + H2O[c] + FMNH2[c] 			Nucleotide Salvage Pathway	
+R173	UTP:uridine 5'-phosphotransferase	UTP[c] + URD[c]  -> UMP[c] + UDP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R174	GTP:uridine 5'-phosphotransferase	GTP[c] + URD[c]  -> H[c] + GDP[c] + UMP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R175	ITP:uridine 5'-phosphotransferase	ITP[c] + URD[c]  -> IDP[c] + UMP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R176	dGTP:uridine 5'-phosphotransferase	dGTP[c] + URD[c]  -> dGDP[c] + UMP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R177	dTTP:uridine 5'-phosphotransferase	dTTP[c] + URD[c]  -> UMP[c] + dTDP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R178	dCTP:uridine 5'-phosphotransferase	dCTP[c] + URD[c]  -> UMP[c] + dCDP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R179	dUTP:uridine 5'-phosphotransferase	dUTP[c] + URD[c]  -> UMP[c] + dUDP[c] 	TTC0210		Nucleotide Salvage Pathway	2.7.1.48
+R180	Uridine 5'-monophosphate phosphohydrolase	H2O[c] + UMP[c]  -> Pi[c] + URD[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R181	Thymidylate 5'-phosphohydrolase	H2O[c] + dTMP[c]  -> Pi[c] + THYMD[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R182	2'-Deoxycytidine 5'-monophosphate phosphohydrolase	H2O[c] + dCMP[c]  -> Pi[c] + dCYTD[c] 	(TTC0964 or TTC1625 or TT_P0028)		Nucleotide Salvage Pathway	3.1.3.5
+R183	UMP:diphosphate phospho-alpha-D-ribosyltransferase	PPi[c] + UMP[c]  <=> PRPP[c] + URA[c] 	(TTC0428 or TTC0946)		Nucleotide Salvage Pathway	2.4.2.9
+R184	Cytidine aminohydrolase	H2O[c] + H[c] + CYTD[c]  <=> NH4[c] + URD[c] 	TTC0383		Nucleotide Salvage Pathway	3.5.4.5
+R185	Deoxycytidine aminohydrolase	H2O[c] + H[c] + dCYTD[c]  -> NH4[c] + dURD[c] 	TTC0383		Nucleotide Salvage Pathway	3.5.4.5
+R186	5,10-methylenetetrahydrofolate,NADPH:dUMP C-methyltransferase	NADPH[c] + dUMP[c] + 5_10_MNTHF[c]  -> NADP[c] + THF[c] + dTMP[c] 	TTC0731		Nucleotide Salvage Pathway	2.1.1.148
+R187	deoxyuridine:orthophosphate 2-deoxy-D-ribosyltransferase	Pi[c] + dURD[c]  -> dR1P[c] + URA[c] 	((TTC0194 or TTC1070) or TTC1412)		Nucleotide Salvage Pathway	2.4.2.1 or 2.4.2.4
+R188	thymidine:phosphate deoxy-alpha-D-ribosyltransferase	Pi[c] + THYMD[c]  <=> dR1P[c] + THYM[c] 	TTC1412		Nucleotide Salvage Pathway	2.4.2.4
+R189	dihydropyrimidine dehydrogenase	THYM[c] + NADPH[c] + H[c] -> DHTHYM[c] + NADP[c]			Nucleotide Salvage Pathway	1.3.1.2
+R190	dihydropyrimidinase	DHTHYM[c] + H2O[c] -> H[c] + UREIDO_BUTR[c]	TTC0426		Nucleotide Salvage Pathway	3.5.2.2
+R191	3-Ureidoisobutyrate amidohydrolase	H2O[c] + UREIDO_BUTR[c]  -> CO2[c] + NH4[c] + 3AIBUTNA[c] 	TTC1539		Nucleotide Salvage Pathway	3.5.1.6
+R192	L-Alanine:NAD+ oxidoreductase (deaminating)	H[c] + NADH[c] + PYR[c] + NH4[c]  <=> L_ALA[c] + NAD[c] + H2O[c] 	(TTC1082 or TTC1770)	ald	Alanine and Aspartate Metabolism	1.4.1.1
+R193	L-Alanine:glyoxylate aminotransferase	L_ALA[c] + GLOXT[c]  -> L_GLY[c] + PYR[c] 	TTC1813		Alanine and Aspartate Metabolism	2.6.1.44
+R194	L-Citrulline:L-aspartate ligase (AMP-forming)	L_ASP[c] + ATP[c] + CTRLN[c]  <=> PPi[c] + H[c] + AMP[c] + L_ARG_SUCC[c] 	TTC1701	argG	Arginine and Proline Metabolism	6.3.4.5
+R195	2-(Nomega-L-arginino)succinate arginine-lyase (fumarate-forming)	L_ARG_SUCC[c]  -> L_ARG[c] + FUM[c] 	TTC1702	argH	Arginine and Proline Metabolism	4.3.2.1
+R196	L-aspartate:ammonia ligase (AMP-forming)	L_ASP[c] + ATP[c] + NH4[c]  <=> L_ASN[c] + PPi[c] + H[c] + AMP[c] 	TTC0282	asnA	Alanine and Aspartate Metabolism	6.3.5.4
+R197	L-asparginase	L_ASN[c] + H2O[c]  -> L_ASP[c] + NH4[c] + H[c]	TTC1938		Alanine and Aspartate Metabolism	3.5.1.1
+R198	L-Aspartate:2-oxoglutarate aminotransferase	L_ASP[c] + AKG[c]  <=> L_GLU[c] + OAC[c] 	(TTC1960 or TTC1641)	aspC	Alanine and Aspartate Metabolism	2.6.1.1
+R199	Succinate-semialdehyde:NADP+ oxidoreductase	NADP[c] + H2O[c] + SUCC_SA[c]  -> 2 H[c] + NADPH[c] + SUCC[c] 	TTC0634		Arginine and Proline Metabolism	1.2.1.16
+R200	4-aminobutanoate:2-oxoglutarate aminotransferase	AKG[c] + 4ABUT[c]  -> L_GLU[c] + SUCC_SA[c] 	TTC0510		Arginine and Proline Metabolism	2.6.1.19
+R201	L-glutamate:NAD+ oxidoreductase (deaminating)	L_GLU[c] + NAD[c] + H2O[c]  <=> H[c] + NADH[c] + AKG[c] + NH4[c] 	(TTC1211 or TTC1212)	gdh	Glutamate Metabolism	1.4.1.3
+R202	L-Glutamate:NADP+ oxidoreductase (deaminating)	L_GLU[c] + NADP[c] + H2O[c]  <=> H[c] + NADPH[c] + AKG[c] + NH4[c] 	(TTC1104 or (TTC1211 or TTC1212))	gdh	Glutamate Metabolism	(1.4.1.13 or 1.4.1.14)
+R203	L-Glutamate:NADP+ oxidoreductase (transaminating)	L_GLN[c] + H[c] + NADPH[c] + AKG[c]  -> 2 L_GLU[c] + NADP[c] 	TTC1104		Glutamate Metabolism 	1.4.1.13
+R204	(S)-1-pyrroline-5-carboxylate:NAD+ oxidoreductase	NAD[c] + 2 H2O[c] + PYRR5CARB[c]  -> L_GLU[c] + H[c] + NADH[c] 	TTC1213		Arginine and Proline Metabolism	1.5.1.12
+R205	L-Glutamate:ammonia ligase (ADP-forming)	L_GLU[c] + ATP[c] + NH4[c]  -> L_GLN[c] + ADP[c] + Pi[c] + H[c] 	TTC0965	gln	Glutamate Metabolism 	6.3.1.2
+R206	L-glutamine:D-fructose-6-phosphate isomerase (deaminating)	L_GLN[c] + F6P[c]  -> L_GLU[c] + GLUSAP[c] 	TTC1533		Glutamate Metabolism 	2.6.1.16
+R207	D-Glycerate:NAD+ 2-oxidoreductase	H[c] + NADH[c] + HY_PYR[c]  -> NAD[c] + D_GLCT[c] 	(TTC0431 or TTC0124)		Alternate Carbon Metabolism	(1.1.1.26 or 1.1.1.81)
+R208	D-Glycerate:NADP+ 2-oxidoreductase	H[c] + NADPH[c] + HY_PYR[c]  -> NADP[c] + D_GLCT[c] 	TTC0124		Alternate Carbon Metabolism	1.1.1.81
+R209	L-Serine:pyruvate aminotransferase	L_SER[c] + PYR[c]  -> L_ALA[c] + HY_PYR[c] 	TTC1813		Glycine and Serine Metabolism	2.6.1.51
+R210	3-Phospho-D-glycerate:NAD+ 2-oxidoreductase	NAD[c] + 3PG[c]  -> H[c] + NADH[c] + 3POXPYR[c] 	(TTC0586 or TTC1209)	serA	Glycine and Serine Metabolism	1.1.1.95
+R211	L-serine ammonia-lyase	L_SER[c]  -> PYR[c] + NH4[c] 	((TTC0387 or TTC0667) or TTC1708)		Glycine and Serine Metabolism	(4.3.1.17 or 4.3.1.19)
+R212	L-serine hydro-lyase [adding 1-C-(indol-3-yl)glycerol 3-phosphate	L_SER[c] + IND_GLYP[c]  <=> L_TRP[c] + H2O[c] + GAP[c] 	(TTC0729 and TTC0730)	trpA	Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.1.20
+R213	5,10-Methylenetetrahydrofolate:glycine hydroxymethyltransferase	L_GLY[c] + H2O[c] + 5_10_MNTHF[c]  <=> L_SER[c] + THF[c] 	TTC1160	glyA	Glycine and Serine Metabolism	2.1.2.1
+R214	glycine:lipoylprotein oxidoreductase (decarboxylating and acceptor-aminomethylating)	L_GLY[c] + LPP[c]  -> CO2[c] + AMDHY_LPP[c] 	(TTC0150 or TTC0151)		Glycine and Serine Metabolism	1.4.4.2
+R215	S-aminomethyldihydrolipoylprotein:(6S)-tetrahydrofolate aminomethyltransferase (ammonia-forming)	THF[c] + AMDHY_LPP[c]  -> NH4[c] + 5_10_MNTHF[c] + DHY_LPP[c] 	TTC0148		Glycine and Serine Metabolism	2.1.2.10
+R216	dihydrolipoylprotein:NAD+ oxidoreductase	NAD[c] + DHY_LPP[c]  -> H[c] + NADH[c] + LPP[c] 	(TTC1700 or TTC1753)		Glycine and Serine Metabolism	1.8.1.4
+R217	L-threonine acetaldehyde-lyase (glycine-forming)	L_THR[c]  -> L_GLY[c] + AALD[c] 	TTC0397		Threonine and Lysine Metabolism	4.1.2.5
+R218	Acetyl-CoA:glycine C-acetyltransferase	CoA[c] + A_OXBUT[c]  <=> L_GLY[c] + ACoA[c] 	TTC1219		Glycine and Serine Metabolism	2.3.1.29
+R219	L-threonine:NAD+ oxidoreductase	L_THR[c] + NAD[c]  -> H[c] + NADH[c] + A_OXBUT[c] 	TTC0201		Glycine and Serine Metabolism	1.1.1.103
+R220	L-threonine ammonia-lyase (2-oxobutanoate-forming)	L_THR[c]  -> NH4[c] + AKB[c] 	TTC1708	ilvA	Threonine and Lysine Metabolism	4.3.1.19
+R221	O-phospho-L-homoserine phosphate-lyase (adding water;L-threonine-forming)	H2O[c] + OP_HSER[c]  -> L_THR[c] + Pi[c] 	TTC0117	thrC	Threonine and Lysine Metabolism	4.2.3.1
+R222	ATP:L-homoserine O-phosphotransferase	ATP[c] + L_HSER[c]  -> ADP[c] + H[c] + OP_HSER[c] 	TTC1028	thrB	Threonine and Lysine Metabolism	2.7.1.39
+R223	L-Homoserine:NAD+ oxidoreductase	H[c] + NADH[c] + ASP_4SA[c]  -> NAD[c] + L_HSER[c] 	TTC0115	thrA	Threonine and Lysine Metabolism	1.1.1.3
+R224	L-homoserine:NADP+ oxidoreductase	H[c] + NADPH[c] + ASP_4SA[c]  -> NADP[c] + L_HSER[c] 	TTC0115	thrA	Threonine and Lysine Metabolism	1.1.1.3
+R225	L-Aspartate-4-semialdehyde:NADP+ oxidoreductase (phosphorylating)	H[c] + NADPH[c] + 4P_ASP[c]  <=> NADP[c] + Pi[c] + ASP_4SA[c] 	TTC0177	asd	Threonine and Lysine Metabolism	1.2.1.11
+R226	ATP:L-aspartate 4-phosphotransferase	L_ASP[c] + ATP[c]  <=> ADP[c] + 4P_ASP[c] 	TTC0166	ask	Threonine and Lysine Metabolism	2.7.2.4
+R227	O3-acetyl-L-serine:hydrogen-sulfide 2-amino-2-carboxyethyltransferase	OAC_SER[c] + H2S[c]  -> L_CYS[c] + H[c] + AC[c] 	TTC1636	cysM	Cysteine and methionine metabolism	2.5.1.47
+R228	O3-acetyl-L-serine:thiosulfate 2-amino-2-carboxyethyltransferase (reducing, L-cysteine-forming)	H[c] + R_TRED[c] + OAC_SER[c] + TSFA[c]  -> L_CYS[c] + AC[c] + O_TRED[c] + SO3[c] 	TTC1636		Cysteine and methionine metabolism	2.5.1.47
+R229	L-cysteate:2-oxoglutarate aminotransferase	AKG[c] + L_CYSTA[c]  <=> L_GLU[c] + SULFO_PYR[c] 	TTC1960		Cysteine and methionine metabolism	2.6.1.1
+R230	3-sulfino-L-alanine:2-oxoglutarate aminotransferase	AKG[c] + SLF_ALA[c]  <=> L_GLU[c] + SULFI_PYR[c] 	TTC1960		Cysteine and methionine metabolism	2.6.1.1
+R231	L-Cysteine hydrogen-sulfide-lyase (deaminating	L_CYS[c] + H2O[c]  -> PYR[c] + NH4[c] + H2S[c] 	TTC1256		Cysteine and methionine metabolism	4.4.1.8
+R232	Acetyl-CoA:L-homoserine O-acetyltransferase	ACoA[c] + L_HSER[c]  -> CoA[c] + OAC_HSER[c] 	TTC0407	met2	Cysteine and methionine metabolism	2.3.1.31
+R233	O-acetyl-L-homoserine:hydrogen sulfide S-(3-amino-3-carboxypropyl)transferase	H2S[c] + OAC_HSER[c]  -> H[c] + AC[c] + L_HCYS[c] 	(TTC0408 or TTC0792)	met17	Cysteine and methionine metabolism	2.5.1.49
+R234	L-cystathionine L-homocysteine-lyase (deaminating	H2O[c] + L_CYSTHNN[c]  -> PYR[c] + NH4[c] + L_HCYS[c] 	TTC1256		Cysteine and methionine metabolism	4.4.1.8
+R235	5-Methyltetrahydrofolate:L-homocysteine S-methyltransferase	L_HCYS[c] + 5MTHF[c]  -> L_MET[c] + H[c] + THF[c] 	TTC0253	metH	Cysteine and methionine metabolism	2.1.1.13
+R236	S-Adenosyl-L-homocysteine homocysteinylribohydrolase	H2O[c] + SAHC[c]  -> ADN[c] + RIBS_HCYS[c] 	TTC1185		Cysteine and methionine metabolism	3.2.2.9
+R237	S-(5-deoxy-D-ribos-5-yl)-L-homocysteine homocysteine-lyase [(4S)-4,5-dihydroxypentan-2,3-dione-forming]	RIBS_HCYS[c]  -> L_HCYS[c] + DHY_PENTDON[c] 	TTC1186		Cysteine and methionine metabolism	4.4.1.21
+R238	ATP:L-methionine S-adenosyltransferase	L_MET[c] + ATP[c] + H2O[c]  -> Pi[c] + PPi[c] + SAM[c] 	TTC1279		Cysteine and methionine metabolism	2.5.1.6
+R239	S-adenosyl-L-methionine carboxy-lyase [(5-deoxy-5-adenosyl)(3-aminopropyl)methylsulfonium-forming]	H[c] + SAM[c]  -> CO2[c] + SAMA[c] 	(TTC0473 or TTC1093)		Cysteine and methionine metabolism	4.1.1.50
+R240	S-adenosylmethioninamine:putrescine 3-aminopropyltransferase	SAMA[c] + PUT[c]  -> H[c] + MTA[c] + SPRD[c] 	TTC0472		Cysteine and methionine metabolism	2.5.1.16
+R241	S-adenosylmethioninamine:spermidine 3-aminopropyltransferase	SAMA[c] + SPRD[c]  <=> H[c] + MTA[c] + SPR[c] 	TTC0472		Cysteine and methionine metabolism	2.5.1.16
+R242	Methylthioadenosine methylthioribohydrolase	H2O[c] + MTA[c]  -> ADN[c] + MTH_RIB[c] 	TTC1185		Cysteine and methionine metabolism	3.2.2.9
+R243	5-Methylthio-5-deoxy-D-ribose-1-phosphate ketol-isomerase	MTh_RIB1P[c]  <=> MTh_RIBL1P[c] 	TTC0707		Cysteine and methionine metabolism	5.3.1.23
+R244	L-Leucine:2-oxoglutarate aminotransferase	L_GLU[c] + 4M_2OPENTN[c]  <=> L_LEU[c] + AKG[c] 	TTC1870	ilvE	Valine, Leucine, and Isoleucine Metabolism	2.6.1.42
+R245	L-Valine:2-oxoglutarate aminotransferase	L_VAL[c] + AKG[c]  <=> L_GLU[c] + 2K3M_BUT[c] 	TTC1870	ilvE	Valine, Leucine, and Isoleucine Metabolism	2.6.1.42
+R246	L-Isoleucine:2-oxoglutarate aminotransferase	L_ILE[c] + AKG[c]  <=> L_GLU[c] + 3M_2OPENTN[c] 	TTC1870	ilvE	Valine, Leucine, and Isoleucine Metabolism	2.6.1.42
+R247	branched-chain alpha-keto acid dehydrogenase	3M_2OPENTN[c] + TPP[c]  -> CO2[c] + 2MHYBUT_ThPP[c] 	(TTC1756 and TTC1757)	vorA	Valine, Leucine, and Isoleucine Metabolism	1.2.4.4
+R248	branched-chain alpha-keto acid dehydrogenase	4M_2OPENTN[c] + TPP[c]  -> CO2[c] + 3MHYBUT_ThPP[c] 	(TTC1756 and TTC1757)	vorA	Valine, Leucine, and Isoleucine Metabolism	1.2.4.4
+R249	branched-chain alpha-keto acid dehydrogenase	2K3M_BUT[c] + TPP[c]  -> CO2[c] + 2MHYPROP_ThPP[c] 	(TTC1756 and TTC1757)	vorA	Valine, Leucine, and Isoleucine Metabolism	1.2.4.4
+R250	branched-chain alpha-keto acid dehydrogenase	2MHYPROP_ThPP[c] + ENZN6_LPL[c]  -> TPP[c] + DHYLPL_MPROP_MPROP_DHLPL[c] 	(TTC1756 and TTC1757)	vorA	Valine, Leucine, and Isoleucine Metabolism	1.2.4.4
+R251	branched-chain alpha-keto acid dehydrogenase	3MHYBUT_ThPP[c] + ENZN6_LPL[c]  -> TPP[c] + DHYLPL_MPROP_3MBUT_DHLPL[c] 	(TTC1756 and TTC1757)	vorA	Valine, Leucine, and Isoleucine Metabolism	1.2.4.4
+R252	branched-chain alpha-keto acid dehydrogenase	2MHYBUT_ThPP[c] + ENZN6_LPL[c]  -> TPP[c] + DHYLPL_MPROP_2MBUT_DHLPL[c] 	(TTC1756 and TTC1757)	vorA	Valine, Leucine, and Isoleucine Metabolism	1.2.4.4
+R253	(S)-2-methylbutanoyl-CoA:acceptor 2,3-oxidoreductase	FAD[c] + MBUTNCoA[c]  -> FADH2[c] + MBUT_ENCoA[c] 	TTC0238		Valine, Leucine, and Isoleucine Metabolism	1.3.8.1
+R254	2-methylpropanoyl-CoA:(acceptor) 2,3-oxidoreductase	FAD[c] + 2M_PROCoA[c]  <=> FADH2[c] + MACRYCoA[c] 	TTC0238		Valine, Leucine, and Isoleucine Metabolism	1.3.8.1
+R255	(2S,3S)-3-Hydroxy-2-methylbutanoyl-CoA hydro-liase	H2O[c] + MBUT_ENCoA[c]  -> HY_MBUTRCoA[c] 	TTC1768		Valine, Leucine, and Isoleucine Metabolism	4.2.1.17
+R256	(S)-3-Hydroxyisobutyryl-CoA hydro-lyase	H2O[c] + MACRYCoA[c]  -> HYIBUTRCoA[c] 	TTC1768		Valine, Leucine, and Isoleucine Metabolism	4.2.1.17
+R257	(S)-3-hydroxy-3-methylglutaryl-CoA acetoacetate-lyase (acetyl-CoA-forming)	HYM_GLUTRCoA[c]  -> ACoA[c] + AAC[c] 	TTC1162		Valine, Leucine, and Isoleucine Metabolism	4.1.3.4
+R258	3-Hydroxy-2-methylpropanoate:NAD+ oxidoreductase	NAD[c] + HYIBUTRA[c]  -> H[c] + NADH[c] + MMAL_SA[c] 	(TTC1749 or TTC0534)		Valine, Leucine, and Isoleucine Metabolism	1.1.1.31 or 1.1.1.35
+R259	(S)-Methylmalonate semialdehyde:NAD+ oxidoreductase	NAD[c] + H2O[c] + MMAL_SA[c]  -> H[c] + NADH[c] + MMAL[c] 	TTC0513		Valine, Leucine, and Isoleucine Metabolism	1.2.1.3
+R260	acetyl-CoA:propanoyl-CoA 2-C-acetyltransferase	CoA[c] + MAACCoA[c]  -> ACoA[c] + PRCoA[c] 	((TTC0535 or TTC0623) or (TTC0191 or TTC0330))		Valine, Leucine, and Isoleucine Metabolism	2.3.1.16 or 2.3.1.9
+R261	(R)-Methylmalonyl-CoA CoA-carbonylmutase	R_MMALCoA[c]  <=> SUCCoA[c] 	(TTC0676 and (TTC0677 or TTC0882))		Valine, Leucine, and Isoleucine Metabolism	5.4.99.2
+R262	Propanoyl-CoA:carbon-dioxide ligase (ADP-forming)	ATP[c] + HCO3[c] + PRCoA[c]  -> ADP[c] + Pi[c] + H[c] + MMALCoA[c] 	(TTC0783 and TTC1192)		Valine, Leucine, and Isoleucine Metabolism	6.4.1.3
+R263	4-hydroxy-tetrahydrodipicolinate synthase	PYR[c] + ASP_4SA[c]  -> 2 H2O[c] + H[c] + DHY_DPICLN[c] 	TTC0591		Threonine and Lysine Metabolism	4.2.1.52
+R264	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminoheptanedioate:D-alanyl-D-alanine ligase(ADP-forming)	ATP[c] + UDP_ACMUR_ALA_GLU_DAPIM[c] + D_ALA_D_ALA[c]  -> ADP[c] + Pi[c] + H[c] + UDP_ACMUR_ALA_GLU_DAPIM_ALA_ALA[c] 	TTC0714		Cell Envelope Biosynthesis	6.3.2.10
+R265	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate:(L)-meso-2,6-diaminoheptanedioate gamma-ligase (ADP-forming)	ATP[c] + UDP_ACMURM_ALA_GLUT[c] + M26_DAP[c]  -> ADP[c] + Pi[c] + H[c] + UDP_ACMUR_ALA_GLU_DAPIM[c] 	TTC1904		Cell Envelope Biosynthesis	6.3.2.13
+R266	acetyl-CoA:2-oxoglutarate C-acetyltransferase (thioester-hydrolysing, carboxymethyl forming)	H2O[c] + ACoA[c] + AKG[c]  -> CoA[c] + HCIT[c] 	TTC1550	lysS	Threonine and Lysine Metabolism	2.3.3.14
+R267	(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate:NAD+ oxidoreductase (decarboxylating)	OXLGLUTR[c]  <=> CO2[c] + 2OADPA[c] 	TTC1012	lysN	Threonine and Lysine Metabolism	1.1.1.87
+R268	(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate:NAD+ oxidoreductase (decarboxylating)	NAD[c] + HICTR[c]  <=> H[c] + NADH[c] + OXLGLUTR[c] 	TTC1012	hicdh	Threonine and Lysine Metabolism	1.1.1.87
+R269	L-2-aminoadipate:2-oxoglutarate aminotransferase	AKG[c] + AADP[c]  <=> L_GLU[c] + 2OADPA[c] 	TTC0043	lysN	Threonine and Lysine Metabolism	2.6.1.39
+R270	N-acetylaminoadipate kinase	ATP[c] + AC_AADP[c]  -> ADP[c] + AC_AADP_DELPi[c] 	(TTC1541 or TTC1586)	lysZ	Threonine and Lysine Metabolism	2.7.2.- 
+R271	N-acetyl-alpha-aminoadipate-phosphate reductase	H[c] + NADPH[c] + AC_AADP_DELPi[c]  -> NADP[c] + Pi[c] + AC_AADP_SA[c] 	(TTC0386 or TTC1542)	lysY	Threonine and Lysine Metabolism	1.2.1.38
+R272	N2-acetyl-L-lysine deacetylase	H2O[c] + N2AC_L_LYS[c]  -> L_LYS[c] + AC[c] 	TTC1396	lysK	Threonine and Lysine Metabolism	3.5.1.-
+R273	2-Oxoadipate:lipoamde 2-oxidoreductase(decarboxylating and acceptor-succinylating)	ENZN6_LPL[c] + 2OADPA[c]  -> CO2[c] + DHLPL_SUCCT_GLUTRDHLPL[c] 	TTC1698		Threonine and Lysine Metabolism	1.2.4.2
+R274	Glutaryl-CoA:dihydrolipoamide S-succinyltransferase	GLUTRCoA[c] + ENZNE_DHYLPL[c]  <=> CoA[c] + DHLPL_SUCCT_GLUTRDHLPL[c] 	TTC1699		Threonine and Lysine Metabolism	2.3.1.61
+R275	4-Trimethylammoniobutanal:NAD+ 1-oxidoreductase	NAD[c] + H2O[c] + TM_AMBUTAL[c]  -> H[c] + NADH[c] + TM_AMBUTAT[c] 	TTC0513		Threonine and Lysine Metabolism	1.2.1.3
+R276	1-(5-phospho-D-ribosyl)-ATP:diphosphate phospho-alpha-D-ribosyl-transferase	PPi[c] + PRIB_ATP[c]  <=> ATP[c] + PRPP[c] 	TTC1866	hisG	Histidine Metabolism	2.4.2.17
+R277	Phosphoribosyl-ATP pyrophosphohydrolase	H2O[c] + PRIB_ATP[c]  -> PPi[c] + H[c] + PRIB_AMP[c] 	TTC1080	hisI	Histidine Metabolism	3.6.1.31
+R278	1-(5-phospho-D-ribosyl)-AMP 1,6-hydrolase	H2O[c] + PRIB_AMP[c]  -> PRINS_AFORMA_PRIBS_IMDZ_CARBA[c] 	TTC1080	hisI	Histidine Metabolism	3.5.4.19
+R279	N-(5'-Phospho-D-ribosylformimino)-5-amino-1- (5''-phospho-D-ribosyl)-4-imidazolecarboxamide ketol-isomerase	PRINS_AFORMA_PRIBS_IMDZ_CARBA[c]  <=> PRINSFORMA_PRIBS_IMDZ_CARBA[c] 	TTC0801	hisA	Histidine Metabolism	5.3.1.16
+R280	Imidazole-glycerol-3-phosphate synthase	L_GLN[c] + PRINSFORMA_PRIBS_IMDZ_CARBA[c]  -> L_GLU[c] + H[c] + AICAR[c] + ERY_IMDZ_GLYCP[c] 	(TTC0062 and TTC1079)	hisF, hisH	Histidine Metabolism	2.4.2.- or 4.1.3.-
+R281	D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate hydro-lyase	ERY_IMDZ_GLYCP[c]  -> H2O[c] + IMDZ_ACLP[c] 	TTC0061	hisB	Histidine Metabolism	4.2.1.19
+R282	5-Amino-2-oxopentanoate:2-oxoglutarate aminotransferase	AKG[c] + HISDPi[c]  <=> L_GLU[c] + IMDZ_ACLP[c] 	(TTC0060 or TT_P0022)	hisC	Histidine Metabolism	2.6.1.9
+R283	L-Histidinol-phosphate phosphohydrolase	H2O[c] + HISDPi[c]  -> Pi[c] + L_HISN[c] 	TTC1652	hisB	Histidine Metabolism	3.1.3.15
+R284	L-Histidinol:NAD+ oxidoreductase	2 NAD[c] + H2O[c] + L_HISN[c]  -> L_HIS[c] + 3 H[c] + 2 NADH[c] 	TTC0370	hisD	Histidine Metabolism	1.1.1.23
+R285	L-histidinal:NAD+ oxidoreductase	NAD[c] + H2O[c] + L_HISDAL[c]  -> L_HIS[c] + H[c] + NADH[c] 	TTC0370	hisD	Histidine Metabolism	1.1.1.23
+R286	Imidazole acetaldehyde:NAD+ oxidoreductase	NAD[c] + H2O[c] + IMDZ_AALD[c]  -> H[c] + NADH[c] + IMDZ_AC[c] 	TTC0513		Histidine Metabolism	1.2.1.3
+R287	p-hydroxyphenylpyruvate oxidase	HYPh_PYR[c] + O2[c] + 2 H[c]  <=> HY_PhAC[c] + H2O[c] + CO2[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.2.3.13
+R288	4-hydroxyphenylacetate,NADH:oxygen oxidoreductase (3-hydroxylating)	H[c] + NADH[c] + O2[c] + HY_PhAC[c]  <=> NAD[c] + H2O[c] + dHY_PhAC[c] 	TTC0594		Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.14.14.9
+R289	3,4-dihydroxyphenylacetate dioxygenase	dHY_PhAC[c]  + O2[c] -> H[c] + 2HY_5CARBMMUC_SA[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.13.11.15
+R290	5-carboxymethyl-2-hydroxymuconic-semialdehyde:NAD+ oxidoreductase	NAD[c] + H2O[c] + 2HY_5CARBMMUC_SA[c]  <=> H[c] + NADH[c] + CARBM_HYMUC[c] 	TTC0593		Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.2.1.60
+R291	5-carboxymethyl-2-hydroxymuconate isomerase	CARBM_HYMUC[c] -> CO2[c] + CRBX_OHEPTEDA[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	5.3.3.10
+R292	5-oxopent-3-ene-1,2,5-tricarboxylate carboxy-lyase	CRBX_OHEPTEDA[c]  -> CO2[c] + HYHEPTDENA[c] 	TTC0592		Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.1.1.68
+R293	2-hydroxyhepta-2,4-dienedioate hydratase	OHEPEDA[c]  <=> HYHEPTDENA[c] + H2O[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	5.3.3.-
+R294	4-hydroxy-2-ketopimelate aldolase	OHEPEDA[c] -> SUCC_SA[c] + PYR[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.1.2.-
+R295	L-tyrosine:2-oxoglutarate aminotransferase	L_TYR[c] + AKG[c]  <=> L_GLU[c] + HYPh_PYR[c] 	TTC1960	aat	Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.6.1.1
+R296	Phenylacetate:CoA ligase	ATP[c] + CoA[c] + PhAC[c]  -> PPi[c] + AMP[c] + PhACoA[c] 	TTC0602		Alternate Carbon Metabolism	6.2.1.30
+R297	L-Phenylalanine:2-oxoglutarate aminotransferase	L_PHE[c] + AKG[c]  <=> L_GLU[c] + PPYR[c] 	TTC1960	aat	Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.6.1.1
+R298	Phenylpyruvate decarboxylase	PPYR[c] + H[c] -> CO2[c] + PhALD[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.1.1.43
+R299	Phenylacetaldehyde dehydrogease	PhALD[c] + NAD[c] + H2O[c] -> 2 H[c] + NADH[c] + PhAC[c]			Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.2.1.39
+R300	phenylacetate-CoA oxygenase	PhACoA[c] + H[c] + NADPH[c] + O2[c] -> H2O[c] + NADP[c] + dhPhACoA[c]	TTC0608		Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.14.13.149
+R301	1,2-epoxyphenylacetyl-CoA isomerase	dhPhAC[c] <=> OPACCoA[c]	TTC1697		Tyrosine, Tryptophan, and Phenylalanine Metabolism	5.3.3.18
+R302	oxepin-CoA hydrolase	OPACCoA[c] + H2O[c] -> ODHSCoASA[c]	TTC0604		Tyrosine, Tryptophan, and Phenylalanine Metabolism	3.7.1.16
+R303	3-oxo-5,6-dehydrosuberyl-CoA semialdehyde dehydrogenase	ODHSCoASA[c] + H2O[c] + NADP[c] -> 2 H[c] + NADPH[c] + ODHSCoA[c]	TTC0604		Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.17.1.17
+R304	beta-ketoadipyl CoA thiolase	ODHSCoA[c] + CoA[c] -> ACoA[c] + DHADPCoA[c]	TTC0623		Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.3.1.-
+R305	enoyl-CoA hydratase 	DHADPCoA[c] -> H2O[c] + HADPCoA[c]	(TTC0604 or TTC1697 or TTC1768)		Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.1.17
+R306	3-hydroxyacyl-CoA dehydrogenase	HADPCoA[c] + NAD[c] -> NADH[c] + H[c] + OADPCoA[c]	(TTC0331 or TTC0534)		Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.1.1.35
+R307	beta-ketoadipyl CoA thiolase	OADPCoA[c] + CoA[c] -> ACoA[c] + SUCCoA[c]	TTC0623		Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.3.1.174
+R308	2-oxoadipate dehydrogenase complex	NAD[c] + CoA[c] + 2OADPA[c]  -> H[c] + NADH[c] + CO2[c] + GLUTRCoA[c] 	(TTC1698 or (TTC1700 or TTC1753) or TTC1699)		Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.2.4.2 or 1.8.1.4 or 2.3.1.61
+R309	L-aspartate 1-carboxy-lyase (beta-alanine-forming)	L_ASP[c] + H[c]  -> CO2[c] + B_ALA[c] 	TTC0241		Cofactor and Prosthetic Group Biosynthesis	4.1.1.11
+R310	beta-alanine:2-oxoglutarate aminotransferase	AKG[c] + B_ALA[c]  <=> L_GLU[c] + MAL_SA[c] 	TTC0510		Beta-Alanine metabolism 	2.6.1.19
+R311	malonate-semialdehyde dehydrogenase	MAL_SA[c] + CoA[c] + NAD[c] -> ACoA[c] + CO2[c] + NADH[c]			Beta-Alanine metabolism 	1.2.1.-
+R312	(R)-Pantoate:beta-alanine ligase (AMP-forming)	ATP[c] + B_ALA[c] + PANTA[c]  -> PPi[c] + H[c] + AMP[c] + PANTO[c] 	TTC1416		Cofactor and Prosthetic Group Biosynthesis	6.3.2.1
+R313	UDP-N-acetylmuramate:L-alanine ligase (ADP-forming)	L_ALA[c] + ATP[c] + UDP_ACMURM[c]  -> ADP[c] + Pi[c] + H[c] + UDP_ACMURM_ALA[c] 	TTC0720		Cell Envelope Biosynthesis	6.3.2.8
+R314	UDP-N-acetylmuramoyl-L-alanine:D-glutamate ligase(ADP-forming)	ATP[c] + D_GLU[c] + UDP_ACMURM_ALA[c]  -> ADP[c] + Pi[c] + H[c] + UDP_ACMURM_ALA_GLUT[c] 	TTC0717		Cell Envelope Biosynthesis	6.3.2.9
+R315	glutamate racemase	L_GLU[c]  <=> D_GLU[c] 	TTC1280		Cell Envelope Biosynthesis	5.1.1.3
+R316	alanine racemase	L_ALA[c]  <=> D_ALA[c] 	TTC1944		Alanine and Aspartate Metabolism	5.1.1.1
+R317	D-alanine:D-alanine ligase (ADP-forming)	ATP[c] + 2 D_ALA[c]  <=> ADP[c] + Pi[c] + H[c] + D_ALA_D_ALA[c] 	TTC1223		Cell Envelope Biosynthesis	6.3.2.4
+R318	(2R,3S)-3-methylmalate:NAD+ oxidoreductase	NAD[c] + IPROP_MAL[c]  -> H[c] + NADH[c] + CO2[c] + AKB[c] 	TTC0867		Valine, Leucine, and Isoleucine Metabolism	1.1.1.85
+R319	(R)-2,3-Dihydroxy-3-methylbutanoate:NADP+ oxidoreductase (isomerizing)	NADP[c] + RDHY_MBUTNA[c]  <=> H[c] + NADPH[c] + 3HY_2M_2OBUTNA[c] 	TTC0850		Valine, Leucine, and Isoleucine Metabolism	1.1.1.86
+R320	(R)-2,3-Dihydroxy-3-methylpentanoate:NADP+ oxidoreductase (isomerizing)	NADP[c] + DHY_MPENTA[c]  <=> H[c] + NADPH[c] + AC_HYBUTNA[c]	TTC0850		Valine, Leucine, and Isoleucine Metabolism	1.1.1.86
+R321	(S)-2-Acetolactate methylmutase	S_ACLAC[c]  <=> 3HY_2M_2OBUTNA[c] 	TTC0850		Valine, Leucine, and Isoleucine Metabolism	1.1.1.86
+R322	(R)-2,3-Dihydroxy-3-methylpentanoate hydro-lyase	DHY_MPENTA[c]  -> H2O[c] + 3M_2OPENTN[c] 	TTC0871	ilvD	Valine, Leucine, and Isoleucine Metabolism	4.2.1.9
+R323	(R)-2,3-Dihydroxy-3-methylbutanoate hydro-lyase	RDHY_MBUTNA[c]  -> H2O[c] + 2K3M_BUT[c] 	TTC0871	ilvD	Valine, Leucine, and Isoleucine Metabolism	4.2.1.9
+R324	acetyl-CoA:3-methyl-2-oxobutanoate C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)	H2O[c] + ACoA[c] + 2K3M_BUT[c]  -> CoA[c] + H[c] + IPRO_MAL[c] 	(TTC0847 or TTC0849)	leuA	Valine, Leucine, and Isoleucine Metabolism	2.3.3.13
+R325	2-Isopropylmalate hydro-lyase	IPRO_MAL[c]  <=> H2O[c] + IPRO_MALE[c] 	((TTC0865 and TTC0866) or (TTC1546 and TTC1547))	leuCD	Valine, Leucine, and Isoleucine Metabolism	4.2.1.33
+R326	3-Isopropylmalate hydro-lyase	IPROP_MAL[c]  <=> H2O[c] + IPRO_MALE[c] 	((TTC0865 and TTC0866) or (TTC1546 and TTC1547))	leuCD	Valine, Leucine, and Isoleucine Metabolism	4.2.1.33
+R327	(2R,3S)-3-isopropylmalate:NAD+ oxidoreductase	NAD[c] + IPROP_MAL[c]  <=> H[c] + NADH[c] + IPROP_OSUCC[c] 	TTC0867	leuB	Valine, Leucine, and Isoleucine Metabolism	1.1.1.85
+R328	acetyl-CoA:L-glutamate N-acetyltransferase	L_GLU[c] + ACoA[c]  -> CoA[c] + H[c] + AC_GLUT[c] 	(TTC0835 or TTC1703)	argA	Arginine and Proline Metabolism	2.3.1.1
+R329	ATP:N-acetyl-L-glutamate 5-phosphotransferase	ATP[c] + AC_GLUT[c]  <=> ADP[c] + AC_GLUTPi[c] 	(TTC1541 or TTC1586)	argB	Arginine and Proline Metabolism	2.7.2.8
+R330	N-acetyl-L-glutamate-5-semialdehyde:NADP+ 5-oxidoreductase (phosphrylating)	H[c] + NADPH[c] + AC_GLUTPi[c]  <=> NADP[c] + Pi[c] + AC_GLUT_SA[c] 	(TTC0836 or TTC1542)	argC	Arginine and Proline Metabolism	1.2.1.38
+R331	N2-Acetyl-L-ornithine:2-oxoglutarate aminotransferase	AKG[c] + AORT[c]  <=> L_GLU[c] + AC_GLUT_SA[c] 	TTC1393	argD	Arginine and Proline Metabolism	2.6.1.11
+R332	L-Glutamate 5-semialdehyde:NAD+ oxidoreductase	L_GLU[c] + H[c] + NADH[c]  -> NAD[c] + H2O[c] + GLUT_SA[c] 	TTC1213	proA	Arginine and Proline Metabolism	1.5.1.12
+R333	L-glutamate-5-semialdehyde:NADP+ 5-oxidoreductase (phosphorylating)	H[c] + NADPH[c] + L_GLUT5P[c]  -> NADP[c] + Pi[c] + GLUT_SA[c] 	TTC1564		Arginine and Proline Metabolism	1.2.1.41
+R334	ATP:L-glutamate 5-phosphotransferase	L_GLU[c] + ATP[c]  -> ADP[c] + L_GLUT5P[c] 	TTC1563		Arginine and Proline Metabolism	2.7.2.11
+R335	N2-Acetyl-L-ornithine:L-glutamate N-acetyltransferase	L_GLU[c] + AORT[c]  <=> ORT[c] + AC_GLUT[c] 	TTC0835		Arginine and Proline Metabolism	2.3.1.35
+R336	N2-Acetyl-L-ornithine amidohydrolase	H2O[c] + AORT[c]  -> ORT[c] + AC[c] 	(TTC0133 or TTC1460)	argE	Arginine and Proline Metabolism	3.5.1.14
+R337	Carbamoyl-phosphate:L-ornithine carbamoyltransferase	ORT[c] + CARB_Pi[c]  <=> Pi[c] + H[c] + CTRLN[c] 	TTC0838	argF	Arginine and Proline Metabolism	2.1.3.3
+R338	L-Arginine amidinohydrolase	L_ARG[c] + H2O[c]  <=> ORT[c] + UREA[c] 	TTC1132		Arginine and Proline Metabolism	3.5.3.1
+R339	urea-1-carboxylate amidohydrolase	H2O[c] + H[c] + UREA_CARB[c]  -> 2 CO2[c] + 2 NH4[c] 	TTC0624		Arginine and Proline Metabolism	3.5.1.54
+R340	L-Proline:NAD+ 5-oxidoreductase	L_PRO[c] + NAD[c]  <=> 2 H[c] + NADH[c] + PYRR5CARB[c] 	TTC0500	ProC	Arginine and Proline Metabolism	1.5.1.2
+R341	L-Proline:NADP+ 5-oxidoreductase	L_PRO[c] + NADP[c]  <=> 2 H[c] + NADPH[c] + PYRR5CARB[c] 	TTC0500	ProC	Arginine and Proline Metabolism	1.5.1.2
+R342	4-hydroxyproline degradation I 	PYRR_3HY_5CARB[c] <=> 2 H[c] + 2 H2O[c] + HYGLU_SA[c]			Arginine and Proline Metabolism	spontaneous
+R343	L-erythro-4-Hydroxyglutamate:NAD+ oxidoreductase	NAD[c] + H2O[c] + HYGLU_SA[c]  -> H[c] + NADH[c] + ERY_HYGLU[c] 	(TTC1213 or TTC1214)		Arginine and Proline Metabolism	(1.5.1.12 or 1.5.99.8)
+R344	L-1-Pyrroline-3-hydroxy-5-carboxylate:NAD+ oxidoreductase	NAD[c] + 2 H2O[c] + PYRR_3HY_5CARB[c]  -> H[c] + NADH[c] + ERY_HYGLU[c] 	TTC1213		Arginine and Proline Metabolism	1.5.1.12
+R345	putrescine:2-oxoglutarate aminotransferase	AKG[c] + PUT[c]  -> L_GLU[c] + 4ABUTALD[c] 	TTC0553		Arginine and Proline Metabolism	2.6.1.82
+R346	4-aminobutanal:NAD+ 1-oxidoreductase	NAD[c] + H2O[c] + 4ABUTALD[c]  -> 2 H[c] + NADH[c] + 4ABUT[c] 	TTC0513		Arginine and Proline Metabolism	1.2.1.3
+R347	trans-4-Hydroxy-L-proline:NAD+ 5-oxidoreductase	H[c] + NADH[c] + PYRR_3HY_5CARB[c]  <=> NAD[c] + tHY_PRO[c] 	TTC0500		Arginine and Proline Metabolism	1.5.1.2
+R348	trans-4-Hydroxy-L-proline:NADP+ 5-oxidoreductase	H[c] + NADPH[c] + PYRR_3HY_5CARB[c]  <=> NADP[c] + tHY_PRO[c] 	TTC0500		Arginine and Proline Metabolism	1.5.1.2
+R349	proline 4-hydroxylase	L_PRO[c] + AKG[c] + O2[c] <=> tHY_PRO[c] + SUCC[c] + CO2[c]			Arginine and Proline Metabolism	1.14.11.-
+R350	L-erythro-4-hydroxyglutamate:2-oxoglutarate aminotransferase	AKG[c] + ERY_HYGLU[c]  -> L_GLU[c] + HY_OGLUTR[c] 	TTC1960		Arginine and Proline Metabolism	2.6.1.1
+R351	D-4-Hydroxy-2-oxoglutarate glyoxylate-lyase	HY_OGLUTR[c]  -> PYR[c] + GLOXT[c] 	TT_P0030		Arginine and Proline Metabolism	 4.1.2.14
+R352	Agmatine amidinohydrolase	H2O[c] + AGMT[c]  -> PUT[c] + UREA[c] 	TTC0764		Arginine and Proline Metabolism	3.5.3.11
+R353	L-arginine carboxy-lyase (agmatine-forming)	L_ARG[c] + H[c]  -> CO2[c] + AGMT[c] 	TTC1277		Arginine and Proline Metabolism	4.1.1.19
+R354	2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate phosphate-lyase (cyclyzing)	DHYDO_ARAB_HEPTP[c]  -> Pi[c] + 3DHYQNT[c] 	TTC1020	aroB	Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.3.4
+R355	3-Dehydroquinate hydro-lyase	3DHYQNT[c]  -> H2O[c] + DHY_SHK[c] 	TTC0989	aroD	Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.1.10
+R356	ATP:shikimate 3-phosphotransferase	ATP[c] + SHK[c]  -> ADP[c] + H[c] + SHKP[c] 	TTC1019	aroK	Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.7.1.71
+R357	Phosphoenolpyruvate:3-phosphoshikimate 5-O-(1-carboxyvinyl)-transferase	PEP[c] + SHKP[c]  <=> Pi[c] + CVP_SHK[c] 	TTC0088	aroA	Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.5.1.19
+R358	5-O-(1-Carboxyvinyl)-3-phosphoshikimate phosphate-lyase (chorismate-forming)	CVP_SHK[c]  -> Pi[c] + CORM[c] 	(TTC0518 or TTC1018)	aroA	Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.3.5
+R359	Chorismate pyruvate-lyase (amino-accepting)	L_GLN[c] + CORM[c]  -> L_GLU[c] + H[c] + PYR[c] + ANTHRL[c] 	(TTC1492 and TTC1493)	trpE	Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.1.3.27
+R360	L-serine hydro-lyase (adding indole	L_SER[c] + IND[c]  -> L_TRP[c] + H2O[c] 	(TTC0729 and TTC0730)		Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.1.20
+R361	(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate D-glyceraldehyde-3-phosphate-lyase	IND_GLYP[c]  -> GAP[c] + IND[c] 	(TTC0729 and TTC0730)		Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.2.1.20
+R362	1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose-5-phosphate carboxy-lyase(cyclizing)	H[c] + CPhA_dRBL5P[c]  -> H2O[c] + CO2[c] + IND_GLYP[c] 	TTC0800	trpC	Tyrosine, Tryptophan, and Phenylalanine Metabolism	4.1.1.48
+R363	N-(5-Phospho-beta-D-ribosyl)anthranilate ketol-isomerase	5PRIBS_ANTRL[c]  <=> CPhA_dRBL5P[c] 	TTC1929	trpF	Tyrosine, Tryptophan, and Phenylalanine Metabolism	5.3.1.24
+R364	N-(5-Phospho-D-ribosyl)anthranilate:pyrophosphate phosphoribosyl-transferase	PPi[c] + 5PRIBS_ANTRL[c]  <=> PRPP[c] + ANTHRL[c] 	TTC1491	trpD	Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.4.2.18
+R365	Chorismate pyruvatemutase	CORM[c]  -> PPHA[c] 	(TTC0020 or TTC0514)	cm	Tyrosine, Tryptophan, and Phenylalanine Metabolism	5.4.99.5
+R366	Phosphoenolpyruvate:D-erythrose-4-phosphate C-(1-carboxyvinyl)transferase (phosphate hydrolysing, 2-carboxy-2-oxoethyl-forming)	H2O[c] + PEP[c] + E4P[c]  -> Pi[c] + DHYDO_ARAB_HEPTP[c] 	(TTC0020 or TTC0448)	aroG	Tyrosine, Tryptophan, and Phenylalanine Metabolism	2.5.1.54
+R367	cellobiose glucohydrolase	H2O[c] + CELBS[c]  -> 2 D_GLC[c] 	TT_P0042		Alternate Carbon Metabolism	3.2.1.21
+R368	ATP:alpha-D-glucose-1-phosphate adenylyltransferase	ATP[c] + H[c] + G1P[c]  -> PPi[c] + ADP_GLU[c] 	(TTC1976 or TTC1977)		Glycolysis/Gluconeogenesis	2.7.7.27
+R369	ADP-glucose:1,4-alpha-D-glucan 4-alpha-D-glucosyltransferase	ADP_GLU[c]  <=> ADP[c] + GLY[c] + H[c]	TTC1980		Alternate Carbon Metabolism	2.4.1.21
+R370	1,4-alpha-D-Glucan:orthophosphate alpha-D-glucosyltransferase	Pi[c] + GLY[c]  -> G1P[c]	(TTC0808 and TTC1540 and TTC0897)		Alternate Carbon Metabolism	2.4.1.1
+R371	maltose glucohydrolase	H2O[c] + MALT[c]  -> 2 D_GLC[c] 	(TTC0107 or TTC1283 or TT_P0221)		Alternate Carbon Metabolism	3.2.1.20
+R372	maltose glucohydrolase	H2O[c] + IMALT[c]  -> 2 D_GLC[c] 	(TTC0107 or TTC1283 or TT_P0221)		Alternate Carbon Metabolism	3.2.1.20
+R373	N-Acetyl-D-glucosamine-6-phosphate amidohydrolase	H2O[c] + AC_GLUSAP[c]  -> AC[c] + GLUSAP[c] 	TT_P0025		Alternate Carbon Metabolism	3.5.1.25
+R374	UTP:N-acetyl-alpha-D-glucosamine-1-phosphate uridylyltransferase	UTP[c] + H[c] + AC_AGLUCSAPi[c]  -> UDP_AGLUAM[c] + PPi[c] 	TTC0017		Cell Envelope Biosynthesis	2.7.7.23
+R375	Acetyl-CoA:D-glucosamine-1-phosphate N-acetyltransferase	ACoA[c] + GLUCSA1P[c]  -> CoA[c] + H[c] + AC_AGLUCSAPi[c] 	TTC0017		Cell Envelope Biosynthesis	2.3.1.157
+R376	UDP-N-acetyl-D-glucosamine 2-epimerase	UDP_AGLUAM[c]  -> UDP_AC_MANNA[c] 	TTC0948		Cell Envelope Biosynthesis	5.1.3.14
+R377	D-Glucosamine 1-phosphate 1,6-phosphomutase	GLUSAP[c]  <=> GLUCSA1P[c] 	TTC0691		Cell Envelope Biosynthesis	5.4.2.10
+R378	UDP-N-acetylmuramate:NADP+ oxidoreductase	H[c] + NADPH[c] + UDP_AC_CARBVIN_GLUCSA[c]  -> UDP_ACMURM[c] + NADP[c] 	TTC0721		Cell Envelope Biosynthesis	1.1.1.158
+R379	Phosphoenolpyruvate:UDP-N-acetyl-D-glucosamine 1-carboxyvinyl-transferase	UDP_AGLUAM[c] + PEP[c]  -> Pi[c] + UDP_AC_CARBVIN_GLUCSA[c] 	TTC1854		Cell Envelope Biosynthesis	2.5.1.7
+R380	1D-myo-Inositol 4-phosphate phosphohydrolase	G6P[c]  -> mINS3P[c]			Inositol phosphate metabolism	5.5.1.4
+R381	1D-myo-Inositol 3-phosphate phosphohydrolase	H2O[c] + mINS3P[c]  -> Pi[c] + M_INS[c] 	TTC1928		Inositol phosphate metabolism	3.1.3.25
+R382	sn-Glycerol-3-phosphate:NAD+ 2-oxidoreductase	H[c] + DHAP[c] + NADH[c]  -> NAD[c] + GLCP[c] 	TTC1378		Alternate Carbon Metabolism	1.1.1.94
+R383	sn-Glycerol-3-phosphate:NADP+ 2-oxidoreductase	H[c] + DHAP[c] + NADPH[c]  -> NADP[c] + GLCP[c] 	TTC1378		Alternate Carbon Metabolism	1.1.1.94
+R384	acyl-CoA:sn-glycerol-3-phosphate 1-O-acyltransferase	0.334 I150CoA[c] + 0.069 AI150CoA[c] + 0.047 I160CoA[c] + 0.014 C160CoA[c] + 0.0015 C161CoA[c] + 0.45 I170CoA[c] + 0.075 AI171CoA[c] + GLCP[c]  -> CoA[c] + GLY3P[c] 	(TTC0841 or TTC1384)		Glycerolipid metabolism	2.3.1.15
+R385	acyl-CoA:1-acyl-sn-glycerol-3-phosphate 2-O-acyltransferase	0.334 I150CoA[c] + 0.069 AI150CoA[c] + 0.047 I160CoA[c] + 0.014 C160CoA[c] + 0.0015 C161CoA[c] + 0.45 I170CoA[c] + 0.075 AI171CoA[c] + GLY3P[c]  -> CoA[c] + PPTD[c] 	TTC0983		Glycerolipid metabolism	2.3.1.51
+R386	S-adenosyl-L-methionine:phosphatidylethanolamine N-methyltransferase	SAM[c] + PETHA[c]  -> SAHC[c] + PMETHA[c] 	TTC1366		Glycerophospholipid metabolism	2.1.1.17
+R387	phosphatidyl-N-methylethanolamine N-methyltransferase	SAM[c] + PMETHA[c]  -> SAHC[c] + PDMETHA[c] 			Glycerophospholipid metabolism	2.1.1.71
+R388	phosphatidyl-N-dimethylethanolamine N-methyltransferase	SAM[c] + PDMETHA[c]  -> SAHC[c] + PCHOL[c] 			Glycerophospholipid metabolism	2.1.1.71
+R389	Transacylase	PCHOL[c] + PETHA[c] -> PX[c] + LYPCHOL[c]			Glycerophospholipid metabolism	
+R390	acyltransferase	LYPCHOL[c] + 0.334 I150CoA[c] + 0.069 AI150CoA[c] + 0.047 I160CoA[c] + 0.014 C160CoA[c] + 0.0015 C161CoA[c] + 0.45 I170CoA[c] + 0.075 AI171CoA[c] -> CoA[c] + PCHOL[c]			Glycerophospholipid metabolism	
+R391	phosphatidic acid phosphatase	PPTD[c] + H2O[c] -> DAG[c] + Pi[c]			Glycerophospholipid metabolism	
+R392	ATP:1,2-diacylglycerol 3-phosphotransferase	ATP[c] + DAG[c]  -> ADP[c] + PPTD[c] 	TTC0682		Glycerolipid metabolism	2.7.1.107
+R393	UDP-glucosyltransferase (diglucosyl)	DAG[c] + UDP_GLU[c] -> H[c] + MGDG[c] + UDP[c]			Glycerolipid metabolism	
+R394	UDP-glucosyltransferase (monoglucosyl)	MGDG[c] + UDP_GLU[c] -> H[c] + DGDG[c] + UDP[c]			Glycerolipid metabolism	
+R395	Phsophatidyl-L-serine carboxy-lyase	PPTD_SER[c]  -> CO2[c] + PETHA[c] 	TTC0815		Glycerophospholipid metabolism	4.1.1.65
+R396	CTP:phosphatidate cytidyltransferase	CTP[c] + PPTD[c]  -> PPi[c] + CDP_DAG[c] 	TTC0505		Glycerophospholipid metabolism	2.7.7.41
+R397	CDPdiacylglycerol:sn-glycerol-3-phosphate 3-phosphatidyltransferase	CDP_DAG[c] + GLCP[c] -> CMP[c] + H[c] + PGLYP[c]			Glycerophospholipid metabolism	
+R398	Phosphatidylglycerophosphate phosphohydrolase	PGLYP[c] + H2O[c] -> PGLY[c] + Pi[c]			Glycerophospholipid metabolism	3.1.3.27
+R399	phosphatidylinositol phosphate synthase	CDP_DAG[c] + mINS3P[c] -> CMP[c] + H[c] + PMINS3P[c]			Glycerophospholipid metabolism	
+R400	1-phosphatidyl-1D-myo-inositol 3-phosphatase	PMINS3P[c] + H2O[c] -> PINS[c] + Pi[c]			Glycerophospholipid metabolism	3.1.3.64
+R401	cardiolipin synthase	2 PGLY[c] -> CDLPN[c] + GLYCRL[c]			Glycerophospholipid metabolism	
+R402	Digalactosylceramide galactohydrolase	H2O[c] + DGALSCRAMD[c]  -> D_GAL[c] + GALS_CA[c] 	TT_P0072		Sphingolipid metabolism	3.2.1.22
+R403	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysine:alanyl-D-alanine ligase (ADP-forming)	ATP[c] + D_ALA_D_ALA[c] + UDP_ACMUR_ALA_GLU_LYS[c]  -> ADP[c] + Pi[c] + UDP_MURAC_ALA_GLU_LYS_ALA_ALA[c] 	TTC0714		Cell Envelope Biosynthesis	6.3.2.10
+R404	UDPMurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala):undecaprenyl-phosphate phospho-N-acetylmuramoyl-pentapeptide-transferase	UDP_MURAC_ALA_GLU_LYS_ALA_ALA[c] + dt_pc_UNDECP[c]  -> UMP[c] + MURAC_ALA_GLU_LYS_ALA_ALA_DP_UNDECP[c] 	TTC0716		Cell Envelope Biosynthesis	2.7.8.13
+R405	UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine:undecaprenyl-phosphate phospho-N-acetylmuramoyl-pentapeptide-transferase	UDP_ACMUR_ALA_GLU_DAPIM_ALA_ALA[c] + dt_pc_UNDECP[c]  -> UMP[c] + Undp_ACMUR_ALA_GLU_DAPIM_AALA[c] 	TTC0716		Cell Envelope Biosynthesis	2.7.8.13
+R406	UDP-N-acetyl-D-glucosamine:N-acetyl-alpha-D-muramyl(oyl-L-Ala-gamma-D-Glu-L-Lys-D-Ala-D-Ala)-diphosphoundecaprenol 4-beta-N-acetylglucosaminlytransferase	UDP_AGLUAM[c] + MURAC_ALA_GLU_LYS_ALA_ALA_DP_UNDECP[c]  -> UDP[c] + Undp_ACMUR_ACGLSA_ALA_GLU_LYS_AALA[c] 	TTC0719		Cell Envelope Biosynthesis	2.4.1.227
+R407	UDP-N-acetyl-D-glucosamine:undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine 4-beta-N-acetylglucosaminlytransferase	UDP_AGLUAM[c] + Undp_ACMUR_ALA_GLU_DAPIM_AALA[c]  -> H[c] + UDP[c] + Undp_ACMUR_ACGLSA_ALA_GLU_DAPIM_AALA[c] 	TTC0719		Cell Envelope Biosynthesis	2.4.1.227
+R408	undecaprenyl-diphosphate phosphohydrolase	H2O[c] + dt_pc_UNDECPPi[c]  -> Pi[c] + H[c] + dt_pc_UNDECP[c] 	TTC1814		Cell Envelope Biosynthesis	3.6.1.27
+R409	Lactoylglutathione lyase	MGLX[c] + GLUTAT[c] -> LACGLUT[c]	TTC0449		Methylglyoxal Metabolism	4.4.1.5
+R410	hydroxyacylglutathione hydrolase	LACGLUT[c] + H2O[c] -> GLUTAT[c] + H[c] + LAC[c]	TTC0485		Methylglyoxal Metabolism	3.1.2.6
+R411	glycerone-phosphate phosphate-lyase (methylglyoxal-forming)	DHAP[c]  -> Pi[c] + MGLX[c] 	TTC1443		Methylglyoxal Metabolism	4.2.3.3
+R412	ATP:pyruvate,phosphate phosphotransferase	ATP[c] + Pi[c] + PYR[c]  <=> PPi[c] + H[c] + PEP[c] + AMP[c] 	TTC0304		Pyruvate metabolism	2.7.9.1
+R413	ATP:pyruvate,water phosphotransferase	ATP[c] + H2O[c] + PYR[c]  -> Pi[c] + 2 H[c] + PEP[c] + AMP[c] 	TTC1136		Glycolysis/Gluconeogenesis	2.7.9.2
+R414	(S)-lactate:oxygen 2-oxidoreductase (decarboxylating)	LAC[c] + O2[c]  <=> H2O[c] + CO2[c] + AC[c] 	TTC1744		Pyruvate metabolism	1.13.12.4
+R415	Acetyl phosphate phosphohydrolase	H2O[c] + ACPi[c]  -> Pi[c] + H[c] + AC[c] 	TTC0199		Pyruvate metabolism	3.6.1.7
+R416	acetyl adenylate:CoA acetyltransferase	CoA[c] + ACADNA[c]  <=> AMP[c] + ACoA[c] 	(TTC0884 or TTC0885 or TTC0886 or TTC0919)		Pyruvate metabolism	6.2.1.1
+R417	ATP:acetate adenylyltransferase	ATP[c] + AC[c]  <=> PPi[c] + ACADNA[c] 	(TTC0884 or TTC0885 or TTC0886 or TTC0919)		Pyruvate metabolism	6.2.1.1
+R418	(S)-malate:NAD+ oxidoreductase (decarboxylating)	NAD[c] + MAL[c]  -> NADH[c] + PYR[c] + CO2[c] 	TTC0144		Pyruvate metabolism	1.1.1.38
+R419	Glycolate oxidase	HY_AC[c] + NAD[c] -> GLOXT[c] + NADH[c] + H[c]	TTC1940		Pyruvate metabolism	1.1.19.14
+R420	acetyl-CoA:glyoxylate C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)	H2O[c] + ACoA[c] + GLOXT[c]  -> CoA[c] + H[c] + MAL[c] 	TTC0130	aceB	Pyruvate metabolism	2.3.3.9
+R421	Formate:tetrahydrofolate ligase (ADP-forming)	ATP[c] + THF[c] + FOR[c]  <=> ADP[c] + Pi[c] + 10F_THF[c] 	TTC1707		Folate Metabolism	6.3.4.3
+R422	10-Formyltetrahydrofolate amidohydrolase	H2O[c] + 10F_THF[c]  -> H[c] + THF[c] + FOR[c] 	TTC0957		Folate Metabolism	3.5.1.10
+R423	5,10-Methenyltetrahydrofolate 5-hydrolase (decyclizing)	H[c] + 10F_THF[c]  <=> H2O[c] + METHF[c] 	TTC0755		Folate Metabolism	3.5.4.9
+R424	5,10-methylenetetrahydrofolate:NADP+ oxidoreductase	NADH[c] + METHF[c]  <=> NAD[c] + 5_10_MNTHF[c] 	TTC0755		Folate Metabolism	1.5.1.5
+R425	isocitrate glyoxylate-lyase (succinate-forming)	ICIT[c]  -> SUCC[c] + GLOXT[c] 	TTC1485	aceA	Glyoxylate and dicarboxylate metabolism	4.1.3.1
+R426	4-hydroxy-2-oxoglutarate glyoxylate-lyase (pyruvate-forming)	4HY_2OGLUTR[c]  <=> PYR[c] + GLOXT[c] 	TT_P0030		Glyoxylate and dicarboxylate metabolism	4.1.3.16
+R427	Glycolate:oxygen 2-oxidoreductase	O2[c] + HY_AC[c]  -> GLOXT[c] + H2O2[c] 	(TTC0129 or TTC0443)		Glyoxylate and dicarboxylate metabolism	1.1.3.15
+R428	Glycolate:NAD+ oxidoreductase	H[c] + NADH[c] + GLOXT[c]  -> NAD[c] + HY_AC[c] 	TTC0431		Glyoxylate and dicarboxylate metabolism	1.1.1.26
+R429	2-Phosphoglycolate phosphohydrolase	H2O[c] + 2P_GLYCA[c]  -> Pi[c] + HY_AC[c] 	TTC1471		Glyoxylate and dicarboxylate metabolism	3.1.3.18
+R430	2-Hydroxybutyrate:NAD+ oxidoreductase	NAD[c] + 2HYBUTNA[c]  -> H[c] + NADH[c] + AKB[c] 	TTC0748		Propanoate metabolism	1.1.1.27
+R431	Propionyladenylate:CoA propionyltransferase	CoA[c] + PROP_ADNSPi[c]  <=> AMP[c] + PRCoA[c] 	(TTC0884 or TTC0885 or TTC0886 or TTC0919)		Propanoate metabolism	6.2.1.1
+R432	ATP:propanoate adenylyltransferase	ATP[c] + PROP[c]  <=> PPi[c] + PROP_ADNSPi[c] 	(TTC0884 or TTC0885 or TTC0886 or TTC0919)		Propanoate metabolism	6.2.1.1
+R433	pyruvate:pyruvate acetaldehydetransferase (decarboxylating)	H[c] + 2 PYR[c]  -> CO2[c] + S_ACLAC[c] 	(TTC0851 and TTC0852)	ilvH	Valine, Leucine, and Isoleucine Metabolism	2.2.1.6
+R434	glycine synthase	L_GLY[c] + NAD[c] + THF[c]  -> H[c] + NADH[c] + CO2[c] + NH4[c] + 5_10_MNTHF[c] 	(TTC0150 and TTC0151)		Folate Metabolism	1.4.4.2
+R435	adenosine nucleotides de novo biosynthesis 	ATP[c] + FMN[c]  -> dATP[c] + H2O[c] + FMNH2[c] 			Folate Metabolism	
+R436	5-Formyltetrahydrofolate cyclo-ligase (ADP-forming)	ATP[c] + FOLNA[c]  <=> ADP[c] + Pi[c] + METHF[c] 	(TTC1247 or TTC1803)		Folate Metabolism	6.3.3.2
+R437	5-methyltetrahydrofolate:NADP+ oxidoreductase	2 H[c] + NADPH[c] + 5_10_MNTHF[c]  -> NADP[c] + 5MTHF[c] 	TTC1656		Folate Metabolism	1.5.1.20
+R438	5-methyltetrahydrofolate:NAD+ oxidoreductase	2 H[c] + NADH[c] + 5_10_MNTHF[c]  -> NAD[c] + 5MTHF[c] 	TTC1656		Folate Metabolism	1.5.1.20
+R439	L-cysteine:[ThiI] sulfurtransferase	L_CYS[c] + ENZ_CYS[c]  -> L_ALA[c] + ENZ_SLUFA_CYS[c] 	(TTC0087 or TTC1373)		Cofactor and Prosthetic Group Biosynthesis	2.8.1.7
+R440	ATP:4-amino-2-methyl-5-phosphomethylpyrimidine phosphotransferase	ATP[c] + 4A_M5PM_PYRM[c]  -> ADP[c] + 2M4A_HYMPYRMPPi[c] 	TTC0321		Cofactor and Prosthetic Group Biosynthesis	2.7.4.7
+R441	ATP:4-amino-5-hydroxymethyl-2-methylpyrimidine 5-phosphotransferase	ATP[c] + TOPYRM[c]  -> ADP[c] + H[c] + 4A_M5PM_PYRM[c] 	TTC0321		Cofactor and Prosthetic Group Biosynthesis	2.7.1.49
+R442	2-methyl-4-amino-5-hydroxymethylpyrimidine-diphosphate:4-methyl-5-(2-phosphoethyl)-thiazole 2-methyl-4-aminopyridine-5-methenyltransferase	H[c] + 2M4A_HYMPYRMPPi[c] + 4M_PE_THZ[c]  -> PPi[c] + TMP[c] 	TTC0315		Cofactor and Prosthetic Group Biosynthesis	2.5.1.3
+R443	ATP:thiamin-phosphate phosphotransferase	ATP[c] + TMP[c]  -> ADP[c] + TPP[c] 	TTC0056		Cofactor and Prosthetic Group Biosynthesis	2.7.4.16
+R444	Thiamin diphosphate phosphohydrolase	H2O[c] + TPP[c]  -> Pi[c] + H[c] + TMP[c] 			Cofactor and Prosthetic Group Biosynthesis	3.6.1.6
+R445	Glycine oxidase	L_GLY[c] + O2[c] -> H2O2[c] + H[c] + IMAC[c]	TTC0318		Cofactor and Prosthetic Group Biosynthesis	
+R446	Thiazole synthase	IMAC[c] + L_CYS[c] + dXYLL5P[c] + ATP[c] -> THZ[c] + 2 H2O[c] + AMP[c] + L_ALA[c] + PPi[c]	TTC0317		Cofactor and Prosthetic Group Biosynthesis	2.8.1.10
+R447	Thiazole isomerase	THZ[c] <=> 4M_PE_THZ[c]			Cofactor and Prosthetic Group Biosynthesis	5.3.99.10
+R448	D-ribulose 5-phosphate formate-lyase (L-3,4-dihydroxybutan-2-one 4-phosphate-forming)	RBL5P[c]  -> H[c] + FOR[c] + DHY_BUTNPi[c] 	TTC0697		Cofactor and Prosthetic Group Biosynthesis	4.1.99.12
+R449	GTP 7,8-8,9-dihydrolase (diphosphate-forming)	GTP[c] + 3 H2O[c]  -> PPi[c] + 2 H[c] + FOR[c] + DA_PRIBSA_PYMDN[c] 	TTC0697		Cofactor and Prosthetic Group Biosynthesis	3.5.4.25
+R450	5-amino-6-(5-phosphoribitylamino)uracil:NADP+ 1'-oxidoreductase	H[c] + NADPH[c] + AP_RIB_URA[c]  -> NADP[c] + APRIBTA_URA[c] 	TTC0699		Cofactor and Prosthetic Group Biosynthesis	1.1.1.193
+R451	ATP:riboflavin 5'-phosphotransferase	ATP[c] + RBFLV[c]  -> ADP[c] + H[c] + FMN[c] 	TTC0159		Cofactor and Prosthetic Group Biosynthesis	2.7.1.26
+R452	ATP:FMN adenylyltransferase	ATP[c] + H[c] + FMN[c]  -> PPi[c] + FAD[c] 	TTC0159		Cofactor and Prosthetic Group Biosynthesis	2.7.7.2
+R453	riboflavin-5-phosphate phosphohydrolase (acid optimum)	H2O[c] + FMN[c]  -> RBFLV[c] + Pi[c] 	TTC1252		Cofactor and Prosthetic Group Biosynthesis	3.1.3.2
+R454	Nicotinate-nucleotide:dimethylbenzimidazole phospho-D-ribosyltransferase	NC_D_RNUC[c] + CBMCo[c]  -> H[c] + NIA[c] + PRIBS_DMBENZ_IMDZ[c] 	TT_P0005		Cofactor and Prosthetic Group Biosynthesis	2.4.2.21
+R455	2,5-Diamino-6-hydroxy-4-(5-phosphoribosylamino)-pyrimidine 2-aminohydrolase	H2O[c] + H[c] + DA_PRIBSA_PYMDN[c]  -> NH4[c] + AP_RIB_URA[c] 	TTC0699		Cofactor and Prosthetic Group Biosynthesis	3.5.4.26
+R456	5-amino-6-(D-ribitylamino)uracil butanedionetransferase	DHY_BUTNPi[c] + 5AM_RIBAM_URA[c]  -> Pi[c] + 2 H2O[c] + DM_DR_LUM[c] 	TTC1647		Cofactor and Prosthetic Group Biosynthesis	2.5.1.78
+R457	O-Phospho-4-hydroxy-L-threonine phospho-lyase (adding water)	H2O[c] + OPHY_THR[c]  -> Pi[c] + HY_THR[c] 	TTC0117		Cofactor and Prosthetic Group Biosynthesis	4.2.3.1
+R458	Nicotinate D-ribonucleotide:diphosphate phosphoribosyltransferase	H[c] + PRPP[c] + NIA[c]  -> PPi[c] + NC_D_RNUC[c] 	TTC0252		Cofactor and Prosthetic Group Biosynthesis	2.4.2.11
+R459	N-Ribosylnicotinamide:orthophosphate ribosyltransferase	Pi[c] + RIBS_NCTA[c]  <=> R1P[c] + NAMD[c] 	(TTC0194 or TTC1070)		Cofactor and Prosthetic Group Biosynthesis	2.4.2.1
+R460	Nicotinate D-ribonucleoside:orthophosphate ribosyltransferase	Pi[c] + NICRIB[c]  <=> H[c] + R1P[c] + NIA[c] 	(TTC0194 or TTC1070)		Cofactor and Prosthetic Group Biosynthesis	2.4.2.1
+R461	Nicotinamide ribonucleotide phosphohydrolase	H2O[c] + NMN[c]  -> Pi[c] + RIBS_NCTA[c] 	(TTC0964 or TTC1625 or TT_P0028)		Cofactor and Prosthetic Group Biosynthesis	3.1.3.5
+R462	Nicotinate-nucleotide:pyrophosphate phosphoribosyltransferase (carboxylating)	2 H[c] + PRPP[c] + QA[c]  -> PPi[c] + CO2[c] + NC_D_RNUC[c] 	TTC0621		Cofactor and Prosthetic Group Biosynthesis	2.4.2.19
+R463	ATP:nicotinamide-nucleotide adenylyltransferase	ATP[c] + H[c] + NMN[c]  -> NAD[c] + PPi[c] 	TTC1421		Cofactor and Prosthetic Group Biosynthesis	2.7.7.18
+R464	deamido-NAD+:ammonia ligase (AMP-forming)	ATP[c] + NH4[c] + DA_NAD[c]  -> NAD[c] + PPi[c] + H[c] + AMP[c] 	TTC1538		Cofactor and Prosthetic Group Biosynthesis	6.3.1.5
+R465	NADPH:NAD+ oxidoreductase	NAD[c] + NADPH[c]  -> NADP[c] + NADH[c] 	(TTC1778 and (TTC1779 or TTC1780))		Oxidative Phosphorylation	1.6.1.1 and 1.6.1.2
+R466	L-aspartate:oxygen oxidoreductase	L_ASP[c] + O2[c]  -> H[c] + H2O2[c] + IMASP[c] 	TTC0619		Cofactor and Prosthetic Group Biosynthesis	1.4.3.16
+R467	glycerone phosphate:iminosuccinate alkyltransferase (cyclizing)	DHAP[c] + IMASP[c]  -> Pi[c] + 2 H2O[c] + QA[c] 	TTC0620		Cofactor and Prosthetic Group Biosynthesis	2.5.1.72
+R468	Nicotinate D-ribonucleotide phosphohydrolase	H2O[c] + NC_D_RNUC[c]  -> Pi[c] + NICRIB[c] 	(TTC0964 or TTC1625 or TT_P0028)		Cofactor and Prosthetic Group Biosynthesis	3.1.3.5
+R469	ATP:nicotinamide-nucleotide adenylyltransferase	ATP[c] + H[c] + NC_D_RNUC[c]  <=> PPi[c] + DA_NAD[c] 	TTC1421		Cofactor and Prosthetic Group Biosynthesis	2.7.7.18
+R470	6-Carboxyhyxanoate:CoA ligase (AMP-forming)	ATP[c] + CoA[c] + PIM[c]  <=> PPi[c] + AMP[c] + PIMCoA[c] 	TTC1711		Cofactor and Prosthetic Group Biosynthesis	6.2.1.14
+R471	dethiobiotin:sulfur sulfurtransferase	2 SAM[c] + DTBTN[c] + S[c]  -> 2 L_MET[c] + H[c] + BTN[c] + 2 dADNS[c] 	TTC0242		Cofactor and Prosthetic Group Biosynthesis	2.8.1.6
+R472	biotin:CoA ligase (AMP-forming)	ATP[c] + BTN[c]  -> PPi[c] + BTN_AMP[c] 	TTC1761		Cofactor and Prosthetic Group Biosynthesis	6.3.4.15
+R473	Biotinyl-5'-AMP:apo-[carboxylase] ligase (AMP-forming)	BTN_AMP[c] + APCARB[c]  -> AMP[c] + HCARB[c] 	TTC1761		Cofactor and Prosthetic Group Biosynthesis	6.3.4.15
+R474	octanoyl-[acp]:sulfur sulfurtransferase	2 SAM[c] + OCT_ACP[c] + 2 S[c]  -> 2 L_MET[c] + 2 dADNS[c] + LP_ACP[c] 	TTC1747		Lipoic acid metabolism 	2.8.1.8
+R475	protein N6-(octanoyl)lysine:sulfur sulfurtransferase	2 SAM[c] + 2 S[c] + PN6_OCTLYS[c]  -> 2 L_MET[c] + 2 dADNS[c] + PN6_LPLYS[c] 	TTC1747		Lipoic acid metabolism 	2.8.1.8
+R476	octanoyl-[acp]:protein N6-octanoyltransferase	OCT_ACP[c] + APPRO[c]  -> ACP[c] + PN6_OCTLYS[c] 	TTC1746		Lipoic acid metabolism 	2.3.1.181
+R477	lipoyl-[acp]:protein N6-lipoyltransferase	LP_ACP[c] + APPRO[c]  -> ACP[c] + PN6_LPLYS[c] 	TTC1746		Lipoic acid metabolism 	2.3.1.181
+R478	2,3-Dihydroxy-3-methylbutanoate:NADP+ oxidoreductase (isomerizing)	H[c] + NADPH[c] + S_ACLAC[c]  <=> NADP[c] + DHY_MBUTNA[c] 	TTC0850		Cofactor and Prosthetic Group Biosynthesis	1.1.1.86
+R479	2,3-Dihydroxy-3-methylbutanoate hydro-lyase	DHY_MBUTNA[c]  -> H2O[c] + 2K3M_BUT[c] 	TTC0871		Cofactor and Prosthetic Group Biosynthesis	4.2.1.9
+R480	5,10-Methylenetetrahydrofolate:3-methyl-2-oxobutanoate hydroxymethyltransferase	H2O[c] + 5_10_MNTHF[c] + 2K3M_BUT[c]  -> THF[c] + DHY_PAN[c] 	TTC0039		Cofactor and Prosthetic Group Biosynthesis	2.1.2.11
+R481	ATP:pantothenate 4'-phosphotransferase	ATP[c] + PANTO[c]  -> ADP[c] + H[c] + PPANT[c] 	TTC1008		Cofactor and Prosthetic Group Biosynthesis	2.7.1.33
+R482	(R)-4'-Phosphopantothenate:L-cysteine ligase	L_CYS[c] + CTP[c] + PPANT[c]  -> PPi[c] + H[c] + CMP[c] + PPANTN_CYS[c] 	TTC1195		Cofactor and Prosthetic Group Biosynthesis	6.3.2.5
+R483	N-[(R)-4'-Phosphopantothenoyl]-L-cysteine carboxy-lyase	H[c] + PPANTN_CYS[c]  -> CO2[c] + PANTE4Pi[c] 	TTC1195		Cofactor and Prosthetic Group Biosynthesis	4.1.1.36
+R484	ATP:pantetheine-4'-phosphate adenylyltransferase	ATP[c] + H[c] + PANTE4Pi[c]  -> PPi[c] + DPCoA[c] 	TTC0560		Cofactor and Prosthetic Group Biosynthesis	2.7.7.3
+R485	ATP:dephospho-CoA 3'-phosphotransferase	ATP[c] + DPCoA[c]  -> CoA[c] + ADP[c] + H[c] 	TTC0557		Cofactor and Prosthetic Group Biosynthesis	2.7.1.24
+R486	GTP 8,9-hydrolase	GTP[c] + H2O[c]  -> FAPYRM_NTP[c] 	TTC1517		Cofactor and Prosthetic Group Biosynthesis	3.5.4.16
+R487	formamidopyrimidine nucleoside triphosphate amidohydrolase	H2O[c] + FAPYRM_NTP[c]  -> FOR[c] + DAPYRM_NTP[c] 	TTC1517		Cofactor and Prosthetic Group Biosynthesis	3.5.4.16
+R488	2,5-Diaminopyrimidine nucleoside triphosphate mutase	DAPYRM_NTP[c]  -> DA_TPiTHY_OPENTAOPYRM[c] 	TTC1517		Cofactor and Prosthetic Group Biosynthesis	3.5.4.16
+R489	2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate hydrolase	DA_TPiTHY_OPENTAOPYRM[c]  -> H2O[c] + AHYRY_THYPROP_DHYPTRN_TPi[c] 	TTC1517		Cofactor and Prosthetic Group Biosynthesis	3.5.4.16
+R490	2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl) dihydropteridine triphosphate phosphohydrolase (alkaline optimum)	3 H2O[c] + AHYRY_THYPROP_DHYPTRN_TPi[c]  -> 3 Pi[c] + 2 H[c] + DHY_NPTRN[c] 	TT_P0024		Cofactor and Prosthetic Group Biosynthesis	3.1.3.1
+R491	2-amino-4-hydroxy-6-(D-erythro-1,2,3-trihydroxypropyl)-7,8-dihydropteridine glycolaldehyde-lyase	DHY_NPTRN[c]  -> H[c] + GLYCALD[c] + AHY_HYM_DHYPTR[c] 	TTC1796		Cofactor and Prosthetic Group Biosynthesis	4.1.2.25
+R492	ATP:2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine 6'-pyrophosphotransferase	ATP[c] + AHY_HYM_DHYPTR[c]  -> H[c] + AMP[c] + ADHY_DPOM_PTRDN[c] 	TTC1387		Cofactor and Prosthetic Group Biosynthesis	2.7.6.3
+R493	2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine-diphosphate:4-aminobenzoate 2-amino-4-hydroxydihydropteridine-6-methenyltransferase	ADHY_DPOM_PTRDN[c] + ABEE[c]  -> PPi[c] + DHY_PTR[c] 	TTC1795		Cofactor and Prosthetic Group Biosynthesis	2.5.1.15
+R494	2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine:4-aminobenzoate 2-amino-4-hydroxydihydropteridine-6-methenyltransferase	AHY_HYM_DHYPTR[c] + ABEE[c]  -> H2O[c] + DHY_PTR[c] 	TTC1795		Cofactor and Prosthetic Group Biosynthesis	2.5.1.15
+R495	Tetrahydrofolate:L-glutamate gamma-ligase (ADP-forming)	L_GLU[c] + ATP[c] + THF[c]  <=> ADP[c] + Pi[c] + THF_GLUT[c] 	(TTC0975 or TTC1640)		Cofactor and Prosthetic Group Biosynthesis	6.3.2.17
+R496	7,8-dihydropteroate:L-glutamate ligase (ADP-forming)	L_GLU[c] + ATP[c] + DHY_PTR[c]  -> ADP[c] + Pi[c] + H[c] + DHF[c] 	(TTC0975 or TTC1640)		Cofactor and Prosthetic Group Biosynthesis	6.3.2.17
+R497	1-Deoxy-D-xylulose-5-phosphate pyruvate-lyase (carboxylating)	H[c] + GAP[c] + PYR[c]  -> CO2[c] + dXYLL5P[c] 	TTC1614	dxs	Cofactor and Prosthetic Group Biosynthesis	2.2.1.7
+R498	1-Deoxy-D-xylulose-5-phosphate isomeroreductase	H[c] + NADPH[c] + dXYLL5P[c]  -> NADP[c] + MEROLPi[c] 	TTC0504	dxr	Cofactor and Prosthetic Group Biosynthesis	1.1.1.267
+R499	CTP: 2-C-Methyl-D-erythritol 4-phosphate cytidylyltransferase	CTP[c] + H[c] + MEROLPi[c]  -> PPi[c] + CYTPPi_MEROL[c] 	TTC1815	ispD	Cofactor and Prosthetic Group Biosynthesis	2.7.7.60
+R500	ATP:4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol 2-phosphotransferase	ATP[c] + CYTPPi_MEROL[c]  -> ADP[c] + H[c] + PCYTPPi_MEROL[c] 	TTC1816	ispE	Cofactor and Prosthetic Group Biosynthesis	2.7.1.148
+R501	2-Phospho-4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol CMP-lyase (cyclizing)	PCYTPPi_MEROL[c]  -> CMP[c] + MEROL_CYCPPi[c] 	TTC1438	ispF	Cofactor and Prosthetic Group Biosynthesis	4.6.1.12
+R502	(E)-4-hydroxy-3-methylbut-2-en-1-yl-diphosphate:oxidized ferredoxin oxidoreductase (hydrating)	H[c] + MEROL_CYCPPi[c] + 2 R_FRDX[c]  -> H2O[c] + HY_MBUTEPPi[c] + 2 O_FRDX[c] 	TTC1677	ispG	Cofactor and Prosthetic Group Biosynthesis	1.17.7.1
+R503	isopentenyl-diphosphate:NAD(P)+ oxidoreductase	H[c] + NADPH[c] + HY_MBUTEPPi[c]  -> NADP[c] + H2O[c] + IPEN_PPi[c] 	TTC1983	ispH	Cofactor and Prosthetic Group Biosynthesis	1.17.1.2
+R504	dimethyallyl diphosphate:NADP+ oxidoreductase	H[c] + NADPH[c] + HY_MBUTEPPi[c]  -> NADP[c] + H2O[c] + DMAPP[c] 	TTC1983	ispH	Cofactor and Prosthetic Group Biosynthesis	1.17.1.2
+R505	isopentenyl-diphosphate:NAD+ oxidoreductase	H[c] + NADH[c] + HY_MBUTEPPi[c]  -> NAD[c] + H2O[c] + IPEN_PPi[c] 	TTC1983	ispH	Cofactor and Prosthetic Group Biosynthesis	1.17.1.2
+R506	dimethyallyl diphosphate:NAD+ oxidoreductase	H[c] + NADH[c] + HY_MBUTEPPi[c]  -> NAD[c] + H2O[c] + DMAPP[c] 	TTC1983	ispH	Cofactor and Prosthetic Group Biosynthesis	1.17.1.2
+R507	Z-farnesyl diphosphate synthase	IPEN_PPi[c] + GRN_PPi[c]  -> PPi[c] + ct_FARPPi[c] 	TTC1551		Cofactor and Prosthetic Group Biosynthesis	2.5.1.68
+R508	Dimethylallyl-diphosphate:isopentenyl-diphosphate dimethylallyltranstransferase	IPEN_PPi[c] + DMAPP[c]  -> PPi[c] + GRN_PPi[c] 	TTC1986	ispA	Cofactor and Prosthetic Group Biosynthesis	2.5.1.1
+R509	Isopentenyl-diphosphate delta3-delta2-isomerase	IPEN_PPi[c]  <=> DMAPP[c] 	(TT_P0067 or  TTC0228)		Cofactor and Prosthetic Group Biosynthesis	5.3.3.2
+R510	Geranyl-diphosphate:isopentenyl-diphosphate geranyltrans-transferase	IPEN_PPi[c] + GRN_PPi[c]  -> PPi[c] + FAR_PPi[c] 	TTC1986		Cofactor and Prosthetic Group Biosynthesis	2.5.1.10
+R511	trans,trans-Farnesyl-diphosphate:isopentenyl-diphosphate farnesyltranstransferase	IPEN_PPi[c] + FAR_PPi[c]  -> PPi[c] + GRN_GRNPPi[c] 	TTC1986	ggpps	Cofactor and Prosthetic Group Biosynthesis	2.5.1.29
+R512	carvone reductase	H[c] + CRVN[c]  -> IDHY_CRVN[c] 			Limonene and pinene degradation	1.3.99.25
+R513	geranylgeranyl-diphosphate:geranylgeranyl-diphosphate geranylgeranyltransferase	2 GRN_GRNPPi[c]  -> 2 PPi[c] + PHTEN[c] 	TT_P0057	crtB	Carotenoid biosynthesis	2.5.1.32
+R514	15-cis-phytoene:plastoquinone oxidoreductase	FAD[c] + PHTEN[c]  -> FADH2[c] + PHFLN[c] 	(TT_P0047 or TT_P0066)	crtI	Carotenoid biosynthesis	1.3.5.5
+R515	15-cis-phytoene:acceptor oxidoreductase	FAD[c] + PHFLN[c]  <=> FADH2[c] + zCARO[c] 	TT_P0066	crtI	Carotenoid biosynthesis	1.3.99.28
+R516	Neurosporene, hydrogen-donor:oxygen oxidoreductase	FADH2[c] + O2[c] + NRSPENE[c]  -> LCPN[c] + 2 H2O[c] + FAD[c] 	TT_P0066	crtI	Carotenoid biosynthesis	1.3.99.28
+R517	zeta-Carotene, hydrogen-donor:oxygen oxidoreductase	FADH2[c] + zCARO[c] + O2[c]  -> 2 H2O[c] + FAD[c] + NRSPENE[c] 	TT_P0066	crtI	Carotenoid biosynthesis	1.3.99.28
+R518	ethylnitronate:oxygen 2-oxidoreductase (nitrite-forming)	FMNH2[c] + O2[c] + ENITRN[c]  -> H2O[c] + AALD[c] + FMN[c] + NO2[c] 	TTC1901		Nitrogen metabolism	1.13.12.16
+R519	Ammonia:ferredoxin oxidoreductase	7 H[c] + 6 R_FRDX[c] + NO2[c]  <=> 2 H2O[c] + NH4[c] + 6 O_FRDX[c] 	TTC0313		Nitrogen metabolism	1.7.7.1
+R520	L-Glutamine amidohydrolase	L_GLN[c] + H2O[c]  -> L_GLU[c] + NH4[c] 	(TTC1104 or TTC0282 or (TTC0247 or TTC1706))		Glutamate Metabolism	1.4.1.13 or 6.3.5.4 or 6.3.5.5
+R521	L-aspartate:L-glutamine amido-ligase (AMP-forming)	L_ASP[c] + L_GLN[c] + ATP[c] + H2O[c]  <=> L_GLU[c] + L_ASN[c] + PPi[c] + H[c] + AMP[c] 	TTC0282		Alanine and Aspartate Metabolism	6.3.5.4
+R522	Sulfite:ferricytochrome-c oxidoreductase	H2O[c] + 2 CYT_C3[c] + SO3[c]  -> 2 CYT_C2[c] + SO4[c] 	(TTC1046 or TTC1650)		Sulfur metabolism 	1.8.2.1
+R523	adenosine 3',5'-bisphosphate,sulfite:oxidized-thioredoxin oxidoreductase (3'-phosphoadenosine-5'-phosphosulfate -forming)	R_TRED[c] + PAPS[c]  -> 2 H[c] + O_TRED[c] + SO3[c] + PAP[c] 	(TTC0310 or TTC0961)		Sulfur metabolism 	1.8.4.8
+R524	Cystathionine L-homocysteine-lyase (deaminating)	H2O[c] + CYSTHN[c]  -> PYR[c] + NH4[c] + L_HCYS[c] 	TTC1256		Sulfur metabolism 	4.4.1.8
+R525	5,10-methylenetetrahydromethanopterin:glycine hydroxymethyltransferase	L_SER[c] + H4MPT[c]  -> L_GLY[c] + H2O[c] + METHMPTR[c] 	TTC1160		Methane metabolism	2.1.2.1
+R526	(R)-2-phospho-3-sulfolactate phosphohydrolase	H2O[c] + PSULFLAC[c]  <=> Pi[c] + SULFLAC[c] 	TTC1073		Methane metabolism	3.1.3.71
+R527	Uroporphyrinogen I carboxy-lyase	UPPHYRGN_I[c]  <=> 4 H[c] + 4 CO2[c] + CPPHYRGN_I[c] 	TTC0232		Cofactor and Prosthetic Group Biosynthesis	4.1.1.37
+R528	Uroporphyrinogen-III carboxy-lyase	4 H[c] + UPPHYRGN_III[c]  -> 4 CO2[c] + CPPPHYRGN[c] 	TTC0232		Cofactor and Prosthetic Group Biosynthesis	4.1.1.37
+R529	5-aminolevulinate hydro-lyase (adding 5-aminolevulinate and cyclizing	2 ALEVU[c]  -> 2 H2O[c] + H[c] + PPBLGN[c] 	TTC1234		Cofactor and Prosthetic Group Biosynthesis	4.2.1.24
+R530	porphobilinogen:(4-[2-carboxyethyl]-3-[carboxymethyl]pyrrol-2-yl)methyltransferase (hydrolysing)	H2O[c] + 4 PPBLGN[c]  -> 4 NH4[c] + HY_MBILN[c] 	TTC1638		Cofactor and Prosthetic Group Biosynthesis	2.5.1.61
+R531	Hydroxymethylbilane hydro-lyase(cyclizing)	HY_MBILN[c]  -> H2O[c] + UPPHYRGN_III[c] 	(TTC0312 or TTC1143)		Cofactor and Prosthetic Group Biosynthesis	4.2.1.75
+R532	coproporphyrinogen-III:S-adenosyl-L-methionine oxidoreductase(decarboxylating)	2 SAM[c] + CPPPHYRGN[c]  -> 2 L_MET[c] + 2 CO2[c] + 2 dADNS[c] + PPPHYRGN[c] 	TTC0123		Cofactor and Prosthetic Group Biosynthesis	1.3.99.22
+R533	protoporphyrinogen-IX:oxygen oxidoreductase	3 O2[c] + PPPHYRGN[c]  -> 3 H2O2[c] + PPPHYR[c] 	TTC0230		Cofactor and Prosthetic Group Biosynthesis	1.3.3.4
+R534	protoheme ferro-lyase (protoporphyrin-forming)	PPPHYR[c] + Fe2[c]  -> 2 H[c] + HEME[c] 	TTC0231		Cofactor and Prosthetic Group Biosynthesis	4.99.1.1
+R535	(S)-4-Amino-5-oxopentanoate 4,5-aminomutase	GLU_SA[c]  <=> ALEVU[c] 	TTC0564		Cofactor and Prosthetic Group Biosynthesis	5.4.3.8
+R536	S-adenosyl-L-methionine:uroporphyrin-III C-methyltransferase	2 SAM[c] + UPPHYRGN_III[c]  -> H[c] + 2 SAHC[c] + PRCRN[c] 	(TTC0308 or TT_P0017)		Cofactor and Prosthetic Group Biosynthesis	2.1.1.107
+R537	Magnesium-protoporphyrin IX chelatase	ATP[c] + H2O[c] + PPPHYR[c] + Mg[c]  -> ADP[c] + Pi[c] + 3 H[c] + Mg_PPPHYR[c] 	TTC0268		Cofactor and Prosthetic Group Biosynthesis	6.6.1.1
+R538	protoheme IX farnesyltransferase	H2O[c] + FAR_PPi[c] + HEME[c]  -> PPi[c] + HEMO[c] 			Cofactor and Prosthetic Group Biosynthesis	2.5.1.-
+R539	S-Adenosyl-L-methionine:uroporphyrin-III C-methyltransferase	Fe2[c] + SRHYCLR[c]  -> 3 H[c] + SHEME[c] 	TTC0311		Cofactor and Prosthetic Group Biosynthesis	4.99.1.4
+R540	S-Adenosyl-L-methionine:uroporphyrin-III C-methyltransferase	NAD[c] + PRCRN[c]  -> H[c] + NADH[c] + SRHYCLR[c] 	TTC0311		Cofactor and Prosthetic Group Biosynthesis	1.3.1.76
+R541	S-adenosyl-L-methionine:precorrin-4 C20-methyltransferase	SAM[c] + PRCRN[c]  -> H[c] + SAHC[c] + PRCRN3A[c] 	TT_P0011		Cofactor and Prosthetic Group Biosynthesis	2.1.1.130
+R542	S-adenosyl-L-methionine:cobalt-factor-II C20-methyltransferase	SAM[c] + CoSRHYCLR[c]  -> SAHC[c] + CoFIII[c] 	TT_P0011		Cofactor and Prosthetic Group Biosynthesis	2.1.1.151
+R543	precorrin-3B C17-methyltransferase	H[c] + SAM[c] + CoPRCRN3[c]  -> SAHC[c] + CoPRCRN4[c] 	TT_P0013		Cofactor and Prosthetic Group Biosynthesis	2.1.1.131
+R544	S-adenosyl-L-methionine:precorrin-3B C17-methyltransferase	SAM[c] + PRCRN3B[c]  -> 2 H[c] + SAHC[c] + PRCRN4[c] 	TT_P0013		Cofactor and Prosthetic Group Biosynthesis	2.1.1.131
+R545	S-adenosyl-L-methionine:precorrin-4 C11 methyltransferase	SAM[c] + PRCRN4[c]  -> H[c] + SAHC[c] + PRCRN5[c] 	TT_P0012		Cofactor and Prosthetic Group Biosynthesis	2.1.1.133
+R546	cobalt-precorrin-4 methyltransferase	SAM[c] + CoPRCRN4[c]  -> SAHC[c] + CoPRCRN5A[c] 	TT_P0012		Cofactor and Prosthetic Group Biosynthesis	2.1.1.133
+R547	S-Adenosyl-L-methionine:1-precorrin-6Y C5,15-methyltransferase (C-12-decarboxylating)	2 SAM[c] + PRCRN6B[c]  -> 2 H[c] + CO2[c] + 2 SAHC[c] + PRCRN8X[c] 	TT_P0010		Cofactor and Prosthetic Group Biosynthesis	2.1.1.132
+R548	precorrin-8X methylmutase	PRCRN8X[c]  -> HOBYRNA[c] 	TT_P0009		Cofactor and Prosthetic Group Biosynthesis	5.4.1.2
+R549	precorrin-8X methylmutase	CoPRCRN8[c]  -> CBRYNA[c] 	TT_P0009		Cofactor and Prosthetic Group Biosynthesis	5.4.1.2
+R550	cobyrinic acid A,C-diamide synthase	2 L_GLN[c] + 2 ATP[c] + 2 H2O[c] + HOBYRNA[c]  -> 2 L_GLU[c] + 2 ADP[c] + 2 Pi[c] + 2 H[c] + HOBYRNDA[c] 	TT_P0001		Cofactor and Prosthetic Group Biosynthesis	6.3.5.9
+R551	cobyrinate:L-glutamine amido-ligase (ADP-forming)	2 L_GLN[c] + 2 ATP[c] + 2 H2O[c] + CBRYNA[c]  -> 2 L_GLU[c] + 2 ADP[c] + 2 Pi[c] + 3 H[c] + Co2ABYRDA[c] 	TT_P0001		Cofactor and Prosthetic Group Biosynthesis	6.3.5.11
+R552	adenosylcobyric acid synthase (glutamine-hydrolysing)	4 L_GLN[c] + 4 ATP[c] + 4 H2O[c] + ADNS_CABYRDA[c]  -> 4 L_GLU[c] + 4 ADP[c] + 4 Pi[c] + 4 H[c] + ADNS_CABYRHA[c] 	TT_P0023		Cofactor and Prosthetic Group Biosynthesis	6.3.5.10
+R553	Cobalt synthesis	HOBYRNDA[c] + H2O[c] + ATP[c] + CO(II)[c] -> Pi[c] + ADP[c] + 3 H[c] + Co2ABYRDA[c]			Cofactor and Prosthetic Group Biosynthesis	6.6.1.2
+R554	ATP:cob(I)yrinic acid-a,c-diamide Cobeta-adenosyltransferase	ATP[c] + CABYRDA[c]  -> TPi[c] + ADNS_CABYRDA[c] 	TT_P0002		Cofactor and Prosthetic Group Biosynthesis	2.5.1.17
+R555	ATP:cobinamide Cobeta-adenosyltransferase	ATP[c] + H[c] + CBAMD[c]  <=> TPi[c] + ADNS_CBNA[c] 	TT_P0002		Cofactor and Prosthetic Group Biosynthesis	2.5.1.17
+R556	adenosylcobyric acid:(R)-1-aminopropan-2-yl phosphate ligase	ATP[c] + ADNS_CABYRHA[c] + APRNPi[c]  -> ADP[c] + Pi[c] + ADNS_CBNAPi[c] 	TT_P0019		Cofactor and Prosthetic Group Biosynthesis	6.3.1.10
+R557	cobalamin [5'-phosphate] synthase	ADNS_CBNA_GDP[c] + ARIBZ[c]  -> H[c] + GMP[c] + CBMCo[c] 	TT_P0004		Cofactor and Prosthetic Group Biosynthesis	2.7.8.26
+R558	citrullinase	H2O[c] + H[c] + CTRLN[c]  -> ORT[c] + CO2[c] + NH4[c] 			Arginine and Proline Metabolism	3.5.1.20
+R560	prephenate dehydratase	H[c] + PPHA[c]  -> H2O[c] + CO2[c] + PPYR[c] 		pheA		4.2.1.51
+R561	3-isopropylmalate dehydrogenase; beta-isopropylmalic enzyme; beta-isopropylmalate dehydrogenase; threo-Ds-3-isopropylmalate dehydrogenase; 3-carboxy-2-hydroxy-4-methylpentanoate:NAD+ oxidoreductase	H[c] + IPROP_OSUCC[c]  -> CO2[c] + 4M_2OPENTN[c] 	TTC0867	leuB	Valine, Leucine, and Isoleucine Metabolism	1.1.1.85
+R562	prephenate dehydrogenase (NADP+)	NADP[c] + PPHA[c]  <=> H[c] + CO2[c] + NADPH[c] + HYPh_PYR[c] 	TTC0447	tyrA	Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.3.1.13
+R563	N2-acetyl-alpha-aminoadipate semialdehyde transaminase	L_GLU[c] + AC_AADP_SA[c]  -> AKG[c] + N2AC_L_LYS[c] 	TTC1393	lysJ	Threonine and Lysine Metabolism	2.6.1.-
+R564	alpha-aminoadipate acetyltransferase	ACoA[c] + AADP[c]  <=> CoA[c] + H[c] + AC_AADP[c] 	TTC1543	lysX	Threonine and Lysine Metabolism	6.3.2.-
+R565	methanogen homoaconitase	HCIT[c]  -> H2O[c] + HICTR[c] 	(TTC1546 and TTC1547)	lysTU	Threonine and Lysine Metabolism	4.2.1.114
+R566	CDP-diacylglycerol-serine O-phosphatidyltransferase	L_SER[c] + CDP_DAG[c]  -> H[c] + CMP[c] + PPTD_SER[c] 	TTC0824		Membrane Lipid Metabolism	2.7.8.8
+R567	sulfite reductase (NADPH2)	5 H[c] + 3 NADPH[c] + SO3[c]  -> 3 NADP[c] + 3 H2O[c] + H2S[c] 	TTC0961		Cysteine and methionine metabolism	1.8.2.2
+R568		H2S[c] + 2 O2[c]  -> 2 H[c] + SO4[c] 			Inorganic Ion Transport and Metabolism	
+R569	catalase	2 H2O2[c]  -> 2 H2O[c] + O2[c] 	TTC1872		Unassigned	
+R570	cytochrome c oxidase	6 H[c] + 4 CYT_C2[c] + O2[c]  -> 2 H2O[c] + 6 H[e] + 4 CYT_C3[c] 	(TTC0769 and TTC0770 and TTC1671 and TTC1672)	cba	Oxidative Phosphorylation	1.9.3.1
+R571	trehalase	H2O[c] + TRE[c]  -> 2 D_GLC[c] 	TTC0614	treA	Alternate Carbon Metabolism	3.2.1.28
+R572	trehalose-6-phosphate hydrolase	H2O[c] + TRE6P[c]  -> D_GLC[c] + G6P[c] 	TTC0107	treC	Alternate Carbon Metabolism	3.2.1.93
+R573	trehalose-6-phosphate phosphatase	H2O[c] + TRE6P[c]  -> Pi[c] + TRE[c] 		otsB	Alternate Carbon Metabolism	3.1.3.12
+R574	ATP synthase	ADP[c] + Pi[c] + 4 H[e]  <=> ATP[c] + H2O[c] + 3 H[c] 	(TTC0905 and TTC0906 and TTC0907 and TTC0908 and TTC0909 and TTC0910 and TTC0911 and TTC0912)		Oxidative Phosphorylation	3.6.3.14
+R575	2-methylpropanoyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-(2-methylpropanoyl)transferase	CoA[c] + DHYLPL_MPROP_MPROP_DHLPL[c]  -> 2M_PROCoA[c] + ENZNE_DHYLPL[c] 	TTC1757	vorB	Valine, Leucine, and Isoleucine Metabolism	2.3.1.168
+R576	(S)-2-methylbutanoyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-(2-methylbutanoyl)transferase	CoA[c] + DHYLPL_MPROP_2MBUT_DHLPL[c]  -> MBUTNCoA[c] + ENZNE_DHYLPL[c] 	TTC1757	vorB	Valine, Leucine, and Isoleucine Metabolism	2.3.1.168
+R577	3-methylbutanoyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-(3-methylbutanoyl)transferase	CoA[c] + DHYLPL_MPROP_3MBUT_DHLPL[c]  -> ENZNE_DHYLPL[c] + IVCoA[c] 	TTC1757	vorB	Valine, Leucine, and Isoleucine Metabolism	2.3.1.168
+R578	dihydrolipoyl dehydrogenase	ENZNE_DHYLPL[c] + NAD[c] <=> ENZN6_LPL[c] + NADH[c] + H[c]	(TTC1700 or TTC1753)	lpdA	Valine, Leucine, and Isoleucine Metabolism	1.8.1.4
+R579	3-methylbutanoyl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase	FAD[c] + IVCoA[c]  <=> FADH2[c] + MCROCoA[c] 	(TTC0238 or TTC0536 or TTC779 or TTC1552 or TTC1575 or TT_P0074)	atp	Valine, Leucine, and Isoleucine Metabolism	1.3.8.7
+R580	3-Methylcrotonoyl-CoA:carbon-dioxide ligase (ADP-forming)	ATP[c] + HCO3[c] + MCROCoA[c]  -> ADP[c] + Pi[c] + 3MGLUTNCoA[c] 	TTC1192	mccc1	Valine, Leucine, and Isoleucine Metabolism	6.4.1.4
+R581	(S)-3-Hydroxy-3-methylglutaryl-CoA hydro-lyase (trans-3-methylglutaconyl-CoA-forming)	H2O[c] + 3MGLUTNCoA[c]  -> HYM_GLUTRCoA[c] 	TTC0182		Valine, Leucine, and Isoleucine Metabolism	4.2.1.18
+R582	succinyl-CoA:acetoacetate CoA-transferase	SUCCoA[c] + AAC[c]  <=> SUCC[c] + ACACoA[c] 			Citric Acid Cycle	2.8.3.5
+R583	(S)-3-Hydroxyisobutyryl-CoA hydrolase	H2O[c] + HYIBUTRCoA[c]  <=> CoA[c] + HYIBUTRA[c] 			Valine, Leucine, and Isoleucine Metabolism	3.1.2.4
+R584	(2S,3S)-3-hydroxy-2-methylbutanoyl-CoA:NAD+ oxidoreductase	NAD[c] + HY_MBUTRCoA[c]  -> H[c] + NADH[c] + MAACCoA[c] 	TTC0534		Valine, Leucine, and Isoleucine Metabolism	1.1.1.35
+R585	Methylmalonyl-CoA epimerase	R_MMALCoA[c]  <=> MMALCoA[c] 	TTC0024		Valine, Leucine, and Isoleucine Metabolism	5.1.99.1
+R586	biotin carboxyl carrier protein of acetyl-CoA carboxylase, acetyl-CoA carboxylase carboxyltransferase subunit alpha, acetyl-coenzyme A carboxylase carboxyl transferase subunit beta	ATP[c] + ACoA[c] + HCO3[c]  -> ADP[c] + Pi[c] + H[c] + MALCoA[c] 	(TTC1408 and TTC1409)		Membrane Lipid Metabolism	6.4.1.2
+R587	phosphoribosylglycinamide formyltransferase	GAR[c] + 10F_THF[c]  <=> H[c] + FGAR[c] + THF[c] 	TTC0459		Nucleotide Salvage Pathway	2.1.2.2
+R589	succinate dehydrogenase membrane anchor subunit	SUCC[c] + MQ[c]  <=> FUM[c] + MQL[c] 	TTC1089, TTC1090, TTC 1091, TTC1092		Oxidative Phosphorylation	1.3.5.1
+R590	formate C-acetyltransferase	CoA[c] + PYR[c]  -> ACoA[c] + FOR[c] 			Pyruvate Metabolism	2.3.1.54
+R591	protoporphyrinogen IX dehydrogenase (menaquinone)	3 MQ[c] + PPPHYRGN[c]  -> PPPHYR[c] + 3 MQL[c] 			Cofactor and Prosthetic Group Biosynthesis	1.3.5.3
+R592	L-glutamate 5-semialdehyde dehydratase (spontaneous)	GLUT_SA[c]  <=> H2O[c] + H[c] + PYRR5CARB[c] 			Arginine and Proline Metabolism	spontaneous
+R593	serine O-acetyltransferase	L_SER[c] + ACoA[c]  -> CoA[c] + OAC_SER[c] 	TTC1875	sat1	Cysteine and methionine metabolism	2.3.1.30
+R594	pyruvate dehydrogenase E1 component beta subunit	NAD[c] + CoA[c] + PYR[c]  -> NADH[c] + CO2[c] + ACoA[c] 	(TTC0568 and TTC1801 and TTC1802 and TTC1754 and TTC1753 and TTC1700)		Glycolysis/Gluconeogenesis	1.2.1.-
+R595	acetaldehyde dehydrogenase	NAD[c] + CoA[c] + AALD[c]  <=> H[c] + NADH[c] + ACoA[c] 	TTC0604		Pyruvate Metabolism	1.2.1.10
+R596	pyrimidine phosphatase	H2O[c] + APRIBTA_URA[c]  -> Pi[c] + 5AM_RIBAM_URA[c] 			Cofactor and Prosthetic Group Biosynthesis	3.6.1.-
+R597	riboflavin synthase subunit alpha	2 DM_DR_LUM[c]  -> RBFLV[c] + 5AM_RIBAM_URA[c] 	TTC0698		Cofactor and Prosthetic Group Biosynthesis	2.5.1.9
+R599	NADPH quinone reductase	H[c] + NADPH[c] + MQ[c]  -> NADP[c] + MQL[c] 			Oxidative Phosphorylation	1.6.5.10
+R600	2-dehydropantoate 2-reductase	H[c] + NADPH[c] + DHY_PAN[c]  -> NADP[c] + PANTA[c] 			Cofactor and Prosthetic Group Biosynthesis	1.1.1.169
+R601	adenine phosphoribosyltransferase	PRPP[c] + ADN[c]  -> PPi[c] + AMP[c] 	(TTC1249 or TTC1250)		Nucleotide Salvage Pathway	2.4.2.7
+R602	cobalamin [5'-phosphate] synthase	H[c] + PRIBS_DMBENZ_IMDZ[c] + ADNS_CBNA_GDP[c]  -> GMP[c] + CBMCo[c] 	TT_P0004 		Nucleotide Salvage Pathway	2.7.8.26
+R603	GMP synthase	L_GLN[c] + ATP[c] + H2O[c] + XMP[c]  -> L_GLU[c] + PPi[c] + 2 H[c] + AMP[c] + GMP[c] 	(TTC0355 or TTC1187)		Nucleotide Salvage Pathway	6.3.5.2
+R604		L_GLN[c] + ATP[c] + H2O[c] + XMP[c]  -> L_GLU[c] + L_ASN[c] + PPi[c] + H[c] + AMP[c] 			Nucleotide Salvage Pathway	
+R605	GTP cyclohydrolase I	GTP[c] + H2O[c]  -> H[c] + FOR[c] + AHYRY_THYPROP_DHYPTRN_TPi[c] 	TTC1517		Nucleotide Salvage Pathway	3.5.4.16
+R606	mannose-1-phosphate guanylyltransferase	GTP[c] + H[c] + MAN1P[c]  -> PPi[c] + GDP_MAN[c] 	TTC1388		Alternate Carbon Metabolism	2.7.7.13
+R607	GTPase	GTP[c] + H2O[c]  <=> Pi[c] + H[c] + GDP[c] 	TTC1158		Nucleotide Salvage Pathway	3.6.5.-
+R608	phosphoribosylaminoimidazole carboxylase	CO2[c] + AIR[c]  -> 2 H[c] + CAIR[c] 	(TTC0137 and TTC0138)		Nucleotide Salvage Pathway	4.1.1.21
+R609	adenosylcobinamide-phosphate synthase	ATP[c] + ADNS_CABYRHA[c] + A_PROPOL[c]  <=> ADP[c] + Pi[c] + H[c] + ADNS_CBNAPi[c] 	TT_P0019		Cofactor and Prosthetic Group Biosynthesis	6.3.1.10
+R610	2-keto-3-deoxy-gluconate kinase	ATP[c] + 2K3DO_GLCN[c]  -> ADP[c] + H[c] + DHY_DOP_GLUCN[c] 	TT_P0036		Alternate Carbon Metabolism	2.7.1.45
+R611	2-phosphoglycerate kinase	ATP[c] + D_GLCT[c]  -> ADP[c] + H[c] + 2PG[c] 	TTC0121		Glycine and Serine Metabolism	2.7.1.165
+R612	Propionate-CoA ligase	ATP[c] + CoA[c] + PROP[c]  -> PPi[c] + AMP[c] + PRCoA[c] 	TTC0884		Valine, Leucine, and Isoleucine Metabolism	6.2.1.17
+R613	NH(3)-dependent NAD(+) synthetase	L_GLN[c] + ATP[c] + H2O[c] + DA_NAD[c]  -> L_GLU[c] + NAD[c] + PPi[c] + H[c] + AMP[c] 	TTC1538		Cofactor and Prosthetic Group Biosynthesis	6.3.5.1
+R614	NAD+ kinase	ATP[c] + NAD[c]  -> NADP[c] + ADP[c] + H[c] 			Cofactor and Prosthetic Group Biosynthesis	2.7.1.23
+R615	acid phosphatase	NADP[c] + H2O[c]  -> NAD[c] + Pi[c] 	TTC1252		Cofactor and Prosthetic Group Biosynthesis	3.1.3.2
+R616	thymidine kinase	ATP[c] + THYMD[c]  -> ADP[c] + H[c] + dTMP[c] 			Nucleotide Salvage Pathway	2.7.1.21
+R617	adenylyl-sulfate kinase	ATP[c] + APS[c]  -> ADP[c] + H[c] + PAPS[c] 	TTC0307		Cysteine and methionine metabolism	2.7.1.25
+R618	urea carboxylase/allophanate hydrolase	ATP[c] + H2O[c] + CO2[c] + UREA[c]  -> ADP[c] + Pi[c] + 2 H[c] + UREA_CARB[c] 	TTC0624		Arginine and Proline Metabolism	6.3.4.6
+R619	carbamate kinase	ADP[c] + H[c] + CARB_Pi[c]  -> ATP[c] + CO2[c] + NH4[c] 			Unassigned	2.7.2.2
+R620	acetate kinase	ADP[c] + ACPi[c]  -> ATP[c] + AC[c] 	TTC0137		Pyruvate Metabolism	2.7.2.1
+R621	phosphoenolpyruvate carboxylase	PEP[c] + HCO3[c]  <=> Pi[c] + OAC[c] 	TTC0260		Glycolysis/Gluconeogenesis	4.1.1.31
+R622	dihydroorotate dehydrogenase (quinone)	MQ[c] + DHY_ORTA[c]  -> MQL[c] + ORTA[c] 	TTC0424		Nucleotide Salvage Pathway	1.3.5.2
+R623	NAD+ diphosphatase	NAD[c] + H2O[c]  -> 2 H[c] + AMP[c] + NMN[c] 	TTC0964		Cofactor and Prosthetic Group Biosynthesis	3.6.1.22
+R624	NMN nucleosidase	H2O[c] + NMN[c]  -> H[c] + R5P[c] + NAMD[c] 			Cofactor and Prosthetic Group Biosynthesis	3.2.2.14
+R625	nicotinamidase	H2O[c] + NAMD[c]  -> NH4[c] + NIA[c] 	TTC1446		Cofactor and Prosthetic Group Biosynthesis	3.5.1.19
+R626	nicotinamide-nucleotide amidase	H2O[c] + NMN[c]  -> H[c] + NH4[c] + NC_D_RNUC[c] 	TTC1468		Cofactor and Prosthetic Group Biosynthesis	3.5.1.42
+R627	nicotinate-nucleotide adenylyltransferase	ATP[c] + H[c] + NC_D_RNUC[c]  <=> PPi[c] + DA_NAD[c] 	TTC1421		Cofactor and Prosthetic Group Biosynthesis	2.7.7.18
+R628	NAD+ nucleosidase	NAD[c] + H2O[c]  -> H[c] + ADP_RIB[c] + NAMD[c] 			Cofactor and Prosthetic Group Biosynthesis	3.2.2.5
+R629	thiosulfate sulfurtransferase	R_TRED[c] + TSFA[c]  <=> H[c] + O_TRED[c] + H2S[c] + SO3[c] 	(TTC0666 or TTC1258 or TTC0155)		Cofactor and Prosthetic Group Biosynthesis	2.8.1.-
+R630	formate dehydrogenase	CO2[c] + NADPH[c] + H[c] <=> FOR[c] + NADP[c]	TT_P0138		Cofactor and Prosthetic Group Biosynthesis	1.2.1.43/1.2.1.2
+R631	formate-tetrahydrofolate ligase	ATP[c] + THF[c] + FOR[c]  -> ADP[c] + Pi[c] + FOLNA[c] 	TTC1707		Cofactor and Prosthetic Group Biosynthesis	6.3.4.3
+R632	dihydrofolate reductase	H[c] + NADPH[c] + DHF[c]  -> NADP[c] + THF[c] 			Cofactor and Prosthetic Group Biosynthesis	1.5.1.3
+R633	2-oxoacid-ferredoxin oxidoreductase	CO2[c] + PRCoA[c] + R_FRDX[c]  -> CoA[c] + AKB[c] + O_FRDX[c] 	TTC1591		Cofactor and Prosthetic Group Biosynthesis	1.2.7.2
+R634	methylenetetrahydrofolate reductase (ferredoxin)	2 H[c] + 5_10_MNTHF[c] + 2 R_FRDX[c]  -> 5MTHF[c] + 2 O_FRDX[c] 	TTC1656		Cofactor and Prosthetic Group Biosynthesis	1.5.7.1
+R635	nitrilotriacetate monooxygenase component B, NADH-dependent flavin oxidoreductase	H[c] + NADH[c] + FMN[c]  <=> NAD[c] + FMNH2[c] 	(TTC0052 or TTC1829)		Cofactor and Prosthetic Group Biosynthesis	1.14.13.-
+R636	thymidylate synthase	dUMP[c] + 5_10_MNTHF[c]  <=> dTMP[c] + DHF[c] 			Nucleotide Salvage Pathway	2.1.1.45
+R637	uridine nucleosidase	H2O[c] + URD[c]  -> D_RIB[c] + URA[c] 			Nucleotide Salvage Pathway	3.2.2.3
+R638	uridine phosphorylase	Pi[c] + URD[c]  -> R1P[c] + URA[c] 	TTC1070		Nucleotide Salvage Pathway	2.4.2.3
+R639	cob(II)yrinic acid a,c-diamide reductase	FMNH2[c] + 2 Co2ABYRDA[c]  -> 3 H[c] + FMN[c] + 2 CABYRDA[c] 	TT_P0018 		Cofactor and Prosthetic Group Biosynthesis	1.16.8.1
+R640	adenosylcobinamide-phosphate guanylyltransferase	GTP[c] + H[c] + ADNS_CBNAPi[c]  -> PPi[c] + ADNS_CBNA_GDP[c] 	TT_P0023 		Cofactor and Prosthetic Group Biosynthesis	2.7.7.62
+R641	aminodeoxychorismate synthase	L_GLN[c] + CORM[c]  -> L_GLU[c] + 4A4CORM[c] 	TTC0355 		Cofactor and Prosthetic Group Biosynthesis	2.6.1.85
+R642	4-amino-4-deoxychorismate lyase	4A4CORM[c]  -> H[c] + PYR[c] + ABEE[c] 	TTC1477		Cofactor and Prosthetic Group Biosynthesis	4.1.3.38
+R643	putative deoxyribonucleotide triphosphate pyrophosphatase	UTP[c] + H2O[c]  -> Pi[c] + H[c] + UDP[c] 	TTC1290		Nucleotide Salvage Pathway	3.6.1.15
+R644	nucleoside-diphosphatase	H2O[c] + UDP[c]  -> Pi[c] + H[c] + UMP[c] 			Nucleotide Salvage Pathway	3.6.1.6
+R645	apyrase	CTP[c] + 2 H2O[c]  -> 2 Pi[c] + 2 H[c] + CMP[c] 			Nucleotide Salvage Pathway	3.6.1.5
+R646	putative deoxyribonucleotide triphosphate pyrophosphatase	CTP[c] + H2O[c]  -> Pi[c] + H[c] + CDP[c] 	TTC1290		Nucleotide Salvage Pathway	3.6.1.15
+R647	nucleoside-diphosphatase	H2O[c] + CDP[c]  -> Pi[c] + H[c] + CMP[c] 			Nucleotide Salvage Pathway	3.6.1.6
+R648	ornithine aminotransferase	ORT[c] + AKG[c]  -> L_GLU[c] + GLU_SA[c] 	TTC0553		Arginine and Proline Metabolism	2.6.1.13
+R649	formate hydrogenlyase	FOR[c]  -> 2 H[c] + CO2[c] 			Pyruvate Metabolism	
+R650	phosphoserine aminotransferase	L_GLU[c] + 3POXPYR[c]  -> AKG[c] + PPTD_SER[c] 		serC	Glycine and Serine Metabolism	2.6.1.52
+R651	3-phosphoserine phosphatase	H2O[c] + PPTD_SER[c]  -> L_SER[c] + Pi[c] 		serB	Glycine and Serine Metabolism	3.1.3.3
+R652	valine-pyruvate aminotransferase	L_VAL[c] + PYR[c]  -> L_ALA[c] + 2K3M_BUT[c] 	TTC1960		Valine, Leucine, and Isoleucine Metabolism	2.6.1.66
+R653	coproporphyrinogen oxidase	2 H[c] + O2[c] + CPPPHYRGN[c]  -> 2 H2O[c] + 2 CO2[c] + PPPHYRGN[c] 			Cofactor and Prosthetic Group Biosynthesis	1.3.3.3
+R654	quinate/shikimate dehydrogenase	H[c] + NADH[c] + DHY_SHK[c]  -> NAD[c] + SHK[c] 	TTC0688 	ydiB	Tyrosine, Tryptophan, and Phenylalanine Metabolism	1.1.1.282
+R655	serine hydroxymethyltransferase	L_SER[c] + THF[c]  -> L_GLY[c] + H2O[c] + METHF[c] 	TTC1160		Glycine and Serine Metabolism	2.1.2.1
+R656	serine-glyoxylate transaminase	L_SER[c] + GLOXT[c]  -> L_GLY[c] + HY_PYR[c] 		sgaA	Glycine and Serine Metabolism	2.6.1.45
+R657	malate-CoA ligase	ATP[c] + CoA[c] + MAL[c]  -> ADP[c] + Pi[c] + MALYCoA[c] 			Glycine and Serine Metabolism	6.2.1.9
+R658	malyl-CoA lyase	MALYCoA[c]  -> ACoA[c] + GLOXT[c] 			Glycine and Serine Metabolism	4.1.3.24
+R659	acyl-CoA hydrolase	2 H2O[c] + ACoA[c]  -> CoA[c] + 5 H[c] + GLOXT[c] 	TTC1452 		Glycine and Serine Metabolism	3.1.2.20 
+R660	malate dehydrogenase	NADP[c] + MAL[c]  -> PYR[c] + CO2[c] + NADPH[c] 	TTC0144		Anaplerotic Reactions	1.1.1.40
+R661	fructose 1,6-bisphosphatase II 	H2O[c] + FBP[c]  -> Pi[c] + F6P[c] 	TTC1081		Glycolysis/Gluconeogenesis	3.1.3.11
+R662	glucose-1-phosphatase	H2O[c] + G1P[c]  -> Pi[c] + D_GLC[c] 		agp	Glycolysis/Gluconeogenesis	3.1.3.10
+R663	phosphate acetyltransferase	Pi[c] + ACoA[c]  -> CoA[c] + ACPi[c] 		pta	Pyruvate Metabolism	2.3.1.8
+R664	acetolactate synthase large subunit	H[c] + PYR[c] + AKB[c]  -> CO2[c] + AC_HYBUTNA[c] 	TTC0852	ilvB	Valine, Leucine, and Isoleucine Metabolism	2.2.1.6
+R665	ketol-acid reductoisomerase	H[c] + NADPH[c] + AC_HYBUTNA[c]  -> NADP[c] + DHY_MPENTA[c] 	TTC0850	ilvC	Valine, Leucine, and Isoleucine Metabolism	1.1.1.86
+R666	2-oxoglutarate ferredoxin oxidoreductase subunit beta	CoA[c] + AKG[c] + 2 O_FRDX[c]  <=> CO2[c] + SUCCoA[c] + 2 R_FRDX[c] 	TTC1592		Citric Acid Cycle	1.2.7.3
+R667	fatty acid synthesis; lumped	16 H[c] + 11 NADPH[c] + 6 MALCoA[c] + MBUTNCoA[c]  -> 7 CoA[c] + 11 NADP[c] + AI171[c] + 5 H2O[c] + 6 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R668	fatty acid synthesis; lumped	14 H[c] + 10 NADPH[c] + 5 MALCoA[c] + MBUTNCoA[c]  -> 6 CoA[c] + 10 NADP[c] + AI150[c] + 4 H2O[c] + 5 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R669	fatty acid synthesis; lumped	14 H[c] + 10 NADPH[c] + 5 MALCoA[c] + IVCoA[c]  -> 6 CoA[c] + 10 NADP[c] + I150[c] + 4 H2O[c] + 5 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R670	fatty acid synthesis; lumped	17 H[c] + 12 NADPH[c] + 6 MALCoA[c] + 2M_PROCoA[c]  -> 7 CoA[c] + 12 NADP[c] + I160[c] + 5 H2O[c] + 6 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R671	fatty acid synthesis; lumped	16 H[c] + 12 NADPH[c] + 6 MALCoA[c] + IVCoA[c]  -> 7 CoA[c] + 12 NADP[c] + I170[c] + 5 H2O[c] + 6 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R672	fatty acid synthesis; lumped	12 H[c] + 8 NADPH[c] + 4 MALCoA[c] + IVCoA[c]  -> 5 CoA[c] + 8 NADP[c] + I130[c] + 3 H2O[c] + 4 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R673	fatty acid synthesis; lumped	10 H[c] + 6 NADPH[c] + 3 MALCoA[c] + IVCoA[c]  -> 6 CoA[c] + 6 NADP[c] + I110[c] + 2 H2O[c] + 3 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R674	fatty acid synthesis; lumped	20 H[c] + ACoA[c] + 14 NADPH[c] + 7 MALCoA[c]  -> 8 CoA[c] + 14 NADP[c] + C160[c] + 6 H2O[c] + 7 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048 and TTC1678)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R675	fatty acid synthesis; lumped	21 H[c] + ACoA[c] + 15 NADPH[c] + 7 MALCoA[c] + O2[c]  -> 8 CoA[c] + 15 NADP[c] + C161[c] + 6 H2O[c] + 7 CO2[c] 	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and (TTC0238 or TTC0536 or TTC779 or TTC1552 or TTC1575 or TT_P0074) and TTC0048  and TTC1678)	FabF, FabG, FabI, FabZ	Membrane Lipid Metabolism	2.3.1.180 and (2.3.1.179 or 2.3.1.180) and 1.1.1.100 and 4.2.1.59
+R676	fatty acid oxidation; lumped	7 CoA[c] + 7 H2O[c] + C161CoA[c] + 7 NAD[c] + NADPH[c] + 7 O2[c] -> 8 ACoA[c] + 6 H[c] + 7 H2O2[c] + 7 NADH[c] + NADP[c]	((TTC0236 or TTC0342) and (TT_P0074 or TTC0238 or TTC0536) and (TTC0604 or TTC1697 or TTC1768) and (TTC0331 or TTC0534) and (TTC0623 or TTC0535))		Membrane Lipid Metabolism	1.3.8.- and 4.2.1.17 and 1.1.1.35 and 2.3.1.16
+R677	fatty acid oxidation; lumped	7 CoA[c] + 7 H2O[c] + C161CoA[c] + 7 NAD[c] + 6 O2[c] -> 8 ACoA[c] + 7 H[c] + 6 H2O2[c] + 7 NADH[c]	((TTC0236 or TTC0342) and (TT_P0074 or TTC0238 or TTC0536) and (TTC0604 or TTC1697 or TTC1768) and (TTC0331 or TTC0534) and (TTC0623 or TTC0535))		Membrane Lipid Metabolism	1.3.8.- and 4.2.1.17 and 1.1.1.35 and 2.3.1.16
+R678	fatty acid coA--ligase	ATP[c] + CoA[c] + AI171[c] <=> AMP[c] + AI171CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R679	fatty acid coA--ligase	ATP[c] + CoA[c] + AI150[c] <=> AMP[c] + AI150CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R680	fatty acid coA--ligase	ATP[c] + CoA[c] + I150[c] <=> AMP[c] + I150CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R681	fatty acid coA--ligase	ATP[c] + CoA[c] + I160[c] <=> AMP[c] + I160CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R682	fatty acid coA--ligase	ATP[c] + CoA[c] + I170[c] <=> AMP[c] + I170CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R683	fatty acid coA--ligase	ATP[c] + CoA[c] + C160[c] <=> AMP[c] + C160CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R684	fatty acid coA--ligase	ATP[c] + CoA[c] + C161[c] <=> AMP[c] + C161CoA[c] + PPi[c]	(TTC0079 or TTC1065 or TTC1099)		Membrane Lipid Metabolism	6.2.1.3
+R685	lycopene epsilon-cyclase	LCPN[c]  <=> gCARO[c] 		crtY	Carotenoid biosynthesis	5.5.1.18
+R686	lycopene beta-cyclase	gCARO[c]  <=> bCARO[c] 		crtY	Carotenoid biosynthesis	5.5.1.18
+R687	UTP--glucose-1-phosphate uridylyltransferase	G1P[c] + UTP[c] + H[c] <=> UDP_GLU[c] + PPi[c]			Alternate Carbon Metabolism	
+R688	beta-carotene hydroxylase	H[c] + NADH[c] + O2[c] + bCARO[c]  <=> NAD[c] + H2O[c] + CRTX[c] 	TT_P0059	crtZ	Carotenoid biosynthesis	
+R689	beta-cryptoxanthin hydroxylase 	H[c] + NADH[c] + O2[c] + CRTX[c]  -> NAD[c] + ZXT[c] + H2O[c] 	TT_P0059	crtZ	Carotenoid biosynthesis	
+R690	thermocryptoxanthin hydroxylase 	H[c] + NADH[c] + O2[c] + tCRTX[c]  -> NAD[c] + tZXT[c] + H2O[c] 	TT_P0059	crtZ	Carotenoid biosynthesis	
+R691	beta-cryptoxanthin glucosyltransferase	CRTX[c] + UDP_GLU[c]  -> bCRTX_GLU[c] + UDP[c] +  H[c] 	TT_P0062	crtQ	Carotenoid biosynthesis	
+R692	beta-cryptoxanthin acyltransferase (C11:0)	bCRTX_GLU[c] + 0.334 I150CoA[c] + 0.069 AI150CoA[c] + 0.047 I160CoA[c] + 0.014 C160CoA[c] + 0.0015 C161CoA[c] + 0.45 I170CoA[c] + 0.075 AI171CoA[c] -> tCRTX[c] + CoA[c] 	TT_P0061	orf-AT	Carotenoid biosynthesis	
+R693	zeaxanthin glucosyltransferase	ZXT[c] + UDP_GLU[c]  -> ZXT_GLU[c] + UDP[c] +  H[c] 	TT_P0062	crtQ	Carotenoid biosynthesis	
+R694	zeaxanthin acyltransferase (C13:0)	ZXT_GLU[c] + 0.334 I150CoA[c] + 0.069 AI150CoA[c] + 0.047 I160CoA[c] + 0.014 C160CoA[c] + 0.0015 C161CoA[c] + 0.45 I170CoA[c] + 0.075 AI171CoA[c]  -> tZXT[c] + CoA[c] 	TT_P0061	orf-AT	Carotenoid biosynthesis	
+R695	thermozeaxanthin glucosyltransferase	tZXT[c] + UDP_GLU[c]  -> tZXT_GLU[c] + UDP[c] +  H[c] 	TT_P0062	crtQ	Carotenoid biosynthesis	
+R696	thermozeaxanthin acyltransferase (C13-C13)	tZXT_GLU[c] + 0.334 I150CoA[c] + 0.069 AI150CoA[c] + 0.047 I160CoA[c] + 0.014 C160CoA[c] + 0.0015 C161CoA[c] + 0.45 I170CoA[c] + 0.075 AI171CoA[c]  -> tbZXT[c] + CoA[c] 	TT_P0061	orf-AT	Carotenoid biosynthesis	
+R697	glucosamine-6-phosphate deaminase	H2O[c] + GLUSAP[c]  -> F6P[c] + NH4[c] 	TTC1074			3.5.99.6
+R698	acetyl-CoA C-acetyltransferase	2 ACoA[c] -> CoA[c] + ACACoA[c]	(TTC0191 or TTC0330)		Butanoate metabolism	2.3.1.9
+R699	(R)-3-Hydroxybutanoyl-CoA:NADP+ oxidoreductase	H[c] + NADPH[c] + ACACoA[c]  <=> NADP[c] + RHY_BUTCoA[c] 	TTC0898		Butanoate metabolism	1.1.1.157
+R700	beta-ketothiolase 	ACoA[c] + PRCoA[c]  -> CoA[c] + KVCoA[c] 	(TTC0191 or TTC0330 or TTC0525 or TTC0623)		Butanoate metabolism	
+R701	(R)-3-Hydroxybutanoyl-CoA:NADP+ oxidoreductase	3 H[c] + NADPH[c] + KVCoA[c]  <=> NADP[c] + HVCoA[c] 	TTC0898		Butanoate metabolism	
+R702	Acyltransferase	2 RHY_BUTCoA[c]  -> 2 CoA[c] + PHB[c] 			Butanoate metabolism	2.3.1.-
+R703	Acyltransferase	2 HVCoA[c]  -> CoA[c] + PHV[c] 			Butanoate metabolism	
+R704	fatty acid synthesis; lumped	RHY_BUTCoA[c] + 2 ACoA[c] + 4 NADPH[c] + 4 H[c]  <=> 4 NADP[c] + HY_OCTCoA[c] + 2 H2O[c] + 2 CoA[c]	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048 and TTC1678)		Butanoate metabolism	
+R705	Acyltransferase	2 HY_OCTCoA[c]  -> 2 CoA[c] + PHO[c] 			Butanoate metabolism	
+R706	fatty acid synthesis; lumped	HY_OCTCoA[c] + ACoA[c] + 2 NADPH[c] + 2 H[c]  <=> 2 NADP[c] + HY_DECCoA[c] + H2O[c] + CoA[c]	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048 and TTC1678)		Butanoate metabolism	
+R707	Acyltransferase	2 HY_DECCoA[c]  -> 2 CoA[c] + PHD[c] 			Butanoate metabolism	
+R708	fatty acid synthesis; lumped	HY_DECCoA[c] + ACoA[c] + 2 NADPH[c] + 2 H[c]  <=> 2 NADP[c] + HY_DODECCoA[c] + H2O[c] + CoA[c]	((TTC0049 or TTC0045) and (TTC0045 or (TTC0049 or TTC0343)) and (TTC0047 or TTC0394) and TTC1463 and TTC0048 and TTC1678)		Butanoate metabolism	
+R709	Acyltransferase	2 HY_DODECCoA[c]  -> 2 CoA[c] + PHDD[c] 			Butanoate metabolism	
+R710	gluconokinase	ATP[c] + GLCN[c]  -> ADP[c] + H[c] + GLCN6P[c] 			Pentose Phosphate Pathway	2.7.1.12
+R711	gluconate 5-dehydrogenase (NAD+)	H[c] + NADH[c] + DHYGLCN[c]  -> NAD[c] + GLCN[c] 	TTC0235			1.1.1.69
+R712	gluconate 5-dehydrogenase (NADP+)	H[c] + NADPH[c] + DHYGLCN[c]  -> NADP[c] + GLCN[c] 	TTC0235			1.1.1.69
+R713	gluconolactonase	H2O[c] + GLC_LACN[c]  -> H[c] + GLCN[c] 			Pentose Phosphate Pathway	3.1.1.17
+R714	phosphogluconate dehydratase	GLCN6P[c]  -> H2O[c] + DHY_DOP_GLUCN[c] 	TTC0871		Pentose Phosphate Pathway	4.2.1.12
+R715	NADH:ubiquinone oxidoreductase I	H[c] + NADH[c] + MQ[c]  -> NAD[c] + MQL[c] 			Oxidative Phosphorylation	1.6.5.-
+R716	S-adenosylmethionine decarboxylase	SAM[c] + H[c]  -> dcSAM[c] + CO2[c] 	TTC0473			
+R717	spermine synthase	AGMT[c] + dcSAM[c]  -> apAGMT[c] + MTA[c] + H[c] 	TTC0472			
+R718	agmatinase	apAGMT[c] + H2O[c]  -> SPRD[c] + UREA[c] 	TTC0764			
+R719	S-adenosylmethioninamine:spermidine 3-aminopropyltransferase	dcSAM[c] + SPRD[c]  -> H[c] + MTA[c] + SPR[c] 	TTC0472			
+R720	S-adenosylmethioninamine:spermidine 3-aminopropyltransferase	dcSAM[c] + SPRD[c]  -> H[c] + MTA[c] + tSPR[c] 	TTC0472			
+R721	polyamine synthesis; lumped	2 dcSAM[c] + SPRD[c]  -> 2 H[c] + 2 MTA[c] + tPAM[c] 				
+R722	polyamine synthesis; lumped	2 dcSAM[c] + SPRD[c]  -> 2 H[c] + 2 MTA[c] + hCPAM[c] 				
+R723	polyamine synthesis; lumped	3 dcSAM[c] + SPRD[c]  -> 3 H[c] + 3 MTA[c] + hCHAM[c] 				
+R724	polyamine synthesis; lumped	dcSAM[c] + PDAM[c]  -> H[c] + MTA[c] + NSPRD[c] 				
+R725	polyamine synthesis; lumped	2 dcSAM[c] + PDAM[c]  -> 2 H[c] + 2 MTA[c] + TM[c] 				
+R726	polyamine synthesis; lumped	3 dcSAM[c] + PDAM[c]  -> 3 H[c] + 3 MTA[c] + CPAM[c] 				
+R727	polyamine synthesis; lumped	4 dcSAM[c] + PDAM[c]  -> 4 H[c] + 4 MTA[c] + CHAM[c] 				
+R728	polyamine synthesis; lumped	2 dcSAM[c] + PDAM[c]  -> 3 H[c] + 2 MTA[c] + TRIAM[c] 				
+R729	polyamine synthesis; lumped	3 dcSAM[c] + PDAM[c]  -> 3 H[c] + 3 MTA[c] + TETAM[c] 				
+R730	polyamine synthesis; lumped	PUT[c] + SPRD[c]  -> hSPRD[c] + PDAM[c] 				
+R731	polyamine synthesis; lumped	2 SPRD[c]  -> hSPR[c] + PDAM[c] 				
+R732	Glucose transport via ABC transporter	ATP[c] + H2O[c] + D_GLC[e]  -> ADP[c] + D_GLC[c] + H[c] + Pi[c] 	((TTC0326 or TTC0327) and TTC0328)		Transport, Extracellular	
+R733	Water transport	H2O[e]  <=> H2O[c] 			Transport, Extracellular	
+R734	Oxygen transport	O2[e]  -> O2[c] 			Transport, Extracellular	
+R735	Sulfate transport	SO4[e]  -> SO4[c] 			Transport, Extracellular	
+R736	Phosphate transport	H[e] + Pi[e]  <=> Pi[c] + H[c] 	(TTC1724 and TTC1725)		Transport, Extracellular	
+R737	Carbon dioxide transport	CO2[c]  <=> CO2[e] 			Transport, Extracellular	
+R738	Acetate transport	AC[e]  <=> AC[c] 			Transport, Extracellular	
+R739	D-Alanyl-D-alanine transport via ABC system	D_ALA_D_ALA[e]  <=> D_ALA_D_ALA[c] 	((TTC1270 or TTC0972) and TTC0973)		Transport, Extracellular	
+R740	L-Arginine transport	L_ARG[e]  <=> L_ARG[c]			Transport, Extracellular	
+R741	L-Asparagine transport	L_ASN[e]  <=> L_ASN[c]			Transport, Extracellular	
+R742	Citrate transport	CIT[e]  <=> CIT[c] 			Transport, Extracellular	
+R743	Ethanol transport	ETH[e]  <=> ETH[c] 			Transport, Extracellular	
+R744	D-Fructose 1-phosphate transport	F1P[e]  <=> F1P[c] 			Transport, Extracellular	
+R745	L-Fuculose 1-phosphate transport	FUCL1P[e]  <=> FUCL1P[c] 			Transport, Extracellular	
+R746	Ferrous ion transport via diffusion	Fe2[e]  <=> Fe2[c] 	(TTC0354 or TTC0776 or TTC1358)		Transport, Extracellular	
+R747	D-Fructose transport via ABC transporter	ATP[c] + H2O[c] + D_FRU[e]  -> ADP[c] + D_FRU[c] + H[c] + Pi[c] 	((TTC0326 or TTC0327) and TTC0328)		Transport, Extracellular	
+R748	Fumarate transport via proton symport	2 H[e] + FUM[e]  <=> 2 H[c] + FUM[c] 	TT_P0033 		Transport, Extracellular	
+R749	alpha-D-Glucosamine 1-phosphate transport	GLUCSA1P[e]  <=> GLUCSA1P[c] 			Transport, Extracellular	
+R750	D-Glucosamine 6-phosphate transport	GLUSAP[e]  <=> GLUSAP[c] 			Transport, Extracellular	
+R751	Glycolaldehyde transport	GLYCALD[e]  <=> GLYCALD[c] 			Transport, Extracellular	
+R752	D-Glutamate transport	D_GLU[e]  <=> D_GLU[c] 			Transport, Extracellular	
+R753	Glycolate transport	HY_AC[e]  <=> HY_AC[c] 			Transport, Extracellular	
+R754	D-Glycerate transport	D_GLCT[e]  <=> D_GLCT[c] 			Transport, Extracellular	
+R755	Glycerol transport	GLYCRL[e]  <=> GLYCRL[c] 			Transport, Extracellular	
+R756	Glycine transport	L_GLY[e]  <=> L_GLY[c] 			Transport, Extracellular	
+R757	Hydrogen sulfide transport	H2S[e]  <=> H2S[c] 			Transport, Extracellular	
+R758	L-Homocysteine transport	L_HCYS[e]  <=> L_HCYS[c] 			Transport, Extracellular	
+R759	L-Isoleucine transport via ABC system	ATP[c] + H2O[c] + L_ILE[e]  -> L_ILE[c] + ADP[c] + Pi[c] 	((TTC0219 or TTC0334 or TTC0970 or TTC0600 or TTC0083) and (TTC0218 or TTC0335 or TTC0969 or TTC0078)) and ((TTC0220 or TTC0337 or TTC0598 or TTC0967 or TTC0080) and (TTC216 or TTC0968 or TTC0081))		Transport, Extracellular	
+R760	L-Lysine transport 	L_LYS[e]  <=> L_LYS[c]			Transport, Extracellular	
+R761	L-Malate transport via proton symport	2 H[e] + MAL[e]  <=> 2 H[c] + MAL[c] 	TT_P0033 		Transport, Extracellular	
+R762	Maltose transport via ABC transporter	ATP[c] + H2O[c] + MALT[e]  -> ADP[c] + MALT[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R763	Isomaltose transport via ABC transporter	ATP[c] + H2O[c] + IMALT[e]  -> ADP[c] + IMALT[c] + H[c] + Pi[c] 			Transport, Extracellular	
+R764	D-Mannose 1-phosphate transport	MAN1P[e]  <=> MAN1P[c] 			Transport, Extracellular	
+R765	D-Mannose 6-phosphate transport	M6P[e]  <=> M6P[c] 			Transport, Extracellular	
+R766	D-Mannose transport via ABC transporter	ATP[c] + H2O[c] + D_MAN[e]  -> ADP[c] + D_MAN[c] + H[c] + Pi[c] 	((TTC0326 or TTC0327) and TTC0328)		Transport, Extracellular	
+R767	L-Phenylalanine transport	L_PHE[e]  <=> L_PHE[c]			Transport, Extracellular	
+R768	L-Proline transport	L_PRO[e]  <=> L_PRO[c]			Transport, Extracellular	
+R769	D-Ribose transport via proton symport	H[e] + D_RIB[e]  <=> H[c] + D_RIB[c] 	(TTC0734 and (TTC1505 or TTC1504) and TTC0733)		Transport, Extracellular	
+R770	D-Sorbitol transport	SORB[e]  <=> SORB[c] 			Transport, Extracellular	
+R771	L-Serine transport	 L_SER[e]  <=> L_SER[c]			Transport, Extracellular	
+R772	Sulfite transport	SO3[e]  <=> SO3[c] 			Transport, Extracellular	
+R773	Succinate transport via proton symport	2 H[e] + SUCC[e]  <=> 2 H[c] + SUCC[c] 	TT_P0033 		Transport, Extracellular	
+R774	Sucrose transport via ABC transporter	ATP[c] + H2O[c] + SUC[e]  -> ADP[c] + SUC[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R775	L-Alanine transport via ABC system	ATP[c] + H2O[c] + L_ALA[e]  -> L_ALA[c] + ADP[c] + Pi[c] 	((TTC0219 or TTC0334 or TTC0970 or TTC0600 or TTC0083) and (TTC0218 or TTC0335 or TTC0969 or TTC0078)) and ((TTC0220 or TTC0337 or TTC0598 or TTC0967 or TTC0080) and (TTC216 or TTC0968 or TTC0081))		Transport, Extracellular	
+R776	L-Aspartate transport	L_ASP[e]  <=> L_ASP[c]			Transport, Extracellular	
+R777	L-Cysteine transport	L_CYS[e]  <=> L_CYS[c]			Transport, Extracellular	
+R778	L-Glutamate transport	 L_GLU[e]  <=> L_GLU[c]			Transport, Extracellular	
+R779	L-Methionine transport	 L_MET[e]  <=> L_MET[c]			Transport, Extracellular	
+R780	L-Threonine transport	L_THR[e]  <=> L_THR[c]			Transport, Extracellular	
+R781	L-Leucine transport via ABC system	ATP[c] + H2O[c] + L_LEU[e]  -> L_LEU[c] + ADP[c] + Pi[c] 	((TTC0219 or TTC0334 or TTC0970 or TTC0600 or TTC0083) and (TTC0218 or TTC0335 or TTC0969 or TTC0078)) and ((TTC0220 or TTC0337 or TTC0598 or TTC0967 or TTC0080) and (TTC216 or TTC0968 or TTC0081))		Transport, Extracellular	
+R782	L-Tryptophan transport	L_TRP[e]  <=> L_TRP[c]			Transport, Extracellular	
+R783	L-Tyrosine transport	 L_TYR[e]  <=> L_TYR[c]			Transport, Extracellular	
+R784	L-Valine transport via ABC system	ATP[c] + H2O[c] + L_VAL[e]  -> L_VAL[c] + ADP[c] + Pi[c] 	((TTC0219 or TTC0334 or TTC0970 or TTC0600 or TTC0083) and (TTC0218 or TTC0335 or TTC0969 or TTC0078)) and ((TTC0220 or TTC0337 or TTC0598 or TTC0967 or TTC0080) and (TTC216 or TTC0968 or TTC0081))		Transport, Extracellular	
+R785	Bicarbonate transport	HCO3[e]  <=> HCO3[c] 			Transport, Extracellular	
+R786	L-Lactate transport	LAC[e]  <=> LAC[c] 			Transport, Extracellular	
+R787	Ammonia transport	NH4[c]  <=> NH4[e] 			Transport, Extracellular	
+R788	Trehalose transport via ATP transporter	ATP[c] + H2O[c] + TRE[e]  -> ADP[c] + TRE[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R789	Magnesium transport via diffusion	Mg[e]  -> Mg[c] 	(TTC0695 or TTC1342)		Transport, Extracellular	
+R790	Heme export via diffusion	HEME[c]  -> HEME[e] 	(TTC1401 and TTC1402)		Transport, Extracellular	
+R791	D-Gluconate transport	GLCN[e]  -> GLCN[c] 			Transport, Extracellular	
+R792	Cellobiose transport via ABC system	ATP[c] + H2O[c] + CELBS[e]  -> ADP[c] + CELBS[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R793	Palatinose transport via ABC system	ATP[c] + H2O[c] + PALT[e]  -> ADP[c] + PALT[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R794	D-Galactose transport via ABC system	ATP[c] + H2O[c] + D_GAL[e]  -> ADP[c] + D_GAL[c] + H[c] + Pi[c] 	((TTC0326 or TTC0327) and TTC0328)		Transport, Extracellular	
+R795	Latose transport via ABC system	ATP[c] + H2O[c] + LACTS[e]  -> ADP[c] + LACTS[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R796	Stachyose transport via ABC system	ATP[c] + H2O[c] + STCYS[e]  -> ADP[c] + STCYS[c] + H[c] + Pi[c] 	(((TTC1287 or TTC1286) and TTC1288) or ((TTC1628 or TTC1629) and TTC1627) or ((TTC0612 or TTC0613) and TTC0615))		Transport, Extracellular	
+R797	PHB transport	PHB[c]  -> PHB[e] 			Transport, Extracellular	
+R798	PHV transport	PHV[c]  -> PHV[e] 			Transport, Extracellular	
+R799	PHO transport	PHO[c]  -> PHO[e] 			Transport, Extracellular	
+R800	PHD transport	PHD[c]  -> PHD[e] 			Transport, Extracellular	
+R801	PHDD transport	PHDD[c]  -> PHDD[e] 			Transport, Extracellular	
+R802	Glucose exchange	D_GLC[e]  <=> 			Exchange Reactions	
+R803	Water exchange	H2O[e]  <=> 			Exchange Reactions	
+R804	Oxygen exchange	O2[e]  <=> 			Exchange Reactions	
+R805	Sulfate exchange	SO4[e]  <=> 			Exchange Reactions	
+R806	Phosphate exchange	Pi[e]  <=> 			Exchange Reactions	
+R807	Carbon dioxide exchange	CO2[e]  <=> 			Exchange Reactions	
+R808	Acetate exchange	AC[e]  <=> 			Exchange Reactions	
+R809	D-Alanyl-D-alanine exchange	D_ALA_D_ALA[e]  <=> 			Exchange Reactions	
+R810	L-Arginine exchange	L_ARG[e]  <=> 			Exchange Reactions	
+R811	L-Asparagine exchange	L_ASN[e]  <=> 			Exchange Reactions	
+R812	Citrate exchange	CIT[e]  <=> 			Exchange Reactions	
+R813	Ethanol exchange	ETH[e]  <=> 			Exchange Reactions	
+R814	D-Fructose 1-phosphate exchange	F1P[e]  <=> 			Exchange Reactions	
+R815	L-Fuculose 1-phosphate exchange	FUCL1P[e]  <=> 			Exchange Reactions	
+R816	Ferrous ion exchange	Fe2[e]  <=> 			Exchange Reactions	
+R817	D-Fructose exchange	D_FRU[e]  <=> 			Exchange Reactions	
+R818	Fumarate exchange	FUM[e]  <=> 			Exchange Reactions	
+R819	alpha-D-Glucosamine 1-phosphate exchange	GLUCSA1P[e]  <=> 			Exchange Reactions	
+R820	D-Glucosamine 6-phosphate exchange	GLUSAP[e]  <=> 			Exchange Reactions	
+R821	Glycolaldehyde exchange	GLYCALD[e]  <=> 			Exchange Reactions	
+R822	D-Glutamate exchange	D_GLU[e]  <=> 			Exchange Reactions	
+R823	Glycolate exchange	HY_AC[e]  <=> 			Exchange Reactions	
+R824	D-Glycerate exchange	D_GLCT[e]  <=> 			Exchange Reactions	
+R825	Glycerol exchange	GLYCRL[e]  <=> 			Exchange Reactions	
+R826	Glycine exchange	L_GLY[e]  <=> 			Exchange Reactions	
+R827	Hydrogen sulfide exchange	H2S[e]  <=> 			Exchange Reactions	
+R828	L-Homocysteine exchange	L_HCYS[e]  <=> 			Exchange Reactions	
+R829	L-Isoleucine tansport	L_ILE[e]  <=> 			Exchange Reactions	
+R830	L-Lysine exchange	L_LYS[e]  <=> 			Exchange Reactions	
+R831	L-Malate exchange	MAL[e]  <=> 			Exchange Reactions	
+R832	Maltose exchange	MALT[e]  <=> 			Exchange Reactions	
+R833	Isomaltose exchange	IMALT[e]  <=> 			Exchange Reactions	
+R834	D-Mannose 1-phosphate exchange	MAN1P[e]  <=> 			Exchange Reactions	
+R835	D-Mannose 6-phosphate exchange	M6P[e]  <=> 			Exchange Reactions	
+R836	D-Mannose exchange	D_MAN[e]  <=> 			Exchange Reactions	
+R837	L-Phenylalanine exchange	L_PHE[e]  <=> 			Exchange Reactions	
+R838	L-Proline exchange	L_PRO[e]  <=> 			Exchange Reactions	
+R839	D-Ribose exchange	D_RIB[e]  <=> 			Exchange Reactions	
+R840	D-Sorbitol exchange	SORB[e]  <=> 			Exchange Reactions	
+R841	L-Serine exchange	L_SER[e]  <=> 			Exchange Reactions	
+R842	Sulfite exchange	SO3[e]  <=> 			Exchange Reactions	
+R843	Succinate exchange	SUCC[e]  <=> 			Exchange Reactions	
+R844	Sucrose exchange	SUC[e]  <=> 			Exchange Reactions	
+R845	L-Alanine exchange	L_ALA[e]  <=> 			Exchange Reactions	
+R846	L-Aspartate exchange	L_ASP[e]  <=> 			Exchange Reactions	
+R847	L-Cysteine exchange	L_CYS[e]  <=> 			Exchange Reactions	
+R848	L-Glutamate exchange	L_GLU[e]  <=> 			Exchange Reactions	
+R849	L-Methionine exchange	L_MET[e]  <=> 			Exchange Reactions	
+R850	L-Threonine exchange	L_THR[e]  <=> 			Exchange Reactions	
+R851	L-Leucine exchange	L_LEU[e]  <=> 			Exchange Reactions	
+R852	L-Tryptophan exchange	L_TRP[e]  <=> 			Exchange Reactions	
+R853	L-Tyrosine exchange	L_TYR[e]  <=> 			Exchange Reactions	
+R854	L-Valine exchange	L_VAL[e]  <=> 			Exchange Reactions	
+R855	Bicarbonate exchange	HCO3[e]  <=> 			Exchange Reactions	
+R856	L-Lactate exchange	LAC[e]  <=> 			Exchange Reactions	
+R857	Ammonia exchange	NH4[e]  <=> 			Exchange Reactions	
+R858	Trehalose exchange	TRE[e]  <=> 			Exchange Reactions	
+R859	Magnesium exchange	Mg[e]  <=> 			Exchange Reactions	
+R860	HEME exchange	HEME[e]  <=> 			Exchange Reactions	
+R861	Gluconate exchange	GLCN[e]  <=> 			Exchange Reactions	
+R862	Cellobiose exchange	CELBS[e]  <=> 			Exchange Reactions	
+R863	Palatinose exchange	PALT[e]  <=> 			Exchange Reactions	
+R864	D-Galactose exchange	D_GAL[e]  <=> 			Exchange Reactions	
+R865	PHB exchange	PHB[e]  <=> 			Exchange Reactions	
+R866	PHV exchange	PHV[e]  <=> 			Exchange Reactions	
+R867	PHO exchange	PHO[e]  <=> 			Exchange Reactions	
+R868	PHD exchange	PHD[e]  <=> 			Exchange Reactions	
+R869	PHDD exchange	PHDD[e]  <=> 			Exchange Reactions	
+R870	H exchange	H[e] <=>			Exchange Reactions	
+R871	Lactose exchange	LACTS[e]  <=> 			Exchange Reactions	
+R872	Stachyose exchange	STCYS[e]  <=> 			Exchange Reactions	

@@ -1,0 +1,539 @@
+Reaction abbreviation	Reaction name	Equation	EC number	Gene	Protein	H. pylori ortholog	Pathway	Source	Notes
+ALAR	Alanine racemase	[c] : ala-L <==> ala-D	EC 5.1.1.1	Cj0905c	Alr	HP0941 (28.6%)	Alanine Metabolism	Parkhill_00	
+ALATA_L	L-alanine transaminase	[c]: akg + ala-L <==> glu-L + pyr	EC 2.6.1.2				Alanine metabolism	Mendz_97	
+G1PACT	Glucosamine-1-phosphate N-acetyltransferase	[c] : accoa + gam1p --> acgam1p + coa + h	EC 2.3.1.157	Cj0821	GlmU	HP0683 (47.10%)	Aminosugar Metabolism 	Parkhill_00	
+GF6PTA	Glutamine-fructose-6-phosphate transaminase	[c] : f6p + gln-L --> gam6p + glu-L	EC 2.6.1.16	Cj1366c	GlmS	HP1532 (52.50%)	Aminosugar Metabolism 	Parkhill_00	
+PGAMT	Phosphoglucosamine mutase	[c] : gam1p <==> gam6p	EC 5.4.2.10	Cj0360	GlmM		Aminosugar Metabolism 	Gundogdu_07	
+UAGCVT	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	[c] : pep + uacgam --> pi + uaccg	EC 2.5.1.7	Cj0858c	MurA	HP0648 (59.60%)	Aminosugar Metabolism 	Parkhill_00	
+UAGDP	UDP-N-acetylglucosamine diphosphorylase	[c] : acgam1p + h + utp --> ppi + uacgam	EC 2.7.7.23	Cj0821	GlmU	HP0683 (47.10%)	Aminosugar Metabolism 	Parkhill_00	
+UAGDP2	UDP-glucosamine diphosphorylase	[c] : gam1p + h + utp --> ppi + ugam	EC 2.7.7.23	Cj0821	GlmU	HP0683 (47.10%)	Aminosugar Metabolism 	Parkhill_00	
+UAPGR	UDP-N-acetylenolpyruvoylglucosamine reductase	[c] : h + nadph + uaccg --> nadp + uamr	EC 1.1.1.158	Cj1676	MurB	HP1418 (40.00%)	Aminosugar Metabolism 	Parkhill_00	
+ACGK	Acetylglutamate kinase	[c] : acglu + atp --> acg5p + adp	EC 2.7.2.8	Cj0226	ArgB		Arginine Metabolism	Parkhill_00	
+ACGS	N-acetylglutamate synthase	[c] : accoa + glu-L --> acglu + coa + h	EC 2.3.1.1	Cj0226	ArgB		Arginine Metabolism	Parkhill, BioCyc	
+ACOTA	Acetylornithine transaminase	[c] : acorn + akg <==> acg5sa + glu-L	EC 2.6.1.11	Cj0227	ArgD		Arginine Metabolism	Parkhill_00, Gundogdu_07	
+AGMH	Agmatine iminohydrolase	[c] : agm + h2o + h --> cbptrc + nh4	EC 3.5.3.12	Cj0949c		HP0049	Arginine Metabolism	Parkhill_00	
+AGPR	N-acetyl-g-glutamyl-phosphate reductase	[c] : acg5sa + nadp + pi <==> acg5p + h + nadph	EC 1.2.1.38	Cj0224	ArgC		Arginine Metabolism	Parkhill_00	
+ARGDC	Arginine decarboxylase	[c] : arg-L + h --> agm + co2	EC 4.1.1.19	Cj0764c	SpeA	HP0422 (62.6%)	Arginine Metabolism	Parkhill_00	
+CBPTRCH	N-carbomoylputrescine amidohydrolase	[c]: cbptrc + h2o + h <==> ptrc + nh4 + co2	EC 3.5.1.53	Cj0947c		HP0757	Arginine Metabolism	Gundogdu_07	
+CBSPDC	Carboxyspermidine decarboxylase	[c] : cbspmd + h --> spmd + co2		Cj1515c			Arginine Metabolism	Lee_09	
+CBSPDH	Carboxyspermidine dehydrogenase	[c]: ptrc + aspsa + h + nadh  --> cbspmd + h2o + nad		Cj0172c			Arginine Metabolism	Lee_09	
+METAT	Methionine adenosyltransferase	[c] : atp + h2o + met-L --> amet + pi + ppi	EC 2.5.1.6	Cj1096c	MetK	HP0197 (40.40%)	Arginine Metabolism	Parkhill_00	
+ORNDE	Ornithine deacetylase	[c] : acorn + h2o <==> ac + orn	EC 3.5.1.16	Cj0479	RpoC		Arginine Metabolism	Parkhill, BioCyc	
+ASNN	L-Asparaginase	[c] : asn-L + h2o --> asp-L + nh4	EC 3.5.1.1	Cj0029	AnsA	HP0723 (45.80%)	Asparagine Metabolism	Parkhill_00,  Guccione_08	
+ASNS2	Asparagine synthetase	[c] : asp-L + atp + nh4 --> amp + asn-L + h + ppi	EC 6.3.1.1	Cj0029	AnsA	HP0723 (45.80%)	Asparagine Metabolism	Parkhill_00	
+ASAD	Aspartate-semialdehyde dehydrogenase	[c] : aspsa + nadp + pi <==> 4pasp + h + nadph	EC 1.2.1.11	Cj1023c	Asd	HP1189 (51.6%)	Aspartate Metabolism	Parkhill_00	
+ASPK	Aspartate kinase	[c] : asp-L + atp <==> 4pasp + adp	EC 2.7.2.4	(Cj0149c or Cj0582)	MetL, LysC	HP0822 (53.30%), HP1229 (63.00%)	Aspartate Metabolism	Parkhill_00	
+ASPT	L-Aspartase	[c] : asp-L --> fum + nh4	EC 4.3.1.1	Cj0087	AspA	HP0649 (67.5%)	Aspartate Metabolism	Parkhill_00, Guccione_08	
+ASPTA	Aspartate transaminase	[c] : akg + asp-L <==> glu-L + oaa	EC 2.6.1.1	(Cj0762c or Cj0150c)	AspB	HP0672 (57.5%)	Aspartate Metabolism	Parkhill_00, Guccione_08	
+AMAOTr	Adenosylmethionine-8-amino-7-oxononanoate transaminase	[c] : 8aonn + amet <==> amob + dann	EC 2.6.1.62	Cj0307	BioA	HP0976 (57.80%)	Biotin Biosynthesis  	Parkhill_00	
+AOXSr	8-Amino-7-oxononanoate synthase	[c] : ala-L + h + pmcoa <==> 8aonn + co2 + coa	EC 2.3.1.47	Cj0306c	BioF	HP0598 (29.00%)	Biotin Biosynthesis  	Parkhill_00	
+BTS2	Biotin synthase (ala-L producing)	[c] : cys-L + dtbt <==> ala-L + btn + (2) h	EC 2.8.1.6	Cj1685c	BioB	HP1406 (53.20%)	Biotin Biosynthesis  	Parkhill_00	Charges unbalanced.
+CHCOAL	6-Carboxyhexanoate-CoA ligase	[c] : atp + coa + pime --> amp + pmcoa + ppi	EC 6.2.1.14				Biotin Biosynthesis  	Thiele_05	Model assumption
+DBTSr	Dethiobiotin synthase	[c] : atp + co2 + dann <==> adp + dtbt + (3) h + pi	EC 6.3.3.3	Cj0308c	BioD	HP0029 (31.80%)	Biotin Biosynthesis  	Parkhill_00	
+CHORS	Chorismate synthase	[c] : 3psme --> chor + pi	EC 4.2.3.5	Cj1634c	AroC	HP0663 (52.70%)	Chorismate Biosynthesis 	Parkhill_00	
+DDPA	3-Deoxy-D-arabino-heptulosonate 7-phosphate synthetase	[c] : e4p + h2o + pep --> 2dda7p + pi	EC 2.5.1.54	Cj0716	Dhs1	HP0134 (59.60%)	Chorismate Biosynthesis 	Parkhill_00	
+DHQD	3-dehydroquinate dehydratase	[c] : 3dhq <==> 3dhsk + h2o	EC 4.2.1.10	Cj0066c	AroQ	HP1038 (50.9%)	Chorismate Biosynthesis 	Parkhill_00	
+DHQS	3-dehydroquinate synthase	[c] : 2dda7p --> 3dhq + pi	EC 4.2.3.4	Cj1008c	AroB	HP0283 (51.10%)	Chorismate Biosynthesis 	Parkhill_00	
+PSCVT	3-Phosphoshikimate 1-carboxyvinyltransferase	[c] : pep + skm5p <==> 3psme + pi	EC 2.5.1.19	Cj0895c	AroA	HP0401 (52.00%)	Chorismate Biosynthesis 	Parkhill_00	
+SHK3Dr	Shikimate dehdrogenase	[c] : 3dhsk + h + nadph <==> nadp + skm	EC 1.1.1.25	Cj0405	AroE	HP1249 (41.2%)	Chorismate Biosynthesis 	Parkhill_00	
+SHKK	Shikimate kinase	[c] : atp + skm --> adp + h + skm5p	EC 2.7.1.71	Cj0387	AroK	HP0157 (40.60%)	Chorismate Biosynthesis 	Parkhill_00	
+CAT	Catalase	[c] : (2) h2o2 --> (2) h2o + o2	EC 1.11.1.6	Cj1385	KatA	HP0875 (56.10%)	Detoxification	Parkhill_00, Grant_95	
+CCP	Cytochrome c peroxidase	[c] : (2) focytcc553 + (2) h + h2o2 --> (2) ficytcc553 + (2) h2o	EC 1.11.1.5	(Cj0020c or Cj0358)	Cper	HP1461 (58.50%)	Detoxification	Parkhill_00, Atack_07	
+NTRARz	Nitrate reductase (TRDRD)	[c] : no3 + trdrd --> h2o + no2 + trdox		Cj0334	AhpC	HP1563 (67.70%)	Detoxification	Parkhill_00	
+SPODM	Superoxide dismutase	[c] : (2) h + (2) o2- --> h2o2 + o2	EC 1.15.1.1	Cj0169	SodB	HP0389 (61.60%)	Detoxification	Parkhill_00, Purdy_99	
+EX_ac(e)	Acetate exchange	[e]: ac <==>					Exchange		
+EX_adn(e)	Adenosine exchange	[e] : adn <==>					Exchange		
+EX_akg(e)	2-Oxoglutarate exchange	[e] : akg <==>					Exchange		
+EX_ala-D(e)	D-Alanine exchange	[e] : ala-D <==>					Exchange		
+EX_ala-L(e)	L-Alanine exchange	[e] : ala-L <==>					Exchange		
+EX_arg-L(e)	L-Arginine exchange	[e] : arg-L <==>					Exchange		
+EX_asn-L(e)	L-Asparagine exchange	[e] : asn-L <==>					Exchange		
+EX_asp-L(e)	L-Aspartate exchange	[e] : asp-L <==>					Exchange		
+EX_cit(e)	Citrate exchange	[e] : cit <==>					Exchange		
+EX_co2(e)	CO2 exchange	[e] : co2 <==>					Exchange		
+EX_cys-L(e)	L-Cysteine exchange	[e] : cys-L <==>					Exchange		
+EX_dms(e)	Dimethyl-sulfide exchange	[e] : dms <==>					Exchange		
+EX_dmso(e)	Dimethyl-sulfoxide exchange	[e] : dmso <==>					Exchange		
+EX_fe2(e)	Fe2+ exchange	[e] : fe2 <==>					Exchange		
+EX_fe3(e)	Fe3+ exchange	[e] : fe3 <==>					Exchange		
+EX_for(e)	Formate exchange	[e] : for <==>					Exchange		
+EX_fum(e)	Fumarate exchange	[e] : fum <==>					Exchange		
+EX_gal(e)	D-Galactose exchange	[e] : gal <==>					Exchange		
+EX_glc(e)	D-Glucose exchange	[e] : glc-D <==>					Exchange		
+EX_gln-L(e)	L-Glutamine exchange	[e] : gln-L <==>					Exchange		
+EX_glu-L(e)	L-Glutamate exchange	[e] : glu-L <==>					Exchange		
+EX_gly(e)	Glycine exchange	[e] : gly <==>					Exchange		
+EX_h(e)	H+ exchange	[e] : h <==>					Exchange		
+EX_h2(e)	H2 exchange	[e] : h2 <==>					Exchange		
+EX_h2co3(e)	carbonic acid exchange	[e] : h2co3 <==>					Exchange		
+EX_h2o(e)	H2O exchange	[e] : h2o <==>					Exchange		
+EX_his-L(e)	L-Histidine exchange	[e] : his-L <==>					Exchange		
+EX_hxan(e)	Hypoxanthine exchange	[e] : hxan <==>					Exchange		
+EX_ile-L(e)	L-Isoleucine exchange	[e] : ile-L <==>					Exchange		
+EX_lac-L(e)	L-Lactate exchange	[e] : lac-L <==>					Exchange		
+EX_leu-L(e)	L-Leucine exchange	[e] : leu-L <==>					Exchange		
+EX_lys-L(e)	L-Lysine exchange	[e] : lys-L <==>					Exchange		
+EX_mal-D(e)	D-Malate exchange	[e] : mal-D <==> 					Exchange		
+EX_mal-L(e)	L-Malate exchange	[e] : mal-L <==>					Exchange		
+EX_met-L(e)	L-Methionine exchange	[e] : met-L <==>					Exchange		
+EX_na1(e)	Sodium exchange	[e] : na1 <==>					Exchange		
+EX_nh4(e)	Ammonia exchange	[e] : nh4 <==>					Exchange		
+EX_no(e)	Nitric oxide exchange	[e] : no <==>					Exchange		
+EX_no2(e)	Nitrite exchange	[e] : no2 <==>					Exchange		
+EX_no3(e)	Nitrate exchange	[e] : no3 <==>					Exchange		
+EX_o2(e)	O2 exchange	[e] : o2 <==>					Exchange		
+EX_phe-L(e)	L-Phenylalanine exchange	[e] : phe-L <==>					Exchange		
+EX_pi(e)	Phosphate exchange	[e] : pi <==>					Exchange		
+EX_pime(e)	Pimelate exchange	[e] : pime <==>					Exchange		
+EX_pro-L(e)	L-Proline exchange	[e] : pro-L <==>					Exchange		
+EX_pyr(e)	Pyruvate exchange	[e] : pyr <==>					Exchange		
+EX_ribflv(e)	Riboflavin exchange	[e] : ribflv <==>					Exchange		
+EX_ser-D(e)	D-Serine exchange	[e] : ser-D <==>					Exchange		
+EX_ser-L(e)	L-Serine exchange	[e] : ser-L <==>					Exchange		
+EX_so4(e)	Sulfate exchange	[e] : so4 <==>					Exchange		
+EX_succ(e)	Succinate exchange	[e] : succ <==>					Exchange		
+EX_thr-L(e)	L-Threonine exchange	[e] : thr-L <==>					Exchange		
+EX_tma(e)	Trimethylamine exchange	[e] : tma <==>					Exchange		
+EX_tmao(e)	Trimethylamine-N-oxide exchange	[e] : tmao <==>					Exchange		
+EX_trp-L(e)	L-Tryptophan exchange	[e] : trp-L <==>					Exchange		
+EX_tyr-L(e)	L-Tyrosine exchange	[e] : tyr-L <==>					Exchange		
+EX_ura(e)	Uracil exchange	[e] : ura <==>					Exchange		
+Ex_urea(e)	Urea exchange	[e] : urea <==>					Exchange		
+EX_val-L(e)	L-Valine exchange	[e] : val-L <==>					Exchange		
+ACCOACr	Acetyl-CoA carboxylase, reversible reaction	[c] : accoa + atp + hco3 <==> adp + h + malcoa + pi	EC 6.4.1.2	(Cj0443 and Cj1291c and Cj1290c and Cj0127c)	AccA, AccB, AccC, AccD	HP0557 (62.20%), HP0370 (41.40%), HP0371 (67.00%), HP0950 (65.50%)	Fatty Acid Synthesis	Parkhill_00	
+ACOATA	Acetyl-CoA ACP transacylase	[c] : ACP + accoa <==> acACP + coa	EC 2.3.1.38	(Cj0328c or Cj1303)	FabH, FabH2	HP0202 (59.80%)	Fatty Acid Synthesis	Parkhill_00	
+C140SN	Fatty acid biosynthesis (n-C14:0)	[c] : actACP + (17) h + (5) malACP + (12) nadph --> (5) ACP + (5) co2 + (6) h2o + myrsACP + (12) nadp		(Cj0442 and Cj0435 and Cj1400c and Cj0273) 	FabF, FabG, FabI, FabZ	HP0558 (63.80%), HP0561 (69.20%), HP0195 (67.90%), HP1376 (56.80%)	Fatty Acid Synthesis	Lambert_87, Leach_97,  Martinez-Rodrigez_05, Moss_84	
+C160SN	Fatty acid biosynthesis (n-C16:0)	[c] : actACP + (20) h + (6) malACP + (14) nadph --> (6) ACP + (6) co2 + (7) h2o + (14) nadp + palmACP		(Cj0442 and Cj0435 and Cj1400c and Cj0273) 	FabF, FabG, FabI, FabZ	HP0558 (63.80%), HP0561 (69.20%), HP0195 (67.90%), HP1376 (56.80%)	Fatty Acid Synthesis	Lambert_87, Leach_97,  Martinez-Rodrigez_05, Moss_84	
+C180SN	Fatty acid biosynthesis (n-C18:0)	[c] : actACP + (23) h + (7) malACP + (16) nadph --> (7) ACP + (7) co2 + (8) h2o + (16) nadp + ocdcaACP		(Cj0442 and Cj0435 and Cj1400c and Cj0273) 	FabF, FabG, FabI, FabZ	HP0558 (63.80%), HP0561 (69.20%), HP0195 (67.90%), HP1376 (56.80%), HP0416 (62.10%)	Fatty Acid Synthesis	Lambert_87, Leach_97,  Martinez-Rodrigez_05, Moss_84	
+C181SN	Fatty acid biosynthesis (n-C18:1)	[c] : actACP + (22) h + (7) malACP + (15) nadph --> (7) ACP + (7) co2 + (8) h2o + (15) nadp + octeACP		(Cj0442 and Cj0435 and Cj1400c and Cj0273) 	FabF, FabG, FabI, FabZ	HP0558 (63.80%), HP0561 (69.20%), HP0195 (67.90%), HP1376 (56.80%)	Fatty Acid Synthesis	Lambert_87, Leach_97,  Martinez-Rodrigez_05, Moss_84	
+C190cSN	Fatty acid biosynthesis (C19:0cSN)	[c] : amet + octeACP --> ahcys + c190cACP + h	EC 2.1.1.79	Cj1183c	Cfa	HP0416 (62.10%)	Fatty Acid Synthesis	Lambert_87, Leach_97,  Martinez-Rodrigez_05, Moss_84	
+KAS	β-ketoacyl synthase	[c] : acACP + h + malACP --> ACP + actACP + co2	EC 2.3.1.41	Cj0442	FabF	HP0558 (63.80%)	Fatty Acid Synthesis	Parkhill_00, Thiele_05	
+KAS14	3-hydroxy-palmetoyl-ACP synthesis	[c] : (2) h + malACP + myrsACP + nadph --> 3hpalmACP + ACP + co2 + nadp		((Cj0442 and Cj0435 and Cj1400c and Cj0273) or Cj1183c)	FabF, FabG, FabI, FabZ	HP0558 (63.80%), HP0561 (69.20%), HP0195 (67.90%), HP1376 (56.80%)	Fatty Acid Synthesis	Thiele_05	
+KAS15	3-hydroxy-octadecanoyl-ACP synthesis	[c] : (2) h + malACP + nadph + palmACP --> 3hoctaACP + ACP + co2 + nadp					Fatty Acid Synthesis	Thiele_05	Model assumption
+KAS-HP2	B-ketoacyl synthase	[c] : accoa + h + malACP --> actACP + co2 + coa	EC 2.3.1.180	(Cj0328c or Cj1303)	FabH, FabH2	HP0202 (59.80%)	Fatty Acid Synthesis	Parkhill_00, Thiele_05	
+MCOATA	Malonyl-CoA-ACP transacylase	[c] : ACP + malcoa <==> coa + malACP	EC 2.3.1.39	Cj0116	FabD	HP0090 (49.50%)	Fatty Acid Synthesis	Parkhill_00	
+ADCL	4-Aminobenzoate synthase	[c] : 4adcho --> 4abz + h + pyr	EC 4.1.3.38	Cj0862c	PabB	HP0293 (39.30%)	Folate Biosynthesis	Parkhill_00	
+DHFRi	Dihydrofolate reductase (irreversible)	[c] : dhf + h + nadph --> nadp + thf	EC 1.5.1.3				Folate Biosynthesis	Thiele_05	Model assumption
+DHFS 	Dihydrofolate synthase	[c] : atp + dhpt + glu-L --> adp + dhf + pi +h 	EC 6.3.2.12	Cj1088c	FolC	HP1545 (42.70%)	Folate Biosynthesis	Parkhill_00	
+DHNPA	Dihydroneopterin aldolase	[c] : dhnpt --> 2ahhmp + gcald + h	EC 4.1.2.25	Cj0356c	FolB	HP1510	Folate Biosynthesis	Gundogdu_07	
+DHPS	Dihydropteroate synthase (PPi)	[c] : 2ahhmp + 4abz --> dhpt + h2o	EC 2.5.1.15	Cj0585	FolP	HP1232 (41.60%)	Folate Biosynthesis	Parkhill_00	
+DNMPPA	Dihydroneopterin monophosphate dephosphorylase	[c] : dhpmp + h2o --> dhnpt + pi	EC 3.6.1.-	Cj0581	InvA	HP1228 (55.30%)	Folate Biosynthesis	Parkhill_00	
+DNTPPA	Dihydroneopterin triphosphate pyrophosphatase	[c] : ahdt + h2o --> dhpmp + h + ppi	EC 3.6.1.-	Cj0581	InvA	HP1228 (55.30%)	Folate Biosynthesis	Parkhill_00	
+FOLD3	Dihydropteroate synthase (H2O)	[c] : 2ahhmd + 4abz --> dhpt + ppi	EC 2.5.1.15	Cj0585	FolP	HP1232 (41.60%)	Folate Biosynthesis	Parkhill_00	
+GTPCI 	GTP cyclohydrolase I	[c] : gtp + h2o --> ahdt + for	EC 3.5.4.16	Cj0194	FolE	HP0928 (49.70%)	Folate Biosynthesis	Parkhill_00	
+HPPK	2-Amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase	[c] : 2ahhmp + atp --> 2ahhmd + amp + h	EC 2.7.6.3	Cj0065c	FolK	HP1036 (35.60%)	Folate Biosynthesis	Parkhill_00	
+PABB	Aminodeoxychorismate synthase	[c] : chor + nh4 --> 4adcho + h2o	EC 2.6.1.85	Cj0861c	PabA	HP1281 (38.60%)	Folate Biosynthesis	Parkhill_00	
+GFUCS	GDP-L-fucose synthase	[c] : gdpddman + h + nadph --> gdpfuc + nadp	EC 1.1.1.271	Cj1428c	Fcl	HP0045 (29.60%)	Fucose Biosynthesis 	Parkhill_00	
+GMAND	GDP-D-mannose dehydratase	[c] : gdpmann --> gdpddman + h2o	EC 4.2.1.47		Gmd		Fucose Biosynthesis 	Thiele_05	Model assumption
+MAN1PT2r	Mannose-1-phosphate guanylyltransferase (GDP)	[c] : gdp + h + man1p <==> gdpmann + pi	EC 2.7.7.22		AlgA		Fucose Biosynthesis 	Thiele_05	Model assumption
+MAN6PI	Mannose-6-phosphate isomerase	[c] : man6p <==> f6p	EC 5.3.1.8		ManC		Fucose Biosynthesis 	Thiele_05	Model assumption
+PMANM	Phosphomannomutase	[c] : man1p <==> man6p	EC 5.4.2.8	Cj1407c	AlgC	HP1275 (44.70%)	Fucose Biosynthesis 	Parkhill_00	
+ENO	Enolase	[c] : 2pg <==> h2o + pep	EC 4.2.1.11	Cj1672c	Eno	HP0154 (63.30%)	Gluconeogenesis	Parkhill_00	
+FBA	Fructose-bisphosphate aldolase	[c] : fdp <==> dhap + g3p	EC 4.1.2.13	Cj0597	Fba	HP0176 (28.00%)	Gluconeogenesis	Parkhill_00	
+FBP	Fructose-bisphosphatase	[c] : fdp + h2o --> f6p + pi	EC 3.1.3.11	Cj0840c	Fbp	HP1385	Gluconeogenesis	Parkhill_00	
+GAPA	Glyceraldehyde-3-phosphate dehydrogenase	[c] : g3p + nad + pi <==> 13dpg + h + nadh	EC 1.2.1.12	Cj1403c	Gap	HP0921 (46.70%), HP1346 (45.60%)	Gluconeogenesis	Parkhill_00	
+PEPC	Phosphoenolpyruvate carboxykinase (ATP)	[c] : atp + oaa --> adp + pep + co2	EC 4.1.1.49	Cj0932c	PckA		Gluconeogenesis	Parkhill_00, Mendz_97	
+PGI	Glucose-6-phosphate isomerase	[c] : g6p <==> f6p	EC 5.3.1.9	Cj1535c	Pgi	HP1166 (26.10%)	Gluconeogenesis	Parkhill_00	
+PGK	Phosphoglycerate kinase	[c] : 3pg + atp <==> 13dpg + adp	EC 2.7.2.3	Cj1402c	Pgk	HP1345 (49.10%)	Gluconeogenesis	Parkhill_00	
+PGM	Phosphoglycerate mutase	[c] : 2pg <==> 3pg	EC 5.4.2.1	Cj0434	Pgm	HP0974 (55.90%)	Gluconeogenesis	Parkhill_00	
+PYC	Pyruvate caxrboxylase	[c]: atp + pyr + hco3 --> adp + pi + oaa + h	EC 6.4.1.1	(Cj1037c and Cj0933c)	PycA, PycB		Gluconeogenesis	Parkhill_00, Mendz_97, Velayudhan_02	
+TPI	Triose-phosphate isomerase	[c] : dhap <==> g3p	EC 5.3.1.1	Cj1401c	Tpi	HP0194 (48.20%)	Gluconeogenesis	Parkhill_00	
+G5SD2	Glutamate-5-semialdehyde dehydrogenase	[c] : glu5p + h + nadh --> glu5sa + nad + pi	EC 1.2.1.41	Cj0558c	ProA		Glutamate Metabolism	Parkhill_00, Louie_93	
+GLU5K	Glutamate 5-kinase	[c] : atp + glu-L --> adp + glu5p	EC 2.7.2.11	Cj0097	ProB		Glutamate Metabolism	Parkhill_00	
+GLUSy	Glutamate synthase (NADPH)	[c] : akg + gln-L + h + nadph --> (2) glu-L + nadp	EC 1.4.1.13	(Cj0007 and Cj0009)	GltB, GltD		Glutamate metabolism	Parkhill_00	
+ORNTA	Ornithine aminotransferase	[c] : akg + orn --> glu-L + glu5sa	EC 2.6.1.13	Cj0227	ArgD		Glutamate Metabolism	Gundogdu_07 	
+P5CD	1-Pyrroline-5-carboxylate dehydrogenase	[c] : 1pyr5c + (2) h2o + nad --> glu-L + h + nadh	EC 1.5.1.12	Cj1503c	PutA	HP0056 (65.00%)	Glutamate Metabolism	Parkhill_00	
+PUTA3	1-Pyrroline-5-carboxylate dehydrogenase	[c] : glu5sa + h2o + nad --> glu-L + (2) h + nadh	EC 1.5.1.12	Cj1503c	PutA	HP0056 (65.00%)	Glutamate Metabolism	Parkhill_00	
+GLNS	Glutamine synthetase	[c] : atp + glu-L + nh4 --> adp + gln-L + h + pi	EC 6.3.1.2	Cj0699c	GlnA	HP0512 (63.60%)	Glutamine Biosynthesis	Parkhill_00	
+CLPNS-HP	Cardiolipin Synthase (Hpi)	[c] : (2) pg_HP <==> clpn_HP + glyc					Glycerolipid Synthesis	Thiele_05	Model assumption
+DAGK-HP	Diacylglycerol kinase Hp specific	[c] : 12dgr_HP + atp --> adp + h + pa_Hp	EC 2.7.1.107	Cj0257	DgkA	HP0700 (38.70%)	Glycerolipid Synthesis	Parkhill_09	12dgr_HP dead end
+DASYN-HP	CDP-Diacylglycerol synthetase Hp specific	[c] : ctp + h + pa_Hp <==> cdpdag_HP + ppi	EC 2.7.7.41	Cj1347c	CdsA	HP0215 (39.30%)	Glycerolipid Synthesis	Parkhill_09	
+G3PD2	Glycerol-3-phosphate dehydrogenase (NADP)	[c] : glyc3p + nadp <==> dhap + h + nadph	EC 1.1.1.94	Cj1196c	GpsA	HP0961 (50.50%)	Glycerolipid Synthesis	Parkhill_09	
+GLYK	Glycerol kinase	[c] : atp + glyc --> adp + glyc3p + h	EC 2.7.1.30				Glycerolipid Synthesis	Thiele_05	Model assumption
+PASYN-HP	Phosphatidic acid synthase Hp specific	[c] : c190cACP + glyc3p + myrsACP --> (2) ACP + pa_Hp	EC 2.3.1.51	Cj0516	PlsC	HP1348 (38.40%)	Glycerolipid Synthesis	Parkhill_09	
+PGPP-HP	Phosphatidylglycerol phosphate phosphatase Hp specific	[c] : h2o + pgp_HP --> pg_HP + pi	EC 3.1.3.27	Cj1610	PgpA	HP0737 (47.10%)	Glycerolipid Synthesis	Parkhill_09	
+PGSA-HP	Phosphatidylglycerol synthase Hp specific	[c] : cdpdag_HP + glyc3p <==> cmp + h + pgp_HP	EC 2.7.8.5	Cj1067	PgsA	HP1016 (43.90%)	Glycerolipid Synthesis	Parkhill_09	
+PSD-HP	Phosphatidylserine decarboxylase Hp specific	[c] : h + ps_HP --> co2 + pe_HP	EC 4.1.1.65	Cj0847	Psd	HP1357 (48.00%)	Glycerolipid Synthesis	Parkhill_09	
+PSSA-HP	Phosphatidylserine synthase Hp specific	[c] : cdpdag_HP + ser-L <==> cmp + h + ps_HP	EC 2.7.8.8	Cj1114c	PssA	HP1357 (50.90%)	Glycerolipid Synthesis	Parkhill_09	
+4HGLSD	L-4-Hydroxyglutamate semialdehyde dehydrogenase, mitochondrial	[c] : 4hglusa + h2o + nad <==> e4hglu + (2) h + nadh	EC 1.5.1.12	Cj1503c	PutA	HP0056 (65.00%)	Glyoxylate Metabolism	Parkhill_00	
+EHGLAT	L-erythro-4-Hydroxyglutamate:2-oxoglutarate aminotransferase	[c] : akg + e4hglu --> 4h2oglt + glu-L	EC 2.6.1.1	Cj0762c	AspB	HP0672 (57.50%)	Glyoxylate Metabolism	Parkhill_00, Guccione_08	4h2oglt dead end
+HPROa	L-Hydroxyproline reductase (NAD)	[c] : 1p3h5c + (2) h + nadh --> 4hpro-LT + nad	EC 1.5.1.2	Cj1076	ProC	HP1158 (36.20%)	Glyoxylate Metabolism	Parkhill_00	
+HPROx	L-Hydroxyproline oxidase (NAD)	[c] : 4hpro-LT + nad --> 1p3h5c + (2) h + nadh	EC 1.5.1.12	Cj1503c	PutA	HP0056 (65.00%)	Glyoxylate Metabolism	Parkhill_00	
+PHCD	L-1-Pyrroline-3-hydroxy-5-carboxylate dehydrogenase	[c] : 1p3h5c + (2) h2o + nad --> e4hglu + h + nadh	EC 1.5.1.12	Cj1503c	PutA	HP0056 (65.00%)	Glyoxylate Metabolism	Parkhill_00	
+PHCHGS	L-1-Pyrroline-3-hydroxy-5-carboxylate spontaneous conversion to L-4-Hydroxyglutamate semialdehyde	[c] : 1p3h5c + h + h2o <==> 4hglusa					Glyoxylate Metabolism	Thiele_05	Spontaneous
+CPPPGO	Coproporphyrinogen oxidase (O2 required)	[c] : cpppg3 + (2) h + o2 --> (2) co2 + (2) h2o + pppg9	EC 1.3.3.3	(Cj0580c and Cj0992c)	HemN	HP0665 (56.60%)	Heme Biosynthesis 	Parkhill_00	
+FCLT	Ferrochelatase	[c] : fe2 + ppp9 --> (2) h + pheme	EC 4.99.1.1	Cj0503c	HemH	HP0376 (40.20%)	Heme Biosynthesis 	Parkhill_00	
+G1SATi	Glutamate-1-semialdehyde aminotransferase	[c] : glu1sa --> 5aop	EC 5.4.3.8	Cj0853c	HemL	HP0306 (59.80%)	Heme Biosynthesis 	Parkhill_00	
+GLUTRR	Glutamyl-tRNA reductase	[c] : glutrna + h + nadph --> glu1sa + nadp + trnaglu	EC 1.2.1.70	Cj0542	HemA	HP0239 (42.10%)	Heme Biosynthesis 	Parkhill_00	
+GLUTRS	Glutamyl-tRNA synthetase	[c] : atp + glu-L + trnaglu --> amp + glutrna + ppi	EC 6.1.1.17	(Cj0845c and Cj1288c)	GltX, GltX2	HP0643 (51.00%), HP0476 (58.30%)	Heme Biosynthesis 	Parkhill_00	
+HMBS	Hydroxymethylbilane synthase	[c] : h2o + (4) ppbng --> hmbil + (4) nh4	EC 2.5.1.61	Cj0545	HemC	HP0237 (51.50%)	Heme Biosynthesis 	Parkhill_00	
+PPBNGS	Porphobilinogen synthase	[c] : (2) 5aop --> h + (2) h2o + ppbng	EC 4.2.1.24	Cj0995c	HemB	HP0163 (63.70%)	Heme Biosynthesis 	Parkhill_00	
+PPPGO	Protoporphyrinogen oxidase	[c] : (1.5) o2 + pppg9 --> (3) h2o + ppp9	EC 1.3.3.4	Cj0722c	HemK	HP0381 (36.90%)	Heme Biosynthesis 	Parkhill_00	
+UPP3S	Uroporphyrinogen-III synthase	[c] : hmbil --> h2o + uppg3	EC 4.2.1.75	Cj1080c	HemD	HP1224	Heme Biosynthesis 	Gundogdu_07	
+UPPDC1	Uroporphyrinogen decarboxylase (uroporphyrinogen III)	[c] : (4) h + uppg3 --> (4) co2 + cpppg3	EC 4.1.1.37	Cj1243	HemE	HP0604 (64.40%)	Heme Biosynthesis 	Parkhill_00	
+UPPDC2	Uroporphyrinogen decarboxylase (uroporphyrinogen I)	[c] : (4) h + uppg1 --> (4) co2 + cpppg1	EC 4.1.1.37	Cj1243	HemE	HP0604 (64.40%)	Heme Biosynthesis 	Parkhill_00	uppg1, cpppg1 dead ends
+ATPPRT	ATP phosphoribosyltransferase	[c] : atp + prpp --> ppi + prbatp	EC 2.4.2.17	Cj1597	HisG		Histidine Metabolism	Parkhill_00	
+HISTD	Histidinol dehydrogenase	[c] : h2o + histd + (2) nad --> (3) h + his-L + (2) nadh	EC 1.1.1.23	Cj1598	HisD		Histidine Metabolism	Parkhill_00	
+HISTP	Histidinol-phosphatase	[c] : h2o + hisp --> histd + pi	EC 3.1.3.15	Cj1599	HisB		Histidine Metabolism	Parkhill_00	
+HSTPT	Histidinol-phosphate transaminase	[c] : glu-L + imacp --> akg + hisp	EC 2.6.1.9	(Cj0317 or Cj1437c)	HisC		Histidine Metabolism	Parkhill_00	
+IG3PS	Imidazole-glycerol-3-phosphate synthase	[c] : gln-L + prlp --> aicar + eig3p + glu-L + h	EC 4.3.1-	(Cj1314c or Cj1603 or Cj1315c or Cj1600)	HisF, HisH		Histidine Metabolism	Parkhill_00	
+IGPDH	Imidazoleglycerol-phosphate dehydratase	[c] : eig3p --> h2o + imacp	EC 4.2.1.19	Cj1599	HisB		Histidine Metabolism	Parkhill_00	
+PRAMPC	Phosphoribosyl-AMP cyclohydrolase	[c] : h2o + prbamp --> prfp	EC 3.5.4.19 	Cj1604	HisI		Histidine Metabolism	Parkhill_00	
+PRATPP	Phosphoribosyl-ATP pyrophosphatase	[c] : h2o + prbatp --> h + ppi + prbamp	EC 3.6.1.31	Cj1604	HisI		Histidine Metabolism	Parkhill_00	
+PRMICIi	1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino)imidazole-4-carboxamide isomerase (irreversible)	[c] : prfp --> prlp	EC 5.3.1.16	Cj1601	HisA		Histidine Metabolism	Parkhill_00	
+ACHBS	2-aceto-2-hydroxybutanoate synthase	[c] : 2obut + h + pyr --> 2ahbut + co2	EC 2.2.1.6	(Cj0574 and Cj0575)	IlvI, IlvH		Isoleucine Metabolism	Parkhill_00, Mendz_97	
+DHAD2	Dihydroxy acid dehydratase (2,3-dihydroxy-3-methylpentanoate)	[c] : 23dhmp --> 3mop + h2o	EC 4.2.1.9	Cj0013	IlvD	HP1100 (32.00%)	Isoleucine Metabolism	Parkhill_00, KEGG	
+ILETA	Isoleucine transaminase	[c] : akg + ile-L <==> 3mop + glu-L	EC 2.6.1.42	Cj0269c	IlvE	HP1468 (33.2%)	Isoleucine Metabolism	Parkhill_00, Mendz_97	
+KARA2i	Ketol-acid reductoisomerase (2-Aceto-2-hydroxybutanoate)	[c] : 2ahbut + h + nadph --> 23dhmp + nadp	EC 1.1.1.86	Cj0632	IlvC	HP0330 (52.6%)	Isoleucine Metabolism	Parkhill_00	
+CDPMEK	4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase	[c] : 4c2me + atp --> 2p4c2me + adp + h	EC 2.7.1.148	Cj1104	IspE	HP1443	Isoprenoid Biosynthesis 	Gundogdu_07	
+DMPPS	1-Hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)	[c] : h + h2mb4p + nadh --> dmpp + h2o + nad		Cj0894c	IspH	HP0400 (59.10%)	Isoprenoid Biosynthesis 	Parkhill_00	
+DXPRIi	1-deoxy-D-xylulose reductoisomerase	[c] : dxyl5p + h + nadph --> 2me4p + nadp	EC 1.1.1.267	Cj1346c	Dxr	HP0216 (46.20%)	Isoprenoid Biosynthesis 	Parkhill_00	
+DXPS	1-Deoxy-D-xylulose 5-phosphate synthase	[c] : g3p + h + pyr --> co2 + dxyl5p	EC 2.2.1.7	Cj0321	Dxs	HP0354 (57.90%)	Isoprenoid Biosynthesis 	Parkhill_00	
+IPDPS	1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)	[c] : h + h2mb4p + nadh --> h2o + ipdp + nad	EC 1.17.1.2	Cj0894c	IspH	HP0400 (59.10%)	Isoprenoid Biosynthesis 	Parkhill_00	
+MECDPDH	2C-Methyl-D-erythritol 2,4 cyclodiphosphate dehydratase	[c] : 2mecdp + h --> h2mb4p + h2o	EC 1.17.7.1	Cj0686	IspG	HP0625 (62.30%)	Isoprenoid Biosynthesis 	Gundogdu_07	
+MECDPS	2-C-Methyl-D-erythritol 2,4-cyclodiphosphate synthase	[c] : 2p4c2me --> 2mecdp + cmp	EC 4.6.1.12	Cj1607	IspDF	HP1020	Isoprenoid Biosynthesis 	Gundogdu_07, Gabrielsen_04	
+MEPCT	2-C-Methyl-D-erythritol 4-phosphate cytidylyltransferase	[c] : 2me4p + ctp + h --> 4c2me + ppi	EC 2.7.7.60	Cj1607	IspDF	HP1020	Isoprenoid Biosynthesis 	Gundogdu_07, Gabrielsen_04	
+IPMD	3-isopropylmalate dehydrogenase	[c] : 3c2hmp + nad --> 3c4mop + h + nadh	 EC 1.1.1.85	Cj1718c	LeuB		Leucine Metabolism	Parkhill_00	
+IPPMIa	3-isopropylmalate dehydratase	[c] : 3c2hmp <==> 2ippm + h2o	EC 4.2.1.33	(Cj1716c and Cj1717c)	LeuD, LeuC		Leucine Metabolism	Parkhill_00	
+IPPMIb	2-isopropylmalate hydratase	[c] : 2ippm + h2o <==> 3c3hmp	EC 4.2.1.33	(Cj1716c and Cj1717c)	LeuD, LeuC		Leucine Metabolism	Parkhill_00	
+IPPS	2-isopropylmalate synthase	[c] : 3mob + accoa + h2o --> 3c3hmp + coa + h	EC 2.3.3.13	Cj1719c	LeuA		Leucine Metabolism	Parkhill_00	
+LEUTA	Leucine transaminase	[c] : akg + leu-L <==> 4mop + glu-L	EC 2.6.1.42	Cj0269c	IlvE	HP1468 (33.2%)	Leucine Metabolism	Parkhill_00	
+OMCDC	2-Oxo-4-methyl-3-carboxypentanoate decarboxylation	[c] : 3c4mop + h --> 4mop + co2					Leucine Metabolism	KEGG	Spontaneous
+A5PISO	Arabinose-5-phosphate isomerase	[c] : ru5p-D <==> ara5p	EC 5.3.1.13	Cj1443c			LPS Biosynthesis	Gundogdu_07	
+AGMHE	ADP-D-glycero-D-manno-heptose epimerase	[c] : adphep-D,D --> adphep-L,D	EC 5.1.3.20	Cj1151c	HldD	HP0859 (48.30%)	LPS Biosynthesis	Parkhill_00	
+GALK	Galactokinase	[c] : atp + gal --> adp + gal1p + h	EC 2.7.1.6	Cj1425c			LPS Biosynthesis	Parkhill_00, BioCyc	
+GALTi	Galactose-1-phosphate uridylyltransferase (irreversible)	[c] : gal1p + h + utp --> ppi + udpgal	EC 2.7.7.10				LPS Biosynthesis	Thiele_05	Model assumption
+GALU	UTP-glucose-1-phosphate uridylyltransferase	[c] : g1p + h + utp <==> ppi + udpg	EC 2.7.7.9	Cj1536c	GalU	HP0646 (61.30%)	LPS Biosynthesis	Parkhill_00	
+GMHEPAT	D-Glycero-D-manno-hepose 1-phosphate adenyltransferase	[c] : atp + gmhep1p + h --> adphep-D,D + ppi	EC 2.7.7.-	Cj1150c	HldE	HP0858 (50.80%)	LPS Biosynthesis	Parkhill_00	
+GMHEPK	D-Glycero-D-manno-heptose 7-phosphate kinase	[c] : atp + gmhep7p --> adp + gmhep17bp + h	EC 2.7.1.-	Cj1150c	HldE	HP0858 (50.80%)	LPS Biosynthesis	Parkhill_00	
+GMHEPPA	D-Glycero-D-manno-heptose 1,7-bisphosphate phosphatase	[c] : gmhep17bp + h2o --> gmhep1p + pi	EC 3.1.3.-	Cj1152c	GmhB		LPS Biosynthesis	KEGG	
+KDOCT	3-deoxy-manno-octulosonate cytidylyltransferase	[c] : ctp + kdo --> cmpkdo + ppi	EC 2.7.7.38	Cj0813	KdsB	HP0230 (47.90%)	LPS Biosynthesis	Parkhill_00	
+KDOPP	3-deoxy-manno-octulosonate-8-phosphatase	[c] : h2o + kdo8p --> kdo + pi	EC 3.1.3.45	Cj0647			LPS Biosynthesis	Parkhill_00	
+KDOPS	3-deoxy -D-manno-octulosonic -acid 8-phosphate	[c] : ara5p + h2o + pep --> kdo8p + pi	EC 2.5.1.55	Cj0384c	KdsA	HP0003 (63.20%)	LPS Biosynthesis	Parkhill_00	
+LPADSS-HP	LipidA_HP disaccaride synthase	[c] : lipidX_HP + u2ga_HP --> (2) h + lipidA_HP + udp	EC 2.4.1.182	Cj0288c	LpxB	HP0867 (42.80%)	LPS Biosynthesis	Parkhill_00	
+LPSSYN-HP	Formation for LPS from Core oligosaccharide-Lipid A and O-chain	[c] : adphep-D,D + core_lps_hp + (3) gdpfuc + (2) uacgam + udpg + (2) udpgal --> adp + (3) gdp + lps_HP + (5) udp			RfaC, RfaJ, FutC, GalTb		LPS Biosynthesis	Thiele_05	Model assumption
+MOAT-HP	Kdo-Lipid IV (A) formation	[c] : cmpkdo + lipidA_HP --> cmp + h + kdolipid4_HP		Cj0707	KdtA	HP0957 (45.70%)	LPS Biosynthesis	Parkhill_00	
+RFAC-HP	Formation of lipidA and sugar core for Hpylori LPS	[c] : adphep-D,D + adphep-L,D + adphep7p-L,D + kdolipid4_HP + (2) udpg + udpgal --> (3) adp + core_lps_hp + (3) udp		Cj1133	WaaC	HP0279 (38.50%)	LPS Biosynthesis	Parkhill_00	
+RFA-HP	Adphep7p-L,D formation	[c] : adphep-L,D + atp --> adp + adphep7p-L,D + h					LPS Biosynthesis	Thiele_05	Model assumption
+S7PI	Sedoheptulose 7-phosphate isomerase	[c] : s7p --> gmhep7p	EC 5.-.-.-	(Cj1149c and Cj1424c)	GmhA, GmhA2	HP0857 (61.10%)	LPS Biosynthesis	Parkhill_00	
+U23GAAT-HP	UDP-3-O-(3-hydroxypalmetoyl)glycosamine acyltransferase	[c] : 3hoctaACP + u3hga_HP --> ACP + h + u23ga_HP	EC 2.3.1.-	Cj0576	LpxD	HP0196 (42.00%)	LPS Biosynthesis	Parkhill_00	
+U2GAAT	U2hga_Hp formation	[c] : 3hoctaACP + ugam --> ACP + u2hga_HP					LPS Biosynthesis	Thiele_05	Model assumption
+U2GAAT2	U2ga_Hp formation	[c] : ocdcaACP + u2hga_HP --> ACP + u2ga_HP					LPS Biosynthesis	Thiele_05	Model assumption
+UAGAAT-HP	UDP-N-acetylglucosamine acyltransferase	[c] : 3hpalmACP + uacgam <==> ACP + u3aga_HP	EC 2.3.1.129	Cj0274	LpxA	HP1375 (42.60%)	LPS Biosynthesis	Parkhill_00	
+UDPG4E	UDPglucose 4-epimerase	[c] : udpg <==> udpgal	EC 5.1.3.2	Cj1131c	GalE	HP0360 (50.00%)	LPS Biosynthesis	Parkhill_00	
+UHGADA-HP	UDP-3-O-acetylglucosamine deacetylase	[c] : h2o + u3aga_HP --> ac + u3hga_HP	EC 3.5.1.-	Cj0132	LpxC	HP1052 (54.90%)	LPS Biosynthesis	Parkhill_00	
+USHD-HP	UDP-sugar hydrolase	[c] : h2o + u23ga_HP --> (2) h + lipidX_HP + ump	EC 3.6.1.-	Cj0286c			LPS Biosynthesis	Parkhill_00	
+DAPDC	Diaminopimelate decarboxylase	[c] : 26dap-M + h --> co2 + lys-L	EC 4.1.1.20	Cj0314	LysA	HP0290 (60.40%)	Lysine Biosynthesis 	Parkhill_00	
+DAPE	Diaminopimelate epimerase	[c] : 26dap-LL <==> 26dap-M	EC 5.1.1.7	Cj1531	DapF	HP0566 (41.60%)	Lysine Biosynthesis 	Parkhill_00	
+DHDPRy	Dihydrodipicolinate reductase (NADPH)	[c] : 23dhdp + h + nadph --> nadp + thdp	EC 1.3.1.26	Cj0197c	DapB	HP0510 (42.00%)	Lysine Biosynthesis 	Parkhill_00	
+DHDPS	Dihydrodipicolinate synthase	[c] : aspsa + pyr --> 23dhdp + h + (2) h2o	EC 4.2.1.52	Cj0806	DapA	HP1013 (56.5%)	Lysine Biosynthesis 	Parkhill_00	
+SDPDS	Succinyl-diaminopimelate desuccinylase	[c] : h2o + sl26da --> 26dap-LL + succ	EC 3.5.1.18	Cj1048c	DapE	HP0212 (48.70%)	Lysine Biosynthesis 	Parkhill_00	
+SDPTA	Succinyldiaminopimelate transaminase	[c] : akg + sl26da <==> glu-L + sl2a6o	EC 2.6.1.17	Cj0227	ArgD		Lysine Biosynthesis 	Gundogdu_07	
+THDPS	Tetrahydrodipicolinate succinylase	[c] : h2o + succoa + thdp --> coa + sl2a6o	EC 2.3.1.117	Cj1605c	DapD	HP0626 (48.50%)	Lysine Biosynthesis 	Parkhill_00	
+AMMQT6	S-Adenosylmethionine methyltransferase 	[c] : 2dmmq6 + amet --> ahcys + h + mqn6	EC 2.1.1.-	Cj0324	UbiE		Menaquinone Biosynthesis  	Thiele_05	
+DHNAOT2	1,4-Dihydroxy-2-naphthoate octaprenyltransferase	[c] : dhna + octdp --> 2dmmq6 + co2 + h + ppi					Menaquinone Biosynthesis  	Thiele_05	Not balanced, model assumption
+ICHORSi	Isochorismate Synthase	[c] : chor --> ichor	EC 5.4.4.2				Menaquinone Biosynthesis  	Thiele_05	Model assumption.
+NPHS	Naphthoate synthase	[c] : sbzcoa --> coa + dhna	EC 4.1.3.36				Menaquinone Biosynthesis  	Thiele_05	Model assumption.
+OXGDC2	2-Oxoglutarate decarboxylase	[c] : akg + h + thmpp --> co2 + ssaltpp	EC 4.1.1.71				Menaquinone Biosynthesis  	Thiele_05	Model assumption.
+SHCHCS2	2-Succinyl-6-hydroxy-2,4-cyclohexadiene 1-carboxylate synthase	[c] : ichor + ssaltpp --> 2shchc + pyr + thmpp	EC 2.5.1.64				Menaquinone Biosynthesis  	Thiele_05	Model assumption.
+SUCBZL	O-Succinylbenzoate-CoA ligase	[c] : atp + coa + sucbz --> amp + ppi + sbzcoa	EC 6.2.1.26				Menaquinone Biosynthesis  	Thiele_05	Model assumption.
+SUCBZS	O-Succinylbenzoate-CoA synthase	[c] : 2shchc --> h2o + sucbz					Menaquinone Biosynthesis  	Thiele_05	Model assumption.
+CYSS	Cysteine synthase	[c] : acser + h2s --> ac + cys-L + h	EC 2.5.1.47	Cj0912c	CysM		Methionine and Cysteine Metabolism	Parkhill_00, Garvis_97	
+CYSTL	Cystathionine beta-lyase	[c] : cyst-L + h2o --> nh4 + hcys-L + pyr	EC 4.4.1.8	(Cj1392 and Cj1393)	MetC		Methionine and Cysteine Metabolism	Parkhill_00	
+HSERTA	Homoserine O-succinyltransferase	[c] : succoa + hom-L <==> suchms + coa	EC 2.3.1.46	Cj1726c	MetA		Methionine and Cysteine Metabolism	Parkhill_00	
+METB1r	Cystathionine gamma-synthase	[c] : achms + cys-L <==> ac + cyst-L + h	EC 2.5.1.48	Cj1393	MetC		Methionine and Cysteine Metabolism	Parkhill_00	
+METS	Methionine synthase	[c]: 5mthf + hcys-L --> met-L + thf	EC 2.1.1.14	Cj1201	MetE		Methionine and Cysteine Metabolism	Reed_03	
+OHSL	O-acetylhomoserine (thiol)-lyase	[c]: achms + h2s  <==> ac + hcys-L + h	EC 2.5.1.49	Cj1727c	MetB		Methionine and Cysteine Metabolism	Parkhill_00	
+SERAT	Serine O-acetyltransferase	[c] : accoa + ser-L <==> acser + coa	EC 2.3.1.30	Cj0763c	CysE		Methionine and Cysteine Metabolism	Parkhill_00	
+SHSL1r	O-Succinylhomoserine lyase reversible	[c] : cys-L + suchms <==> cyst-L + h + succ	EC 2.5.1.48	Cj1393	MetC		Methionine and Cysteine Metabolism	Parkhill_00	
+SHSL4r	O-Succinylhomoserine lyase (elimination), reversible	[c] : h2o + suchms <==> 2obut + h + nh4 + succ	EC 2.5.1.48	Cj1393	MetC		Methionine and Cysteine Metabolism	Parkhill_00	
+ASPO2	L-Aspartate oxidase	[c] : asp-L + nad --> h + iasp + nadh	EC 1.4.1.21	Cj0437	SdhA		Nicotinate Biosynthesis  	Parkhill_00, Thiele_05, BioCyc	
+NADK	NAD kinase	[c] : atp + nad --> adp + h + nadp	EC 2.7.1.23	Cj0641	PpnK		Nicotinate Biosynthesis  	Gundogdu_07	
+NADS1	NAD synthase (nh3)	[c] : atp + dnad + nh4 --> amp + h + nad + ppi	EC 6.3.1.5	Cj0810	NadE	HP0329 (47.20%)	Nicotinate Biosynthesis  	Parkhill_00	
+NMNAT	Nicotinamide-nucleotide adenylyltransferase	[c] : atp + h + nmn --> nad + ppi	EC 2.7.7.1	Cj1404	NadD		Nicotinate Biosynthesis  	Gundogdu_07	nmn dead end
+NNAT	Nicotinate-nucleotide adenylyltransferase	[c] : atp + h + nicrnt --> dnad + ppi	EC 2.7.7.18	Cj1404	NadD		Nicotinate Biosynthesis  	Gundogdu_07	
+NNDPR	Nicotinate-nucleotide diphosphorylase (carboxylating)	[c] : (2) h + prpp + quln --> co2 + nicrnt + ppi	EC 2.4.2.19		NadC		Nicotinate Biosynthesis  	Thiele_05, BioCyc	Model assumption
+QULNS	Quinolinate synthase	[c] : dhap + iasp --> (2) h2o + h+  pi + quln	EC 2.5.1.72		NadA		Nicotinate Biosynthesis  	Thiele_05, BioCyc	Model assumptiom
+CYTK1	Cytidylate kinase (CMP)	[c] : atp + cmp <==> adp + cdp					Nucleotide Interconversion	Thiele_05	Model assumption.
+ADPT1	Adenine phosphoribosyltransferase	[c] : ade + prpp --> amp + ppi	EC 2.4.2.7	Cj0927	Apt	HP0572 (52.80%)	Nucleotide Salvage Pathway	Parkhill_00	
+DADK	ATP:dAMP phosphotransferase	[c] : damp + atp <==> adp + dadp	EC 2.7.4.3	Cj0639c	Adk	HP0618 (62.40%)	Nucleotide Salvage Pathway	Parkhill_00	
+DCTPD	DCTP deaminase	[c] : dctp + h + h2o --> dutp + nh4	EC 3.5.4.13	Cj1292	Dcd	HP0372 (71.40%)	Nucleotide Salvage Pathway	Parkhill_00	
+DCTPD2	CTP deaminase	[c] : ctp + h + h2o --> nh4 + utp	EC 3.5.4.13	Cj1292	Dcd	HP0372 (71.40%)	Nucleotide Salvage Pathway	Parkhill_00	
+DGK1	Deoxyguanylate kinase (dGMP:ATP)	[c] : atp + dgmp <==> adp + dgdp	EC 2.7.4.8	Cj1177c	Gmk	HP0321 (51.00%)	Nucleotide Salvage Pathway	Parkhill_00	
+DTMPK	DTMP kinase	[c] : atp + dtmp <==> adp + dtdp	EC 2.7.4.9	Cj0766c	Tmk	HP1474 (48.50%)	Nucleotide Salvage Pathway	Parkhill_00	
+DUTPDP	DUTP diphosphatase	[c] : dutp + h2o --> dump + h + ppi	EC 3.6.1.23	Cj1451	Dut		Nucleotide Salvage Pathway	Parkhill_00, Musso-Buendia_09	
+GUAPRT	Guanine phosphoribosyltransferase	[c] : gua + prpp --> gmp + ppi	EC 2.4.2.8	Cj1370	Gpt	HP0735 (39.50%)	Nucleotide Salvage Pathway	Parkhill_00	gua dead end
+HXPRT	Hypoxanthine phosphoribosyltransferase (Hypoxanthine)	[c] : hxan + prpp --> imp + ppi	EC 2.4.2.8	Cj1370	Gpt	HP0735 (39.50%)	Nucleotide Salvage Pathway	Parkhill_00	
+NDPK3	Nucleoside-diphosphate kinase (ATP:CDP)	[c] : atp + cdp <==> adp + ctp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Nucleotide Salvage Pathway	Parkhill_00	
+NDPK4	Nucleoside-diphosphate kinase (ATP:dTDP)	[c] : atp + dtdp <==> adp + dttp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Nucleotide Salvage Pathway	Parkhill_00	
+NDPK5	Nucleoside-diphosphate kinase (ATP:dGDP)	[c] : atp + dgdp <==> adp + dgtp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Nucleotide Salvage Pathway	Parkhill_00	
+NDPK6	Nucleoside-diphosphate kinase (ATP:dUDP)	[c] : atp + dudp <==> adp + dutp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Nucleotide Salvage Pathway	Parkhill_00	
+NDPK7	Nucleoside-diphosphate kinase (ATP:dCDP)	[c] : atp + dcdp <==> adp + dctp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Nucleotide Salvage Pathway	Parkhill_00	
+NDPK8	Nucleoside-diphosphate kinase (ATP:dADP)	[c] : atp + dadp <==> adp + datp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Nucleotide Salvage Pathway	Parkhill_00	
+RNDR1	Ribonucleoside-diphosphate reductase (ADP)	[c] : adp + trdrd --> dadp + h2o + trdox	EC 1.17.4.1	(Cj0024 and Cj0231c)	NrdA, NrdB	HP0680 (68.9%), HP0364 (58.20%)	Nucleotide Salvage Pathway	Parkhill_00	
+RNDR2	Ribonucleoside-diphosphate reductase (GDP)	[c] : gdp + trdrd --> dgdp + h2o + trdox	EC 1.17.4.1	(Cj0024 and Cj0231c)	NrdA, NrdB	HP0680 (68.9%), HP0364 (58.20%)	Nucleotide Salvage Pathway	Parkhill_00	
+RNDR3	Ribonucleoside-diphosphate reductase (CDP)	[c] : cdp + trdrd --> dcdp + h2o + trdox	EC 1.17.4.1	(Cj0024 and Cj0231c)	NrdA, NrdB	HP0680 (68.9%), HP0364 (58.20%)	Nucleotide Salvage Pathway	Parkhill_00	
+RNDR4	Ribonucleoside-diphosphate reductase (UDP)	[c] : trdrd + udp --> dudp + h2o + trdox	EC 1.17.4.1	(Cj0024 and Cj0231c)	NrdA, NrdB	HP0680 (68.9%), HP0364 (58.20%)	Nucleotide Salvage Pathway	Parkhill_00	
+TMDSf	Thymidylate synthase  (Flavin-dependent)	[c] : dump + fmnh2 + mlthf --> dtmp + fmn + thf	EC 2.1.1.45	Cj0026c	ThyX	HP1533	Nucleotide Salvage Pathway	Parkhill_00, Myllykallio_02	
+TRDR	Thioredoxin reductase (NADPH)	[c] : h + nadph + trdox --> nadp + trdrd	EC 1.8.1.9	(Cj0146c and Cj0147c)	TrxB, TrxA	HP0825 (68.60%), HP0824 ( 64.20%)	Nucleotide Salvage Pathway	Parkhill_00	
+UPPRT	Uracil phosphoribosyltransferase	[c] : prpp + ura --> ppi + ump	EC 2.4.2.9	Cj1286c	Upp		Nucleotide Salvage Pathway	Parkhill_00	
+URIDK2r	Uridylate kinase (dUMP)	[c] : atp + dump <==> adp + dudp	EC 2.7.4.9	Cj0766c	Tmk	HP1474 (48.50%)	Nucleotide Salvage Pathway	Parkhill_00	
+XPPT	Xanthine phosphoribosyltransferase	[c] : prpp + xan --> ppi + xmp	EC 2.4.2.22	Cj1370		HP0735 (39.50%)	Nucleotide Salvage Pathway	Parkhill_00	xan dead end
+NTD1	5 nucleotidase dUMP 	[c] : dump + h2o  --> duri + pi	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	duri dead end
+NTD10	5 nucleotidase XMP 	[c] : h2o + xmp  --> pi + xtsn	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	xtsn dead end
+NTD11	5 nucleotidase IMP 	[c] : h2o + imp  --> ins + pi	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	ins dead end
+NTD2	5 nucleotidase UMP 	[c] : h2o + ump  --> pi + uri 	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	uri dead end
+NTD3	5 nucleotidase dCMP 	[c] : dcmp + h2o  --> dcyt + pi	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	dcmp, dcyt dead end
+NTD4	5 nucleotidase CMP 	[c] : cmp + h2o --> cytd + pi	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	cytd dead end
+NTD5	5 nucleotidase dTMP 	[c] : dtmp + h2o  --> pi + thymd 	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	thymd dead end
+NTD6	5 nucleotidase dAMP 	[c] : damp + h2o  --> dad-2 + pi 	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	dad-2 dead end
+NTD7	5 nucleotidase AMP 	[c] : amp + h2o  --> adn + pi	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	
+NTD8	5 nucleotidase dGMP 	[c] : dgmp + h2o  --> dgsn + pi 	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	dgsn dead end
+NTD9	5 nucleotidase GMP 	[c] : gmp + h2o  --> gsn + pi 	EC 3.1.3.5	Cj0293	SurE	HP0930 (46.00%)	Nucleotide Salvage Pathway	Parkhill_00	gsn dead end
+AHCYSNS	S-Adenosylhomocysteine nucleosidase	[c] : ahcys + h2o --> ade + rhcys	EC 3.2.2.9	Cj0117	Pfs		Others	Parkhill_00	
+ALCD2y	Alcohol dehydrogenase (ethanol, NADP)	[c] : etoh + nadp <==> acald + h + nadph	EC 1.1.1.2	Cj1548c	Cad		Others	Parkhill_00	acald, etoh dead ends
+DHPTDC	4,5-Dihydroxy-2,3-pentanedione cyclization 	[c] : dhptd --> h2o + hmfurn					Others	Thiele_05, Zhu_03	Spontaneous
+DMATT	Dimethylallyltranstransferase	[c] : dmpp + ipdp --> grdp + ppi	EC 2.5.1.1	Cj1644	IspA		Others	Parkhill_00	
+FBA2	D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase	[c] : f1p <==> dhap + glyald	EC 4.1.2.13	Cj0597	Fba		Others	Parkhill_00	f1p, glyald dead ends
+GCALDDr	Glycolaldehyde dehydrogenase	[c] : gcald + h2o + nad <==> glyclt + (2) h + nadh	EC 1.2.1.21	Cj0490	Ald'		Others	Parkhill_00	
+GLUR	Glutamate racemase	[c] : glu-D <==> glu-L	EC 5.1.1.3	Cj1652c	Glr		Others	Parkhill_00	
+GLYCTO1	Glycolate oxidase	[c] : glyclt + o2 --> glx + h2o2	EC 1.1.3.15	(Cj1213c and Cj0075c)	GlcD		Others	Parkhill_00	
+GRTT	Geranyltranstransferase	[c] : grdp + ipdp --> frdp + ppi	EC 2.5.1.10	Cj1644	IspA		Others	Parkhill_00	
+H2CO3D	Carboxylic acid dissociation	[c] : co2 + h2o <==> h2co3	EC 4.2.1.1	Cj0237	CynT		Others	Parkhill_00	
+H2CO3D2	Carboxylic acid dissociation	[c] : h + hco3 <==> h2co3					Others	Thiele_05	Spontaneous
+MTAN	Methylthioadenosine nucleosidase	[c] : 5mta + h2o --> 5mtr + ade	EC 3.2.2.16	Cj0117	Pfs		Others	Parkhill_00	5mta, 5mtr dead ends
+NO	Peroxynitrite formation (spontanous)	[c] : no + o2- --> no3					Others	Thiele_05	Spontaneous
+OCTDPS	Octaprenyl pyrophosphate synthase	[c] : frdp + (5) ipdp --> octdp + (5) ppi	EC 2.5.1.-	Cj0541	IspB		Others	Parkhill_00	
+PGMT	Phosphoglucomutase	[c] : g1p <==> g6p	EC 5.4.2.2				Others	Thiele_05	
+PPA	Inorganic diphosphatase	[c] : h2o + ppi --> h + (2) pi	EC 3.6.1.1	Cj0638c	Ppa		Others	Parkhill_00	
+PYK	Pyruvate kinase	[c] : adp + pep + h --> atp + pyr	EC 2.7.1.40	Cj0392c	Pyk		Others	Parkhill_00, Velayudhan_02	
+RHCCE	S-Ribosylhomocysteine cleavage enzyme	[c] : rhcys --> dhptd + hcys-L	EC 4.4.1.21	Cj1198	LuxS		Others	Gundogdu_07	
+sink-4hba	sink 4-Hydroxy-benzyl alcohol	[c] : 4hba <==>					Others	Feist_07	Model assumption to allow 4-hydroxy-benzoate to leave the system
+sink-amob	sink S-Adenosyl-4-methylthio-2-oxobutanoate	[c] : amob <==>					Others	Thiele_05	Model assumption to allow S-Adenosyl-4-methylthio-2-oxobutanoate to leave the system
+sink-hmfurn	sink 4-Hhydroxy-5-methyl-3-2H-furanone	[c] : hmfurn <==>					Others	Feist_07	Model assumption to allow 4-hydroxy-5-methyl-3(2H)-furanone to leave the system
+UDCPDPS	Undecaprenyl diphosphate synthase	[c] : frdp + (8) ipdp --> (8) ppi + udcpdp	EC 2.5.1.31	Cj0824	UppS		Others	Parkhill_00	
+ACPS	Acyl Carrier Protein Synthase	[c] : coa + h2o --> (2) h + pan4p + pap	EC 2.7.8.7	Cj1409	AcpS	HP0808 (51.30%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+ASP1DC	Aspartate 1-decarboxylase	[c] : asp-L + h --> ala-B + co2	EC 4.1.1.11	Cj0296c	PanD	HP0034 (52.30%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+BPNT	3',5'-Bisphosphate nucleotidase	[c] : h2o + pap --> amp + pi	EC 3.1.3.7				Pantothenate/ CoA Biosynthesis	Thiele_05	Model assumption
+DPCOAK	Dephospho-CoA kinase	[c] : atp + dpcoa --> adp + coa + h	EC 2.7.1.24	Cj1530	CoaE	HP0831	Pantothenate/ CoA Biosynthesis	Gundogdu_07	
+DPR	2-Dehydropantoate 2-reductase	[c] : 2dhp + h + nadph --> nadp + pant-R	EC 1.1.1.169				Pantothenate/ CoA Biosynthesis	Thiele_05	
+MOHMT	3-Methyl-2-oxobutanoate hydroxymethyltransferase	[c] : 3mob + h2o + mlthf --> 2dhp + thf	EC 2.1.2.11	Cj0298c	PanB	HP1058 (43.90%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+PANTS	Pantothenate synthase	[c] : ala-B + atp + pant-R --> amp + h + pnto-R + ppi	EC 6.3.2.1	Cj0297c	PanC	HP0006 (42.90%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+PNTK	Pantothenate kinase	[c] : atp + pnto-R --> 4ppan + adp + h	EC 2.7.1.33	Cj0394c			Pantothenate/ CoA Biosynthesis	KEGG	Model assumption
+PPCDC	Phosphopantothenoylcysteine decarboxylase	[c] : 4ppcys + h --> co2 + pan4p	EC 4.1.1.36	Cj0822	Dfp	HP0841 (38.60%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+PPNCL2	Phosphopantothenate-cysteine ligase	[c] : 4ppan + ctp + cys-L --> 4ppcys + cmp + h + ppi 	EC 6.3.2.5	Cj0822	Dfp	HP0841 (38.60%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+PTPATi	Pantetheine-phosphate adenylyltransferase	[c] : atp + h + pan4p --> dpcoa + ppi	EC 2.7.7.3	Cj0767c	KdtB	HP1475 (57.00%)	Pantothenate/ CoA Biosynthesis	Parkhill_00	
+RPE	Ribulose 5-phosphate 3-epimerase	[c] : ru5p-D <==> xu5p-D	EC 5.1.3.1	Cj0451	Rpe	HP1386 (54.70%)	Pentose-Phosphate-Pathway	Parkhill_00	
+RPI	Ribose-5-phosphate isomerase	[c] : r5p <==> ru5p-D	EC 5.3.1.6	Cj0925	RpiB	HP0574 (45.00%)	Pentose-Phosphate-Pathway	Parkhill_00	
+TALA	Transaldolase	[c] : g3p + s7p <==> e4p + f6p	EC 2.2.1.2	Cj0281c	Tal	HP1495 (43.40%)	Pentose-Phosphate-Pathway	Parkhill_00	
+TKT1	Transketolase	[c] : r5p + xu5p-D <==> g3p + s7p	EC 2.2.1.1	Cj1645	Tkta1	HP1088 (59.90%)	Pentose-Phosphate-Pathway	Parkhill_00	
+TKT2	Transketolase	[c] : e4p + xu5p-D <==> f6p + g3p	EC 2.2.1.1	Cj1645	Tkta2	HP1088 (59.90%)	Pentose-Phosphate-Pathway	Parkhill_00	
+ALAALAr	D-Alanine-D-alanine ligase  	[c] : (2) ala-D + atp <==> adp + alaala + h + pi	EC 6.3.2.4	Cj0798c	Ddl	HP0738 (54.30%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+AMAA	N-acetylmuramoyl-L-alanine amidase	[c] : acmama + h2o --> acmam + ala-L	EC 3.5.1.28	Cj1269c	AmiA	HP0772 (51.80%)	Peptidoglycan Biosynthesis 	Parkhill_00	acmam, acmama dead ends
+PAPPT3	Phospho-N-acetylmuramoyl-pentapeptide-transferase (meso-2,6-diaminopimelate)	[c] : udcpp + ugmda --> uagmda + ump	EC 2.7.8.13	Cj0433c	MraY	HP0493 (54.80%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+PPTGS	Peptidoglycan subunit synthesis	[c] : uaagmda --> h + peptido_EC + udcpdp					Peptidoglycan Biosynthesis 	Thiele_05	Model assumption
+UAAGDS	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase	[c] : 26dap-M + atp + uamag --> adp + h + pi + ugmd	EC 6.3.2.13	Cj1641	MurE	HP1494 (48.00%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+UAGPT3	UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	[c] : uacgam + uagmda --> h + uaagmda + udp	EC 2.4.1.227	Cj1039	MurG	HP1155 (48.70%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+UAMAGS	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase	[c] : atp + glu-D + uama --> adp + h + pi + uamag	EC 6.3.2.9	Cj0432c	MurD	HP0494 (45.80%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+UAMAS	UDP-N-acetylmuramoyl-L-alanine synthetase	[c] : ala-L + atp + uamr --> adp + h + pi + uama	EC 6.3.2.8	Cj1054c	MurC	HP0623 (52.50%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+UDCPDP	Undecaprenyl-diphosphatase	[c] : h2o + udcpdp --> h + pi + udcpp	EC 3.6.1.27	Cj0205	UppP		Peptidoglycan Biosynthesis 	Parkhill_00	
+UGMDDS	UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine synthetase	[c] : alaala + atp + ugmd --> adp + h + pi + ugmda	EC 6.3.2.10	Cj0795c	MurF	HP0740 (41.50%)	Peptidoglycan Biosynthesis 	Parkhill_00	
+CHORM	Chorismate mutase	[c] : chor --> pphn	EC 5.4.99.5	Cj0316	PheA	HP0291 (35.80%)	Phenylalanine Biosynthesis	Parkhill_00	
+PHETA1	Phenylalanine transaminase	[c] : akg + phe-L <==> glu-L + phpyr	EC 2.6.1.1	Cj0762c	AspB	HP0672 (57.50%)	Phenylalanine Biosynthesis	Parkhill_00, Guccione_08	
+PPNDH	Prephenate dehydratase	[c] : h + pphn --> co2 + h2o + phpyr	EC 4.2.1.51	Cj0316	PheA	HP0291 (35.80%)	Phenylalanine Biosynthesis	Parkhill_00	
+G5SADr	L-Glutamate 5-semialdehyde dehydratase, reversible	[c] : glu5sa <==> 1pyr5c + h + h2o					Proline Metabolism	Thiele_05, BioCyc	Model assumption
+P5CR	Pyrroline-5-carboxylate reductase	[c] : 1pyr5c + (2) h + nadph --> nadp + pro-L	EC 1.5.1.2	Cj1076	ProC	HP1158 (36.20%)	Proline Metabolism	Parkhill_00	
+PROD2	Proline dehydrogenase	[c] : fad + pro-L --> 1pyr5c + fadh2 + h	EC 1.5.99.8	Cj1503c	PutA	HP0056 (65.00%)	Proline Metabolism	Parkhill_00	
+ADK1	Adenylate kinase	[c] : amp + atp <==> (2) adp	EC 2.7.4.3	Cj0639c	Adk	HP0618 (62.40%)	Purine Biosynthesis	Parkhill_00	
+ADSL1r	Adenylsuccinate lyase	[c] : dcamp <==> amp + fum	EC 4.3.2.2	(Cj0023 or Cj1394)	PurB	HP1112 (67.90%)	Purine Biosynthesis	Parkhill_00	
+ADSL2r	Adenylosuccinate lyase	[c] : 25aics <==> aicar + fum	EC 4.3.2.2	(Cj0023 or Cj1394)	PurB	HP1112 (67.90%)	Purine Biosynthesis	Parkhill_00	
+ADSS	Adenylosuccinate synthase	[c] : asp-L + gtp + imp --> dcamp + gdp + (2) h + pi	EC 6.3.4.4	Cj1498c	PurA	HP0255 (51.60%)	Purine Biosynthesis	Parkhill_00	
+AICART	Phosphoribosylaminoimidazolecarboxamide formyltransferase	[c] : 10fthf + aicar <==> fprica + thf	EC 2.1.2.3	Cj0953c	PurH		Purine Biosynthesis	Parkhill_00	
+AIRC2	Phosphoribosylaminoimidazole carboxylase	[c]: air + atp + hco3  --> 5caiz + adp + h + pi	EC 6.3.4.18	Cj0702	PurE		Purine Biosynthesis	Parkhill_00	
+AIRC3	Phosphoribosylaminoimidazole carboxylase mutase rxn 	5aizc[c]  <==> 5caiz[c] 	EC 5.4.98.19	Cj0702	PurE		Purine Biosynthesis	Parkhill_00	
+GARFT	Phosphoribosylglycinamide formyltransferase	[c] : 10fthf + gar <==> fgam + h + thf	EC 2.1.2.2	Cj0187c	PurN		Purine Biosynthesis	Parkhill_00	
+GK1	Guanylate kinase (GMP:ATP)	[c] : atp + gmp <==> adp + gdp	EC 2.7.4.8	Cj1177c	Gmk	HP0321 (51.00%)	Purine Biosynthesis	Parkhill_00	
+GLUPRT	Amidophosphoribosyltransferase	[c] : gln-L + h2o + prpp --> glu-L + ppi + pram	EC 2.4.2.14	Cj0196c	PurF		Purine Biosynthesis	Parkhill_00	
+GMPS2	GMP synthase	[c] : atp + gln-L + h2o + xmp --> amp + glu-L + gmp + (2) h + ppi	EC 6.3.5.2	Cj1248	GuaA	HP0409 (62.40%)	Purine Biosynthesis	Parkhill_00	
+IMPC	IMP cyclohydrolase	[c] : h2o + imp <==> fprica	EC 3.5.4.10	Cj0953c	PurH		Purine Biosynthesis	Parkhill_00	
+IMPD	IMP dehydrogenase	[c] : h2o + imp + nad --> h + nadh + xmp	EC 1.1.1.205	Cj1058c	GuaB	HP0829 (67.70%)	Purine Biosynthesis	Parkhill_00	
+NDPK1	Nucleoside-diphosphate kinase (ATP:GDP)	[c] : atp + gdp <==> adp + gtp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Purine Biosynthesis	Parkhill_00	
+PRAGSr	Phosphoribosylglycinamide synthase	[c] : atp + gly + pram <==> adp + gar + h + pi	EC 6.3.4.13	Cj1250	PurD	HP1218 (38.20%)	Purine Biosynthesis	Parkhill_00	
+PRAIS	Phosphoribosylaminoimidazole synthase	[c] : atp + fpram --> adp + air + (2) h + pi	EC 6.3.3.1	Cj1529c	PurM		Purine Biosynthesis	Parkhill_00	
+PRASCS	Phosphoribosylaminoimidazolesuccinocarboxamide synthase	[c] : 5aizc + asp-L + atp <==> 25aics + adp + h + pi	EC 6.3.2.6	Cj0512	PurC		Purine Biosynthesis	Parkhill_00	
+PRFGS	Phosphoribosylformylglycinamidine synthase	[c] : atp + fgam + gln-L + h2o --> adp + fpram + glu-L + h + pi	EC 6.3.5.3	(Cj0955c and Cj0514)	PurL, Pur Q		Purine Biosynthesis	Parkhill_00	
+PRPPS	Phosphoribosylpyrophosphate synthetase	[c] : atp + r5p <==> amp + h + prpp	EC 2.7.6.1	Cj0918c	PrsA	HP0742 (71.40%)	Purine Biosynthesis	Parkhill_00	
+E4PD	Erythrose 4 phosphate dehydrogenase	[c]: e4p + h2o + nad  <==> 4per + (2) h + nadh 		Cj1403c	GapA		Pyridoxine Biosynthesis	Parkhill_00	
+OHPBAT	O-Phospho-4-hydroxy-L-threonine2 oxoglutarate aminotransferase	[c]: glu-L + ohpb  <==> akg + phthr 		Cj0326	SerC		Pyridoxine Biosynthesis	Parkhill_00	
+PDX5PO	Pyridoxine 5 phosphate oxidase	[c]: o2 + pdx5p  <==> h2o2 + pydx5p 					Pyridoxine Biosynthesis	Reed_03	Model assumption
+PDX5PS2	Pyridoxine 5'-phosphate synthase	[c] : aopp + dxyl5p --> h + (2) h2o + pdx5p + pi		Cj1238	PdxJ		Pyridoxine Biosynthesis	Parkhill_00	
+PERD	Erythronate 4 phosphate 4per dehydrogenase	[c]: 4per + nad  <==> h + nadh + ohpb 		Cj0891c	SerA		Pyridoxine Biosynthesis	Parkhill_00	
+SPONT1	3-amino-2-oxopropyl phophate synthatse, Spontaneous Reaction	[c] : amopbut-L + h --> aopp + co2					Pyridoxine Biosynthesis		Spontaneous
+THPDH	NAD-dependent threonine 4-phosphate dehydrogenase	[c] : nad + phthr --> amopbut-L + h + nadh		Cj1239	PdxA		Pyridoxine Biosynthesis	Parkhill_00	
+ASPCT	Aspartate carbamoyltransferase	[c] : asp-L + cbp --> cbasp + h + pi	EC 2.1.3.2	Cj1098	PyrB	HP1084 (52.50%)	Pyrimidine Biosynthesis	Parkhill_00	
+CBPS	Carbamoyl-phosphate synthase (glutamine-hydrolysing)	[c] : (2) atp + gln-L + h2o + hco3 --> (2) adp + cbp + glu-L + (2) h + pi	EC 6.3.5.5	(Cj0279 and Cj1494c)	CarB, CarA	HP0919 (62.50%) HP1237 (57.80%)	Pyrimidine Biosynthesis	Parkhill_00	
+CTPS1	CTP synthase (NH3)	[c] : atp + nh4 + utp --> adp + ctp + (2) h + pi	EC 6.3.4.2	Cj0027	PyrG	HP0349 (62.60%)	Pyrimidine Biosynthesis	Parkhill_00	
+DHORD3	Dihydroorotic acid dehydrogenase (menaquinone 6)	[c] : dhor-S + mqn6 <==> mql6 + orot	EC 1.3.3.1	Cj0804	PyrD	HP1011 (47.60%)	Pyrimidine Biosynthesis	Parkhill_00	
+DHORTS	Dihydroorotase	[c] : dhor-S + h2o <==> cbasp + h	EC 3.5.2.3	(Cj0259 and Cj1195c)	PyrC, PyrC2	HP0581 (39.60%) HP0266 (30.10%)	Pyrimidine Biosynthesis	Parkhill_00	
+NDPK2	Nucleoside-diphosphate kinase (ATP:UDP)	[c] : atp + udp <==> adp + utp	EC 2.7.4.6	Cj0332c	Ndk	HP0198 (73.30%)	Pyrimidine Biosynthesis	Parkhill_00	
+OMPDC	Orotidine-5'-phosphate decarboxylase	[c] : h + orot5p --> co2 + ump	EC 4.1.1.23	Cj0381c	PyrF	HP0005 (53.60%)	Pyrimidine Biosynthesis	Parkhill_00	
+ORPT	Orotate phosphoribosyltransferase	[c] : orot5p + ppi <==> orot + prpp	EC 2.4.2.10	Cj0233c	PyrE	HP1257 (58.40%)	Pyrimidine Biosynthesis	Parkhill_00	
+UMPK	UMP kinase	[c] : atp + ump <==> adp + udp	EC 2.7.4.22	Cj1274c	PyrH	HP0777 (70.00%)	Pyrimidine Biosynthesis	Parkhill_00	
+ACKr	Acetate kinase	[c] : ac + atp <==> actp + adp	EC 2.7.2.1	Cj0689	AckA	HP0903	Pyruvate Metabolism	Thiele_05	
+ACS	Acetyl-CoA synthetase	[c] : ac + atp + coa --> accoa + amp + ppi	EC 6.2.1.1	Cj1537c	AcoE	HP1045 (69.30%)	Pyruvate Metabolism	Parkhill_00	
+LACR	Lactate racemase	[c] : lac-L <==> lac-D	EC 5.1.2.1				Pyruvate Metabolism	Thiele_05	Model assumption
+LDH_D	D-lactate dehydrogenase	[c]: lac-D + nad  <==> h + nadh + pyr 	EC 1.1.1.27	Cj1167	Ldh		Pyruvate Metabolism	Parkhill_00	
+MALDDH	Malate decarboxylating oxidoreductase decarboxylating 	[c]: mal-D + nad  --> co2 + nadh + pyr 	EC 1.1.1.83				Pyruvate Metabolism	Feist_07	Model assumption
+MDH	Malate hydrogenase (decarboxylating, nadp)	[c] : mal-L + nadp <==> co2 + nadph + pyr	EC 1.1.1.40	Cj1287c	Mez		Pyruvate Metabolism	Parkhill_00, Velayudhan_02	
+PTAr	Phosphotransacetylase	[c] : accoa + pi <==> actp + coa	EC 2.3.1.8	Cj0688	Pta	HP0905 (24.80%)	Pyruvate Metabolism	Parkhill_00	
+ATPS4r	ATP synthase (four protons for one ATP)	adp[c] + (4) h[e] + pi[c] <==> atp[c] + (3) h[c] + h2o[c]	EC 3.6.3.14	(Cj0105 and Cj1204c and Cj0108 and Cj0107 and Cj0936 and Cj0103 and Cj0102 and Cj0106 and Cj0104)	AtpA, AtpB, AtpC, AtpD, AtpE, AtpF, AtpG, AtpH	HP1134 (75.00%), HP0828 (57.40%), HP1131 (40.00%), HP1132 (79.50%), HP1212 (58.70%), HP1136 (31.90%), HP1137 (25.40%), HP1133 (52.80%)	Respiratory chain	Parkhill_00	
+BC10	Cytochrome bc1 complex (complex III)	(2) ficytcc553[c] + (2) h[c] + mql6[c] --> (2) focytcc553[c] + (4) h[e] + mqn6[c]	EC 1.10.2.2	(Cj1184c and Cj1185 and Cj1186c and Cj1153)	PetC, PetB, Pet A	HP1538 (36.40%), HP1539 (70.90%), HP1540 (56.80%), HP1217 (31.00%)	Respiratory chain	Parkhill_00, Thiele_05	
+CCG	Gluconate dehydrogenase cytochrome c	(2) ficytcc553[c] +glcn[c] --> (2) focytcc553[c] + 2dhglcn[c] + (2) h[e]	EC 1.1.99.3	(Cj0414 and Cj0415)			Respiratory chain	Gundogdu_07, Kelly_08	glcn, 2dhglcn dead ends
+CCS	Sulfite:cytochrome c oxidoreductase	(2) ficytcc553[c] +so3[c] + h2o[c] --> (2) focytcc553[c] + so4[c] + (2) h[e]	EC 1.8.1.2	(Cj0004c and Cj0005)	SorA, SorB		Respiratory chain	Gundogdu_07, Myers_05	
+CYOO-HP	Cytochrome c 553 oxidase, by analogy to Hpylori	(4) focytcc553[c] + (5.98) h[c] + o2[c] --> (4) ficytcc553[c] + (2) h[e] + (1.99) h2o[c] + (0.0050) o2-[c]	EC 1.9.3.1	(Cj1487c and Cj1488 and Cj1489 and Cj1490c and Cj1153)	CcoP, CcoQ, CcoO, CcoN	HP0147 (51.20%), HP0146 (35.10%), HP0145 (66.80%), HP0144 (68.80%), HP1227 (31.00%)	Respiratory chain	Parkhill_00, Thiele_05	Charges only approximatively balanced
+CYTBD	Cyanide insensitive oxidase, cytochrome cb type	(4) h[c] + o2[c] + (2) mql6[c]  --> (2) h2o[c] + (4) h[e] + (2) mqn6[c] 	EC 1.10.3.-	(Cj0081 and Cj0082)	CydA, CydB		Respiratory chain	Parkhill_00, Jackson_07	
+DMSORe	Dimethyl sulfoxide reductase Menaquinol 6	dmso[e] + mql6[c]  --> dms[e] + h2o[e] + mqn6[c] 	EC 1.7.2.3	(Cj0264c and Cj0265c)	TorA	HP0407 (40.90%)	Respiratory chain	Sellars_02, Reed_03	
+FADOX	Flavodoxin oxidase (Menaquinone)	[c] : fadh2 + mqn6 --> fad + mql6					Respiratory chain	Thiele_05	Model assumption
+FDHC	Formate Dehydrogenase nad	[c]: for + nad  <==> co2 + nadh 	EC 1.2.1.21	(Cj1509c and Cj1510c)	FdhC, FdhB		Respiratory chain	Parkhill_00	
+FDHM	Formate Dehydrogenase menaquinone	for[e] + (2) h[c] + mqn6[c]  --> co2[e] + h[e] + mql6[c] 		(Cj1511c and Cj1510c and Cj1509c and Cj1508c)	FdhA, FdhB, FdhC, FdhD		Respiratory chain	Parkhill_00	
+FLDO	NAD(P)H-flavin oxidoreductase	[c] : fmnh2 + nadp --> fmn + h + nadph		Cj0559	FqrB	HP1164 (46.30%)	Respiratory chain	Parkhill_00, StMaurice_07	
+HYDA1	Hydrogenase (Menaquinone)	(2) h[c] + h2[e] + mqn6[c] --> (2) h[e] + mql6[c]	EC 1.12.7.2	(Cj1267c and Cj1266c and Cj1265c and Cj1264c and Cj1399c)	HydA, HydB, HydC, HydD, HydA2	HP0631 (68.20%), HP0632 (64.70%), HP0633 (41.10%), HP0634 (42.70%)	Respiratory chain	Parkhill_00, Carlone_83, Hoofman_82	
+LDH	L-lactate dehydrogenase	[c]: lac-L + mqn6  --> pyr + mql6		Cj1167	Ldh		Respiratory chain	Parkhill_00,  Hoofman_82	
+NADPHQR	NADPH Quinone Reductase	[c] : h + mqn6 + nadph --> mql6 + nadp	EC 1.6.5.5   	Cj1545c	MdaB	HP0630 (65.10%)	Respiratory chain	Parkhill_00	
+NDH-1	NADH dehydrogenase (menaquinone) (complex I)	(3) h[c] + mqn6[c] + nadph[c] --> (2) h[e] + mql6[c] + nadp[c]	EC 1.6.99.5	(Cj1566c and Cj1567c and Cj1568c and Cj1569c and Cj1570c and Cj1571c and Cj1572c and Cj1573c and Cj1576c and Cj1577c and Cj1578c and Cj1579c)	NuoN, NuoM, NuoL, NuoK, NuoJ, NuoI, NuoH, NuoG, NuoD, NuoC, NuoB, NuoA	HP1260 (43.10%), HP1261 (80.00%), HP1262 (44.20%), HP1263 (60.60%), HP1266 (36.30%), HP1267 (55.20%), HP1268 (49.50%), HP1269 (40.60%), HP1270 (45.80%), HP1271 (55.10%), HP1272 (40.10%), HP1273 (35.30%)	Respiratory chain	Parkhill_00, Smith_00	
+NO2R	Nitrite Reductase Menaquinol 6	(2) h[c] + (3) mql6[c] + no2[c]  --> (2) h2o[c] + (3) mqn6[c] + nh4[c] 		(Cj1357c and Cj1358c)	NrfA, NrfH		Respiratory chain	Pittman_07	
+NO3R	Nitrate reductase Menaquinol 6	(2) h[c] + mql6[c] + no3[c]  --> h2o[c] + (2) h[e] + mqn6[c] + no2[c] 	EC 1.7.99.4	((Cj0780 and Cj0781 and Cj0782 and Cj0783) or (Cj0780 and Cj0783 and Cj1358c))	NapA, NapG/NrfH, NapH, NapB		Respiratory chain	Parkhill_00, Pittman_07	
+TMSORe	Dimethyl sulfoxide reductase Menaquinol 6	tmao[e] + mql6[c]  --> tma[e] + h2o[e] + mqn6[c] 	EC 1.7.2.3	(Cj0264c and Cj0265c)	TorA	HP0407 (40.90%)	Respiratory chain	Sellars_02, Reed_03	
+APRAUR	5-Amino-6-(5-phosphoribosylamino)uracil reductase	[c] : 5apru + h + nadph --> 5aprbu + nadp	EC 1.1.1.193	Cj1622	RibD	HP1505 (37.90%)	Riboflavin Metabolism 	Parkhill_00	
+DB4PS	3,4-Dihydroxy-2-butanone 4-phosphate synthase	[c] : ru5p-D --> db4p + for + h		Cj0572	RibB	HP0804 (50.00%)	Riboflavin Metabolism 	Parkhill_00	
+DHPPDA	Diaminohydroxyphosphoribosylaminopyrimidine deaminase	[c] : 25dhpp + h + h2o --> 5apru + nh4	EC 3.5.4.26	Cj1622	RibD	HP1505 (37.90%)	Riboflavin Metabolism 	Parkhill_00	
+FMNAT	FMN adenylyltransferase	[c] : atp + fmn + h --> fad + ppi	EC 2.7.7.2	Cj0589	RibF	HP1087 (43.50%)	Riboflavin Metabolism 	Parkhill_00	
+GTPCII	GTP cyclohydrolase II	[c] : gtp + (3) h2o --> 25dhpp + for + (2) h + ppi	EC 3.5.4.25	Cj0996	RibA	HP0802 (53.20%)	Riboflavin Metabolism 	Parkhill_00	
+PMDPHT	Pyrimidine phosphatase	[c] : 5aprbu + h2o --> 4r5au + pi					Riboflavin Metabolism 	Thiele_05	Model assumption
+RBFK	Riboflavin kinase	[c] : atp + ribflv --> adp + fmn + h	EC 2.7.1.26	Cj0589	RibF	HP1087 (43.50%)	Riboflavin Metabolism 	Parkhill_00	
+RBFSa	Riboflavin synthase	[c] : 4r5au + db4p --> dmlz + (2) h2o + pi	EC 2.5.1.9	(Cj0383c and Cj1218c)	RibC, RibE	HP0002 (67.50%), HP1574 (47.60%)	Riboflavin Metabolism 	Parkhill_00	
+RBFSb	Riboflavin synthase	[c] : (2) dmlz --> 4r5au + ribflv	EC 2.5.1.9	(Cj0383c and Cj1218c)	RibC, RibE	HP0002 (67.50%), HP1574 (47.60%)	Riboflavin Metabolism 	Parkhill_00	
+GHMT2r	Glycine hydroxymethyltransferase, reversible	[c] : ser-L + thf <==> gly + h2o + mlthf	EC 2.1.2.1	Cj0402	GlyA	HP0183 (68.40%)	Serine Metabolism	Parkhill_00	
+PGCD	Phosphoglycerate dehydrogenase	[c] : 3pg + nad --> 3php + h + nadh	EC 1.1.1.95	Cj0891c	SerA	HP0397 (50.70%), HP0096 (47.50%)	Serine Metabolism	Parkhill_00	
+PSERT	Phosphoserine transaminase	[c] : 3php + glu-L --> akg + pser-L	EC 2.6.1.52	Cj0326	SerC	HP0736	Serine Metabolism	Parkhill_00	
+PSP-D	Phosphoserine phosphatase (D-serine)	[c] : h2o + pser-D --> pi + ser-D	EC 3.1.3.3	Cj0282c	SerB	HP0652 (48.80%)	Serine Metabolism	Parkhill_00	pser-D dead end
+PSP-L	Phosphoserine phosphatase (L-serine)	[c] : h2o + pser-L --> pi + ser-L	EC 3.1.3.3	Cj0282c	SerB	HP0652 (48.80%)	Serine Metabolism	Parkhill_00	
+SERD-L	L-Serine deaminase	[c] : ser-L --> nh4 + pyr	EC 4.3.1.17	Cj1624c	SdaA	HP0132 (53.40%)	Serine Metabolism	Parkhill_00, Velayudhan_04	
+ADSK	Adenylyl-sulfate kinase	[c] : aps + atp --> adp + h + paps	EC 2.7.1.25	Cj1415c	CysC		Sulfur Metabolism	Parkhill_00	
+ADST	Sulfate adenyl transferase	[c] : so4 + atp + h --> aps + ppi	EC 2.7.7.4	Cj1609			Sulfur Metabolism	Parkhill_00, KEGG	
+PAPSR	Phosphoadenylyl-sulfate reductase (thioredoxin)	[c] : paps + trdrd --> (2) h + pap + so3 + trdox	EC 1.8.4.8				Sulfur Metabolism	Thiele_05	Model assumption
+SULR	Sulfite reductase (NADPH2)	[c] : (3) h2o + h2s + (3) nadp <==> (5) h + (3) nadph + so3	EC 1.8.2.2				Sulfur Metabolism	Thiele_05	Model assumption
+ACONT	Aconitase	[c] : cit <==> icit	EC 4.2.1.3	Cj0835c	Acnb	HP0779 (65.80%)	TCA cycle	Parkhill_00	
+CS	Citrate synthase	[c] : accoa + h2o + oaa --> cit + coa + h	EC 2.3.3.1	Cj1682c	GltA	HP0026 (52.80%)	TCA cycle	Parkhill_00	
+FRD	Fumarate reductase	[c] : fum + mql6 --> mqn6 + succ	EC 1.3.99.1	((Cj0408 and Cj0409 and Cj0410) or (Cj0437 and Cj0438 and Cj0439))	SdhB	HP0193 (50.00%), HP0192 (62.20%), HP0191 (65.80%)	TCA cycle	Weingarten_09	
+FUM	Fumarase	[c] : fum + h2o <==> mal-L	EC 4.2.1.2	Cj1364c	FumC	HP1325 (76.90%)	TCA cycle	Parkhill_00, Smith_00	
+ICDHyr	Isocitrate dehydrogenase (NADP)	[c] : icit + nadp <==> akg + co2 + nadph	EC 1.1.1.42	Cj0531	Icd		TCA cycle	Parkhill_00	
+MALS	Malate synthase	[c] : accoa + glx + h2o --> coa + h + mal-L					TCA cycle	Thiele_05	Model assumption
+MDH4	Malate dehydrogenase (menaquinone 6 as acceptor)	[c] : mal-L + mqn6 --> mql6 + oaa	EC 1.1.99.16	Cj0393c	Mqo	HP0086	TCA cycle	Parkhill_00	
+MDH-L	Malate dehydrogenase 	[c] : mal-L + nad --> nadh + oaa + h	EC 1.1.1.37	Cj0532	Mdh		TCA cycle	Parkhill_00	
+OOR	Ferredoxin oxidoreductase	[c] : akg + coa + fmn + h --> co2 + fmnh2 + succoa	EC 1.2.7.3	(Cj0535 and Cj0536 and Cj0537 and Cj0538)	OorA, OorB, OorC, OorD		TCA cycle	Parkhill_00, Weerakoon_08	
+PDH2	Pyruvate dehydrogenase - FMN dependent	[c] : coa + fmn + h + pyr --> accoa + co2 + fmnh2	EC 1.2.7.1	Cj1476c	PorA, PorB, PorC, PorD	HP1108, HP1109, HP1110, HP1111	TCA cycle	Parkhill_00, Daucher_95	
+SUC	Succinyl-CoA synthetase	[c]: succoa + adp + pi <==> succ + atp + coa	EC 6.2.1.5	(Cj0533 and Cj0534)	SucC, SucD		TCA cycle	Parkhill_00, Daucher_95, Mendz_97	
+SUCDH	Succinate dehydrogenase	[c] : mqn6 + succ --> fum + mql6	EC 1.3.99.1	(Cj0408 and Cj0409 and Cj0410)	FrdA, FrdB, FrdC	HP0193 (50.00%), HP0192 (62.20%), HP0191 (65.80%)	TCA cycle	Parkhill_00	
+FTHFD	Formyltetrahydrofolate deformylase	[c] : 10fthf + h2o --> for + h + thf	EC 3.5.1.10	Cj0790	PurU	HP1434 (52.60%)	THF Metabolism	Parkhill_00, Weingarten_09, Smith_00	
+FTHFLi	Formate-tetrahydrofolate ligase	[c] : atp + for + thf --> 10fthf + adp + pi	EC 6.3.4.3	Cj0855	FolD	HP0577 (54.90%)	THF Metabolism	Parkhill_00	
+MTHFC	Methenyltetrahydrofolate cyclohydrolase	[c] : h2o + methf <==> 10fthf + h	EC 3.5.4.9	Cj0855	FolD	HP0577 (54.90%)	THF Metabolism	Parkhill_00	
+MTHFD	Methylenetetrahydrofolate dehydrogenase (NADP)	[c] : mlthf + nadp <==> methf + nadph	EC 1.5.1.5	Cj0855	FolD	HP0577 (54.90%)	THF Metabolism	Parkhill_00	
+MTHFR2	5,10-Methylenetetrahydrofolate reductase (NADH)	[c] : (2) h + mlthf + nadh --> 5mthf + nad	EC 1.5.1.20	Cj1202	MetF		THF Metabolism	Parkhill_00	
+AHMMPS	4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase	[c] : (2) air + (2) h2o --> (2) 4ahmmp + (2) gcald + o2 + (2) pi		Cj0453	ThiC		Thiamine Biosynthesis	Parkhill_00	
+HMPK1	Hydroxymethylpyrimidine kinase (ATP)	[c] : 4ahmmp + atp --> 4ampm + adp + h	EC 2.7.1.49	Cj1082c	ThiD	HP0844 (43.40%)	Thiamine Biosynthesis	Parkhill_00	
+PMPK	Phosphomethylpyrimidine kinase	[c] : 4ampm + atp --> 2mahmp + adp	EC 2.7.4.7	Cj1082c	ThiD	HP0844 (43.40%)	Thiamine Biosynthesis	KEGG	
+THZPSN	Thiazole phosphate synthesis	[c]: atp + cys-L + dxyl5p + tyr-L  --> 4hba + 4mpetz + ala-L + amp + co2 + h2o + h + ppi 		(Cj1046c and Cj0240 and Cj1044c and Cj1045c)	ThiF, iscS, ThiG, ThiH	HP0814 (34.20%)	Thiamine Biosynthesis	Parkhill_00, Feist_07	Reactions pooled together
+TMPKr	Thiamine-phosphate kinase	[c] : atp + thmmp <==> adp + thmpp	EC 2.7.4.16	Cj1458c	ThiL		Thiamine Biosynthesis	Parkhill_00	
+TMPPP	Thiamine-phosphate diphosphorylase	[c] : 2mahmp + 4mpetz + h --> ppi + thmmp	EC 2.5.1.3	Cj1081c	ThiE	HP0843 (38.90%)	Thiamine Biosynthesis	Parkhill_00, Gundogdu_07	
+HSDy	Homoserine dehydrogenase (NADPH)	[c] : hom-L + nadp <==> aspsa + h + nadph	EC 1.1.1.3	Cj0149c	MetL	HP0822 (53.30%)	Threonine Metabolism	Parkhill_00	
+HSK	Homoserine kinase	[c] : atp + hom-L --> adp + h + phom	EC 2.7.1.39	Cj0134	ThrB	HP1050 (51.60%)	Threonine Metabolism	Parkhill_00	
+THRD-L	L-Threonine deaminase	[c] : thr-L --> 2obut + nh4	EC 4.3.1.19 	Cj0828c	ilvA		Threonine Metabolism	Parkhill_00	
+THRS	Threonine synthase	[c] : h2o + phom --> pi + thr-L	EC 4.2.3.1	Cj0812	ThrC	HP0098 (43.50%)	Threonine Metabolism	Parkhill_00	
+ACt2r	Acetate reversible transport via proton symport	ac[e] + h[e]  <==> ac[c] + h[c] 					Transport	Mendz_97	
+ADNt2	Adenosine transport in via proton symport	adn[e] + h[e] --> adn[c] + h[c]					Transport	Thiele_05	
+AKGt2r	2-Oxoglutarate reversible transport via symport	akg[e] + h[e] <==> akg[c] + h[c]		Cj1619	KgtP	HP1091 (49.90%)	Transport	Parkhill_00	
+ALAt2	L-Alanine transport in via proton symport	ala-L[e] + h[e] --> ala-L[c] + h[c]		Cj0903c	DagA	HP0942 (33.60%)	Transport	Parkhill_00	
+ALAt4	L-alanine-Sodium symporter	ala-L[e] + na1[e] --> ala-L[c] + na1[c]		Cj0903c	DagA	HP0942 (33.60%)	Transport	Parkhill_00	
+ARGt2r	L-Arginine reversible transport via proton symport	arg-L[e] + h[e] <==> arg-L[c] + h[c]					Transport	Leach_97, Reed_03	
+ASNt2	L-Asparagine transport in via proton symport	asn-L[e] + h[e] --> asn-L[c] + h[c]		(Cj0088 or Cj0671)	DcuA, DcuB	HP0724 (61.00%)	Transport	Parkhill_00	
+ASPabc	L-Aspartate transport via ABC system	atp[c] + asp-L[e] + h2o[c] --> adp[c] + asp-L[c]+ h[c] + pi[c]		Cj0921c	Peb1a		Transport	Gundogdu_07, Leon-Kempis_06	
+ASPt2_2	L-Aspartate transport via proton symport (2 H)	asp-L[e] + (2) h[e] --> asp-L[c] + (2) h[c]		Cj1192	DctA		Transport	Parkhill_00	
+ASPt2r	L-Aspartate reversible transport via proton symport	asp-L[e] + h[e] <==> asp-L[c] + h[c]		(Cj0088 or Cj0671)	DcuA, DcuB	HP0724 (61.00%)	Transport	Parkhill_00	
+CITt7	Citrate transport via succinate antiport	cit[e] + succ[c]  --> cit[c] + succ[e] 		Cj0203			Transport	Parkhill_00, Line_10, Reed_03	
+CO2t	CO2 transporter via diffusion	co2[e] <==> co2[c]					Transport	Thiele_05	
+CYSabc	L-Cysteine transport via ABC system	atp[c] + cys-L[e] + h2o[c] --> adp[c] + cys-L[c] + h[c] + pi[c]		Cj0982c	CjaA	HP1172 (56.10%)	Transport	Parkhill_00, Muller_05	
+DALAt2	D-Alanine transport via proton symport	ala-D[e] + h[e] --> ala-D[c] + h[c]		Cj0903c	DagA	HP0942 (33.60%)	Transport	Parkhill_00	
+DSERt2	D-serine transport via proton symport	h[e] + ser-D[e] --> h[c] + ser-D[c]		Cj0903c	DagA	HP0942 (33.60%)	Transport	Parkhill_00	
+FE2abc	Iron (II) transport via ABC system	atp[c] + fe2[e] + h2o[c] --> adp[c] + fe2[c] + h[c] + pi[c]		Cj1398	FeoB	HP0687 (50.50%)	Transport	Parkhill_00	
+FE3abc	iron (III) transport via ABC system	atp[c] + fe3[e] + h2o[c] --> adp[c] + fe3[c] + h[c] + pi[c]		(Cj0175c and Cj0174c and Cj0173c)	CfbpA, CfbpB, CfbpC		Transport	Parkhill_00	
+FEDCabc	Iron (III) dicitrate transport via ABC system	atp[c] + (2) cit[e] + fe3[e] + h2o[c] --> adp[c] + (2) cit[c] + fe3[c] + h[c] + pi[c]		(Cj0755 or Cj1614 or (Cj0615 and Cj1616))	FecA, FecD, FecE	HP0686 (23.40%), HP0807 (21.60%), HP0889 (31.20%), HP0888 (32.90%), HP1400	Transport	Parkhill_00, Gundogdu_07	
+FORt	Formate transport via diffusion	for[e] <==> for[c]					Transport	Mohammed_04	
+FUMt2_2	Fumarate transport via proton symport (2 H)	fum[e] + (2) h[e] --> fum[c] + (2) h[c]		Cj1192	DctA		Transport	Parkhill_00	
+GALt2	D-Galactose transport in via proton symport	gal[e] + h[e] --> gal[c] + h[c]		Cj0486	GluP	HP1174 (32.60%)	Transport	Parkhill_00	
+GLCt2	D-Glucose transport in via proton symport	glc-D[e] + h[e] --> glc-D[c] + h[c]		Cj0486	GluP	HP1174 (32.60%)	Transport	Parkhill_00	glc-D[c] dead end
+GLNabc	L-Glutamine transport via ABC system	atp[c] + gln-L[e] + h2o[c] --> adp[c] + gln-L[c] + h[c] + pi[c]		(Cj0467 and Cj0468 and Cj0469)	GlnH, GlnP, GlnQ	HP1169 (45.3%), HP1170 (49.30%), HP1171 (61.40%)	Transport	Parkhill_00	
+GLUabc	L-Glutamate transport via ABC system	atp[c] + glu-L[e] + h2o[c] --> adp[c] + glu-L[c] + h[c] + pi[c]		Cj0921c	Peb1a		Transport	Gundogdu_07, Leon-Kempis_06	
+GLYt2	Glycine transport in via proton symport	gly[e] + h[e] --> gly[c] + h[c]		Cj0903c	DagA	HP0942 (33.60%)	Transport	Parkhill_00	
+H2CO3TP	H2CO3 transport	h2co3[e] <==> h2co3[c]					Transport	Thiele_05	
+H2Ot	H2O transport via diffusion	h2o[e] <==> h2o[c]					Transport	Thiele_05	
+HISabc	L-Histidine transport via ABC system	atp[c] + h2o[c] + his-L[e] --> adp[c] + h[c] + his-L[c] + pi[c]					Transport	Leach_97	
+HYXNt	Hypoxanthine transport	hxan[e]  <==> hxan[c] 					Transport	Thiele_05	
+ILEabc	L-Isoleucine transport via ABC system	atp[c] + h2o[c] + ile-L[e] --> adp[c] + h[c] + ile-L[c] + pi[c]					Transport	Leach_97	
+LEUabc	L-Leucine transport via ABC system	atp[c] + h2o[c] + leu-L[e] --> adp[c] + h[c] + leu-L[c] + pi[c]					Transport	Leach_97	
+L-LACt2r	L-Lactate reversible transport via proton symport	h[e] + lac-L[e] <==> h[c] + lac-L[c]		Cj0076c	LctP	HP0141 (61.20%), HP0140 (60.60%)	Transport	Parkhill_00	
+LYSt2r	L-Lysine reversible transport via proton symport	h[e] + lys-L[e] <==> h[c] + lys-L[c]					Transport	Leach_97	
+MALDt2	D-Malate transport via proton symport (2 H)	(2) h[e] + mal-D[e]  --> (2) h[c] + mal-D[c] 					Transport	Line_10	
+MALt2_2	L-Malate transport via proton symport (2 H)	(2) h[e] + mal-L[e] --> (2) h[c] + mal-L[c]		Cj1192	DctA		Transport	Parkhill_00	
+MALt2r	L-Malate reversible transport via proton symport	h[e] + mal-L[e] <==> h[c] + mal-L[c]		(Cj0088 or Cj0671)	DcuA, DcuB	HP0724 (61.00%)	Transport	Parkhill_00	
+METabc	L-Methionine transport via ABC system	atp[c] + h2o[c] + met-L[e] --> adp[c] + h[c] + met-L[c] + pi[c]					Transport	Leach_97	
+NARK	Nitrite transport	no2[c] --> no2[e]					Transport	Thiele_05	
+NAt3-1	Sodium proton antiporter (H:NA is 1:1)	h[e] + na1[c] <==> h[c] + na1[e]		(Cj1684c or Cj1655c)	NhaA, NapA	HP1183 (35.9%), HP1552 (41.00%)	Transport	Parkhill_00	
+NH4t2r	Ammonia transport in via proton symport	nh4[e] <==> nh4[c]					Transport	Thiele_05	
+NO3t2	Nitrate transport in via proton symport, in	h[e] + no3[e] --> h[c] + no3[c]					Transport	Thiele_05	
+NO3t3	Nitrate transport out via proton antiport, out	h[e] + no3[c] --> h[c] + no3[e]					Transport	Thiele_05	
+NOt	Nitric oxide transport 	no[e] <==> no[c]					Transport	Thiele_05	
+O2t	O2 transport (diffusion)	o2[e] <==> o2[c]					Transport	Thiele_05	
+PHEt2r	L-Phenylalanine reversible transport via proton symport	h[e] + phe-L[e] <==> h[c] + phe-L[c]					Transport	Leach_97	
+PIabc	Phosphate transport via ABC system	atp[c] + h2o[c] + pi[e] --> adp[c] + h[c] + (2) pi[c]		(Cj0613 and Cj0614 and Cj0615 and Cj0616)	PstS, PstC, PstA, PstB		Transport	Parkhill_00	
+PIMEtr	Pimelate transport, reversible	pime[e] <==> pime[c]					Transport	Thiele_05	Model assumption
+PIt2r	Phosphate reversible transport via symport	h[e] + pi[e] <==> h[c] + pi[c]		Cj1194	PitB	HP1491 (32.70%)	Transport	Parkhill_00	
+PROt2r	L-Proline reversible transport via proton symport	h[e] + pro-L[e] <==> h[c] + pro-L[c]		Cj0250c	ProP	HP0936 (50.90%)	Transport	Parkhill_00	
+PROt4	Proline transporter	na1[e] + pro-L[e] --> na1[c] + pro-L[c]		Cj1502c	PutP	HP0055 (74.90%)	Transport	Parkhill_00	
+PYRt2r	Pyruvate reversible transport via proton symport	h[e] + pyr[e] <==> h[c] + pyr[c]					Transport	Line_10	
+RIBFLVt2	Riboflavin transport in via proton symport	h[e] + ribflv[e] --> h[c] + ribflv[c]					Transport	Crossley_07	
+SERt2	L-Serine reversible transport via proton symport	h[e] + ser-L[e] <==> h[c] + ser-L[c]		Cj1625c	SdaC	HP0133 (42.00%)	Transport	Parkhill_00, Velayudhan_04	
+SERt4	L-Serine via sodium symport	na1[e] + ser-L[e]  --> na1[c] + ser-L[c] 					Transport	Parkhill_00, Velayudhan_04	
+SUCCt2	Succinate transport via proton symport	h[e] + succ[e] <==> h[c] + succ[c]		(Cj0088 or Cj0671)	DcuA, DcuB	HP0724 (61.00%)	Transport	Parkhill_00	
+SUCCt2_2	Succinate transport via proton symport (2 H)	(2) h[e] + succ[e] --> (2) h[c] + succ[c]		Cj1192	DctA		Transport	Parkhill_00	
+SUCFUMti	Succinate:fumarate antiporter	fum[e] + succ[c] <==> fum[c] + succ[e]		(Cj0088 or Cj0671)	DcuA, DcuB	HP0724 (61.00%)	Transport	Parkhill_00, Kelly_08	
+SULabc	Sulfate transport via ABC system	atp[c] + h2o[c] + so4[e] --> adp[c] + h[c] + pi[c] + so4[c]					Transport	Thiele_05	
+THRt4	L- threonine via sodium symport	na1[e] + thr-L[e]  --> na1[c] + thr-L[c] 					Transport	Leach_97, Velayudhan_04	
+TRPt2r	L-Tryptophan reversible transport via proton symport	h[e] + trp-L[e] <==> h[c] + trp-L[c]					Transport	Thiele_05, Reed_03	
+TYRt2r	L-Tyrosine reversible transport via proton symport	h[e] + tyr-L[e] <==> h[c] + tyr-L[c]					Transport	Leach_97	
+URAt2	Uracil transport in via proton symport	h[e] + ura[e] --> h[c] + ura[c]					Transport	Thiele_05	
+UREAt	Urea transport via facilitate diffusion	urea[e]  <==> urea[c] 					Transport	Kelly_08	
+VALabc	L-Valine transport via ABC system	atp[c] + h2o[c] + val-L[e] --> adp[c] + h[c] + pi[c] + val-L[c]					Transport	Leach_97	
+ANPRT	Anthranilate phosphoribosyltransferase	[c] : anth + prpp --> ppi + pran	EC 2.4.2.18	Cj0346	TrpD	HP1280 (33.20%), HP1281 (34.60%)	Tryptophan Biosynthesis	Parkhill_00	
+ANS	Anthranilate synthase	[c] : chor + gln-L --> anth + glu-L + h + pyr	EC 4.1.3.27	Cj0345	TrpE	HP1282 (35.60%)	Tryptophan Biosynthesis	Parkhill_00	
+ANS2	Anthranilate synthase 2	[c] : chor + nh4 --> anth + h + h2o + pyr	EC 4.1.3.27	Cj0345	TrpE	HP1282 (35.60%)	Tryptophan Biosynthesis	Parkhill_00	
+IGPS	Indole-3-glycerol-phosphate synthase	[c] : 2cpr5p + h --> 3ig3p + co2 + h2o	EC 4.1.1.48	Cj0498	TrpC	HP1279 (N term, 37.60%))	Tryptophan Biosynthesis	Parkhill_00	
+PRAIi	Phosphoribosylanthranilate isomerase (irreversible)	[c] : pran --> 2cpr5p	EC 5.3.1.24	Cj0347	TrpF	HP1279 (C-term, 38.20%)	Tryptophan Biosynthesis	Parkhill_00	
+TRPS1	Tryptophan synthase (indoleglycerol phosphate)	[c] : 3ig3p + ser-L --> g3p + h2o + trp-L	EC 4.2.1.20	(Cj0348 and Cj0349)	TrpA, TrpB	HP1277 (30.30%), HP1278 (56.40%)	Tryptophan Biosynthesis	Parkhill_00	
+TRPS2	Tryptophan synthase (indole)	[c] : indole + ser-L --> h2o + trp-L	EC 4.2.1.20	(Cj0348 and Cj0349)	TrpA, TrpB	HP1277 (30.30%), HP1278 (56.40%)	Tryptophan Biosynthesis	Parkhill_00	
+TRPS3	Tryptophan synthase (indoleglycerol phosphate)	[c] : 3ig3p --> g3p + indole	EC 4.2.1.20	(Cj0348 and Cj0349)	TrpA, TrpB	HP1277 (30.30%), HP1278 (56.40%)	Tryptophan Biosynthesis	Parkhill_00	
+PPND	Prephenate dehydrogenase	[c] : nad + pphn --> 34hpp + co2 + nadh	EC 1.3.1.12	Cj0130	TyrA	HP1380 (45.30%)	Tyrosine Biosynthesis	Parkhill_00	
+TYRTA	Tyrosine transaminase	[c] : akg + tyr-L <==> 34hpp + glu-L	EC 2.6.1.1	Cj0762c	AspB	HP0672 (57.50%)	Tyrosine Biosynthesis	Parkhill_00, Guccione_08	
+HBZOPT	Hydroxybenzoate octaprenyltransferase	[c] : 4hbz + octdp --> 3ophb + ppi	EC 2.5.1.-	Cj0164c	UbiA	HP1360 (51.20%)	Others	Parkhill_00	4hbz dead end
+OMBZLM	2-Octaprenyl-6-methoxy-benzoquinol methylase	[c] : 2ombzl + amet --> 2ommbl + ahcys + h	EC 2.1.1.-	Cj0324	UbiE	HP1483 (50.40%)	Others	Parkhill_00	2ombzl, 2ommbl dead ends
+OPHBDC	Octaprenyl-hydroxybenzoate decarboxylase	[c] : 3ophb + h --> 2oph + co2	EC 4.1.1.-	Cj0546	UbiD	HP0396	Others	Gundogdu_07	2oph dead end
+ARGSL	Argininosuccinate lyase	[c] : argsuc <==> arg-L + fum	EC 3.5.3.1	Cj0931c	ArgH		Urea cycle	Parkhill_00	
+OCBTi	Ornithine carbamoyltransferase, irreversible	[c] : cbp + orn --> citr-L + h + pi	EC 4.3.2.1	Cj0994c	ArgF		Urea cycle	Parkhill_00	
+UREAc	Urea carboxylase	[c]: urea + hco3 +atp --> adp + pi+ h + allo	EC 2.1.3.3	Cj1541	Uca		Urea cycle	Kelly_08	
+UREAh	Allophanate hydrolase	[c]: allo + (3) h2o + h  --> (2) nh4 + (2) hco3		(Cj1542 and Cj1543)			Urea cycle	Gundogdu_07, Kelly_08	
+ARGSS	Argininosuccinate synthase	[c] : asp-L + atp + citr-L --> amp + argsuc + h + ppi		Cj0665c	ArgG		Urea Cycle 	Parkhill_00	
+ACLS	Acetolactate synthase	[c]: h + (2) pyr  --> alac-S + co2 	EC 2.2.1.6	(Cj0574 and Cj0575)	IlvI, IlvH		Valine Metabolism	Parkhill_00	
+DHAD1	Dihydroxy acid dehydratase (2,3-dihydroxy-3-methylbutanoate)	[c]: 23dhmb --> 3mob + h2o 	EC 4.2.1.9	Cj0013	IlvD		Valine Metabolism	Parkhill_00	
+KARA1i	Acetohydroxy acid isomeroreductase	[c] : alac-S + h + nadph --> 23dhmb + nadp	EC 1.1.1.86	Cj0632	IlvC	HP0330 (52.60%)	Valine Metabolism	Parkhill_00	
+VALTA	Valine transaminase	[c] : akg + val-L <==> 3mob + glu-L	EC 2.6.1.42	Cj0269c	IlvE	HP1468 (33.20%)	Valine Metabolism	Parkhill_00	
+Biomass_HP	Biomass	(0.05) 5mthf[c] + (0.0084) lps_HP[c] + (0.00005) accoa[c] + (0.326) lys-L[c] + (0.488) ala-L[c] + (0.146) met-L[c] + (0.001) amp[c] + (0.000006) mqn6[c] + (0.281) arg-L[c] + (0.00215) nad[c] + (0.229) asn-L[c] + (0.00005) nadh[c] + (0.229) asp-L[c] + (0.00013) nadp[c] + (45.7318) atp[c] + (0.0004) nadph[c] + (0.000006) btn[c] + (0.0748946) pe_HP[c] + (0.027907) clpn_HP[c] + (0.0276) peptido_EC[c] + (0.000006) coa[c] + (0.0163548) pg_HP[c] + (0.126) ctp[c] + (0.176) phe-L[c] + (0.087) cys-L[c] + (0.000006) pheme[c] + (0.0247) datp[c] + (0.21) pro-L[c] + (0.0254) dctp[c] + (0.0033748) ps_HP[c] + (0.0254) dgtp[c] + (0.035) ptrc[c] + (0.0247) dttp[c] + (0.000006) pydx5p[c] +  (0.205) ser-L[c] + (0.00001) fad[c] + (0.007) spmd[c] + (0.25) gln-L[c] + (0.000003) succoa[c] + (0.25) glu-L[c] + (0.000006) thmpp[c] + (0.582) gly[c] + (0.241) thr-L[c] + (0.203) gtp[c] + (0.054) trp-L[c] + (45.5608) h2o[c] + (0.131) tyr-L[c] + (0.09) his-L[c] + (0.003) udpg[c] + (0.276) ile-L[c] + (0.136) utp[c] + (0.428) leu-L[c] + (0.402) val-L[c] --> (41.6918) adp[c] + (41.691389) h[c] + (41.693631) pi[c] + (0.668191) ppi[c]						Thiele_05	Biomass of H. pylori + pydx5p

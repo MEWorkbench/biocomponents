@@ -1,0 +1,4 @@
+Rxn name	Rxn description	Formula	Gene-reaction association	Genes	Protein	Subsystem	Reversible	LB	UB	Objective	ConfidenceScore	E.C. number	Notes	References
+HGREACT	Hugo Reaction reversible transport	zymst[e]  => zymst[c] + hugometabX[c] 				Transport Reaction	1			0				
+HGREAC2	Hugo Reaction reversible transport	[e] : zymst  => zymst + hugometabX 				Transport Reaction	1			0				
+	Hugo Reaction reversible transport	zymst[z]  => zymst[y] + hugometabX 				Transport Reaction	1			0				

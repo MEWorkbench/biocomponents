@@ -1,0 +1,7 @@
+Abbreviation	Name	Formula (neutral)	Formula (charged)	Charge	Compartment
+10F_THF[H]	10-Formyltetrahydrofolate	C20H23N7O7	C20H23N7O7	0	Cytosol
+13BPG[H]	C3H8O10P2	C3H8O10P2	0	Cytosol
+2HY_5CARBMMUC_SA[H]	2-Hydroxy-5-carboxymethylmuconate semialdehyde	C8H8O6	C8H8O6	0	Cytosol
+2HYBUTNA[H]	2-Hydroxybutyrate	C4H8O3	C4H8O3	0	Cytosol
+2K3DO_GLCN[H]	2-Dehydro-3-deoxy-D-gluconate	C6H10O6		Cytosol
+2K3M_BUT[H]	3-Methyl-2-oxobutanoate	C5H8O3	C5H8O3	0
