@@ -4,11 +4,10 @@ import java.io.File;
 import java.net.URL;
 import java.util.HashMap;
 
-import pt.uminho.ceb.biosystems.mew.utilities.io.Delimiter;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.DatabaseCSVFilesReader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.NewDatabaseCSVFilesReader;
+import pt.uminho.ceb.biosystems.mew.utilities.io.Delimiter;
 
 public class DatabaseCSVTest {
 		

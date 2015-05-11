@@ -14,9 +14,6 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.MapUtils;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.CompartmentCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ContainerException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneCI;
@@ -32,6 +29,8 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.Metabo
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.ReactionAlreadyExistsException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.ReactionDoesNotExistsException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.StoichiometryDoesNotExistsException;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.MapUtils;
 
 
 public class Container implements Serializable, Cloneable/*

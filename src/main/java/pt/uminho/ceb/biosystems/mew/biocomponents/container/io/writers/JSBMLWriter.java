@@ -54,7 +54,6 @@ import org.sbml.jsbml.text.parser.ParseException;
 import org.sbml.jsbml.xml.XMLNode;
 import org.sbml.jsbml.xml.XMLTriple;
 import org.sbml.jsbml.xml.parsers.MathMLStaxParser;
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.ContainerUtils;
@@ -65,6 +64,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.JSBMLWriterException;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 /**
  * A writer for SBML Files 
  * 

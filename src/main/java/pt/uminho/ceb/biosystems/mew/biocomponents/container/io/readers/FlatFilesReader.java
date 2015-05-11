@@ -36,9 +36,6 @@ import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.indexedhashmap.IndexedHashMap;
-import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.CompartmentCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.InvalidBooleanRuleException;
@@ -49,6 +46,8 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionT
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.interfaces.IContainerBuilder;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.MatrixEnum;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.indexedhashmap.IndexedHashMap;
+import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
 
 
 

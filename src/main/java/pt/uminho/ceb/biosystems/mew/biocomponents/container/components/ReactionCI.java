@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.MetaboliteDoesNotPresentInReaction;
 import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 import pt.uminho.ceb.biosystems.mew.utilities.datastructures.tree.BooleanTreeUtils;
 import pt.uminho.ceb.biosystems.mew.utilities.grammar.syntaxtree.AbstractSyntaxTree;
@@ -18,8 +19,6 @@ import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.DataType
 import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.IValue;
 import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
 import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParserSingleton;
-
-import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.MetaboliteDoesNotPresentInReaction;
 
 public class ReactionCI implements Serializable, Cloneable {
 

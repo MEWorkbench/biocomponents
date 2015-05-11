@@ -6,13 +6,12 @@ import java.io.Writer;
 import java.util.Collection;
 import java.util.TreeSet;
 
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.ContainerUtils;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.MetaboliteCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionConstraintCI;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 
 public class TableFiles {
 	

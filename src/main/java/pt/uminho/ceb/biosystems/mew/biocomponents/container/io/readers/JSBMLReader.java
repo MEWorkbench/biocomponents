@@ -36,7 +36,6 @@ import org.sbml.jsbml.validator.SBMLValidator.CHECK_CATEGORY;
 import org.sbml.jsbml.xml.parsers.MathMLStaxParser;
 import org.sbml.jsbml.xml.parsers.SBMLCoreParser;
 import org.xml.sax.SAXException;
-import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
 
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.CompartmentCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneCI;
@@ -49,6 +48,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.Stoichiom
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.interfaces.IContainerBuilder;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidationException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidator;
+import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
 
 public class JSBMLReader implements IContainerBuilder{
 

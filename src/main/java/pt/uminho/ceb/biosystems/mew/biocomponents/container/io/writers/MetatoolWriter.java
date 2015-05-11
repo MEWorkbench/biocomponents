@@ -29,8 +29,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.pair.Pair;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.CompartmentCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.MetaboliteCI;
@@ -38,6 +36,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionConstraintCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.pair.Pair;
 
 public class MetatoolWriter{// implements IModelWriter{
 

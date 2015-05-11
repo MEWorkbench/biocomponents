@@ -15,7 +15,6 @@ import javax.xml.transform.TransformerException;
 
 import org.junit.Assert;
 import org.junit.Test;
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -27,6 +26,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLRead
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidationException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidator;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.jsbml.validators.JSBMLValidatorException;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 
 public class JSbmlUnitTests {
 	

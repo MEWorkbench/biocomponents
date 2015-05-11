@@ -12,12 +12,12 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 
 import org.junit.Test;
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 import org.xml.sax.SAXException;
 
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidationException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidator;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.jsbml.validators.JSBMLValidatorException;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 
 public class JSBMLTest {
 

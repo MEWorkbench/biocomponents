@@ -10,8 +10,6 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.CompartmentCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.InvalidBooleanRuleException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.MetaboliteCI;
@@ -19,6 +17,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLReader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.chemestry.BalanceValidator;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 
 public class ContainerUtils {
 

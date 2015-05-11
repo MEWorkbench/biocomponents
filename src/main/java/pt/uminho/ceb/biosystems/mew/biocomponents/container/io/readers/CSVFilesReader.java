@@ -33,10 +33,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.indexedhashmap.IndexedHashMap;
-import pt.uminho.ceb.biosystems.mew.utilities.grammar.syntaxtree.TreeUtils;
-import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.CompartmentCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneReactionRuleCI;
@@ -46,6 +42,9 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.interfaces.IContainerBuilder;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.indexedhashmap.IndexedHashMap;
+import pt.uminho.ceb.biosystems.mew.utilities.grammar.syntaxtree.TreeUtils;
+import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
 
 
 public class CSVFilesReader implements IContainerBuilder

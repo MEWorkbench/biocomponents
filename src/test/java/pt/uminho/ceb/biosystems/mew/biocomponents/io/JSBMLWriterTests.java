@@ -2,12 +2,6 @@ package pt.uminho.ceb.biosystems.mew.biocomponents.io;
 
 import java.net.URL;
 
-import org.junit.Test;
-
-import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
-import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.FlatFilesReader;
-import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.writers.JSBMLWriter;
-
 public class JSBMLWriterTests {
 	
 	private String getFile(String fileName){

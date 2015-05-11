@@ -29,13 +29,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import pt.uminho.ceb.biosystems.mew.utilities.io.Delimiter;
-
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.MetaboliteCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionConstraintCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
+import pt.uminho.ceb.biosystems.mew.utilities.io.Delimiter;
 
 public class FlatFilesWriter {
 
