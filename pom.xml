@@ -52,6 +52,30 @@
           <skipTests>${skipTests}</skipTests>
         </configuration>
       </plugin>
+      <plugin>
+		 <groupId>org.apache.maven.plugins</groupId>
+		 <artifactId>maven-source-plugin</artifactId>
+		 <executions>
+		   <execution>
+		     <id>attach-sources</id>
+		     <goals>
+		       <goal>jar</goal>
+		     </goals>
+		   </execution>
+		 </executions>
+	  </plugin>
+      <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-javadoc-plugin</artifactId>
+		  <executions>
+		    <execution>
+		      <id>attach-javadocs</id>
+		      <goals>
+		        <goal>jar</goal>
+		      </goals>
+		    </execution>
+		  </executions>
+	</plugin>
     </plugins>
   </build>
   
@@ -61,16 +85,20 @@
 		<name>EBI Repository</name>
 		<url>http://www.ebi.ac.uk/~maven/m2repo</url>
 	 </repository>
+	 <repository>
+	    <id>biosystems-releases</id>
+	    <url>http://193.137.11.210:8081/nexus/content/repositories/biosystems-releases</url>
+	  </repository>
 	</repositories>
   
   <distributionManagement>
-	  <snapshotRepository>
-	    <id>HGRepSnap</id>
-	    <url>http://193.137.11.210:8081/nexus/content/repositories/HGRepSnap</url>
-	  </snapshotRepository>
-	  <repository>
-	    <id>HGRep</id>
-	    <url>http://193.137.11.210:8081/nexus/content/repositories/HGRep</url>
-	  </repository>
+  	<snapshotRepository>
+	    <id>biosystems-snapshots</id>
+	    <url>http://193.137.11.210:8081/nexus/content/repositories/biosystems-snapshots</url>
+	</snapshotRepository>
+	<repository>
+	    <id>biosystems-releases</id>
+		<url>http://193.137.11.210:8081/nexus/content/repositories/biosystems-releases</url>
+	</repository>
   </distributionManagement>
 </project>
