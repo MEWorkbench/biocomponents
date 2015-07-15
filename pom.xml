@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>pt.uminho.ceb.biosystems.mew</groupId>
-  <artifactId>biocomponents</artifactId>
-  <version>0.0.1</version>
+  <artifactId>mew-biocomponents</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>biocomponents</name>
@@ -23,7 +23,7 @@
     </dependency>
     <dependency>
       <groupId>pt.uminho.ceb.biosystems.mew</groupId>
-      <artifactId>utilities</artifactId>
+      <artifactId>mew-utilities</artifactId>
       <version>0.0.1</version>
     </dependency>
     <dependency>
