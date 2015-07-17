@@ -1616,6 +1616,9 @@ public class Container implements Serializable, Cloneable/*
 		for (MetaboliteCI met : getMetabolites().values())
 			met.setReactionsId(new HashSet<String>());
 
+//		for(GeneCI g : getGenes().values())
+//			g.getReactionIds().clear();
+		
 		Set<String> genesToRemove = new HashSet<String>();
 		genesToRemove.addAll(genes.keySet());
 
@@ -1625,8 +1628,10 @@ public class Container implements Serializable, Cloneable/*
 			verifyStoiDep(reaction.getReactants(), rid, throwerros);
 
 			for (String g : reaction.getGenesIDs()) {
-				if (genesToRemove.contains(g))
+				if (genesToRemove.contains(g)){
 					genesToRemove.remove(g);
+					genes.get(g).getReactionIds().clear();
+				}
 
 				GeneCI gene = genes.get(g);
 				if (gene == null) {
