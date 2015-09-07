@@ -1616,9 +1616,6 @@ public class Container implements Serializable, Cloneable/*
 		for (MetaboliteCI met : getMetabolites().values())
 			met.setReactionsId(new HashSet<String>());
 
-//		for(GeneCI g : getGenes().values())
-//			g.getReactionIds().clear();
-		
 		Set<String> genesToRemove = new HashSet<String>();
 		genesToRemove.addAll(genes.keySet());
 
@@ -1628,10 +1625,8 @@ public class Container implements Serializable, Cloneable/*
 			verifyStoiDep(reaction.getReactants(), rid, throwerros);
 
 			for (String g : reaction.getGenesIDs()) {
-				if (genesToRemove.contains(g)){
+				if (genesToRemove.contains(g))
 					genesToRemove.remove(g);
-					genes.get(g).getReactionIds().clear();
-				}
 
 				GeneCI gene = genes.get(g);
 				if (gene == null) {
@@ -2094,8 +2089,18 @@ public class Container implements Serializable, Cloneable/*
 		return ret;
 	}
 	
-	public void addReaction(ReactionCI reaction) throws ReactionAlreadyExistsException, IOException {
+	public Set<String> checkReactions(ReactionCI reaction, boolean rev, boolean comp){
+		
+		Set<String> set = new HashSet<>();
+		for(ReactionCI containerReaction : reactions.values()) {
 
+			boolean sameReaction = containerReaction.hasSameStoichiometry(reaction, rev, comp);
+			if(sameReaction) set.add(containerReaction.getId());
+		}
+		return set;
+	}
+	
+	public void addReaction(ReactionCI reaction, boolean verify) throws ReactionAlreadyExistsException, IOException {
 		String reactionId = reaction.getId();
 		if(reactions.containsKey(reactionId))
 			throw new ReactionAlreadyExistsException(reactionId);
@@ -2112,7 +2117,13 @@ public class Container implements Serializable, Cloneable/*
 			}
 			reactions.put(reactionId, reaction);
 		}
-		verifyDepBetweenClass();
+		if(verify)
+			verifyDepBetweenClass();
+	}
+	
+	public void addReaction(ReactionCI reaction) throws ReactionAlreadyExistsException, IOException {
+
+		addReaction(reaction, true);
 	}
 	
 	public ReactionCI addReactionReturnSame(ReactionCI reaction) throws ReactionAlreadyExistsException, IOException {
