@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,8 +22,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.ErrorsException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLReader;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLLevel3Reader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidationException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidator;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.jsbml.validators.JSBMLValidatorException;
@@ -552,5 +555,19 @@ public class JSbmlUnitTests {
 //			e1.printStackTrace();
 //		}
 		
+	}
+	
+	@Test
+	public void jsbmlReaderV3Test01(){
+		try {
+			JSBMLLevel3Reader reader = new JSBMLLevel3Reader(getFile("level3Models/iAF1260.xml"), "NoName");
+			Container cont = new Container(reader);
+//			Set<String> met = cont.identifyMetabolitesIdByPattern(Pattern.compile(".*_b"));
+			Assert.assertEquals("Container is null", true, cont != null);
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
