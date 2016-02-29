@@ -427,6 +427,7 @@ public class JSBMLReader implements IContainerBuilder{
 				warnings.add("Problem in reaction "+ ogreaction.getId() + ": " + e.getMessage());
 			} catch (XMLStreamException e) {
 				e.printStackTrace();
+				throw new RuntimeException(e);
 			}
 			
 			reactionList.put(reactionId,ogreaction);
