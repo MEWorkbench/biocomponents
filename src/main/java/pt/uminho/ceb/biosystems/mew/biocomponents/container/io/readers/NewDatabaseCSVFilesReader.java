@@ -130,7 +130,7 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 																		// ()
 	private static String compartment = "\\[([\\w\\d\\.\\:]+)\\]";
 	private static Pattern patternEquation = Pattern.compile("^\\s*(?:" + compartment + "\\s*\\:)?"
-			+ "([\\d\\w\\+\\.\\*\\(\\)\\[\\]\\:\\s\\-\\,]+?)" + "(<)?((?:--?|==?)>)"
+			+ "([\\d\\w\\+\\.\\*\\(\\)\\[\\]\\:\\s\\-\\,]+?)" + "(<+)?((?:--?|==?)>+)"
 			+ "([\\d\\w\\+\\.\\*\\(\\)\\[\\]\\:\\s\\-\\,]*)\\s*$");
 	private static Pattern patternCompoundEq = Pattern.compile("^\\s*(?:" + stoic + "\\s+)?\\s*(?:\\*?\\s+)?(" + name
 			+ ")\\s*(?:" + compartment + ")?\\s*$");
@@ -197,6 +197,14 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 
 		populateInformation();
 	}
+	
+	
+	public NewDatabaseCSVFilesReader(File reactionsFile, Map<String, Integer> reacIndexes, 
+			String reactSep, Map<String, Integer> reacExtraInfo, 
+			boolean reacHasHeaders) throws Exception{
+		this(reactionsFile, null, null, reacIndexes, "", "", "", reactSep, null, reacExtraInfo, false, reacHasHeaders, null, null);
+	}
+	
 	
 	public NewDatabaseCSVFilesReader(File reactionsFile, Map<String, Integer> reacIndexes, 
 			String modelID, String modelName, String reactSep, Map<String, Integer> reacExtraInfo, 
@@ -544,6 +552,7 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 				if (this.hasGeneReactioAssociations)
 					reacHasGeneReacAssociation(fields, reactionGeneIndex, reactionId);
 			}
+			System.out.println(line);
 			line++;
 		}
 		r.close();
