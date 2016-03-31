@@ -1616,6 +1616,18 @@ public class Container implements Serializable, Cloneable/*
 		for (MetaboliteCI met : getMetabolites().values())
 			met.setReactionsId(new HashSet<String>());
 
+
+		Set<String> reactionsToDelete = new HashSet<String>();
+		for(ReactionCI rci: getReactions().values()){
+			if(rci.getMetaboliteSetIds().size() == 0)
+				reactionsToDelete.add(rci.getId());
+		}
+		
+		getReactions().keySet().removeAll(reactionsToDelete);
+		
+//		for(GeneCI g : getGenes().values())
+//			g.getReactionIds().clear();
+		
 		Set<String> genesToRemove = new HashSet<String>();
 		genesToRemove.addAll(genes.keySet());
 
