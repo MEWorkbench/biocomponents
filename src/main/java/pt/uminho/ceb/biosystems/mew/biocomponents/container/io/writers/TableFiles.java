@@ -104,10 +104,10 @@ public class TableFiles {
 			try {
 				info = cont.getReactionsExtraInfo().get(idExtraInfo).get(id);
 			} catch (Exception e) {
-				if(true) e.printStackTrace();
+				 e.printStackTrace();
 			}
 			
-			ret += (info==null)?"":info + sepFile;
+			ret += ((info==null)?"":info) + sepFile;
 		}
 		
 		return ret;
