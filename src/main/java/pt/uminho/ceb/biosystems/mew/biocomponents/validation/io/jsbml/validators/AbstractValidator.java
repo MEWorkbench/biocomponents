@@ -65,7 +65,7 @@ public abstract class AbstractValidator implements ElementValidator{
 		if(isEmpty(elem))
 			return getElementName() + " has the atribute "+ getAtributeId()+ " empty";
 		else if(unsuportCaracter(elem))
-			return "Unsuported caracters in atribute " + getAtributeId() + " of the element " + getElementName() + " [" + elem.getAttribute(getAtributeId())+ "]";
+			return "Unsuported characters in atribute " + getAtributeId() + " of the element " + getElementName() + " [" + elem.getAttribute(getAtributeId())+ "]";
 		
 		if(startWithNumber(elem)){
 			return "The atribute " + getAtributeId() + " of element " + getElementName() + " could not start with number";

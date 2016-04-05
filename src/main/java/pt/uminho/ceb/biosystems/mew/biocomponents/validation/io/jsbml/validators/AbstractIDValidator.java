@@ -88,7 +88,7 @@ public abstract class AbstractIDValidator implements ElementValidator{
 		if(isEmpty(elem))
 			return getElementName() + " has the attribute "+ getAtributeId()+ " empty";
 		else if(unsuportCaracter(elem))
-			return "Unsuported caracters in attribute " + getAtributeId() + " of the element " + getElementName() + " [" + elem.getAttribute(getAtributeId())+ "]";
+			return "Unsuported characters in attribute " + getAtributeId() + " of the element " + getElementName() + " [" + elem.getAttribute(getAtributeId())+ "]";
 		
 		if(startWithNumber(elem)){
 			return "The attribute " + getAtributeId() + " of element " + getElementName() + " could not start with number";
