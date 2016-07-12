@@ -42,6 +42,10 @@ public class MetaboliteFormula implements Serializable {
 		return elements.keySet();
 	}
 
+	public Map<String, Integer> getElements() {
+		return elements;
+	}
+
 	public String toString() {
 		String ret = originalFormula + "\t=>\t";
 
