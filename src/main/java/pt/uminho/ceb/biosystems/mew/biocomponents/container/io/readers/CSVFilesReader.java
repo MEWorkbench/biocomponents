@@ -115,6 +115,10 @@ public class CSVFilesReader implements IContainerBuilder
 	public static Set<String> metaboliteInfoID = new TreeSet<String>(Arrays.asList(NOTHING, METID, METNAME, METFORMULA));
 	public static Set<String> reactionInfoID = new TreeSet<String>(Arrays.asList(NOTHING, REACID, REACNAME, REACEQUATION, REACECNUMBER, REACGENERULE, REACSUBSYSTEM, REACLB, REACUB));
 	
+	public CSVFilesReader(String reactionsFilePath, Map<String, Integer> reacIndexes, String reactSep, Map<String, Integer> reacExtraInfo, boolean metHasHeaders, boolean reacHasHeaders) throws Exception{
+		this(reactionsFilePath, null, null, reacIndexes,"", "", "", "", 0, "", "", null, reactSep, null, reacExtraInfo, metHasHeaders, reacHasHeaders);
+	}
+	
 	public CSVFilesReader(String reactionsFilePath, String metabolitesFilePath, Map<String, Integer> metIndexes, Map<String, Integer> reacIndexes, String modelID, String modelName, String organismName, String notes, int version, String biomassId, String externalCompartmentId, String metSep, String reactSep, Map<String, Integer> metExtraInfo, Map<String, Integer> reacExtraInfo, boolean metHasHeaders, boolean reacHasHeaders) throws Exception{
 		this.reactionsFile = new File(reactionsFilePath);
 		this.metabolitesFile = new File(metabolitesFilePath);
