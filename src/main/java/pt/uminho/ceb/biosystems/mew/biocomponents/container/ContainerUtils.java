@@ -328,6 +328,19 @@ public class ContainerUtils {
 		
 		return reactions;
 	}
+	
+	static public Set<String> identyfyReactionWithDeadEndsNotIt(Container c/*, boolean useComp*/){
+		
+		Set<String> met = c.identifyDeadEnds(false);
+		
+		Set<String> reactions = new HashSet<String>();
+		
+		for(String m : met){
+			reactions.addAll(c.getMetabolite(m).getReactionsId());
+		}
+		
+		return reactions;
+	}
 
 	/**
 	 * Retrieve metabolites withou kegg ids from container
