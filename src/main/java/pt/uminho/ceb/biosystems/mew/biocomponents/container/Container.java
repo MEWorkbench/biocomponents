@@ -1660,7 +1660,7 @@ public class Container implements Serializable, Cloneable/*
 			}
 
 		if (metaboliteToRemove.size() > 0)
-			System.out.println("Metabolites To remove: " + metaboliteToRemove);
+			System.out.println("Metabolites To remove: " + metaboliteToRemove.size() + "/" + metabolites.size());
 
 		for (String id : metaboliteToRemove)
 			_removeMetabolite(id);

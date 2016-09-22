@@ -73,4 +73,34 @@ public class ReactionConstraintCI implements Serializable, Cloneable{
 	public String toString(){
 		return "["+lowerLimit + ", " + upperLimit + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(lowerLimit);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(upperLimit);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		ReactionConstraintCI other = (ReactionConstraintCI) obj;
+		if (Double.doubleToLongBits(lowerLimit) != Double.doubleToLongBits(other.lowerLimit))
+			return false;
+		if (Double.doubleToLongBits(upperLimit) != Double.doubleToLongBits(other.upperLimit))
+			return false;
+		return true;
+	}
+	
+	
 }

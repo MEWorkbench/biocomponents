@@ -509,6 +509,10 @@ public class ReactionCI implements Serializable, Cloneable {
 	}
 	
 	//TODO Change this name to compareStoichiometry
+	public Integer hasSameStoichiometry2(ReactionCI r, boolean ignoreCompartments){
+		return hasSameStoichiometry2(r, ignoreCompartments, true);
+	}
+	
 	
 	/**
 	 * Compare reactions
@@ -524,9 +528,9 @@ public class ReactionCI implements Serializable, Cloneable {
 	 * @param ignoreCompartments
 	 * @return
 	 */
-	public Integer hasSameStoichiometry2(ReactionCI r, boolean ignoreCompartments){
+	public Integer hasSameStoichiometry2(ReactionCI r, boolean ignoreCompartments, boolean doInverseTest){
 		
-		boolean doubleTest = true;
+		if(r==null) return null;
 		boolean equals = true;
 		
 		Integer ret = null;
@@ -535,7 +539,7 @@ public class ReactionCI implements Serializable, Cloneable {
 		if(equals)
 			ret = 1;
 		
-		if(doubleTest && !equals){
+		if(doInverseTest && !equals){
 			equals = compareStoichiometry(r.getProducts(), r.getReactants(), ignoreCompartments);
 			if(equals) ret = -1;
 		}
