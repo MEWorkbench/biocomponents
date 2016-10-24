@@ -1,0 +1,1575 @@
+Metabolite name;Metabolite description
+G1P[k];D-glucopyranose 1-phosphate
+G6P[k];alpha-D-glucose 6-phosphate
+F6P[k];D-fructose 6-phosphate
+ATP[k];ATP
+GLC[k];D-glucopyranose
+ADP[k];ADP
+H[k];hydrogen
+FDP[k];beta-D-fructofuranose 1,6-bisphosphate
+H2O[k];water
+PI[k];phosphate(3-)
+T3P2[k];glycerone phosphate
+T3P1[k];D-glyceraldehyde 3-phosphate
+NAD[k];NAD(+)
+13PDG[k];3-phospho-D-glyceroyl phosphate
+NADH[k];NADH
+3PG[k];3-phospho-D-glyceric acid
+2PG[k];2-phospho-D-glyceric acid
+PEP[k];phosphoenolpyruvate
+PYR[k];pyruvic acid
+COA[k];coenzyme A
+CO2[k];carbon dioxide
+ACCOA[k];acetyl-CoA
+ETOL[k];ethanol
+ACAL[k];acetaldehyde
+HCO3[k];hydrogencarbonate
+OA[k];oxaloacetic acid
+CIT[k];citric acid
+ICIT[k];isocitric acid
+NADP[k];NADP(+)
+AKG[k];2-oxoglutaric acid
+NADPH[k];NADPH
+SUCCOA[k];succinyl-CoA
+SUCC[k];succinic acid
+FAD[k];FAD
+FUM[k];fumaric acid
+FADH2[k];FADH2
+MAL[k];(S)-malic acid
+D6PGL[k];6-O-phosphono-D-glucono-1,5-lactone
+D6PGC[k];6-phospho-D-gluconic acid
+RL5P[k];D-ribulose 5-phosphate
+XUL5P[k];D-xylulose 5-phosphate
+E4P[k];D-erythrose 4-phosphate
+S7P[k];sedoheptulose 7-phosphate
+R5P[k];D-ribose 5-phosphate
+R1P[k];D-ribose 1-phosphate
+DRIB[k];2-deoxy-D-ribose
+DR5P[k];2-deoxy-D-ribose 5-phosphate
+RIB[k];D-ribofuranose
+DR1P[k];2-deoxy-D-ribofuranose 1-phosphate
+GLCN15LAC[k];D-glucono-1,5-lactone
+GLCNT[k];D-gluconic acid
+KDG[k];2-dehydro-3-deoxy-D-gluconic acid
+KDPG[k];2-dehydro-3-deoxy-6-phospho-D-gluconic acid
+Q8[k];Ubiquinone-8
+Q8H2[k];ubiquinol-8
+DGLUNT[k];2-dehydro-D-gluconic acid
+GLCUNT[k];D-glucopyranuronic acid
+FRUTN[k];D-fructofuranuronic acid
+XUL[k];D-xylulose
+LRL5P[k];L-ribulose 5-phosphate
+LARAB[k];L-arabinopyranose
+LRL[k];L-ribulose
+MANOE[k];D-mannonic acid
+A5P[k];D-arabinose 5-phosphate
+MNT[k];D-mannitol
+FRU[k];D-fructose
+MAN6P[k];D-Mannose 6-phosphate
+MAN[k];D-mannopyranose
+MAN1P[k];D-mannose 1-phosphate
+GDP[k];GDP
+GDPMAN[k];GDP-alpha-D-mannose
+GDPDDMAN[k];GDP-4-dehydro-6-deoxy-alpha-D-mannose
+GDPFUC[k];GDP-L-fucose
+SOT[k];D-glucitol
+SOR[k];L-sorbopyranose
+PQQ[k];pyrroloquinoline quinone
+FERO[k];ferrocytochrome c
+SON[k];L-xylo-hexos-2-ulose
+PQQH2[k];pyrroloquinoline quinol
+FERI[k];ferricytochrome c
+2KLG[k];2-dehydro-L-idonate
+LAA[k];L-ascorbate
+IDON[k];L-Idonate
+RHA[k];aldehydo-L-rhamnose
+RHAMN[k];L-rhamnulose
+RHAMNP[k];L-rhamnulose 1-phosphate
+LACAL[k];(S)-lactaldehyde
+LACTOSE[k];Lactose
+GAL[k];D-galactopyranose
+GUL[k];L-gulose
+O2[k];dioxygen
+GULNT[k];L-gulonate
+GULAC[k];L-gulono-1,4-lactone
+H2O2[k];hydrogen peroxide
+GLUCARATE[k];D-glucaric acid
+ADPGLC[k];ADP alpha-D-glucoside
+GLYCOGEN[k];glycogen
+PPI[k];diphosphate(4-)
+UDPG[k];UDP-glucose
+UDP[k];UDP
+TRE6P[k];alpha,alpha-trehalose 6-phosphate
+TRE[k];alpha,alpha-trehalose
+SUC[k];sucrose
+MLT[k];maltose
+UTP[k];UTP
+CELLOB[k];cellobiose
+UDPGAL[k];UDP-D-galactose
+NAGA6P[k];N-acetyl-D-glucosamine 6-phosphate
+AC[k];acetate
+GA6P[k];alpha-D-glucosamine 6-phosphate
+GA1P[k];alpha-D-glucosamine 1-phosphate
+NAGA1P[k];N-acetyl-alpha-D-glucosamine 1-phosphate
+UDPNAG[k];UDP-N-acetyl-alpha-D-glucosamine
+GLN[k];L-glutamine
+GLU[k];L-glutamic acid
+CHIB[k];N,N'-diacetylchitobiose
+NAG[k];N-acetyl-D-glucosamine
+NAMA6P[k];N-acetyl-D-mannosamine 6-phosphate
+GLX[k];glyoxylate
+LAC[k];(R)-lactic acid
+AMP[k];AMP
+LLAC[k];(S)-lactic acid
+LGT[k];(R)-S-lactoylglutathione
+RGT[k];glutathione
+MTHGXL[k];methylglyoxal
+MQN8[k];Menaquinone 8
+MQL8[k];menaquinol 8
+HPYR[k];3-hydroxypyruvic acid
+G[k];D-glyceric acid
+HOPP[k];2-hydroxy-3-oxopropanoic acid
+OXAL[k];oxalate
+PROP[k];propionic acid
+PROPCOA[k];propionyl-CoA
+ACLAC[k];(2S)-2-hydroxy-2-methyl-3-oxobutanoic acid
+MI4P[k];1D-myo-inositol 4-phosphate
+MYOI[k];myo-inositol
+MI3P[k];1D-myo-inositol 3-phosphate
+MI1P[k];1D-myo-inositol 1-phosphate
+FOR[k];formate
+ADPR[k];ADP-D-ribose
+PRPP[k];5-O-phosphono-alpha-D-ribofuranosyl diphosphate
+PRAM[k];5-phospho-beta-D-ribosylamine
+GLY[k];glycine
+GAR[k];N(1)-(5-phospho-D-ribosyl)glycinamide
+FTHF[k];10-formyltetrahydrofolic acid
+THF[k];(6S)-5,6,7,8-tetrahydrofolic acid
+FGAR[k];N(2)-formyl-N(1)-(5-phospho-D-ribosyl)glycinamide
+FGAM[k];2-formamido-N(1)-(5-phospho-D-ribosyl)acetamidine
+AIR[k];5-amino-1-(5-phospho-D-ribosyl)imidazole
+N5CAIR[k];5-carboxyamino-1-(5-phospho-D-ribosyl)imidazole
+CAIR[k];5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylic acid
+ASP[k];L-aspartic acid
+SAICAR[k];(2S)-2-[5-amino-1-(5-phospho-beta-D-ribosyl)imidazole-4-carboxamido]succinic acid
+AICAR[k];1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide
+AICAD[k];5-Amino-4-imidazolecarboxyamide
+PRFICA[k];5-formamido-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide
+IMP[k];IMP
+XMP[k];5'-xanthylic acid
+GMP[k];GMP
+HYXN[k];hypoxanthine
+INS[k];inosine
+XTSINE[k];xanthosine
+XAN[k];9H-xanthine
+GTP[k];GTP
+ASUC[k];N(6)-(1,2-dicarboxyethyl)-AMP
+ADN[k];adenosine
+AD[k];adenine
+NH3[k];ammonia
+DA[k];2'-deoxyadenosine
+DIN[k];2'-deoxyinosine
+DAMP[k];dAMP
+DADP[k];dADP
+DATP[k];dATP
+DGDP[k];dGDP
+DGTP[k];2'-Deoxyguanosine 5'-triphosphate
+IDP[k];IDP
+ITP[k];ITP
+DGMP[k];dGMP
+GN[k];guanine
+GSN[k];guanosine
+DG[k];2'-deoxyguanosine
+TRDRD[k];thioredoxin dithiol
+TRDOX[k];thioredoxin disulfide
+pppGpp[k];guanosine 3'-diphosphate 5'-triphosphate
+ppGpp[k];guanosine 3',5'-bis(diphosphate)
+DITP[k];2'-deoxyinosine-5'-triphosphate
+DIMP[k];2'-deoxy-5'-inosinic acid
+UREA[k];urea
+UGC[k];(-)-ureidoglycolic acid
+PPPI[k];triphosphate(5-)
+URATE[k];7,9-dihydro-1H-purine-2,6,8(3H)-trione
+URI[k];uridine
+URA[k];uracil
+CAP[k];carbamoyl phosphate
+CAASP[k];N-carbamoyl-L-aspartic acid
+DOROA[k];(S)-dihydroorotic acid
+OROA[k];orotic acid
+OMP[k];orotidine 5'-(dihydrogen phosphate)
+UMP[k];UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+DUMP[k];dUMP
+METTHF[k];(6R)-5,10-methylenetetrahydrofolic acid
+DTMP[k];dTMP
+CYTD[k];cytidine
+CYTS[k];cytosine
+DU[k];2'-deoxyuridine
+CTP[k];CTP
+CDP[k];CDP
+CMP[k];CMP
+DCDP[k];dCDP
+DCTP[k];dCTP
+DCMP[k];dCMP
+DC[k];2'-deoxycytidine
+DUDP[k];dUDP
+DUTP[k];dUTP
+DTDP[k];dTDP
+DT[k];thymidine
+DTTP[k];dTTP
+THY[k];thymine
+ASN[k];L-asparagine
+CYS[k];L-cysteine
+GC[k];L-gamma-glutamyl-L-cysteine
+BASP[k];4-phospho-L-aspartate
+ASPSA[k];L-aspartate 4-semialdehyde
+HSER[k];L-homoserine
+THR[k];L-threonine
+OBUT[k];2-oxobutanoic acid
+PHP[k];3-phosphonooxypyruvic acid
+3PSER[k];O-phospho-L-serine
+SER[k];L-serine
+AMIEVUL[k];5-aminolevulinate
+LIPOYLPROTEIN[k];lipoylprotein
+SAP[k];S(8)-aminomethyldihydrolipoylprotein
+DIHYDROLIPOYLPROTEIN[k];dihydrolipoylprotein
+SARC[k];sarcosine
+FALD[k];formaldehyde
+ALA[k];L-alanine
+ASER[k];O-acetyl-L-serine
+H2S[k];hydrogen sulfide
+MPYR[k];3-mercaptopyruvic acid
+H2SO3[k];sulfurous acid
+THJ[k];thiosulfate(1-)
+OSLHSER[k];O-succinyl-L-homoserine
+LLCT[k];cystathionine
+HCYS[k];L-homocysteine
+MTHF[k];5-methyltetrahydrofolic acid
+MET[k];L-methionine
+MTHPTGLU[k];5-methyltetrahydropteroyltri-L-glutamic acid
+THPTGLU[k];tetrahydropteroyltri-L-glutamic acid
+SAH[k];S-adenosyl-L-homocysteine
+DMET[k];D-methionine
+SAM[k];S-adenosyl-L-methionine
+METOX[k];L-methionine S-oxide
+ABUT[k];(S)-2-acetyl-2-hydroxybutanoate
+HMOP[k];(R)-3-hydroxy-3-methyl-2-oxopentanoic acid
+33HMEOXOBUT[k];3-hydroxy-3-methyl-2-oxobutanoate
+DHMP[k];(2R,3R)-2,3-dihydroxy-3-methylpentanoate
+DH3MVA[k];2,3-dihydroxy-3-methylbutanoic acid
+OMVAL[k];3-methyl-2-oxobutanoate
+3MOP[k];(S)-3-methyl-2-oxovalerate
+ILE[k];L-isoleucine
+VAL[k];L-valine
+IPPMAL[k];(2S)-2-isopropylmalate(2-)
+PPMAL[k];2-Isopropylmaleate
+CBHCAP[k];(2R,3S)-3-isopropylmalate(2-)
+OICAP[k];(2S)-2-isopropyl-3-oxosuccinic acid
+4MOP[k];4-methyl-2-oxopentanoate
+LEU[k];L-leucine
+DHDP[k];(S)-2,3-dihydrodipicolinic acid
+TDHDP[k];(S)-2,3,4,5-tetrahydrodipicolinic acid
+SAOPIM[k];N-Succinyl-2-amino-6-oxopimelate
+SDAPIM[k];N-succinyl-LL-2,6-diaminopimelic acid
+DAPIM[k];2,6-diaminopimelic acid
+MDAPIM[k];meso-2,6-diaminopimelic acid
+LYS[k];L-lysine
+NAGLU[k];N-acetyl-L-glutamic acid
+NAGLUP[k];N-acetyl-L-gamma-glutamyl phosphate
+NAGLUS[k];2-acetamido-5-oxopentanoate
+NAORN[k];N(2)-acetyl-L-ornithine
+ORN[k];L-ornithine
+CITR[k];L-citrulline
+ARGSUCC[k];(N(omega)-L-arginino)succinic acid
+ARG[k];L-arginine
+GLU5P[k];L-gamma-glutamyl phosphate
+GLUGSAL[k];L-glutamic 5-semialdehyde
+P5C[k];(S)-1-pyrroline-5-carboxylic acid
+PRO[k];L-proline
+PHC[k];(3R,5S)-1-pyrroline-3-hydroxy-5-carboxylic acid
+E4HGLU[k];erythro-4-hydroxy-L-glutamate(1-)
+ABAL[k];4-aminobutanal
+GABA[k];gamma-aminobutyric acid
+HPRO[k];trans-4-hydroxy-L-proline
+4HGLUSA[k];L-4-hydroxyglutamic semialdehyde
+HYDROXYAKG[k];D-4-Hydroxy-2-oxoglutarate
+PTRSC[k];putrescine
+AGMT[k];agmatine
+PROGLY[k];L-Prolinylglycine
+DPRO[k];D-proline
+CRTNN[k];creatinine
+CRTN[k];creatine
+METHYLHYDANTOIN[k];N-methylhydantoin
+CMS[k];N-carbamoylsarcosine
+PRBATP[k];1-(5-phospho-D-ribosyl)-ATP
+PRBAMP[k];1-(5-phosphoribosyl)-5'-AMP
+PRFP[k];1-(5-phospho-D-ribosyl)-5-[(5-phospho-D-ribosylamino)methylideneamino]imidazole-4-carboxamide
+PRLP[k];5-[(5-phospho-1-deoxy-D-ribulos-1-ylimino)methylamino]-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide
+DIMGP[k];D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate
+IMACP[k];3-(imidazol-4-yl)-2-oxopropyl dihydrogen phosphate
+HISOLP[k];L-histidinol phosphate
+HISOL[k];L-histidinol
+HISTIDINAL[k];L-Histidinal
+HIS[k];L-histidine
+3DDAH7P[k];7-phospho-2-dehydro-3-deoxy-D-arabino-heptonic acid
+DQT[k];3-dehydroquinic acid
+DHSK[k];3-dehydroshikimate
+SME[k];shikimic acid
+SME3P[k];3-phosphoshikimic acid
+3PSME[k];5-O-(1-carboxyvinyl)-3-phosphoshikimic acid
+CHOR[k];chorismic acid
+AN[k];anthranilate
+NPRAN[k];N-(5-phospho-beta-D-ribosyl)anthranilic acid
+CPAD5P[k];1-(2-carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate
+IGP[k];1-C-(indol-3-yl)glycerol 3-phosphate
+TRP[k];L-tryptophan
+IND[k];indole
+PHEN[k];prephenic acid
+PHPYR[k];keto-phenylpyruvic acid
+PHE[k];L-phenylalanine
+4HPP[k];3-(4-hydroxyphenyl)pyruvate
+TYR[k];L-tyrosine
+AG[k];L-arogenic acid
+DALA[k];D-alanine
+DGLU[k];D-glutamic acid
+CGLY[k];L-cysteinylglycine
+OGT[k];glutathione disulfide
+5OPRO[k];5-oxo-L-prolinate
+ALAGLN[k];Ala-Gln
+ALAHIS[k];Ala-His
+ALAASP[k];ala-L-asp-L
+ALAGLU[k];ala-L-glu-L
+ALATHR[k];ala-L-Thr-L
+ALAGLY[k];L-alanylglycine
+ALALEU[k];Ala-Leu
+GLYASN[k];glycyl-L-asparagine
+GLYASP[k];N-glycyl-L-aspartic acid
+GLYGLN[k];L-Glycylglutamine
+GLYGLU[k];glycyl-L-glutamic acid
+GLYLEU[k];Gly-Leu
+GLYMET[k];N-Glycyl-L-methionine
+GLYPHE[k];Gly-Phe
+METALA[k];met-L-ala-L
+GLYCYS[k];glycylcysteine
+GLYTYR[k];Gly-Tyr
+GLYPRO[k];glycyl-L-Proline
+UACCG[k];UDP-N-acetyl-3-O-(1-carboxyvinyl)-D-glucosamine
+UDPNAM[k];UDP-N-acetylmuramic acid
+UDPNAMA[k];UDP-N-acetylmuramoyl-L-alanine
+UDPNAMAG[k];UDP-N-acetylmuramoyl-L-alanyl-D-glutamic acid
+UGMD[k];UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminoheptanedioic acid
+ALAALA[k];D-alanyl-D-alanine
+UGMDA[k];UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+UDCPP[k];di-trans,poly-cis-undecaprenyl phosphate
+UAGMDA[k];Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+UAAGMDA[k];undecaprenyldiphospho-N-acetyl-(N-acetylglucosaminyl)muramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+H[e];H+(e)
+UDCPDP[k];undecaprenyl diphosphate
+PEPTIDO_eco[e];a peptidoglycan UNITE
+DALA[e];D-Alanine(e)
+PEPTX[k];Peptidoglycan subunit crosslinked
+FRDP[k];farnesyl pyrophosphate
+IPP[k];isopentenyl diphosphate
+C14HACP[k];(R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]
+ACP[k];holo-[acyl-carrier protein]
+UDPG2AA[k];UDP-3-O-(3-hydroxytetradecanoyl)-N-acetylglucosamine
+UDPG2A[k];UDP-3-O-(3-hydroxytetradecanoyl)glucosamine
+UDPG23A[k];UDP-2,3-bis(3-hydroxytetradecanoyl)-D-glucosamine
+LIPIDX[k];lipid X
+DISAC1P[k];2,3,2',3'-tetrakis(3-hydroxytetradecanoyl)-alpha-D-glucosaminyl-1,6-beta-D-glucosamine 1-phosphate
+LIPIDA[k];lipid Iva
+CMPKDO[k];CMP-3-deoxy-D-manno-octulosonic acid
+KDOLIPID4[k];(KDO)-lipid IVA
+K2LIPIV[k];KDO2-lipid IV(A)
+C120ACP[k];lauroyl-[acyl-carrier protein]
+LK2LIPIV[k];Lauroyl-KDO2-lipid IV(A)
+C140ACP[k];myristoyl-[acyl-carrier protein]
+K2LIPA[k];Kdo2-lipid A
+KDO8P[k];8-phospho-3-deoxy-D-manno-oct-2-ulosonic acid
+KDO[k];keto-3-deoxy-D-manno-octulosonic acid
+DGDMH7P[k];D-glycero-D-manno-heptose 7-phosphate
+DGDMH17BP[k];D-Glycero-D-manno-heptose 1,7-bisphosphate
+DGDMH1P[k];D-glycero-D-manno-heptose 1-phosphate
+ADPDGDMHEP[k];ADP-D-glycero-D-manno-heptose
+ADPHEP[k];ADP-L-glycero-D-manno-heptose
+CDPETN[k];CDP-ethanolamine
+LPS_eco[k];LPS
+THME[k];thiamine
+THMP[k];thiamine(1+) monophosphate
+THDP[k];thiamine(1+) diphosphate
+D6RP5P[k];2,5-diamino-4-hydroxy-6-(5-phosphoribosylamino)pyrimidine
+A6RP5P[k];5-amino-6-(5-phospho-D-ribosylamino)uracil
+A6RP5P2[k];5-amino-6-(5-phospho-D-ribitylamino)uracil
+4R5AU[k];5-amino-6-(D-ribitylamino)uracil
+DB4P[k];3,4-dihydroxy-2-butanone 4-phosphate
+D8RL[k];6,7-dimethyl-8-(1-D-ribityl)lumazine
+RIBFLAV[k];riboflavin
+FMN[k];FMN
+DEZ[k];4-phospho-D-erythronic acid
+OHPB[k];(R)-3-hydroxy-2-oxo-4-phosphonooxybutanoic acid
+PHT[k];4-(phosphonooxy)-L-threonine
+4HLT[k];4-hydroxy-L-threonine
+3A2OP[k];3-amino-2-oxopropyl phosphate
+AOPBUT[k];2-amino-3-oxo-4-(phosphonooxy)butanoic acid
+DX5P[k];1-deoxy-D-xylulose 5-phosphate
+P5P[k];pyridoxine 5'-phosphate
+PDXL5PI[k];pyridoxal 5'-phosphate
+PDXAM5PI[k];pyridoxamine 5'-phosphate
+PDXI[k];pyridoxine
+PDXAL[k];pyridoxal
+PDXAM[k];pyridoxamine
+NAMN[k];nicotinic acid D-ribonucleotide
+DNAD[k];deamido-NAD(+)
+NMN[k];NMN zwitterion
+NAMD[k];N-ribosylnicotinamide
+NAR[k];D-ribosylnicotinic acid
+NICD[k];nicotinamide
+NICA[k];nicotinic acid
+AKP[k];2-dehydropantoate
+PANT[k];pantoic acid
+bALA[k];beta-Alanine
+PNTO[k];(R)-pantothenate
+4PPNTO[k];(R)-4'-phosphopantothenic acid
+4PPNCYS[k];N-[(R)-4-phosphopantothenoyl]-L-cysteine
+4PPNTE[k];pantetheine 4'-phosphate
+DPCOA[k];3'-dephospho-CoA
+DIHURA[k];5,6-dihydrouracil
+CAALA[k];N-carbamoyl-beta-alanine
+THFGLU[k];5,6,7,8-tetrahydrofolyl-L-glutamic acid
+DHPT[k];7,8-dihydropteroic acid
+DHF[k];dihydrofolic acid
+METHF[k];(6R)-5,10-methenyltetrahydrofolic acid
+5FTHF[k];5-formyltetrahydrofolic acid
+LMETTRNA[k];L-Methionyl-tRNA
+FOFMET[k];fMet-tRNA(fMet)
+PPBG[k];porphobilinogen
+HMTB[k];preuroporphyrinogen
+UDPGI[k];uroporphyrinogen I
+CPGI[k];coproporphyrinogen I
+UPGIII[k];uroporphyrinogen III
+CPGIII[k];coproporphyrinogen III
+PPGIX[k];protoporphyrinogen
+DAD5[k];5'-deoxyadenosine
+PPRIX[k];protoporphyrin
+FE2[k];iron(2+)
+HEME[k];ferroheme b
+HEMEO[k];heme o
+4HBZ[k];4-hydroxybenzoate
+OPP[k];all-trans-octaprenyl diphosphate
+N4HBZ[k];4-hydroxy-3-octaprenylbenzoate
+2NPPP[k];2-octaprenylphenol
+2N6H[k];6-hydroxy-2-octaprenylphenol
+2NPMP[k];6-methoxy-2-octaprenylphenol
+2NPMB[k];6-methoxy-2-octaprenyl-1,4-benzoquinone
+2NPMMB[k];3-methyl-6-methoxy-2-octaprenyl-1,4-benzoquinone
+2OP3M5H6M14BQ[k];5-hydroxy-6-methoxy-3-methyl-2-octaprenyl-1,4-benzoquinone
+SLF[k];sulfate
+APS[k];5'-adenylyl sulfate
+S[k];polysulfur
+METHOL[k];methanol
+HMRGT[k];S-(hydroxymethyl)glutathione
+FRGT[k];S-formylglutathione
+O2S[k];superoxide
+5DGLCNT[k];5-Dehydro-D-gluconate
+2ME4P[k];2-C-methyl-D-erythritol 4-(dihydrogen phosphate)
+4C2ME[k];4-CDP-2-C-methyl-D-erythritol
+2P4C2ME[k];4-CDP-2-C-methyl-D-erythritol 2-phosphate
+2MECDP[k];2-C-methyl-D-erythritol 2,4-cyclic diphosphate
+H2MB4P[k];(2E)-4-hydroxy-3-methylbut-2-en-1-yl diphosphate
+DMPP[k];prenyl diphosphate
+GRDP[k];geranyl diphosphate
+PCACE[k];3,4-dihydroxybenzoic acid
+3CMUCON[k];3-carboxy-cis,cis-muconic acid
+2C25DHO[k];2-(carboxymethyl)-5-oxo-2,5-dihydro-2-furoic acid
+5ODHF2A[k];5-oxo-4,5-dihydro-2-furylacetic acid
+3OA[k];3-oxoadipate(2-)
+3OACOA[k];3-oxoadipyl-CoA
+DTDPGLC[k];dTDP-glucose
+DTDPDDG[k];dTDP-4-dehydro-6-deoxy-alpha-D-glucose
+DTDPDDM[k];dTDP-4-dehydro-6-deoxy-L-mannose
+DTDPDM[k];dTDP-6-deoxy-beta-L-mannose
+MALCOA[k];malonyl-CoA
+ACACP[k];acetyl-[acyl-carrier protein]
+MALACP[k];carboxyacetyl-[acyl-carrier protein]
+C100ACP[k];decanoyl-[acyl-carrier protein]
+C160ACP[k];palmitoyl-[acyl-carrier protein]
+C180ACP[k];Stearoyl-[acyl-carrier protein]
+C161ACP[k];Hexadecenoyl-[acyl-carrier protein]
+C181ACP[k];Oleoyl-[acyl-carrier protein]
+C140[k];Myristic acid
+C150ACP[k];Pentadecanoyl-[acp]
+C150[k];pentadecanoic acid 
+C160[k];Palmitic acid
+C170ACP[k];Heptadecanoyl-[acp]
+C170[k];heptadecanoic acid 
+C180[k];Stearic acid
+C181[k];Octadecenoic acid 
+GLYAL[k];D-glyceraldehyde
+GL[k];glycerol
+GL3P[k];sn-glycerol 3-phosphate
+AGLY3P[k];1-acyl-sn-glycerol 3-phosphate
+PA[k];1,2-diacyl-sn-glycerol 3-phosphate
+CDPDG[k];CDP-diacylglycerol
+PGP[k];3-(3-sn-phosphatidyl)-sn-glycerol 1-phosphate
+PG[k];phosphatidylglycerol
+CL[k];cardiolipin
+PS[k];Phosphatidylserine
+PE[k];phosphatidylethanolamine
+GLYCEROCHO[k];sn-glycero-3-phosphocholine
+CHO[k];choline
+GLYCEROPE[k];sn-glycero-3-phosphoethanolamine
+ETHAM[k];ethanolamine
+G3PG[k];glycerophosphoglycerol
+ALAASP[e];ala-L-asp-L(e)
+GLYGLU[e];gly-glu-L(e)
+GLYMET[e];Gly-Met(e)
+METALA[e];met-L-ala-L(e)
+GLYASP[e];gly-asp-L(e)
+GLYPRO[e];gly-pro-L(e)
+ALAGLN[e];Ala-Gln(e)
+ALAGLU[e];ala-L-glu-L(e)
+ALAGLY[e];L-alanylglycine(e)
+ALAHIS[e];Ala-His(e)
+ALALEU[e];Ala-Leu(e)
+ALATHR[e];ala-L-Thr-L(e)
+GLYASN[e];gly-asn-L(e)
+GLYGLN[e];Gly-Gln(e)
+GLYCYS[e];glycylcysteine
+GLYLEU[e];Gly-Leu(e)
+GLYPHE[e];Gly-Phe(e)
+GLYTYR[e];Gly-Tyr(e)
+SER[e];L-Serine(e)
+TYR[e];L-Tyrosine
+CYS[e];L-Cysteine
+GLY[e];Glycine(e)
+LYS[e];L-Lysine(e)
+ARG[e];L-Arginine(e)
+ASP[e];L-Aspartate(e)
+GLU[e];L-Glutamate(e)
+ASN[e];L-Asparagine
+GLN[e];L-Glutamine(e)
+DPRO[e];D-proline
+PRO[e];L-Proline(e)
+TRP[e];L-Tryptophan(e)
+PHE[e];L-Phenylalanine
+ALA[e];L-Alanine(e)
+VAL[e];L-Valine(e)
+LEU[e];L-Leucine(e)
+ILE[e];L-Isoleucine(e)
+THR[e];L-Threonine
+HIS[e];L-Histidine
+MET[e];L-Methionine(e)
+DMET[e];D-Methionine(e)
+METOX[e];L-methionine S-oxide
+GLC[e];D-Glucose(e)
+FRU[e];D-Fructose(e)
+SOR[e];L-sorbose(e)
+LAC[e];L-Lactate(e)
+MAN[e];D-Mannose(e)
+MNT[e];Mannitol(e)
+GUL[e];L-gulose
+GAL[e];D-Galactose(e)
+XUL[e];D-xylulose
+RHA[e];aldehydo-L-rhamnose
+LARAB[e];L-Arabinose(e)
+RIB[e];D-Ribose(e)
+DRIB[e];Deoxyribose(e)
+MLT[e];Maltose(e)
+TRE[e];alpha,alpha-Trehalose(e)
+SUC[e];Sucrose(e)
+LACTOSE[e];Lactose(e)
+CELLOB[e];cellobiose
+RAF[e];Raffinose
+RAF[k];raffinose
+MYOI[e];myo-Inositol
+CHIB[e];N,N'-diacetylchitobiose
+IDTOL[e];L-iditol
+IDTOL[k];L-iditol
+SOT[e];D-glucitol
+SLF[e];Sulfate(e)
+THJ[e];Thiosulfate(e)
+FE2[e];Fe2+(e)
+PTRSC[e];Putrescine(e)
+SPRMD[e];Spermidine(e)
+SPRMD[k];spermidine
+GL3P[e];sn-Glycerol 3-phosphate(e)
+CHO[e];Choline
+HCO3[e];hydrogencarbonate
+PI[e];Orthophosphate(e)
+BT[e];Biotin(e)
+BT[k];biotin
+THME[e];Thiamine(e)
+HEME[e];Heme(e)
+RGT[e];Glutathione(e)
+CO2[e];CO2(e)
+H2O[e];H2O(e)
+O2[e];O2(e)
+UREA[e];Urea(e)
+NH3[e];Ammonia
+GL[e];Glycerol(e)
+ETOL[e];Ethanol
+MAL[e];(S)-Malate(e)
+SUCC[e];Succinate(e)
+FUM[e];Fumarate(e)
+GN[e];Guanine
+AD[e];Adenine
+NICA[e];Nicotinate
+PNTO[e];Pantothenate(e)
+THDP[e];thiamine(1+) diphosphate
+SME[e];shikimic acid
+BA[e];benzoate
+BA[k];benzoic acid
+GLCUNT[e];D-Glucuronate
+SAM[e];S-adenosyl-L-methionine
+2KLG[e];2-dehydro-L-idonate
+PYR[e];Pyruvate
+NMN[e];NMN zwitterion
+ACAL[e];acetaldehyde
+FOR[e];Formate(e)
+URATE[e];7,9-dihydro-1H-purine-2,6,8(3H)-trione
+Q8[e];Ubiquinone-8
+THF[e];(6S)-5,6,7,8-tetrahydrofolic acid
+DHF[e];dihydrofolic acid
+5FTHF[e];5-formyltetrahydrofolic acid
+MTHF[e];5-methyltetrahydrofolic acid
+CDPETN[e];CDP-ethanolamine
+HEMEO[e];heme o
+PDXI[e];pyridoxine
+PROP[e];propionic acid
+UGC[e];(-)-ureidoglycolic acid
+CDPGL[e];CDP-glycerol
+CDPGL[k];CDP-glycerol
+CYTS[e];Cytosine(e)
+H2SO3[e];sulfurous acid
+PROGLY[e];L-Prolinylglycine
+4HBZ[e];4-hydroxybenzoate
+NAG[e];N-Acetyl-D-glucosamine(e)
+XAN[e];Xanthine(e)
+THY[e];Thymine
+URA[e];Uracil(e)
+LAA[e];L-ascorbate
+COA[e];coenzyme A
+RIBFLAV[e];Riboflavin(e)
+PQQ[e];pyrroloquinoline quinone
+CHOR[e];Chorismate
+HPRO[e];trans-4-Hydroxy-L-proline
+PABA[e];4-Aminobenzoate
+PABA[k];4-Aminobenzoate
+ADPR[e];ADP-ribose
+AICAD[e];5-Amino-4-imidazolecarboxyamide
+CPGI[e];coproporphyrinogen I
+GLYCEROCHO[e];sn-glycero-3-phosphocholine
+GLYCEROPE[e];sn-glycero-3-phosphoethanolamine
+LLAC[e];(S)-lactic acid
+LMETTRNA[e];L-Methionyl-tRNA
+MI1P[e];1D-myo-inositol 1-phosphate
+MI3P[e];1D-myo-inositol 3-phosphate
+MI4P[e];1D-myo-inositol 4-phosphate
+O2S[e];superoxide
+OGT[e];Glutathione disulfide
+PDXAM[e];pyridoxamine
+PDXAM5PI[e];pyridoxamine 5'-phosphate
+PDXL5PI[e];Pyridoxal phosphate
+5OPRO[e];5-oxo-L-prolinate
+AGMT[e];agmatine
+DAD5[e];5'-deoxyadenosine
+DHPT[e];7,8-dihydropteroic acid
+ETHAM[e];Ethanolamine
+GABA[e];4-Aminobutanoate
+GLUCARATE[e];D-glucarate
+LACAL[e];(S)-lactaldehyde
+METHOL[e];methanol
+MTHGXL[e];methylglyoxal
+THFGLU[e];5,6,7,8-tetrahydrofolyl-L-glutamic acid
+THMP[e];Thiamin monophosphate
+H2O[b];H2O
+SALCN6P[b];Salicin 6-phosphate
+G6P[b];D-Glucose 6-phosphate
+SALAL[b];Salicyl alcohol
+ARBT6P[b];Arbutin 6-phosphate
+BENDL[b];p-Benzenediol
+G1P[b];D-Glucose 1-phosphate
+F6P[b];D-Fructose 6-phosphate
+ATP[b];ATP
+GLC[b];D-Glucose
+ADP[b];ADP
+H[b];H+
+FDP[b];D-Fructose 1,6-bisphosphate
+PI[b];Orthophosphate
+T3P2[b];Dihydroxyacetone phosphate
+T3P1[b];D-Glyceraldehyde 3-phosphate
+NAD[b];NAD+
+13PDG[b];3-Phospho-D-glyceroyl phosphate
+NADH[b];NADH
+3PG[b];3-Phospho-D-glycerate
+NADP[b];NADP+
+NADPH[b];NADPH
+2PG[b];2-Phospho-D-glycerate
+PEP[b];Phosphoenolpyruvate
+PYR[b];Pyruvate
+COA[b];CoA
+CO2[b];CO2
+ACCOA[b];Acetyl-CoA
+ETOL[b];Ethanol
+ACAL[b];Acetaldehyde
+HCO3[b];HCO3-
+OA[b];Oxaloacetate
+CIT[b];Citrate
+ICIT[b];Isocitrate
+AKG[b];2-Oxoglutarate
+SUCCOA[b];Succinyl-CoA
+SUCC[b];Succinate
+FAD[b];FAD
+FUM[b];Fumarate
+FADH2[b];FADH2
+MAL[b];(S)-Malate
+D6PGL[b];D-Glucono-1,5-lactone 6-phosphate
+D6PGC[b];6-Phospho-D-gluconate
+RL5P[b];D-Ribulose 5-phosphate
+ARAHE6P[b];D-arabino-3-Hexulose 6-phosphate
+FALD[b];Formaldehyde
+XUL5P[b];D-Xylulose 5-phosphate
+E4P[b];D-Erythrose 4-phosphate
+S7P[b];Sedoheptulose 7-phosphate
+R5P[b];D-Ribose 5-phosphate
+R1P[b];D-Ribose 1-phosphate
+DRIB[b];Deoxyribose
+DR5P[b];2-Deoxy-D-ribose 5-phosphate
+RIB[b];D-Ribose
+DR1P[b];2-Deoxy-D-ribose 1-phosphate
+GLCN15LAC[b];D-Glucono-1,5-lactone
+GLCNT[b];D-Gluconic acid
+KDG[b];2-Dehydro-3-deoxy-D-gluconate
+KDPG[b];2-Dehydro-3-deoxy-6-phospho-D-gluconate
+DGLCNT[b];2-dehydro-D-gluconate
+GALUNT[b];D-Galacturonate
+TAGUR[b];D-Tagaturonate
+GLCUNT[b];D-Glucuronate
+FRUTN[b];D-Fructuronate
+ALTRN[b];D-Altronate
+UTP[b];UTP
+PPI[b];Diphosphate
+UDPG[b];UDP-glucose
+UDPGTE[b];UDP-glucuronate
+XYL[b];D-Xylose
+XOL[b];Xylitol
+LARAB[b];L-Arabinose
+LAOL[b];L-Arabitol
+XUL[b];D-xylulose
+LRL5P[b];L-Ribulose 5-phosphate
+LRL[b];L-Ribulose
+MANOE[b];D-Mannonate
+FRU[b];D-Fructose
+MNT1P[b];D-Mannitol 1-phosphate
+MAN6P[b];D-Mannose 6-phosphate
+MAN1P[b];D-Mannose 1-phosphate
+GTP[b];GTP
+GDPMAN[b];GDP-mannose
+F1P[b];D-Fructose 1-phosphate
+GLYAL[b];D-Glyceraldehyde
+SOT[b];D-Sorbitol
+GAL[b];D-Galactose
+GAL1P[b];alpha-D-Galactose 1-phosphate
+MELI[b];Melibiose
+MATR[b];Manninotriose
+STAC[b];Stachyose
+RAF[b];Raffinose
+SUC[b];Sucrose
+SUC6P[b];Sucrose 6-phosphate
+MELT[b];Melibiitol
+EPIBIO[b];Epimelibiose
+MAN[b];D-Mannose
+DGALGLY[b];3-beta-D-Galactosyl-sn-glycerol
+GL[b];Glycerol
+GALOL[b];alpha-D-galactosyl-(1->3)-1D-myo-inositol
+MYOI[b];myo-Inositol
+LACTOSE[b];Lactose
+T6P[b];D-Tagatose 6-phosphate
+TAGBP[b];D-Tagatose 1,6-bisphosphate
+LGALNT[b];L-Galactonate
+GALAC[b];L-Galactono-1,4-lactone
+GLUCARATE[b];D-glucarate
+DH4DGLC[b];5-dehydro-4-deoxy-D-glucarate
+DGALCTR[b];D-Galactarate
+DIOXPEN[b];2,5-Dioxopentanoate
+GLUAC[b];D-Glucuronolactone
+TRE6P[b];Trehalose 6-phosphate
+ADPGLC[b];ADP-glucose
+GLYCOGEN[b];glycogen
+AMYLS1[b];Amylose(n)
+AMYLS2[b];Amylose(n+1)
+STAR[b];Starch(n)
+DEX[b];Dextrin(n)
+STAR1[b];Starch(n-1)
+DEX1[b];Dextrin(n-1)
+LEVN1[b];Levan(n-1)
+LEVN[b];Levan(n)
+LEVMN[b];Levan(m+n)
+LEVM[b];Levan(m)
+MLT[b];Maltose
+CELLOB[b];cellobiose
+GENTB[b];gentiobiose 
+CTETRAOSE[b];cellotetraose
+TUR[b];turanose
+CELLOT[b];cellotriose
+UDPGAL[b];UDP-D-galactose
+MURNAC6P[b];N-Acetylmuramic acid 6-phosphate
+NAGA6P[b];N-Acetyl-D-glucosamine 6-phosphate
+LAC[b];L-Lactate
+AC[b];Acetate
+GA6P[b];D-Glucosamine 6-phosphate
+GA1P[b];alpha-D-Glucosamine 1-phosphate
+NAGA1P[b];N-Acetyl-alpha-D-glucosamine 1-phosphate
+UDPNAG[b];UDP-N-acetyl-D-glucosamine
+UDP[b];UDP
+NAMA[b];N-Acetyl-D-mannosamine
+UACMAM[b];UDP-N-acetyl-D-mannosamine
+UACMAMU[b];UDP-N-acetyl-D-mannosaminouronate
+GLN[b];L-Glutamine
+GLU[b];L-Glutamate
+UDPNAGA[b];UDP-N-acetyl-D-galactosamine
+NH3[b];Ammonia
+GLX[b];Glyoxylate
+LLAC[b];(S)-lactic acid
+AMP[b];AMP
+O2[b];O2
+ACTP[b];Acetyl phosphate
+H2O2[b];H2O2
+RGT[b];Glutathione
+MTHGXL[b];Methylglyoxal
+LGT[b];(R)-S-Lactoylglutathione
+HYOXGLU[b];4-Hydroxy-2-oxoglutarate
+GLYA[b];Glycolate
+G[b];D-Glycerate
+MTART[b];meso-Tartaric acid
+OXGLY[b];Oxaloglycolate
+TART[b];L-tartarate
+HOPP[b];2-Hydroxy-3-oxopropanoate
+HPYR[b];Hydroxypyruvate
+GLAL[b];Glycolaldehyde
+METTHF[b];5,10-Methylenetetrahydrofolate
+GLY[b];Glycine
+THF[b];Tetrahydrofolate
+PROP[b];Propanoate
+PROPCOA[b];Propanoyl-CoA
+PPAP[b];Propanoyl phosphate
+HBUT[b];2-Hydroxybutyrate
+OBUT[b];2-Oxobutanoate
+PAPP[b];propanoyl phosphate
+MMSA[b];(S)-Methylmalonate semialdehyde
+RMMCOA[b];(R)-Methylmalonyl-CoA
+3OPP[b];3-Oxopropanoate
+C40COA[b];Butanoyl-CoA
+BUAC[b];Butanoic acid
+BUTP[b];Butanoylphosphate
+AACCOA[b];Acetoacetyl-CoA
+3HBCOA[b];(S)-3-Hydroxybutanoyl-CoA
+RHYBC[b];(R)-3-Hydroxybutanoyl-CoA
+ACTAC[b];Acetoacetate
+BUTAL[b];Butanal
+BUTL[b];1-Butanol
+BDOH[b];(R,R)-2,3-Butanediol
+ACTN[b];(R)-Acetoin
+POLHYBU[b];Poly-beta-hydroxybutyrate
+ACLAC[b];(S)-2-Acetolactate
+TMASP[b];threo-3-methyl-L-aspartate
+MI4P[b];1D-myo-inositol 4-phosphate
+MI3P[b];1D-myo-inositol 3-phosphate
+MI1P[b];1D-myo-inositol 1-phosphate
+INOSOSE[b];2,4,6/3,5-Pentahydroxycyclohexanone
+TCHDIONE[b];3D-(3,5/4)-Trihydroxycyclohexane-1,2-dione
+DEKEGLU[b];2-Deoxy-5-keto-D-gluconic acid
+DEKG6P[b];2-Deoxy-5-keto-D-gluconic acid 6-phosphate
+FOR[b];Formate
+ADPR[b];ADP-ribose
+PRPP[b];5-Phospho-alpha-D-ribose 1-diphosphate
+PRAM[b];5-Phosphoribosylamine
+GAR[b];5'-Phosphoribosylglycinamide
+FTHF[b];10-Formyltetrahydrofolate
+FGAR[b];5'-Phosphoribosyl-N-formylglycinamide
+FGAM[b];2-(Formamido)-N1-(5'-phosphoribosyl)acetamidine
+AIR[b];Aminoimidazole ribotide
+N5CAIR[b];5-carboxyamino-1-(5-phospho-D-ribosyl)imidazole
+CAIR[b];1-(5-Phospho-D-ribosyl)-5-amino-4-imidazolecarboxylate
+ASP[b];L-Aspartate
+SAICAR[b];1-(5'-Phosphoribosyl)-5-amino-4-(N-succinocarboxamide)-imidazole
+AICAR[b];1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide
+AICAD[b];5-Amino-4-imidazolecarboxyamide
+PRFICA[b];1-(5'-Phosphoribosyl)-5-formamido-4-imidazolecarboxamide
+IMP[b];IMP
+XMP[b];Xanthosine 5'-phosphate
+GMP[b];GMP
+HYXN[b];Hypoxanthine
+INS[b];Inosine
+XTSINE[b];Xanthosine
+XAN[b];Xanthine
+GDP[b];GDP
+ASUC[b];N6-(1,2-Dicarboxyethyl)-AMP
+DC[b];Deoxycytidine
+DCMP[b];dCMP
+ADN[b];Adenosine
+23CAMP[b];2',3'-Cyclic AMP
+3AMP[b];3'-AMP
+AD[b];Adenine
+DA[b];Deoxyadenosine
+DIN[b];Deoxyinosine
+DAMP[b];dAMP
+DADP[b];dADP
+DATP[b];dATP
+ITP[b];ITP
+DGDP[b];dGDP
+DGTP[b];dGTP
+IDP[b];IDP
+XTP[b];XTP
+GN[b];Guanine
+GSN[b];Guanosine
+DG[b];Deoxyguanosine
+TRDRD[b];thioredoxin dithiol
+TRDOX[b];thioredoxin disulfide
+DGMP[b];dGMP
+pppGpp[b];Guanosine 3'-diphosphate 5'-triphosphate
+ppGpp[b];Guanosine 3',5'-bis(diphosphate)
+DIDP[b];dIDP
+DITP[b];dITP
+DIMP[b];2'-Deoxyinosine 5'-phosphate
+23CGMP[b];2',3'-Cyclic GMP
+3GMP[b];Guanosine 3'-phosphate
+URATE[b];Urate
+ATT[b];Allantoate
+UGLYC[b];ureidoglycolate
+UREA[b];Urea
+HIUR[b];5-Hydroxyisourate
+HYURCAR[b];5-Hydroxy-2-oxo-4-ureido-2,5-dihydro-1H-imidazole-5-carboxylate
+ALLOIN[b];Allantoin
+UR[b];Ureidoglycine
+CAP[b];Carbamoyl phosphate
+CAASP[b];N-Carbamoyl-L-aspartate
+DOROA[b];(S)-Dihydroorotate
+OROA[b];Orotate
+OMP[b];Orotidine 5'-phosphate
+UMP[b];UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+URI[b];Uridine
+URA[b];Uracil
+CYTD[b];Cytidine
+CYTS[b];Cytosine
+CMP[b];CMP
+DU[b];Deoxyuridine
+CTP[b];CTP
+CDP[b];CDP
+DCDP[b];dCDP
+DCTP[b];dCTP
+DUMP[b];dUMP
+DUDP[b];dUDP
+DUTP[b];dUTP
+DTMP[b];dTMP
+DTDP[b];dTDP
+DT[b];Thymidine
+DTTP[b];dTTP
+5MC[b];5-Methylcytosine
+THY[b];Thymine
+56DTHM[b];dihydrothymine
+PAP[b];Adenosine 3',5'-bisphosphate
+ALA[b];L-Alanine
+ASN[b];L-Asparagine
+GABA[b];4-Aminobutanoate
+SUCCSAL[b];Succinate semialdehyde
+DASP[b];D-Aspartate
+BASP[b];4-Phospho-L-aspartate
+ASPSA[b];L-Aspartate 4-semialdehyde
+HSER[b];L-Homoserine
+DIAMIBU[b];L-2,4-Diaminobutanoate
+PHSER[b];O-Phospho-L-homoserine
+THR[b];L-Threonine
+PHP[b];3-Phosphonooxypyruvate
+3PSER[b];O-Phospho-L-serine
+SER[b];L-Serine
+DSER[b];D-Serine
+HCYS[b];L-Homocysteine
+LLCT[b];Cystathionine
+AM3OXBU[b];L-2-Amino-3-oxobutanoic acid
+LIPOYLPROTEIN[b];Lipoylprotein
+SAP[b];S-Aminomethyldihydrolipoylprotein
+DIHYDROLIPOYLPROTEIN[b];Dihydrolipoylprotein
+AMACR[b];2-Aminoacrylate
+SARC[b];Sarcosine
+BETALD[b];Betaine aldehyde
+GLYB[b];Glycine betaine
+ASER[b];O-Acetyl-L-serine
+THJ[b];Thiosulfate
+SULCYS[b];S-Sulfo-L-cysteine
+H2S[b];Hydrogen sulfide
+CYS[b];L-Cysteine
+H2SO3[b];Sulfite
+MPYR[b];Mercaptopyruvate
+CYSD[b];D-Cysteine
+MERLAC[b];3-Mercaptolactate
+OSLHSER[b];O-Succinyl-L-homoserine
+SAM[b];S-Adenosyl-L-methionine
+MET[b];L-Methionine
+SAH[b];S-Adenosyl-L-homocysteine
+MTHPTGLU[b];5-methyltetrahydropteroyltri-L-glutamic acid
+THPTGLU[b];tetrahydropteroyltri-L-glutamic acid
+RHCYS[b];S-Ribosyl-L-homocysteine
+DIHY23DIO[b];(4S)-4,5-Dihydroxypentan-2,3-dione
+DSAM[b];S-Adenosylmethioninamine
+SPRMD[b];Spermidine
+5MTA[b];5'-Methylthioadenosine
+SPRM[b];Spermine
+PTRSC[b];Putrescine
+MTR[b];5-Methylthio-D-ribose
+MTR1P[b];S-Methyl-5-thio-D-ribose 1-phosphate
+MTRL1P[b];S-Methyl-5-thio-D-ribulose 1-phosphate
+DMTP1P[b];2,3-Diketo-5-methylthiopentyl-1-phosphate
+HYKEMEP[b];2-Hydroxy-3-keto-5-methylthiopentenyl-1-phosphate
+D5MPO[b];1,2-Dihydroxy-5-(methylthio)pent-1-en-3-one
+METOBU[b];4-Methylthio-2-oxobutanoic acid
+METH[b];Methanethiol
+METOX[b];L-methionine S-oxide
+OAHSER[b];O-Acetyl-L-homoserine
+METRO[b];L-methionine R-oxide
+R2MMAL[b];(R)-2-Methylmalate
+MEMA[b];2-Methylmaleate
+ERY3MEM[b];D-erythro-3-Methylmalate
+ABUT[b];(S)-2-Aceto-2-hydroxybutanoate
+HMOP[b];(R)-3-Hydroxy-3-methyl-2-oxopentanoate
+33HMEOXOBUT[b];3-Hydroxy-3-methyl-2-oxobutanoic acid
+DHMP[b];(R)-2,3-Dihydroxy-3-methylpentanoate
+DH3MVA[b];2,3-dihydroxy-3-methylbutanoic acid
+OMVAL[b];3-Methyl-2-oxobutanoic acid
+3MOP[b];(S)-3-Methyl-2-oxopentanoic acid
+ILE[b];L-Isoleucine
+VAL[b];L-Valine
+IPPMAL[b];(2S)-2-Isopropylmalate
+PPMAL[b];2-Isopropylmaleate
+CBHCAP[b];(2R,3S)-3-Isopropylmalate
+OICAP[b];(2S)-2-Isopropyl-3-oxosuccinate
+4MOP[b];4-Methyl-2-oxopentanoate
+LEU[b];L-Leucine
+MMALN[b];Methylmalonate
+MBUTCOA[b];3-Methylbutanoyl-CoA
+IBCOA[b];Isobutyryl-CoA
+MBCOA[b];(S)-2-Methylbutanoyl-CoA
+MCRCOA[b];2-Methylbut-2-enoyl-CoA
+HMBUTCOA[b];(2S,3S)-3-Hydroxy-2-methylbutanoyl-CoA
+MCECOA[b];2-Methylacetoacetyl-CoA
+MEENCO[b];2-Methylprop-2-enoyl-CoA
+HIBUTCOA[b];(S)-3-Hydroxyisobutyryl-CoA
+MECRCO[b];3-Methylcrotonyl-CoA
+HYISORATE[b];3-Hydroxy-2-methylpropanoate
+2MOP[b];2-Methyl-3-oxopropanoate
+MMCOA[b];(S)-Methylmalonyl-CoA
+AIBUT[b];L-3-Amino-isobutanoate
+DHDP[b];L-2,3-Dihydrodipicolinate
+TDHDP[b];2,3,4,5-Tetrahydrodipicolinate
+ACAMOXM[b];N-Acetyl-L-2-amino-6-oxopimelate
+AL26DA[b];N6-Acetyl-LL-2,6-diaminoheptanedioate
+DAPIM[b];LL-2,6-Diaminoheptanedioate
+SDAPIM[b];N-Succinyl-LL-2,6-diaminoheptanedioate
+MDAPIM[b];meso-2,6-Diaminoheptanedioate
+LYS[b];L-Lysine
+DPA[b];Dipicolinate
+bLYS[b];(3S)-3,6-Diaminohexanoate
+NAGLU[b];N-Acetyl-L-glutamate
+NAGLUP[b];N-Acetyl-L-glutamate 5-phosphate
+NAGLUS[b];N-Acetyl-L-glutamate 5-semialdehyde
+NAORN[b];N-Acetylornithine
+ORN[b];L-Ornithine
+CITR[b];L-Citrulline
+ARGSUCC[b];N-(L-Arginino)succinate
+ARG[b];L-Arginine
+AGMT[b];Agmatine
+NO[b];Nitric oxide
+UREACAR[b];Urea-1-carboxylate
+GLUGSAL[b];L-Glutamate 5-semialdehyde
+GLU5P[b];L-Glutamyl 5-phosphate
+P5C[b];(S)-1-Pyrroline-5-carboxylate
+PRO[b];L-Proline
+PHC[b];L-1-Pyrroline-3-hydroxy-5-carboxylate
+E4HGLU[b];L-erythro-4-Hydroxyglutamate
+ABAL[b];4-Aminobutanal
+HPRO[b];trans-4-Hydroxy-L-proline
+4HGLUSA[b];L-4-Hydroxyglutamate semialdehyde
+HYDROXYAKG[b];D-4-Hydroxy-2-oxoglutarate
+ASPRM[b];N-Acetylspermidine
+DIPYRCAR[b];3,4-Dihydro-2H-Pyrrole-2-carboxylate
+PRBATP[b];Phosphoribosyl-ATP
+PRBAMP[b];Phosphoribosyl-AMP
+PRFP[b];5-(5-Phospho-D-ribosylaminoformimino)-1-(5-phosphoribosyl)-imidazole-4-carboxamide
+PRLP[b];N-(5'-Phospho-D-1'-ribulosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide
+DIMGP[b];D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate
+IMACP[b];3-(Imidazol-4-yl)-2-oxopropyl phosphate
+HISOLP[b];L-Histidinol phosphate
+HISOL[b];L-Histidinol
+HISTIDINAL[b];L-Histidinal
+HIS[b];L-Histidine
+UROCA[b];Urocanate
+IMIPR[b];4-Imidazolone-5-propanoate
+FORGLU[b];N-Formimino-L-glutamate
+FORMIE[b];Formamide
+3DDAH7P[b];2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate
+DQT[b];3-Dehydroquinate
+DHSK[b];3-Dehydroshikimate
+SME[b];Shikimate
+SME3P[b];Shikimate 3-phosphate
+3PSME[b];5-O-(1-Carboxyvinyl)-3-phosphoshikimate
+CHOR[b];Chorismate
+AN[b];Anthranilate
+NPRAN[b];N-(5-Phospho-D-ribosyl)anthranilate
+CPAD5P[b];1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate
+IGP[b];Indoleglycerol phosphate
+TRP[b];L-Tryptophan
+PHEN[b];Prephenate
+PHPYR[b];Phenylpyruvate
+PHE[b];L-Phenylalanine
+4HPP[b];3-(4-Hydroxyphenyl)pyruvate
+TYR[b];L-Tyrosine
+AG[b];L-Arogenate
+DGLU[b];D-Glutamate
+DPHE[b];D-Phenylalanine
+PHACAL[b];Phenylacetaldehyde
+PAC[b];Phenylacetic acid
+BENZGLY[b];N-benzoylglycinate
+BA[b];benzoate
+FKYN[b];L-Formylkynurenine
+FORL[b];Formylanthranilate
+KYN[b];L-Kynurenine
+HBENZ[b];3-hydroxybenzoate
+DHBENZ[b];2,5-dihydroxybenzoate
+MAPYR[b];maleylpyruvate
+FPYR[b];3-fumarylpyruvate
+DALA[b];D-Alanine
+bALA[b];beta-Alanine
+PRPECO[b];Propenoyl-CoA
+HPCOA[b];3-Hydroxypropionyl-CoA
+SULALA[b];3-sulfino-L-alanine
+HTAUR[b];hypotaurine zwitterion
+CYSTE[b];L-Cysteate
+TAUR[b];Taurine
+MTRNA[b];tRNA(Met)
+LMETTRNA[b];L-Methionyl-tRNA (Met)
+SELNT[b];selenate
+ASELNT[b];adenosine phosphoselenate
+FERO[b];ferrocytochrome c
+FERI[b];ferricytochrome c
+SELT[b];selenite
+SELD[b];selane
+SCYS[b];selenocysteine
+SCYST[b];L-selenocystathionine
+SHSYS[b];selenohomocysteine
+SEMET[b];selenomethionine
+MSEL[b];Methylselenol
+CYAL[b];L-3-cyanoalanine
+AMPROTR[b];beta-Aminopropionitrile
+GAPPN[b];gamma-glutamyl-beta-aminopropiononitrile
+GCALA[b];gamma-Glutamyl-beta-cyanoalanine
+HCN[b];hydrogen cyanide
+DGLN[b];D-Glutamine
+OGT[b];Glutathione disulfide
+CGLY[b];Cys-Gly
+GSPRMD[b];glutathionylspermidine
+ALAGLN[b];Ala-Gln
+ALAHIS[b];Ala-His
+ALAASP[b];ala-L-asp-L
+ALAGLU[b];ala-L-glu-L
+ALATHR[b];ala-L-Thr-L
+ALAGLY[b];L-alanylglycine
+ALALEU[b];Ala-Leu
+GLYASN[b];gly-asn-L
+GLYASP[b];gly-asp-L
+GLYGLN[b];Gly-Gln
+GLYGLU[b];gly-glu-L
+GLYLEU[b];Gly-Leu
+GLYMET[b];Gly-Met
+GLYPHE[b];Gly-Phe
+METALA[b];met-L-ala-L
+UACCG[b];UDP-N-acetyl-3-(1-carboxyvinyl)-D-glucosamine
+UDPNAM[b];UDP-N-acetylmuramate
+UDPNAMA[b];UDP-N-acetylmuramoyl-L-alanine
+UDPNAMAG[b];UDP-N-acetylmuramoyl-L-alanyl-D-glutamate
+UGMD[b];UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimelate
+ALAALA[b];D-Alanyl-D-alanine
+UGMDA[b];UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-6-carboxy-L-lysyl-D-alanyl-D-alanine
+UDCPP[b];di-trans,poly-cis-Undecaprenyl phosphate
+UAGMDA[b];Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+UAAGMDA[b];Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+PEPG[b];Peptidoglycan subunit
+UDCPDP[b];di-trans,poly-cis-Undecaprenyl diphosphate
+FRDP[b];trans,trans-Farnesyl diphosphate
+IPP[b];Isopentenyl diphosphate
+GL3P[b];sn-Glycerol 3-phosphate
+CDPGL[b];CDP-glycerol
+GTA[b];glycerol teichoic acid (n=45), unlinked, unsubstituted
+GTA2[b];glycerol teichoic acid (n=45), unlinked, D-ala substituted
+GTA3[b];glycerol teichoic acid (n=45), unlinked, glucose substituted
+MGTA[b];minor teichoic acid (acetylgalactosamine glucose phosphate, n=30)
+DGLDGLY[b];diglucosyl-1,2 diacylglycerol
+LIPOTA[b];lipoteichoic acid (n=24), linked, glucose substituted
+LIPO2[b];lipoteichoic acid (n=24), linked, N-acetyl-D-glucosamine
+LIPO3[b];lipoteichoic acid (n=24), linked, D-alanine substituted
+LIPO4[b];lipoteichoic acid (n=24), linked, unsubstituted
+AHM[b];4-Amino-5-hydroxymethyl-2-methylpyrimidine
+AHMP[b];4-Amino-2-methyl-5-phosphomethylpyrimidine
+2MAHMP[b];2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate
+IMGLY[b];Iminoglycine
+THZ[b];5-(2-Hydroxyethyl)-4-methylthiazole
+THZP[b];4-Methyl-5-(2-phosphoethyl)-thiazole
+THMP[b];Thiamin monophosphate
+THME[b];Thiamine
+THDP[b];Thiamin diphosphate
+THTP[b];Thiamin triphosphate
+D6RP5P[b];2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one
+A6RP5P[b];5-Amino-6-(5'-phosphoribosylamino)uracil
+A6RP5P2[b];5-Amino-6-(5'-phosphoribitylamino)uracil
+4R5AU[b];4-(1-D-Ribitylamino)-5-amino-2,6-dihydroxypyrimidine
+DB4P[b];3,4-Dihydroxy-2-butanone 4-phosphate
+D8RL[b];6,7-Dimethyl-8-(D-ribityl)lumazine
+RIBFLAV[b];Riboflavin
+FMN[b];FMN
+FMNH2[b];FMNH2
+DIMBEN[b];Dimethylbenzimidazole
+PDXL5PI[b];Pyridoxal phosphate
+PDXAL[b];pyridoxal
+PDXAM[b];pyridoxamine
+PDXAM5PI[b];pyridoxamine 5'-phosphate
+PDXI[b];pyridoxine
+P5P[b];pyridoxine 5'-phosphate
+DEZ[b];4-Phospho-D-erythronate
+OHPB[b];2-Oxo-3-hydroxy-4-phosphobutanoate
+IMASP[b];Iminoaspartate
+PYR2CAR[b];Pyridine-2,3-dicarboxylate
+NAMN[b];Nicotinate D-ribonucleotide
+DNAD[b];Deamino-NAD+
+NMN[b];Nicotinamide D-ribonucleotide
+NAMD[b];N-Ribosylnicotinamide
+NICD[b];Nicotinamide
+NICA[b];Nicotinate
+DHMVA[b];(R)-2,3-Dihydroxy-3-methylbutanoate
+AKP[b];2-Dehydropantoate
+PANT[b];(R)-Pantoate
+PNTO[b];Pantothenate
+4PPNTO[b];D-4'-Phosphopantothenate
+4PPNCYS[b];(R)-4'-Phosphopantothenoyl-L-cysteine
+PTT[b];Pantetheine
+4PPNTE[b];Pantetheine 4'-phosphate
+DPCOA[b];Dephospho-CoA
+PMCOA[b];Pimeloyl-CoA
+AONA[b];8-Amino-7-oxononanoate
+DIHURA[b];5,6-Dihydrouracil
+CAALA[b];3-Ureidopropionate
+MALACP[b];Malonyl-[ACP]
+MMEACP[b];Malonyl-[acyl-carrier protein] methyl ester
+PMEACP[b];Pimeloyl-[acyl-carrier protein] methyl ester
+PIMACP[b];Pimeloyl-[acyl-carrier protein]
+METHOL[b];methanol
+ACP[b];Acyl-carrier protein
+AMOB[b];S-Adenosyl-4-methylthio-2-oxobutanoate
+DANNA[b];7,8-Diaminononanoate
+DTB[b];Dethiobiotin
+S[b];Sulfur
+BT[b];Biotin
+DAD5[b];5'-Deoxyadenosine
+C80ACP[b];octanoyl-[acyl-carrier protein]
+SULDO[b];Sulfur donor
+LPACP[b];Lipoyl-[acp]
+FPYNTP[b];Formamidopyrimidine nucleoside triphosphate
+DIANTP[b];2,5-Diaminopyrimidine nucleoside triphosphate
+DIATRPAO[b];2,5-Diamino-6-(5'-triphosphoryl-3',4'-trihydroxy-2'-oxopentyl)-amino-4-oxopyrimidine
+AHDT[b];2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate
+PYRTETR[b];6-Pyruvoyltetrahydropterin
+PPPI[b];Triphosphate
+GLYN[b];Glycerone
+DHP[b];7,8-Dihydroneopterin
+AHHMP[b];2-Amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine
+AHHMD[b];2-Amino-7,8-dihydro-4-hydroxy-6-(diphosphooxymethyl)pteridine
+ADCHOR[b];4-Amino-4-deoxychorismate
+PABA[b];4-Aminobenzoate
+DHPT[b];Dihydropteroate
+DHF[b];Dihydrofolate
+FOL[b];Folate
+THFGLU[b];Tetrahydrofolyl-[Glu](2)
+THFGLU3[b];Tetrahydrofolyl-[Glu](3)
+METHF[b];5,10-Methenyltetrahydrofolate
+5FTHF[b];5-Formyltetrahydrofolate
+MTHF[b];5-Methyltetrahydrofolate
+ETRNA[b];tRNA(Glu)
+LGLUTRNA[b];L-Glutamyl-tRNA(Glu)
+S4AMOXOPE[b];(S)-4-Amino-5-oxopentanoate
+AMIEVUL[b];5-Aminolevulinate
+PPBG[b];Porphobilinogen
+HMTB[b];Hydroxymethylbilane
+UDPGI[b];uroporphyrinogen I
+CPGI[b];coproporphyrinogen I
+UPGIII[b];Uroporphyrinogen III
+CPGIII[b];Coproporphyrinogen III
+PPGIX[b];Protoporphyrinogen IX
+PPRIX[b];Protoporphyrin
+FE2[b];Fe2+
+FE3[b];Fe3+
+HEME[b];Heme
+HEMEO[b];Heme O
+HEMEA[b];Heme A
+PRE2[b];Precorrin 2
+SHCR[b];sirohydrochlorin
+COBALT2[b];Co2+
+COSIR[b];Cobalt-sirohydrochlorin
+COBFIII[b];Cobalt-factor III
+COPR3[b];Cobalt-precorrin 3
+COPR4[b];Cobalt-precorrin 4
+COPR5A[b];Cobalt-precorrin 5A
+COPR5B[b];Cobalt-precorrin 5B
+COPR6[b];Cobalt-precorrin 6
+COHYP6[b];Cobalt-dihydro-precorrin 6
+COPR7[b];Cobalt-precorrin 7
+COPR8[b];Cobalt-precorrin 8
+COBY[b];Cobyrinate
+COB2DIDE[b];Cob(II)yrinate a,c diamide
+PRE3A[b];precorrin 3A
+PRE3B[b];Precorrin 3B
+PRE4[b];Precorrin 4
+PRE5[b];precorrin 5
+PRE6X[b];Precorrin 6X
+PRE6Y[b];Precorrin 6Y
+PRE8X[b];Precorrin 8X
+HYBY[b];Hydrogenobyrinate
+HYBYDA[b];Hydrogenobyrinate a,c diamide
+COB1DIDE[b];Cob(I)yrinate a,c diamide
+ADCODIE[b];Adenosyl cobyrinate a,c diamide
+ADCOHEX[b];Adenosyl cobyrinate hexaamide
+ADOCBI[b];Adenosyl cobinamide
+RAMOL[b];(R)-1-aminopropan-2-ol
+CBI[b];cobinamide
+ADOCBIP[b];Adenosyl cobinamide phosphate
+AGDPCBI[b];adenosine-GDP-cobinamide
+THR3P[b];L-Threonine O-3-phosphate
+AMIP[b];D-1-Aminopropan-2-ol O-phosphate
+RI5P[b];alpha-ribazole 5'-phosphate
+RIBAZ[b];alpha-Ribazole
+COBCE[b];Cobamide coenzyme
+ICHOR[b];Isochorismate
+SUCCYCA[b];2-Succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate
+SHCHC[b];(1R,6R)-6-Hydroxy-2-succinylcyclohexa-2,4-diene-1-carboxylate
+SUCBEN[b];2-Succinylbenzoate
+SUCBENCO[b];2-Succinylbenzoyl-CoA
+DHNTCOA[b];1,4-Dihydroxy-2-naphthoyl-CoA
+DHN[b];1,4-Dihydroxy-2-naphthoate
+OPP[b];all-trans-Octaprenyl diphosphate
+DMKH[b];2-demethylmenaquinol-8
+MQL8[b];Menaquinol 8
+PHYDP[b];Phytyl diphosphate
+2P14NQ[b];2-Phytyl-1,4-naphthoquinone
+PQ[b];Phylloquinone
+SIHM[b];Siroheme
+NAR[b];Nicotinate D-ribonucleoside
+PRECZ[b];Precursor Z
+MQN8[b];Menaquinone 8
+RFER[b];Reduced ferredoxin
+OFER[b];Oxidized ferredoxin
+HNO2[b];Nitrite
+HNO3[b];Nitrate
+N2[b];nitrogen
+SLF[b];Sulfate
+APS[b];Adenylyl sulfate
+PAPS[b];3'-Phosphoadenylyl sulfate
+DIHB[b];(2S,3S)-2,3-Dihydro-2,3-dihydroxybenzoate
+ACMALT[b];Acetyl-maltose
+PENI[b];Penicillin
+PENIA[b];Penicilloic acid
+O2S[b];superoxide
+CODSUL[b];CoA-disulfide
+COPR5[b];Cobalt-precorrin 5
+RALIN[b];(R)(-)-Allantoin
+ADGLC[b];6-O-acetyl-beta-D-glucose
+MALN[b];Malonate
+BUTSUL[b];butanesulfonate
+HYETHS[b];2-Hydroxyethanesulfonate
+ETSUL[b];ethanesulfonate
+HEXSUL[b];hexanesulfonate
+HEAL[b];hexanal
+METSA[b];Methanesulfonic acid
+SULA[b];Sulfoacetate
+DX5P[b];1-Deoxy-D-xylulose 5-phosphate
+2ME4P[b];2-C-Methyl-D-erythritol 4-phosphate
+4C2ME[b];4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol
+2P4C2ME[b];4-CDP-2-C-methyl-D-erythritol 2-phosphate
+2MECDP[b];2-C-Methyl-D-erythritol 2,4-cyclodiphosphate
+H2MB4P[b];1-Hydroxy-2-methyl-2-butenyl 4-diphosphate
+DMPP[b];Dimethylallyl diphosphate
+GRDP[b];Geranyl diphosphate
+GERGDP[b];Geranylgeranyl diphosphate
+ATHEDI[b];all-trans-Heptaprenyl diphosphate
+PREQ2P[b];Presqualene diphosphate
+SQL[b];Squalene
+DIPNE[b];Diploptene
+DIPLO[b];Diplopterol
+ANIL[b];Aniline
+CCL[b];Catechol
+MUCO[b];cis,cis-Muconate
+DHFUAC[b];5-oxo-2,5-dihydro-2-furylacetate
+5ODHF2A[b];5-oxo-4,5-dihydro-2-furylacetate
+3OA[b];3-oxoadipate
+3OAPCOA[b];3-oxoadipyl-CoA
+MALCOA[b];Malonyl-CoA
+ACACP[b];Acetyl-[ACP]
+PROPACP[b];Propanoyl-ACP
+C100ACP[b];Decanoyl-[acp]
+C120ACP[b];Dodecanoyl-[acyl-carrier protein]
+C140ACP[b];Tetradecanoyl-[acp]
+C160ACP[b];Hexadecanoyl-[acp]
+C180ACP[b];Stearoyl-[acyl-carrier protein]
+C150ACP[b];Pentadecanoyl-[acp]
+C170ACP[b];Heptadecanoyl-[acp]
+GMEACP[b];Glutaryl-[acyl-carrier protein] methyl ester
+C140[b];Myristic acid
+C150[b];pentadecanoic acid 
+C160[b];Palmitic acid
+C170[b];heptadecanoic acid 
+C180[b];Stearic acid
+C181ACP[b];Oleoyl-[acyl-carrier protein]
+C181[b];Octadecenoic acid 
+C160IACP[b];IsoC160ACP
+PMTCOA[b];palmitoyl-CoA(n-C16:0 CoA)
+FA6COA[b];Iso-C16:0 CoA
+TDCOA[b];tetradecanoyl-CoA(C14:0 CoA)
+PTDCOA[b];pentadecanoyl-CoA(anteiso-C15:0 CoA)
+HPDCOA[b];heptadecanoyl-CoA(anteiso-C17:0 CoA)
+C180COA[b];Stearoyl-CoA
+3OACOA[b];3-oxoadipyl-CoA
+H3MCOA[b];(S)-3-Hydroxy-3-methylglutaryl-CoA
+HDBUT[b];(R)-3-Hydroxybutanoate
+AGLY3P[b];1-Acyl-sn-glycerol 3-phsophate
+PA[b];1,2-diacyl-sn-glycerol 3-phosphate
+DAGL[b];1,2-Diacyl-sn-glycerol
+CDPDG[b];CDP-diacylglycerol
+PGP[b];Phosphatidylglycerophosphate
+PG[b];Phosphatidylglycerol
+CL[b];Cardiolipin
+PS[b];Phosphatidylserine
+PE[b];Phosphatidylethanolamine
+PSMEE[b];Phosphatidyl-N-methylethanolamine
+PSNDM[b];Phosphatidyl-N-dimethylethanolamine
+PL[b];Phosphatidylcholine
+GLYCEROCHO[b];sn-glycero-3-Phosphocholine
+CHO[b];Choline
+GLYCEROPE[b];sn-Glycero-3-phosphoethanolamine
+ETHAM[b];Ethanolamine
+APOACP[b];apoprotein [acyl carrier protein]
+GLYPRO[b];gly-pro-L
+GLYCYS[b];glycylcysteine
+GLYTYR[b];Gly-Tyr
+DMET[b];D-Methionine
+AHM[e];4-Amino-5-hydroxymethyl-2-methylpyrimidine
+GLYB[e];Glycine betaine
+ZN[e];Zinc(e)
+ZN[b];Zinc
+FERCH[e];Ferrichrome(e)
+FERCH[b];Ferrichrome
+K[e];Potassium(e)
+K[b];Potassium
+NA[e];Sodium(e)
+NA[b];Sodium
+METSA[e];Methanesulfonic acid(e)
+BUTSUL[e];butanesulfonate(e)
+HEXSUL[e];hexanesulfonate(e)
+ETSUL[e];ethanesulfonate(e)
+SULA[e];Sulfoacetate(e)
+ACMUM[e];N-Acetylmuramate(e)
+ARBUTIN[e];Arbutin(e)
+SALI[e];Salicin(e)
+GLCN[e];D-Glucosamine(e)
+ACGALA[e];N-Acetyl-D-galactosamine(e)
+ACGAL6P[b];N-Acetyl-D-galactosamine 6-phosphate
+GA[e];D-Galactosamine(e)
+GAL6P[b];D-Galactosamine 6-phosphate
+LAC6P[b];Lactose 6-phosphate
+CHL[e];Chloride(e)
+CHL[b];Chloride
+CRO4[b];chromate
+CRO4[e];chromate(e)
+COBALT2[e];Co2+(e)
+MG[e];Magnesium(e)
+MG[b];Magnesium
+FE3[e];Fe3+(e)
+CD2[b];Cd2+|Cadmium
+CD2[e];Cd2+|Cadmium
+CA[b];Calcium
+CA[e];Calcium(e)
+HG2[e];Mercury (+2)
+HG2[b];Mercury (+2)
+ASENI[e];arsenite
+ASENI[b];arsenite
+ASENA[e];Arsenate
+ASENA[b];Arsenate
+MN2[e];manganese
+MN2[b];manganese
+N2[e];nitrogen
+PPI[e];Diphosphate(e)
+HNO2[e];Nitrite(e)
+HNO3[e];Nitrate(e)
+ACTAC[e];Acetoacetate(e)
+BUAC[e];Butanoic acid(e)
+AC[e];Acetate
+ACTN[e];(R)-Acetoin
+BDOH[e];(R,R)-2,3-Butanediol
+MELI[e];Melibiose(e)
+XYL[e];D-Xylose(e)
+GLCNT[e];D-Gluconic acid
+GALUNT[e];D-Galacturonate(e)
+DGALAC[e];D-Galactonate(e)
+DGALAC[b];D-Galactonate
+ALLOIN[e];Allantoin(e)
+MDAPIM[e];meso-2,6-Diaminoheptanedioate
+DGLCNT[e];2-dehydro-D-gluconate
+CTETRAOSE[e];cellotetraose
+FOL[e];Folate
+SOR[b];L-sorbose
+GENTB[e];gentiobiose
+ERY[e];D-erythrose
+ERY[b];D-erythrose
+3PG[e];3-Phospho-D-glycerate
+CIT[e];Citrate(e)
+OA[e];Oxaloacetate
+AKG[e];2-Oxoglutarate(e)
+HDBUT[e];(R)-3-Hydroxybutanoate(e)
+DSER[e];D-Serine(e)
+ORN[e];L-Ornithine(e)
+DA[e];Deoxyadenosine(e)
+CYTD[e];Cytidine(e)
+URI[e];Uridine(e)
+DU[e];Deoxyuridine(e)
+DIN[e];Deoxyinosine(e)
+DT[e];Thymidine(e)
+ADN[e];Adenosine(e)
+INS[e];Inosine(e)
+DG[e];Deoxyguanosine(e)
+DC[e];Deoxycytidine(e)
+UMP[e];UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine
+OMP[e];Orotidine 5'-phosphate
+GSN[e];Guanosine
+HYXN[e];Hypoxanthine(e)
+COBCE[e];Cobamide coenzyme
+DOROA[e];(S)-Dihydroorotate
+OROA[e];Orotate
+MALN[e];Malonate(e)
+FMN[e];FMN
+PA[e];1,2-diacyl-sn-glycerol 3-phosphate
+UDPG[e];UDP-glucose
+DGLDGLY[e];diglucosyl-1,2 diacylglycerol
+UDPNAG[e];UDP-N-acetyl-D-glucosamine
+HBENZ[e];3-hydroxybenzoate
+PHPYR[e];Phenylpyruvate
+CELLOT[e];cellotriose
+MPYR[e];Mercaptopyruvate
+TUR[e];turanose
+AMOB[e];S-Adenosyl-4-methylthio-2-oxobutanoate
+AG[e];L-Arogenate
+bLYS[e];(3S)-3,6-diaminohexanoic acid
+BUTL[e];1-Butanol
+DPA[e];Dipicolinate
+HBUT[e];2-Hydroxybutyrate
+LGT[e];(R)-S-Lactoylglutathione
+METH[e];Methanethiol
+NO[e];Nitric oxide
+SARC[e];Sarcosine
+SPRM[e];Spermine
+THPTGLU[e];tetrahydropteroyltri-L-glutamic acid
+UR[e];Ureidoglycine
+VB12[e];Vitamin B12(e)

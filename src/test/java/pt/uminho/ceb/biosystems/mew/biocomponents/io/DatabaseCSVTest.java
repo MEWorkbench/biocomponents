@@ -4,9 +4,12 @@ import java.io.File;
 import java.net.URL;
 import java.util.HashMap;
 
+import org.junit.Test;
+
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.DatabaseCSVFilesReader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.NewDatabaseCSVFilesReader;
+import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.MapUtils;
 import pt.uminho.ceb.biosystems.mew.utilities.io.Delimiter;
 
 public class DatabaseCSVTest {
@@ -702,6 +705,59 @@ public class DatabaseCSVTest {
 				System.out.println("\t: " +metabolite);
 			}
 		}
+	}
+	
+	@Test
+	public void validateCSV() throws Exception {
+			
+		Delimiter tab = Delimiter.TAB;
+		
+		NewDatabaseCSVFilesReader reader = new NewDatabaseCSVFilesReader(new File(getFile("CSVFiles/Original/1471-2164-12-535-s1_Reactions")), 
+				new File(getFile("CSVFiles/Original/1471-2164-12-535-s1_Metabolites")), 
+				new HashMap<String, Integer>(){{put("Name",1); put("ID",0);}}, 
+				new HashMap<String, Integer>(){{put("Name",1); put("Equation",2); put("ID",0);}}, 
+				"", 
+				"", 
+				tab.toString(), 
+				tab.toString(), 
+				new HashMap<String, Integer>(), 
+				new HashMap<String, Integer>(), 
+				true, 
+				true, 
+				null, 
+				null);
+		
+		Container container = new Container(reader);
+		for (String compartement: container.getCompartments().keySet()) {
+			System.out.println(compartement);
+		}
+	}
+	
+	@Test
+	public void validateCSV_AME() throws Exception {
+		Delimiter tab = Delimiter.SEMICOLON;
+		
+		NewDatabaseCSVFilesReader reader = new NewDatabaseCSVFilesReader(new File(getFile("CSVFiles/Original/AME_reactions.csv")), 
+				new File(getFile("CSVFiles/Original/AME_metabolites.csv")), 
+				new HashMap<String, Integer>(){{put("Name",1); put("ID",0);}}, 
+				new HashMap<String, Integer>(){{put("Name",1); put("Equation",2); put("ID",0); put(NewDatabaseCSVFilesReader.REACGENERULE,3);}}, 
+				"", 
+				"", 
+				tab.toString(), 
+				tab.toString(), 
+				new HashMap<String, Integer>(), 
+				new HashMap<String, Integer>(), 
+				true, 
+				true, 
+				null, 
+				null);
+		
+		Container container = new Container(reader);
+		for (String compartement: container.getCompartments().keySet()) {
+			System.out.println(compartement);
+		}
+		
+		MapUtils.prettyPrint(container.getGenes());
 	}
 	
 }

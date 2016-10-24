@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
+import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
 
@@ -23,6 +24,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneCI;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.MetaboliteCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.ErrorsException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLReader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLLevel3Reader;
@@ -564,6 +567,37 @@ public class JSbmlUnitTests {
 			Container cont = new Container(reader);
 //			Set<String> met = cont.identifyMetabolitesIdByPattern(Pattern.compile(".*_b"));
 			Assert.assertEquals("Container is null", true, cont != null);
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void jsbmlReaderV3Test0(){
+		try {
+			JSBMLLevel3Reader reader = new JSBMLLevel3Reader("/home/hgiesteira/Downloads/iMM1415.xml", "NoName");
+			Container container = new Container(reader);
+			
+			Set<String> metabolitesWithoutReactions = new HashSet<String>();
+			Set<String> genesWithoutReactions = new HashSet<String>();
+			
+			for (MetaboliteCI metab : container.getMetabolites().values()) {
+				if(metab.getReactionsId().isEmpty())
+					metabolitesWithoutReactions.add(metab.getId());
+			}
+			
+			for (GeneCI gene : container.getGenes().values()) {
+				if(gene.getReactionIds().isEmpty())
+					genesWithoutReactions.add(gene.getGeneId());
+			}
+			
+			container.removeMetabolites(metabolitesWithoutReactions);
+			// I don't know why but I can't find a removeGenes method :S
+			for (String geneToDel : genesWithoutReactions) {
+				container.getGenes().remove(geneToDel);
+			}
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

@@ -28,6 +28,7 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -45,7 +46,10 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionT
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.interfaces.IContainerBuilder;
 import pt.uminho.ceb.biosystems.mew.utilities.datastructures.map.indexedhashmap.IndexedHashMap;
+import pt.uminho.ceb.biosystems.mew.utilities.grammar.syntaxtree.AbstractSyntaxTree;
 import pt.uminho.ceb.biosystems.mew.utilities.grammar.syntaxtree.TreeUtils;
+import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.DataTypeEnum;
+import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.IValue;
 import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.ParseException;
 
 public class NewDatabaseCSVFilesReader implements IContainerBuilder {
@@ -466,8 +470,11 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 		
 		
 		
-		if (reactionGeneIndex < 0) {
-			this.hasGeneReactioAssociations = false;
+		if (reactionGeneIndex > 0) {
+			this.hasGeneReactioAssociations = true;
+			geneReactionRules = new IndexedHashMap<>();
+			geneSet = new IndexedHashMap<>();
+			geneReactionMapping = new HashMap<>();
 		}
 
 		while (r.ready()) {
@@ -552,7 +559,6 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 				if (this.hasGeneReactioAssociations)
 					reacHasGeneReacAssociation(fields, reactionGeneIndex, reactionId);
 			}
-			System.out.println(line);
 			line++;
 		}
 		r.close();
@@ -759,27 +765,42 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 	private void reacHasGeneReacAssociation(String[] fields, int reactionGeneIndex, String reactionId)
 			throws ParseException {
 
-		String geneAssociation = fields[reactionGeneIndex];
-		GeneReactionRuleCI geneReactionRule = new GeneReactionRuleCI(geneAssociation);
-		geneReactionRules.put(reactionId, geneReactionRule);
-
-		ArrayList<String> genesId = TreeUtils.withdrawVariablesInRule(geneReactionRule.getRule());
-		for (int g = 0; g < genesId.size(); g++) {
-			if (!geneSet.containsKey(genesId.get(g))) {
-				geneSet.put(genesId.get(g), new GeneCI(genesId.get(g), genesId.get(g)));
+		if(fields.length > reactionGeneIndex){
+			String geneAssociation = fields[reactionGeneIndex];
+			GeneReactionRuleCI geneReactionRule = new GeneReactionRuleCI(geneAssociation);
+			geneReactionRules.put(reactionId, geneReactionRule);
+	
+			ArrayList<String> genesId = TreeUtils.withdrawVariablesInRule(geneReactionRule.getRule());
+			for (int g = 0; g < genesId.size(); g++) {
+				if (!geneSet.containsKey(genesId.get(g))) {
+					geneSet.put(genesId.get(g), new GeneCI(genesId.get(g), genesId.get(g)));
+				}
+	
+				if (geneReactionMapping.containsKey(genesId.get(g))) {
+					ArrayList<String> dependentReactions = geneReactionMapping.get(genesId.get(g));
+					dependentReactions.add(reactionId);
+	
+				} else {
+					ArrayList<String> dependentReactions = new ArrayList<String>();
+					dependentReactions.add(reactionId);
+					geneReactionMapping.put(genesId.get(g), dependentReactions);
+				}
 			}
-
-			if (geneReactionMapping.containsKey(genesId.get(g))) {
-				ArrayList<String> dependentReactions = geneReactionMapping.get(genesId.get(g));
-				dependentReactions.add(reactionId);
-
-			} else {
-				ArrayList<String> dependentReactions = new ArrayList<String>();
-				dependentReactions.add(reactionId);
-				geneReactionMapping.put(genesId.get(g), dependentReactions);
-			}
+			
+			associateReactionWithGeneRules(reactionId, geneReactionRule);
 		}
 
+	}
+	
+	protected void associateReactionWithGeneRules(String reactionID, GeneReactionRuleCI geneReactionRule){
+		if(reactionsHash.containsKey(reactionID)){
+			AbstractSyntaxTree<DataTypeEnum, IValue> geneRule = geneReactionRule.getRule();
+			ArrayList<String> geneIDsArray = TreeUtils.withdrawVariablesInRule(geneRule);
+			Set<String> geneIDsSet = new HashSet<String>(geneIDsArray);
+			
+			reactionsHash.get(reactionID).setGeneRule(geneRule);
+			reactionsHash.get(reactionID).setGenesIDs(geneIDsSet);
+		}
 	}
 
 	/**
