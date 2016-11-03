@@ -35,7 +35,7 @@ public class ReactionCI implements Serializable, Cloneable {
 	protected Map<String, StoichiometryValueCI> reactants;
 	protected ReactionTypeEnum type = ReactionTypeEnum.Undefined;
 
-	private boolean allMetabolitesHaveKEGGId;
+	protected boolean allMetabolitesHaveKEGGId;
 
 	protected String ecNumber = null;
 	 
