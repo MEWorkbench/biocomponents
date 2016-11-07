@@ -2298,6 +2298,16 @@ public class Container implements Serializable, Cloneable/*
 		return reactionChanged;
 	}
 	
+	public Collection<String> getAllGenesByReactionList(Collection<String> reactionsList){
+		Set<String> toRet = new HashSet<String>();
+		
+		for (String r : reactionsList) {
+			ReactionCI reaction = getReaction(r);
+			toRet.addAll(reaction.getGenesIDs());
+		}
+		return toRet;
+	}
+	
 //	private ReactionCI validateIfExistsReaction(String reactionId) {
 //		ReactionCI r = reactions.get(reactionId);
 //		if(r == null) throw new ReactionDoesNotExistsException(reactionId);
