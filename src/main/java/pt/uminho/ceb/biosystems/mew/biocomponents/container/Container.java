@@ -2308,6 +2308,48 @@ public class Container implements Serializable, Cloneable/*
 		return toRet;
 	}
 	
+	public Map<String, Double> getGenesReactionsCountMap(Collection<String> genesList){
+		HashMap<String, Double> toRet = new HashMap<String, Double>();
+		
+		for (String geneID : genesList) {
+			GeneCI gene = getGene(geneID);
+			if(gene == null){
+				throw new NullPointerException("Unknown Gene ID: " + geneID);
+			}
+			toRet.put(geneID, gene.getReactionIds().size()+0.0);
+		}
+		return toRet;
+	}
+	
+	public Map<String, Double> getGenesReactionsCountMap(){
+		return getGenesReactionsCountMap(getGenes().keySet());
+	}
+	
+	public Map<String, Double> getGenesReactionsCountIntersectionMap(Collection<String> reactionList, Collection<String> genesList){
+		HashMap<String, Double> toRet = new HashMap<String, Double>();
+		
+		for (String geneID : genesList) {
+			GeneCI gene = getGene(geneID);
+			if(gene == null){
+				throw new NullPointerException("Unknown Gene ID: " + geneID);
+			}
+			Set<String> reactionGeneAssoc = new HashSet<String>(gene.getReactionIds());
+			Set<String> reactionGeneAssocIntersection = new HashSet<String>();
+			for (String reactID : reactionGeneAssoc) {
+				if(reactionList.contains(reactID)){
+					reactionGeneAssocIntersection.add(reactID);
+				}
+			}
+			
+			toRet.put(geneID, reactionGeneAssocIntersection.size()+0.0);
+		}
+		return toRet;
+	}
+	
+	public Map<String, Double> getGenesReactionsCountIntersectionMap(Collection<String> reactionList){
+		return getGenesReactionsCountIntersectionMap(reactionList, getGenes().keySet());
+	}
+	
 //	private ReactionCI validateIfExistsReaction(String reactionId) {
 //		ReactionCI r = reactions.get(reactionId);
 //		if(r == null) throw new ReactionDoesNotExistsException(reactionId);
