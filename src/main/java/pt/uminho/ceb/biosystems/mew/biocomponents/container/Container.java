@@ -671,30 +671,24 @@ public class Container implements Serializable, Cloneable/*
 		return newStoicMap;
 	}
 
-	public Map<String, String> stripDuplicateMetabolitesInfoById(Pattern metaboliteIDpattern) throws Exception {
+	public Map<String, String> stripDuplicateMetabolitesInfoById(Pattern metaboliteIDpattern) throws Exception{
+		return stripDuplicateMetabolitesInfoById(metaboliteIDpattern, true);
+	}
+	
+	public Map<String, String> stripDuplicateMetabolitesInfoById(Pattern metaboliteIDpattern, boolean allMatch) throws Exception {
 		Map<String, String> oldToNewId = new HashMap<String, String>();
-		Map<String, MetaboliteCI> newMetabolites = new HashMap<String, MetaboliteCI>();
 
 		for (String oldId : metabolites.keySet()) {
-			MetaboliteCI metaboliteInfo = metabolites.get(oldId);
 			Matcher matcher = metaboliteIDpattern.matcher(oldId);
 
 			if (matcher.matches()) {
 				String newId = matcher.group(1);
 				oldToNewId.put(oldId, newId);
-				metaboliteInfo.setId(newId);
-				if (!newMetabolites.containsKey(newId))
-					newMetabolites.put(newId, metaboliteInfo);
-				changeIdInExtraInfo(oldId, newId, metabolitesExtraInfo);
-			} else
-				throw new Exception("Metabolite [" + oldId + "] does not matche to pattern");
+			} else if(allMatch)
+				throw new RuntimeException("Metabolite [" + oldId + "] does not match pattern");
 		}
-
-		this.metabolites = newMetabolites;
-
-		for (ReactionCI reaction : reactions.values()) {
-			changeMetabolitesIdInReaction(reaction, oldToNewId);
-		}
+		
+		changeMetaboliteIds(oldToNewId, true);
 		verifyDepBetweenClass();
 		return oldToNewId;
 	}
