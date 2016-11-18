@@ -104,6 +104,11 @@ public class JSBMLWriter{
 
 //	private XMLNamespaces spaces;
 
+	/**
+	 *  Having this constructor is very dangerous
+	 *  since the global variables are not initialized
+	 */
+	@Deprecated
 	public JSBMLWriter(){}
 
 	public JSBMLWriter(String path,Container container) {
