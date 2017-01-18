@@ -86,6 +86,10 @@
 
 	<repositories>
 		<repository>
+			<id>thirdparty</id>
+			<url>http://193.137.11.210/nexus/content/repositories/thirdparty</url>
+		</repository>
+		<repository>
 			<id>ebi-repo</id>
 			<name>EBI Repository</name>
 			<url>http://jsbml.sourceforge.net/m2repo/</url>
