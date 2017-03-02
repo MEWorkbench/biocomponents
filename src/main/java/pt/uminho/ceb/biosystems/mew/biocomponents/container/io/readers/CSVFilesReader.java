@@ -52,12 +52,12 @@ public class CSVFilesReader implements IContainerBuilder
 	//names that will appear in the HeadedTable, in the CSV Configurations Panel
 	public static String NOTHING = "---";
 	public static String METID = "ID";
-	public static String METNAME = "Name";
-	public static String METFORMULA = "Formula";
+	public static final String METNAME = "Name";
+	public static final String METFORMULA = "Formula";
 	public static String REACID = "ID";
-	public static String REACNAME = "Name";
+	public static final String REACNAME = "Name";
 	public static String REACEQUATION = "Equation";
-	public static String REACECNUMBER = "EC Number";
+	public static final String REACECNUMBER = "EC Number";
 	public static String REACGENERULE = "Gene Rule";
 	public static String REACSUBSYSTEM = "Subsystem";
 	public static String REACLB = "Lower Bound";
