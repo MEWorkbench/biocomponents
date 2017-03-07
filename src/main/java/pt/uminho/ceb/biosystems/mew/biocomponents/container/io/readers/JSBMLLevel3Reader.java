@@ -1,6 +1,9 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,6 +46,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.interfaces.IContainerBuilder;
+import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidator;
 
 public class JSBMLLevel3Reader implements IContainerBuilder{
 
@@ -81,9 +85,31 @@ public class JSBMLLevel3Reader implements IContainerBuilder{
 	}
 
 	public JSBMLLevel3Reader(InputStream data, String organismName, boolean checkConsistency) throws Exception {
+		
+		// Clone InputStream
+		// Necessary thus the JSBMLValidator close the stream after use it
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+		byte[] buffer = new byte[1024];
+		int len;
+		while ((len = data.read(buffer)) > -1 )
+		    baos.write(buffer, 0, len);
+		baos.flush();
+
+		InputStream is1 = new ByteArrayInputStream(baos.toByteArray()); 
+		InputStream is2 = new ByteArrayInputStream(baos.toByteArray());
+		
+		JSBMLValidator validator = new JSBMLValidator(is1);
+		validator.enableAllValidators(true);
+		validator.validate();
+		
 		this.checkConsistency = checkConsistency;
 		SBMLReader reader = new SBMLReader();
-		document = reader.readSBMLFromStream(data);
+		try {
+			document = reader.readSBMLFromStream(is2);
+		} catch (Exception e) {
+			throw new IOException("The file is not a valid SBML! Please validate your file at SBML Validator (www.sbml.org/validator)");
+		}
 
 		jsbmlmodel = document.getModel();
 		
