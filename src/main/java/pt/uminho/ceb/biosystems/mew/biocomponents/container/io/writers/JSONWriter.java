@@ -1,8 +1,10 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container.io.writers;
 
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.Writer;
 import java.util.Map;
 import java.util.Set;
 
@@ -47,12 +49,23 @@ public class JSONWriter {
 	
 	public final static String NOTES_SPLIT_CHAR = ";";
 	
-	private OutputStream out;
+	private Writer out;
 	
 	private String path;
 	private Container container;
 	
 	protected boolean addPrefix = true;
+	
+	
+	public JSONWriter(Writer out , Container container){
+		
+		this.out = out;
+		this.container = container;
+		if(!container.hasUnicIds()){
+			this.container = container.clone();
+			this.container.useUniqueIds();
+		}
+	}
 	
 	public JSONWriter(String path, Container container) {
 		this.path = path;
@@ -65,13 +78,14 @@ public class JSONWriter {
 	}
 	
 	public void writeToFile() throws IOException {
-		this.writeToFile();
+		this.writeToFile(true);
 	}
 	
 	public void writeToFile(boolean addPerfix) throws IOException {
 		this.addPrefix = addPerfix;
 		
-		out = new FileOutputStream(path);
+		if(out == null)
+			out = new FileWriter(path);
 		
 		JsonGenerator node = new JsonFactory().createGenerator(out);
 		node.setPrettyPrinter(new DefaultPrettyPrinter());
