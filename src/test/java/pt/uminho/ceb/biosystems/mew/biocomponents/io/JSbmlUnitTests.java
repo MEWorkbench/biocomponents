@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.regex.Pattern;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -27,8 +26,8 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.GeneCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.MetaboliteCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.ErrorsException;
-import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLReader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLLevel3Reader;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.readers.JSBMLReader;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidationException;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.JSBMLValidator;
 import pt.uminho.ceb.biosystems.mew.biocomponents.validation.io.jsbml.validators.JSBMLValidatorException;
@@ -330,7 +329,7 @@ public class JSbmlUnitTests {
 		long timeinitMY = System.currentTimeMillis();
 		JSBMLValidator validator;
 		try {
-			validator = new JSBMLValidator(new File(getFile("test_unit_models/recon2.v02.xml")));
+			validator = new JSBMLValidator(new File(getFile("test_unit_models/recon2model.v02.xml")));
 			validator.enableAllValidators(true);
 			try {
 				validator.validate();
@@ -417,7 +416,7 @@ public class JSbmlUnitTests {
 	@Test
 	public void validateSBMLModel2() throws JSBMLValidatorException, TransformerException, ParserConfigurationException, SAXException, IOException{
 		try {
-			JSBMLReader reader = new JSBMLReader("/home/hgiesteira/Downloads/iRP911.xml", "NoName");
+			JSBMLReader reader = new JSBMLReader(getFile("model_with_problems/iRP911.xml"), "NoName");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -449,12 +448,14 @@ public class JSbmlUnitTests {
 				//solvable = true;
 				System.out.println("---------------------- // ------------------------");
 				System.out.println("\t\t Correcting SBML");
-				Set<String> out = e.getSbmlvalidator().validate("/home/hgiesteira/Downloads/iRP911_new.xml");
+				File f = new File("./src/test/resources/solved_problem_models/iRP911_new.xml");
+				f.createNewFile();
+				Set<String> out = e.getSbmlvalidator().validate("./src/test/resources/solved_problem_models/iRP911_new.xml");
 				System.out.println(CollectionUtils.join(out, "\n"));
 				System.out.println("---------------------- // ------------------------");
 				System.out.println("SBML is solved!");
 				
-				Document doc = JSBMLValidator.readStream(new FileInputStream(new File("/home/hgiesteira/Downloads/iRP911_new.xml")));
+				Document doc = JSBMLValidator.readStream(new FileInputStream(new File("./src/test/resources/solved_problem_models/iRP911_new.xml")));
 			}
 			else
 				System.out.println("SBML cannot be solved!");
@@ -490,7 +491,7 @@ public class JSbmlUnitTests {
 	@Test
 	public void validateSBMLModelNew() throws JSBMLValidatorException, TransformerException, ParserConfigurationException, SAXException, IOException{
 		try {
-			JSBMLReader reader = new JSBMLReader("/home/hgiesteira/Downloads/short_model (copy).xml", "NoName");
+			JSBMLReader reader = new JSBMLReader("./src/test/resources/test_unit_models/short_model (copy).xml", "NoName");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -577,7 +578,7 @@ public class JSbmlUnitTests {
 	@Test
 	public void jsbmlReaderV3Test0(){
 		try {
-			JSBMLLevel3Reader reader = new JSBMLLevel3Reader("/home/hgiesteira/Downloads/iMM1415.xml", "NoName");
+			JSBMLLevel3Reader reader = new JSBMLLevel3Reader(getFile("level3Models/iMM1415.xml"), "NoName");
 			Container container = new Container(reader);
 			
 			Set<String> metabolitesWithoutReactions = new HashSet<String>();
