@@ -1,9 +1,7 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container.io.writers;
 
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.Writer;
 import java.util.Map;
 import java.util.Set;
@@ -203,6 +201,7 @@ public class JSONWriter {
 		node.writeStartObject();
 		String name = gene.getGeneName();
 		String id = gene.getGeneId();
+		name = (name != null && !name.isEmpty()) ? name : id;
 
 		node.writeStringField(FIELD_NAME, name);
 		node.writeStringField(FIELD_ID, id);
