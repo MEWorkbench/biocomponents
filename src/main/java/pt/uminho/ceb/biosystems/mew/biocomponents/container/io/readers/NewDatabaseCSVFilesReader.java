@@ -226,13 +226,25 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 		loadReactions();
 		loadMetabolites();
 		
-		compoundsHashAux.putAll(compoundsHashAuxFile);
-		metaCompartmentsReac.putAll(metaCompartmentsReacFile);
-		metaCompartments.putAll(metaCompartmentsReacFile);
 		
+		updateInfoMaps();
 		putCompartmentsInMetaIds();
 		
 //		verifyFile();
+	}
+	
+	protected void updateInfoMaps(){
+		for (String compId : compoundsHashAuxFile.keySet()) {
+			if(!compoundsHashAux.containsKey(compId)){
+				compoundsHashAux.put(compId, compoundsHashAuxFile.get(compId));
+			}
+		}
+		for (String metaId : metaCompartmentsReacFile.keySet()) {
+			if(!metaCompartmentsReac.containsKey(metaId)){
+				metaCompartmentsReac.put(metaId, metaCompartmentsReacFile.get(metaId));
+			}
+		}
+		metaCompartments.putAll(metaCompartmentsReacFile);
 	}
 
 	// substitute the MetaboliteID for the MetaboliteID[Compartment]
@@ -314,7 +326,7 @@ public class NewDatabaseCSVFilesReader implements IContainerBuilder {
 			line++;
 		}
 		int compoundIdIndex = metIndexes.get(METID);
-		int compoundNameIndex = getMetabolitesMandatoryFields().contains(METNAME) && (metIndexes.containsKey(METNAME)) ? metIndexes.get(METNAME) : -1;
+		int compoundNameIndex = metIndexes.containsKey(METNAME) ? metIndexes.get(METNAME) : -1;
 		int compoundFormulaIndex = (metIndexes.containsKey(METFORMULA)) ? metIndexes.get(METFORMULA) : -1;
 		int compoundCompartmentIndex = (metIndexes.containsKey(METCOMP)) ? metIndexes.get(METCOMP) : -1;
 
