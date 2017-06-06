@@ -707,6 +707,32 @@ public class JSBMLWriter{
 		newName = newName.replace("[", "_");
 		newName = newName.replace("]", "_");
 		newName = newName.replace(" ", "_");
+		newName = newName.replace("=", "");
+		newName = newName.replace(":", "_");
+		newName = newName.replace("'", "_");
+		newName = newName.replace("+", "_");
+		newName = newName.replace("/", "_");
+		newName = newName.replace("\\", "_");
+		newName = newName.replace("*", "_");
+		newName = newName.replace("!", "_");
+		newName = newName.replace("?", "_");
+		newName = newName.replace("#", "_");
+		newName = newName.replace("$", "_");
+		newName = newName.replace("@", "_");
+		newName = newName.replace("%", "_");
+		newName = newName.replace("§", "_");
+		newName = newName.replace("{", "_");
+		newName = newName.replace("}", "_");
+		newName = newName.replace("«", "_");
+		newName = newName.replace("»", "_");
+		newName = newName.replace("¨", "_");
+		newName = newName.replace("^", "_");
+		newName = newName.replace("`", "_");
+		newName = newName.replace("º", "_");
+		newName = newName.replace("ª", "_");
+		newName = newName.replace(";", "_");
+		newName = newName.replace("£", "_");
+		newName = newName.replace("|", "_");
 		
 		return newName;
 	}
@@ -731,6 +757,29 @@ public class JSBMLWriter{
 		id = id.replace("=", "");
 		id = id.replace(":", "_");
 		id = id.replace("'", "_");
+		id = id.replace("+", "_");
+		id = id.replace("/", "_");
+		id = id.replace("\\", "_");
+		id = id.replace("*", "_");
+		id = id.replace("!", "_");
+		id = id.replace("?", "_");
+		id = id.replace("#", "_");
+		id = id.replace("$", "_");
+		id = id.replace("@", "_");
+		id = id.replace("%", "_");
+		id = id.replace("§", "_");
+		id = id.replace("{", "_");
+		id = id.replace("}", "_");
+		id = id.replace("«", "_");
+		id = id.replace("»", "_");
+		id = id.replace("¨", "_");
+		id = id.replace("^", "_");
+		id = id.replace("`", "_");
+		id = id.replace("º", "_");
+		id = id.replace("ª", "_");
+		id = id.replace(";", "_");
+		id = id.replace("£", "_");
+		id = id.replace("|", "_");
 		return id;
 	}
 
