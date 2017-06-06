@@ -57,6 +57,7 @@ public abstract class AbstractIDValidator implements ElementValidator{
 			invalidCarac.put("ª", "_FORDINAL_");
 			invalidCarac.put(";", "_SEMICOLON_");
 			invalidCarac.put("£", "_POUND_");
+			invalidCarac.put("|", "_VBAR_");
 			
 		}
 		return invalidCarac;
