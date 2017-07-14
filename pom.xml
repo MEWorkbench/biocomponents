@@ -4,7 +4,7 @@
 
 	<groupId>pt.uminho.ceb.biosystems.mew</groupId>
 	<artifactId>mew-biocomponents</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>biocomponents</name>
@@ -14,7 +14,12 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
+		<meworkbench.version>0.0.3-SNAPSHOT</meworkbench.version>
 	</properties>
+	
+	<scm>
+		<developerConnection>${project.scm.url}</developerConnection>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -26,7 +31,7 @@
 		<dependency>
 			<groupId>pt.uminho.ceb.biosystems.mew</groupId>
 			<artifactId>mew-utilities</artifactId>
-			<version>0.0.2-SNAPSHOT</version>
+			<version>${meworkbench.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.sbml.jsbml</groupId>
