@@ -3,11 +3,12 @@
 
 	<groupId>pt.uminho.ceb.biosystems.mew</groupId>
 	<artifactId>mew-biocomponents</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>biocomponents</name>
 	<description>Biocomponents for MEWorkbench</description>
+	<url>https://github.com/MEWorkbench/biocomponents</url>
 	
 	<developers>
 		<developer>
@@ -54,7 +55,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
-		<meworkbench.version>0.0.4-SNAPSHOT</meworkbench.version>
+		<project.sign.skip>true</project.sign.skip>
+		<meworkbench.version>1.0.0-SNAPSHOT</meworkbench.version>
 	</properties>
 	
 	<scm>
@@ -143,6 +145,9 @@
 						<goals>
 							<goal>sign</goal>
 						</goals>
+						<configuration>
+							<skip>${project.sign.skip}</skip>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
