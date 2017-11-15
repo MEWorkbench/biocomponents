@@ -1,5 +1,6 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container;
 
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -588,5 +589,13 @@ public class ContainerUtils {
 		allReactions.removeAll(container.getDrains());
 		allReactions.removeAll(container.identifyTransportReactions());
 		return allReactions;
+	}
+	
+	public static Container subContainer(Container origin, Collection<String> reactions) throws IOException{
+		Container c = new Container(origin);
+		c.getReactions().keySet().retainAll(reactions);
+		c.verifyDepBetweenClass();
+		
+		return c;
 	}
 }
