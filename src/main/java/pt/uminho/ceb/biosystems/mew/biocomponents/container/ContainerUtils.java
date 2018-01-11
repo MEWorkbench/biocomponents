@@ -591,10 +591,14 @@ public class ContainerUtils {
 		return allReactions;
 	}
 	
-	public static Container subContainer(Container origin, Collection<String> reactions) throws IOException{
+	public static Container subContainer(Container origin, Collection<String> reactions){
 		Container c = new Container(origin);
 		c.getReactions().keySet().retainAll(reactions);
-		c.verifyDepBetweenClass();
+		try {
+			c.verifyDepBetweenClass();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 		return c;
 	}
