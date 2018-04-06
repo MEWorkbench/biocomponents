@@ -35,7 +35,7 @@ maven_deploy:
     - sed -i 's,RELEASE_REPO_KEY,'"$RELEASE_REPO_KEY"',g' configuration.yml
     - sed -i 's,ARTIFACTORY_JCENTER_REPO_KEY,'"$ARTIFACTORY_JCENTER_REPO_KEY"',g' configuration.yml
   script:
-    - ./jfrog rt mvn "clean verify gpg:sign install" configuration.yml --build-name=biocomponents_gitlabci_build --build-number=$CI_JOB_ID
+    - ./jfrog rt mvn "clean verify gpg:sign install -DadditionalJOption=-Xdoclint:none" configuration.yml --build-name=biocomponents_gitlabci_build --build-number=$CI_JOB_ID
     - ./jfrog rt bce biocomponents_gitlabci_build $CI_JOB_ID
     - ./jfrog rt bp biocomponents_gitlabci_build $CI_JOB_ID
   only:
