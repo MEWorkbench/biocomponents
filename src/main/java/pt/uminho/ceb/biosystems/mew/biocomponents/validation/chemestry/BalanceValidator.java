@@ -588,7 +588,11 @@ public class BalanceValidator implements Serializable {
 			}
 			
 		}
-		
+		try {
+			balContainer.verifyDepBetweenClass();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 		return reactionTags;
 	}
 	

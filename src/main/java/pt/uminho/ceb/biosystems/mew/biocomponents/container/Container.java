@@ -1279,6 +1279,7 @@ public class Container implements Serializable, Cloneable/*
 		for(String rId : reactionsWithMet){
 			
 			ReactionCI r = getReaction(rId);
+			if(r == null) continue;
 			StoichiometryValueCI reactant = r.getReactants().get(metId);
 			StoichiometryValueCI products = r.getProducts().get(metId);
 			
