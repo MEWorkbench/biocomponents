@@ -1,8 +1,16 @@
 image: maven:latest
 
 stages:
+ - compile
  - test
  - deploy
+
+maven_compile:
+  stage: compile
+  tags:
+    - maven
+  script:
+    - mvn compile
  
 maven test:
   stage: test
