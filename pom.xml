@@ -3,7 +3,7 @@
 
 	<groupId>pt.uminho.ceb.biosystems.mew</groupId>
 	<artifactId>mew-biocomponents</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>${meworkbench.version}</version>
 	<packaging>jar</packaging>
 
 	<name>biocomponents</name>
