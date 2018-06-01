@@ -148,7 +148,7 @@ public class JSBMLWriter{
 
 	/**
 	 * This method writes the container into a SBML file
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	public void writeToFile() throws Exception {
 		if(isPalssonSpecific())
@@ -216,7 +216,7 @@ public class JSBMLWriter{
 	/**
 	 * This method checks if a metaboliteID has a compartment and a '_' in its name
 	 * @param name The metaboliteID
-	 * @return
+	 * @return boolean 
 	 */
 	private boolean underComp(String name) {
 		String reg_exp = ".*(" + CollectionUtils.join(container.getCompartments().keySet(), "|")+")_$";
@@ -282,8 +282,8 @@ public class JSBMLWriter{
 	 * <p>This method converts the <code>InformationContainer</code> to the SBML</p>
 	 * <p>native format and returns it as an SBML <code>String</code></p> 
 	 * 
-	 * @return <code>String</code> representation of the SBML model.
-	 * @throws Exception 
+	 * @param outputFile path for output file
+	 * @throws Exception  Exception
 	 */
 	public void toSBML(String outputFile) throws Exception{
 		Model model = createModel();
@@ -461,8 +461,8 @@ public class JSBMLWriter{
 	
 	/**
 	 * This method loads the drains and define new metabolites for each one of them
-	 * @param model
-	 * @throws Exception 
+	 * @param model model
+	 * @throws Exception  Exception
 	 */
 	public void loadDrains(Model model) throws Exception{
 		String extcomp = container.getExternalCompartment().getId();
@@ -869,11 +869,11 @@ public class JSBMLWriter{
 			ignoredNamespaces.add(CELLDESIGNER_NAMESPACE_PREFIX);
 	}
 
-	/**
-	 * This method gets the notes of a reaction and returns a XMLNode object with it
-	 * @param reaction A ReactionCI object
-	 * @return A XMLNode with the reaction notes
-	 */
+//	/**
+//	 * This method gets the notes of a reaction and returns a XMLNode object with it
+//	 * @param reaction A ReactionCI object
+//	 * @return A XMLNode with the reaction notes
+//	 */
 	
 	//TODO: Remove after 31 Dec 2012
 //	@Deprecated

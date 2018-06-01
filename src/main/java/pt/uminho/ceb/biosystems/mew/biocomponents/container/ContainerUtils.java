@@ -346,7 +346,7 @@ public class ContainerUtils {
 	/**
 	 * Retrieve metabolites withou kegg ids from container
 	 * 
-	 * @param reactionID
+	 * @param reaction
 	 * @param container
 	 * @return
 	 */

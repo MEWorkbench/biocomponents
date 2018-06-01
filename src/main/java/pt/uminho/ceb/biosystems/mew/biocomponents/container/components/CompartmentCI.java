@@ -6,10 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class CompartmentCI implements Serializable, Cloneable{
-	
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	protected String id;
 	protected String name;
@@ -19,9 +16,9 @@ public class CompartmentCI implements Serializable, Cloneable{
 
 	/***
 	 * 
-	 * @param shortName
-	 * @param name
-	 * @param outside
+	 * @param shortName short name
+	 * @param name name
+	 * @param outside outside
 	 */
 	public CompartmentCI(String shortName, String name, String outside) {
 		this.id = shortName;

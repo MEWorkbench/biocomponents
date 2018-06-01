@@ -170,7 +170,7 @@ public class FlatFilesReader implements IContainerBuilder{
 	
 	/**
 	 * This method reads the information in the reactions file
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	public void loadReactions() throws Exception{
 		
@@ -253,7 +253,7 @@ public class FlatFilesReader implements IContainerBuilder{
 
 	/**
 	 * This method counts the number of reactions in the reactions file
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	public void countReactions() throws IOException{
 		FileReader f = new FileReader(reactionsFile);
@@ -273,7 +273,7 @@ public class FlatFilesReader implements IContainerBuilder{
 	 * @param ir String: "I" (irreversible) or "R" (reversible)
 	 * @param line The line number
 	 * @return An array with the lower and upper bounds (0: lower bound; 1: upper bound)
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	public double[] reactionsTwoTokens(String ir, int line) throws Exception{
 		double[] bounds = new double[2]; //0: lower bound; 1: upper bound
@@ -298,7 +298,7 @@ public class FlatFilesReader implements IContainerBuilder{
 	 * @param line The line number
 	 * @param numTokens Total number of tokens
 	 * @return An array with the lower and upper bounds (0: lower bound; 1: upper bound)
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	public double[] reactionsMoreThanTwoTokens(String ir, String ir2, int line, int numTokens) throws Exception{
 		double[] bounds = new double[2]; //0: lower bound; 1: upper bound
@@ -372,9 +372,9 @@ public class FlatFilesReader implements IContainerBuilder{
 	
 	/**
 	 * This method reads the genes file, if it exists
-	 * @throws IOException
-	 * @throws ParseException
-	 * @throws Exception
+	 * @throws IOException IOException
+	 * @throws ParseException ParseException
+	 * @throws Exception Exception
 	 */
 	public void loadGenes() throws IOException, ParseException, Exception{
 		FileReader f = new FileReader(genesFile);
@@ -421,9 +421,9 @@ public class FlatFilesReader implements IContainerBuilder{
 	
 	/**
 	 * This method does some verification operations in the file
-	 * @param sparseMatrix 
-	 * @param denseMatrix
-	 * @throws Exception
+	 * @param sparseMatrix sm
+	 * @param denseMatrix dm
+	 * @throws Exception Exception
 	 */
 	private void verifyFiles(HashMap<Integer, HashMap<Integer, Double>> sparseMatrix, ArrayList<ArrayList<Double>> denseMatrix) throws Exception {
 		int met = getMetMatrix(sparseMatrix, denseMatrix);
@@ -482,7 +482,7 @@ public class FlatFilesReader implements IContainerBuilder{
 
 	/**
 	 * Loads the metabolites from a text file
-	 * @throws Exception 
+	 * @throws Exception  Exception
 	 */
 	public void loadMetabolites() throws Exception{
 		
@@ -527,8 +527,8 @@ public class FlatFilesReader implements IContainerBuilder{
 	 * @param metabolites Set to be filled with the metabolites
 	 * @param duplicated_metabolites Set to be filled with the duplicated metabolites
 	 * @param comp Set to be filled with the compartments
-	 * @throws IOException
-	 * @throws Exception
+	 * @throws IOException IOException
+	 * @throws Exception Exception
 	 */
 	public void seekDuplicatedMetabolites(Set<String> metabolites, Set<String> duplicated_metabolites, Set<String> comp) throws IOException, Exception{
 		FileReader f = new FileReader(metabolitesFile);
@@ -586,7 +586,7 @@ public class FlatFilesReader implements IContainerBuilder{
 	 * @param i
 	 * @param str The current line of the metabolites file
 	 * @param ids Structure to fill with the metabolites ID
-	 * @return
+	 * @return boolean
 	 */
 	public boolean metabolitesOneToken(boolean flag, int i, String str, LinkedList<String> ids){
 		if(flag){
