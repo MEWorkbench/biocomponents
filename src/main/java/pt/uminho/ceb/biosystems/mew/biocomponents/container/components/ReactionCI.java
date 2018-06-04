@@ -292,6 +292,7 @@ public class ReactionCI implements Serializable, Cloneable {
 
 	public void setGeneRule(AbstractSyntaxTree<DataTypeEnum, IValue> geneRule) {
 		this.geneRule = geneRule;
+		genesIDs = new HashSet<>(withdrawVariablesInRule(geneRule));
 	}
 
 
