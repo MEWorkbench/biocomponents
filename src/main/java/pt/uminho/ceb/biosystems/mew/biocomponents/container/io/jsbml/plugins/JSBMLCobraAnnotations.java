@@ -156,8 +156,6 @@ public class JSBMLCobraAnnotations implements JSBMLIOPlugin<Object>{
 	 * @param notes A String with the notes
 	 * @param ogreaction A ReactionCI object
 	 * @throws InvalidBooleanRuleException 
-	 * @throws ParseException
-	 * @throws utilities.math.language.mathboolean.parser.ParseException
 	 */
 	private void parserNotes(String notes, ReactionCI ogreaction, Map<String, Map<String, String>> reactionsExtraInfo) throws InvalidBooleanRuleException{
 		

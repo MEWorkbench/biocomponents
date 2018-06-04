@@ -235,14 +235,7 @@ public class JBMLBaseInformation implements JSBMLIOPlugin<Object>{
 //		reactions.get(biomassId).setType(ReactionTypeEnum.Biomass);
 		
 	}
-	
-	/**
-	 * This method handles with the kinetic law of the reaction, if it exists
-	 * @param sbmlreaction The reaction
-	 * @param isReversible The reaction reversibility
-	 * @param reactantsCI The reactants
-	 * @param productsCI The products
-	 */
+
 	public void kinetic(Reaction sbmlreaction, boolean isReversible, Map<String, ReactionConstraintCI> defaultEC){
 		KineticLaw kineticlaw = sbmlreaction.getKineticLaw();
 		
@@ -280,13 +273,6 @@ public class JBMLBaseInformation implements JSBMLIOPlugin<Object>{
 	
 	
 	
-	/**
-	 * This method adds mapping to reactants and products
-	 * @param list List of reactants or products
-	 * @param reactionId The reaction ID
-	 * @param speciesInReactions A set with all the metabolites that participate in some reaction
-	 * @return The mapping of reactants or products
-	 */
 	public Map<String, StoichiometryValueCI> addMapping(ListOf<SpeciesReference> list, String reactionId, Set<String> speciesInReactions, Map<String, String> mapMetaboliteIdCompartment){
 		Map<String, StoichiometryValueCI> result = new HashMap<String, StoichiometryValueCI>();
 		for(int l = 0;l<list.size();l++){
