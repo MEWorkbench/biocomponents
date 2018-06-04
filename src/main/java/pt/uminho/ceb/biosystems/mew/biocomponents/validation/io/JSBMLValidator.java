@@ -55,7 +55,7 @@ public class JSBMLValidator {
 	private boolean enableModelIDValidator = true;
 	private boolean enableStoichiometryValidator = true;
 	
-	public JSBMLValidator(InputStream is) throws ParserConfigurationException, SAXException, IOException{
+	public JSBMLValidator(InputStream is) {
 		doc = readStream(is);
 		validators = new LinkedHashSet<ElementValidator>();
 	}
@@ -234,12 +234,19 @@ public class JSBMLValidator {
 		
 	}
 	
-	static public Document readStream(InputStream is) throws ParserConfigurationException, SAXException, IOException{
+	static public Document readStream(InputStream is) {
 		
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		dbFactory.setIgnoringElementContentWhitespace(true);
-		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-		Document doc = dBuilder.parse(is);
+		DocumentBuilder dBuilder;
+		Document doc;
+		try {
+			dBuilder = dbFactory.newDocumentBuilder();
+			doc = dBuilder.parse(is);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+		
 		return doc;
 	}
 	
