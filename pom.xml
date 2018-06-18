@@ -60,7 +60,7 @@
 	</properties>
 	
 	<scm>
-		<developerConnection>${project.scm.devcon}</developerConnection>
+		<developerConnection>https://github.com/MEWorkbench/biocomponents.git</developerConnection>
 		<url>https://github.com/MEWorkbench/biocomponents</url>
 	</scm>
 
