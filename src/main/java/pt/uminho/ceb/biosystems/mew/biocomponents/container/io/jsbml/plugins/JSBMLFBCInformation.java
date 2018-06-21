@@ -221,7 +221,9 @@ public class JSBMLFBCInformation implements JSBMLIOPlugin<Object>{
 
 		for(GeneCI g : container.getGenes().values()){
 			GeneProduct gp = modelPlugin.createGeneProduct(g.getGeneId());
-			gp.setLabel(g.getGeneName());
+			String name = g.getGeneName();
+			if(name == null) name = g.getGeneId();
+			gp.setLabel(name);
 		}
 
 	}
