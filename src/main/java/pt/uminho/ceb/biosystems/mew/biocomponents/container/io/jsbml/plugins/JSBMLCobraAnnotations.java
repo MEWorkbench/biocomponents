@@ -47,6 +47,7 @@ public class JSBMLCobraAnnotations implements JSBMLIOPlugin<Object>{
 	@Override
 	public void write(Model sbmlModel, Container container, Object pluginInfo,  SBMLDocument doc) {
 
+		
 	}
 	
 	

@@ -52,7 +52,7 @@ public class JSONWriter {
 	private String path;
 	private Container container;
 	
-	protected boolean addPrefix = true;
+	protected boolean addPrefix = false;
 	
 	
 	public JSONWriter(Writer out , Container container){
@@ -73,6 +73,10 @@ public class JSONWriter {
 			this.container.useUniqueIds();
 		}
 		
+	}
+	
+	public Container getContainer() {
+		return container;
 	}
 	
 	public void writeToFile() throws IOException {
