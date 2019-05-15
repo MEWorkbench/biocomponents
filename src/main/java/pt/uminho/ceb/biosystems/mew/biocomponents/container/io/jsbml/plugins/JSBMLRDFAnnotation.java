@@ -101,9 +101,15 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 			metabolites.put("METACYC_CPD", "biocyc");
 			metabolites.put("SEED_CPD", "seed.compound");
 			metabolites.put("CHEBI", "chebi");
-			metabolites.put("metanetx", "metanetx.chemical");
+			metabolites.put("MetaNetX", "metanetx.chemical");
+			metabolites.put("BiGG", "bigg.metabolite");
 		
 			Map<String, String> reactions = new HashMap<>();
+			reactions.put("MetaNetX", "metanetx.reaction");
+			reactions.put("SEED", "seed.reaction");
+			reactions.put("KEGG", "kegg.reaction");
+			reactions.put("BiGG", "bigg.reaction");
+			reactions.put("MetaCyc", "biocyc");
 			return new IdentifiersResources(metabolites, reactions);
 		}
 		
