@@ -117,6 +117,16 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 			this.metabolites = metabolites;
 			this.reactions = reactions;
 		}
+
+
+		public Map<String, String> getMetabolites() {
+			return metabolites;
+		}
+
+
+		public Map<String, String> getReactions() {
+			return reactions;
+		}
 		
 		
 	}
