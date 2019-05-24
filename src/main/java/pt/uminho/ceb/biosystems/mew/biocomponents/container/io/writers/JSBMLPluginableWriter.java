@@ -5,6 +5,7 @@ import org.sbml.jsbml.SBMLWriter;
 
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.JSBMLIOBase;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.SBMLStandardsIds;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.plugins.JBMLBaseInformation;
 
 public class JSBMLPluginableWriter extends JSBMLIOBase{
@@ -32,7 +33,9 @@ public class JSBMLPluginableWriter extends JSBMLIOBase{
 
 	
 	public void write(Container c) throws Exception {
-		
+		SBMLStandardsIds s = new SBMLStandardsIds();
+		c = s.standardize(c);
+		getWarnings().addAll(s.getWarnings());
 		setContainer(c);
 		createNewModel(level, version, c.getModelName(), "");
 		SBMLDocument doc = writePlugin();

@@ -64,6 +64,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.JSBMLWriterException;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.SBMLStandardsIds;
 import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 /**
  * A writer for SBML Files 
@@ -114,17 +115,16 @@ public class JSBMLWriter{
 	public JSBMLWriter(String path,Container container) {
 		this.overrideConstraints = new HashMap<String, ReactionConstraintCI>();
 		this.path = path;
-		this.container = container;
-//		System.out.println("\n\n\n\n");
-//		System.out.println(!container.hasUnicIds());
-//		System.out.println(container.getMetabolites().keySet());
-		if(!container.hasUnicIds()){
-			this.container = container.clone();
-			this.container.useUniqueIds();
+//		this.container = container;
+
+		SBMLStandardsIds standard = new SBMLStandardsIds();
+		try {
+			container = standard.standardize(container);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
 		}
 		
-		
-		
+		this.container = container;
 		extraMetabolitesInfo = container.getMetabolitesExtraInfo().keySet();
 		extraReactionsInfo = container.getReactionsExtraInfo().keySet();
 	}
