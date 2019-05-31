@@ -1,12 +1,10 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.plugins;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.sbml.jsbml.CVTerm;
 import org.sbml.jsbml.CVTerm.Qualifier;
@@ -18,13 +16,14 @@ import org.sbml.jsbml.Species;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.Container;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.JSBMLIOPlugin;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.plugins.rdf.IdentifiersResources;
 
 public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 
-	Map<String, String> dbMiriantIds;
+	IdentifiersResources dbMiriantIds;
 	
 	public JSBMLRDFAnnotation(IdentifiersResources ids){
-		dbMiriantIds = ids.metabolites;
+		dbMiriantIds = ids;
 	}
 	
 	public JSBMLRDFAnnotation() {
@@ -48,8 +47,8 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 		for(int i =0; i < sbmlModel.getSpeciesCount(); i++) {
 			Species s = sbmlModel.getSpecies(i);
 			
-			String[] links = getMetaboliteMirianLinks(container, s.getId());
-			if(links.length > 0)s.getAnnotation().addCVTerm(new CVTerm(Qualifier.BQB_IS,links));
+			Set<String> links = getMetaboliteMirianLinks(container, s.getId());
+			if(links.size() > 0)s.getAnnotation().addCVTerm(new CVTerm(Qualifier.BQB_IS,links.toArray(new String[] {})));
 		}
 		
 		for(int i =0; i < sbmlModel.getReactionCount(); i++) {
@@ -64,7 +63,7 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 
 	
 	private Set<String> getReactionIdentifiers(Container container, String reactionId) {
-		Set<String> links = new HashSet<>();
+		Set<String> links = getMiriantByExtraInfo(reactionId, container.getReactionsExtraInfo(), dbMiriantIds.getReactions());
 		
 		ReactionCI rci = container.getReaction(reactionId);
 		String ec = rci.getEc_number();
@@ -73,84 +72,26 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
  		return links;
 	}
 
-	private String[] getMetaboliteMirianLinks(Container container, String id) {
+	private Set<String> getMetaboliteMirianLinks(Container container, String id) {
 
 		Map<String, Map<String, String>> extraInfo = container.getMetabolitesExtraInfo();
-		ArrayList<String> ret = new ArrayList<>();
+		return getMiriantByExtraInfo(id, extraInfo, dbMiriantIds.getMetabolites());
+	}
+	
+	
+	private Set<String> getMiriantByExtraInfo(String id, Map<String, Map<String, String>> extraInfo, Map<String, String> miriant) {
+		Set<String> ret = new TreeSet<>();
 		
-		for(String dbId : dbMiriantIds.keySet()) {
+		for(String dbId : miriant.keySet()) {
 			String info = extraInfo.getOrDefault(dbId, new HashMap<String, String>()).get(id);
 			if(info != null) {
 				
 				String[] idsToAdd = info.split("\\s*\\|\\s*");
 				for(String idToAdd: idsToAdd)
-					if(!idToAdd.isEmpty()) ret.add("http://identifiers.org/" + dbMiriantIds.get(dbId) +"/"+idToAdd);
+					if(!idToAdd.isEmpty()) ret.add("http://identifiers.org/" + miriant.get(dbId) +"/"+idToAdd);
 			}
 		}
-		return ret.toArray(new String[] {});
-	}
-
-	
-	
-	
-	
-	static public class IdentifiersResources implements Serializable{
-		
-		/**
-		 * 
-		 */
-		private static final long serialVersionUID = 1L;
-
-
-		public static IdentifiersResources defaultIdentifiers() {
-			Map<String, String> metabolites = new HashMap<>();
-			metabolites.put("KEGG_CPD", "kegg.compound");
-			metabolites.put("METACYC_CPD", "biocyc");
-			metabolites.put("SEED_CPD", "seed.compound");
-			metabolites.put("CHEBI", "chebi");
-			metabolites.put("MetaNetX", "metanetx.chemical");
-			metabolites.put("BiGG", "bigg.metabolite");
-		
-			Map<String, String> reactions = new HashMap<>();
-			reactions.put("MetaNetX", "metanetx.reaction");
-			reactions.put("SEED", "seed.reaction");
-			reactions.put("KEGG", "kegg.reaction");
-			reactions.put("BiGG", "bigg.reaction");
-			reactions.put("MetaCyc", "biocyc");
-			return new IdentifiersResources(metabolites, reactions);
-		}
-		
-		
-		Map<String, String> metabolites;
-		Map<String, String> reactions;
-		
-		
-		public IdentifiersResources(Map<String, String> metabolites, Map<String, String> reactions) {
-			super();
-			this.metabolites = metabolites;
-			this.reactions = reactions;
-		}
-
-
-		public Map<String, String> getMetabolites() {
-			return metabolites;
-		}
-
-
-		public Map<String, String> getReactions() {
-			return reactions;
-		}
-		
-		public void addMetaboliteLink(String externalId, String miriamId) {
-			metabolites.values().remove(miriamId);
-			metabolites.put(externalId, miriamId);
-		}
-		
-		public void addReactionLinks(String externalId, String miriamId) {
-			reactions.values().remove(miriamId);
-			metabolites.put(externalId, miriamId);
-		}
-		
+		return ret;
 	}
 	
 }
