@@ -44,6 +44,7 @@ import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.node.Var
 public class JSBMLFBCInformation implements JSBMLIOPlugin<Object>{
 
 
+	public static Double MAX = 100000.0;
 	private static final Logger logger = LoggerFactory.getLogger(JSBMLFBCInformation.class);
 	@Override
 	public String getName() {
@@ -99,12 +100,12 @@ public class JSBMLFBCInformation implements JSBMLIOPlugin<Object>{
 
 	private void associateBounds(ReactionCI ogreaction, Reaction s, FBCModelPlugin modelPlugin, Model sbmlModel,
 			FBCReactionPlugin rp, Container container) {
-		Double up = Double.POSITIVE_INFINITY;
-		Double lb = Double.NEGATIVE_INFINITY;
+		Double up = MAX;
+		Double lb = -MAX;
 
 		ReactionConstraintCI reactionConstraintCI = container.getDefaultEC().get(ogreaction.getId()); 
 		
-		if(ogreaction.isReversible())
+		if(!ogreaction.isReversible())
 			lb = 0.0;
 		if(reactionConstraintCI != null){
 			up = reactionConstraintCI.getUpperLimit();
