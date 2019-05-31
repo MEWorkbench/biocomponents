@@ -225,6 +225,7 @@ public class JSBMLFBCInformation implements JSBMLIOPlugin<Object>{
 			String name = g.getGeneName();
 			if(name == null) name = g.getGeneId();
 			gp.setLabel(name);
+			gp.setSBOTerm("SBO:0000243");
 		}
 
 	}

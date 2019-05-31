@@ -72,6 +72,11 @@ public class JBMLBaseInformation implements JSBMLIOPlugin<Object>{
 	
 	private Map<String, String> buildReactions(Model sbmlModel, Container container) {
 		
+		Set<String> drains = container.getDrains();
+		Set<String> transports = container.identifyTransportReactions();
+		String biomassId = container.getBiomassId();
+		
+		
 		Map<String, String> metabolitesInCompartment = new HashMap<>();
 		for(String rId : container.getReactions().keySet()){
 			ReactionCI ogreaction = container.getReactions().get(rId);
@@ -84,7 +89,13 @@ public class JBMLBaseInformation implements JSBMLIOPlugin<Object>{
 			
 			sbmlReaction.setListOfReactants(createStoichiometry(sbmlModel, ogreaction.getReactants(), metabolitesInCompartment));
 			sbmlReaction.setListOfProducts(createStoichiometry(sbmlModel, ogreaction.getProducts(), metabolitesInCompartment));
+			String sboTerm = "SBO:0000176";
 			
+			if(rId.equals(biomassId))         sboTerm = "SBO:0000629";
+			else if(drains.contains(rId))     sboTerm = "SBO:0000627";
+			else if(transports.contains(rId)) sboTerm = "SBO:0000185";
+			
+			sbmlReaction.setSBOTerm(sboTerm);
 //			addReactionBoundsInKineticLaw(sbmlReaction,ogreaction, container.getDefaultEC().get(rId));
 		}
 		
@@ -149,6 +160,7 @@ public class JBMLBaseInformation implements JSBMLIOPlugin<Object>{
 			s.setHasOnlySubstanceUnits(false);
 			s.setBoundaryCondition(false);
 			s.setConstant(false);
+			s.setSBOTerm("SBO:0000247");
 		}
 		
 	}
