@@ -1,5 +1,6 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.plugins;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -93,8 +94,14 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 	
 	
 	
-	static public class IdentifiersResources{
+	static public class IdentifiersResources implements Serializable{
 		
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+
 		public static IdentifiersResources defaultIdentifiers() {
 			Map<String, String> metabolites = new HashMap<>();
 			metabolites.put("KEGG_CPD", "kegg.compound");
@@ -134,6 +141,15 @@ public class JSBMLRDFAnnotation implements JSBMLIOPlugin<Object>{
 			return reactions;
 		}
 		
+		public void addMetaboliteLink(String externalId, String miriamId) {
+			metabolites.values().remove(miriamId);
+			metabolites.put(externalId, miriamId);
+		}
+		
+		public void addReactionLinks(String externalId, String miriamId) {
+			reactions.values().remove(miriamId);
+			metabolites.put(externalId, miriamId);
+		}
 		
 	}
 	
