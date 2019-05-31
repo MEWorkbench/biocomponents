@@ -31,8 +31,8 @@ public class IdentifiersResources implements Serializable{
 	}
 
 
-	Map<String, String> metabolites;
-	Map<String, String> reactions;
+	protected Map<String, String> metabolites;
+	protected Map<String, String> reactions;
 
 
 	public IdentifiersResources(Map<String, String> metabolites, Map<String, String> reactions) {
