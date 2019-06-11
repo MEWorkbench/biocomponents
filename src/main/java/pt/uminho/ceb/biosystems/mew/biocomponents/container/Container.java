@@ -1046,7 +1046,6 @@ public class Container implements Serializable, Cloneable/*
 			String comp = extComp;
 			if (comp == null) {
 				Set<String> compartments = getMetaboliteCompartments(metId);
-				System.out.println(metId + "\t" + compartments );
 				if (compartments.size() > 1)
 					throw new Exception("To create drains, you must have just one compartment!");
 
