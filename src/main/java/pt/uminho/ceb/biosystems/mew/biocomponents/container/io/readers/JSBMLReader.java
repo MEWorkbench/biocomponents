@@ -144,9 +144,7 @@ public class JSBMLReader implements IContainerBuilder{
 
 	/**
 	 * This method checks the consistency from the JSBML file and gets the JSBML model
-	 * @throws XMLStreamException
-	 * @throws IOException
-	 * @throws ErrorsException
+	 * @throws ErrorsException ErrorsException
 	 */
 	private void getJSBMLModel() throws ErrorsException {
 
@@ -220,7 +218,7 @@ public class JSBMLReader implements IContainerBuilder{
 	
 	/**
 	 * This method populates the structures with the information from the JSBML file
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	private void populateInformation(){
 
@@ -386,7 +384,6 @@ public class JSBMLReader implements IContainerBuilder{
 	
 	/**
 	 * This method reads the reactions from the SBML file
-	 * @throws ParseException
 	 */
 	public void readReactions(){
 		Set<String> speciesInReactions = new TreeSet<String>();
@@ -460,7 +457,7 @@ public class JSBMLReader implements IContainerBuilder{
 		return result;
 	}
 	
-	/**
+	/*
 	 * This method handles with the kinetic law of the reaction, if it exists
 	 * @param sbmlreaction The reaction
 	 * @param isReversible The reaction reversibility
@@ -548,10 +545,9 @@ public class JSBMLReader implements IContainerBuilder{
 	/**
 	 * This method parses the notes
 	 * @param notes A String with the notes
-	 * @param ogreaction A ReactionCI object
-	 * @throws InvalidBooleanRuleException 
-	 * @throws ParseException
-	 * @throws utilities.math.language.mathboolean.parser.ParseException
+	 * @param ogreaction A ReactionCI object 
+	 * @throws InvalidBooleanRuleException InvalidBooleanRuleException
+
 	 */
 	private void parserNotes(String notes, ReactionCI ogreaction) throws InvalidBooleanRuleException{
 		
@@ -718,9 +714,7 @@ public class JSBMLReader implements IContainerBuilder{
 		return genes;
 	}
 
-	/**
-	 * @return 
-	 */
+
 	public HashMap<String, String> getMetaboliteIdToSpecieTermId() {
 		return null;
 	}

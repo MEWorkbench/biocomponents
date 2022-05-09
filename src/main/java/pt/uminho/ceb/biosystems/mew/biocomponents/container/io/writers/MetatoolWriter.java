@@ -65,7 +65,7 @@ public class MetatoolWriter{// implements IModelWriter{
 	/**
 	 * This method writes the reactions in the metatool file
 	 * @param writer A BufferedWriter object
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	protected void createReactionListDescription(BufferedWriter writer) throws IOException{
 		Map<String, ReactionCI> fluxes = container.getReactions();
@@ -97,7 +97,7 @@ public class MetatoolWriter{// implements IModelWriter{
 	 * @param enzymeIrreversibleList A list with the irreversible reactions IDs
 	 * @param enzymeReversibleList A list with the reversible reactions IDs
 	 * @param cAT A String with all the reactions (the "CAT" section of the metatool files)
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	protected void writeFileData(BufferedWriter writer,List<String> enzymeIrreversibleList,	List<String> enzymeReversibleList, String cAT) throws IOException {
 		writer.write("-ENZIRREV\n");
@@ -153,7 +153,7 @@ public class MetatoolWriter{// implements IModelWriter{
 	 * This method writes the reaction list
 	 * @param writer A BufferedWriter object
 	 * @param enzymeList A list with the enzymes
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	protected void writeReactionList(BufferedWriter writer, List<String> enzymeList) throws IOException {
 		String stringList = new String();
@@ -246,7 +246,7 @@ public class MetatoolWriter{// implements IModelWriter{
 	/**
 	 * This method creates the metabolite list
 	 * @param writer A BufferedWriter object
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	protected void createMetaboliteList(BufferedWriter writer) throws IOException {
 		String externalMetaboliteString = "";

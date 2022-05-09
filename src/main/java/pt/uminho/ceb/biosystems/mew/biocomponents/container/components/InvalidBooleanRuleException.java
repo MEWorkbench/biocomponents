@@ -1,6 +1,6 @@
 package pt.uminho.ceb.biosystems.mew.biocomponents.container.components;
 
-public class InvalidBooleanRuleException extends Exception {
+public class InvalidBooleanRuleException extends RuntimeException {
 	
 	/**
 	 * 

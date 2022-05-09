@@ -64,6 +64,7 @@ import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionC
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.ReactionTypeEnum;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.components.StoichiometryValueCI;
 import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.exceptions.JSBMLWriterException;
+import pt.uminho.ceb.biosystems.mew.biocomponents.container.io.jsbml.SBMLStandardsIds;
 import pt.uminho.ceb.biosystems.mew.utilities.datastructures.collection.CollectionUtils;
 /**
  * A writer for SBML Files 
@@ -114,17 +115,16 @@ public class JSBMLWriter{
 	public JSBMLWriter(String path,Container container) {
 		this.overrideConstraints = new HashMap<String, ReactionConstraintCI>();
 		this.path = path;
-		this.container = container;
-//		System.out.println("\n\n\n\n");
-//		System.out.println(!container.hasUnicIds());
-//		System.out.println(container.getMetabolites().keySet());
-		if(!container.hasUnicIds()){
-			this.container = container.clone();
-			this.container.useUniqueIds();
+//		this.container = container;
+
+		SBMLStandardsIds standard = new SBMLStandardsIds();
+		try {
+			container = standard.standardize(container);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
 		}
 		
-		
-		
+		this.container = container;
 		extraMetabolitesInfo = container.getMetabolitesExtraInfo().keySet();
 		extraReactionsInfo = container.getReactionsExtraInfo().keySet();
 	}
@@ -148,7 +148,7 @@ public class JSBMLWriter{
 
 	/**
 	 * This method writes the container into a SBML file
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	public void writeToFile() throws Exception {
 		if(isPalssonSpecific())
@@ -216,7 +216,7 @@ public class JSBMLWriter{
 	/**
 	 * This method checks if a metaboliteID has a compartment and a '_' in its name
 	 * @param name The metaboliteID
-	 * @return
+	 * @return boolean 
 	 */
 	private boolean underComp(String name) {
 		String reg_exp = ".*(" + CollectionUtils.join(container.getCompartments().keySet(), "|")+")_$";
@@ -282,8 +282,8 @@ public class JSBMLWriter{
 	 * <p>This method converts the <code>InformationContainer</code> to the SBML</p>
 	 * <p>native format and returns it as an SBML <code>String</code></p> 
 	 * 
-	 * @return <code>String</code> representation of the SBML model.
-	 * @throws Exception 
+	 * @param outputFile path for output file
+	 * @throws Exception  Exception
 	 */
 	public void toSBML(String outputFile) throws Exception{
 		Model model = createModel();
@@ -461,8 +461,8 @@ public class JSBMLWriter{
 	
 	/**
 	 * This method loads the drains and define new metabolites for each one of them
-	 * @param model
-	 * @throws Exception 
+	 * @param model model
+	 * @throws Exception  Exception
 	 */
 	public void loadDrains(Model model) throws Exception{
 		String extcomp = container.getExternalCompartment().getId();
@@ -869,11 +869,11 @@ public class JSBMLWriter{
 			ignoredNamespaces.add(CELLDESIGNER_NAMESPACE_PREFIX);
 	}
 
-	/**
-	 * This method gets the notes of a reaction and returns a XMLNode object with it
-	 * @param reaction A ReactionCI object
-	 * @return A XMLNode with the reaction notes
-	 */
+//	/**
+//	 * This method gets the notes of a reaction and returns a XMLNode object with it
+//	 * @param reaction A ReactionCI object
+//	 * @return A XMLNode with the reaction notes
+//	 */
 	
 	//TODO: Remove after 31 Dec 2012
 //	@Deprecated

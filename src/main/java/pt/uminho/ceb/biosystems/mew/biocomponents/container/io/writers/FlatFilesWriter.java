@@ -148,7 +148,7 @@ public class FlatFilesWriter {
 
 	/**
 	 * This method creates the sparse matrix file
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	private void createSparseMatrixFile() throws IOException{
 		
@@ -188,7 +188,7 @@ public class FlatFilesWriter {
 
 	/**
 	 * This method creates the reactions file
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	private void createFluxFile() throws IOException{
 		
@@ -255,7 +255,7 @@ public class FlatFilesWriter {
 	
 	/**
 	 * This method creates the GeneRules file
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	private void createReactioRulesFile() throws IOException{
 		
@@ -278,7 +278,7 @@ public class FlatFilesWriter {
 	
 	/**
 	 * This method creates the metabolites file
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	private void createMetabolitesFile() throws IOException{
 		
@@ -320,7 +320,7 @@ public class FlatFilesWriter {
 	
 	/**
 	 * This method writes the Flat Files
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	public void writeFlatFiles() throws IOException{
 		
@@ -371,10 +371,10 @@ public class FlatFilesWriter {
 		}
 	}
 
-	/**
+	/*
 	 * This method creates a dense matrix and saves it in the class variable saveMatrix
-	 * @param model 
-	 * @param isMetEIBand
+	 * @param model  model
+	 * @param isMetEIBand isMetEIBand
 	 * @param filePaths list of file Paths position 0 matrix file Path
 	 *                        					    1 flux file path
 	 *                          					2 metabolites file path
@@ -382,7 +382,7 @@ public class FlatFilesWriter {
 	 * @param delim list of file delimiters position 0 matrix file Path
 	 *                        					     1 flux file path
 	 *                          					 2 metabolites file path
-	 * @throws IOException
+	 * @throws IOException IOException
 	 */
 	static public void writeFlatFiles(String matrix, String reactions, String metabolites, String genes, boolean hasGene, Container container, boolean isMetEIBand, ArrayList<String> filePaths,Map<String, Delimiter>delim,Boolean isbandMetEI, boolean includeDrains) throws IOException{
 		

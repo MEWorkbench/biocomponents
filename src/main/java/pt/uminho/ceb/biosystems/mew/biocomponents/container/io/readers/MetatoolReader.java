@@ -100,7 +100,7 @@ public class MetatoolReader implements IContainerBuilder{
 
 	/**
 	 * Populates the container structures with the file information
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	@SuppressWarnings("unchecked")
 	public void populateInformation() throws Exception {
@@ -154,7 +154,7 @@ public class MetatoolReader implements IContainerBuilder{
 	/**
 	 * Reads the metatool file
 	 * @param path the file path
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	public void read(String path) throws Exception{
 		
@@ -191,7 +191,7 @@ public class MetatoolReader implements IContainerBuilder{
 	 * @param flag the metatool file flag (ENZREV, ENZIRREV, METINT, METEXT or CAT)
 	 * @param lineStr the line of the file
 	 * @param lineIndex the number of the read line
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	private void readLine(String flag, String lineStr, int lineIndex) throws Exception{
 
@@ -219,7 +219,7 @@ public class MetatoolReader implements IContainerBuilder{
 	
 	/**
 	 * Verifies if the metatool file has any incongruity, throwing an Exception if it does
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	@SuppressWarnings("unchecked")
 	private void verifyMetatoolFile() throws Exception {
@@ -290,7 +290,7 @@ public class MetatoolReader implements IContainerBuilder{
 	 * @param reaction the reaction
 	 * @param line the line number
 	 * @return a ReactionCI object with the reaction
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	private ReactionCI getReaction(String reactionName, String reaction, int line) throws Exception{
 		
@@ -325,7 +325,7 @@ public class MetatoolReader implements IContainerBuilder{
 	 * @param values an array with some elements of an equation (eg: [stoichiometric value]? metabolite)
 	 * @param line the line number
 	 * @return a map which keys are the metabolite name and the values are the corresponding stoichiometric value (represented by a StoichiometricValueCI object) 
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	private Map<String, StoichiometryValueCI> getStoiqValues(String[] values, int line) throws Exception{
 		Map<String,StoichiometryValueCI> ret = new HashMap<String,StoichiometryValueCI>();
@@ -361,7 +361,7 @@ public class MetatoolReader implements IContainerBuilder{
 	 * This method is the first to act in the reaction string from the file (in other words, it treats the lines with the CAT flag)
 	 * @param reaction the line from the file with the reaction
 	 * @param line the line number
-	 * @throws Exception
+	 * @throws Exception Exception
 	 */
 	private void treatReactionStep1(String reaction, int line) throws Exception{
 		

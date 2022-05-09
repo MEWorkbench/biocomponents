@@ -22,9 +22,6 @@ import pt.uminho.ceb.biosystems.mew.utilities.math.language.mathboolean.parser.P
 
 public class ReactionCI implements Serializable, Cloneable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	protected String id;
 	protected String name;
@@ -295,6 +292,7 @@ public class ReactionCI implements Serializable, Cloneable {
 
 	public void setGeneRule(AbstractSyntaxTree<DataTypeEnum, IValue> geneRule) {
 		this.geneRule = geneRule;
+		genesIDs = new HashSet<>(withdrawVariablesInRule(geneRule));
 	}
 
 
@@ -523,10 +521,10 @@ public class ReactionCI implements Serializable, Cloneable {
 	 *        = 1  same stoiquiometry direct direction
 	 *        = 2 change to irreversible
 	 *        
-	 * @param r
-	 * @param rev_in_account
-	 * @param ignoreCompartments
-	 * @return
+	 * @param r reaction
+	 * @param doInverseTest perform inverse test
+	 * @param ignoreCompartments  ignore compartments
+	 * @return integer output
 	 */
 	public Integer hasSameStoichiometry2(ReactionCI r, boolean ignoreCompartments, boolean doInverseTest){
 		
@@ -665,14 +663,14 @@ public class ReactionCI implements Serializable, Cloneable {
 		return ret;
 	}
 
-	/**
+	/*
 	 * @return the allMetabolitesHaveKEGGId
 	 */
 	public boolean isAllMetabolitesHaveKEGGId() {
 		return allMetabolitesHaveKEGGId;
 	}
 
-	/**
+	/*
 	 * @param allMetabolitesHaveKEGGId the allMetabolitesHaveKEGGId to set
 	 */
 	public void setAllMetabolitesHaveKEGGId(boolean allMetabolitesHaveKEGGId) {
