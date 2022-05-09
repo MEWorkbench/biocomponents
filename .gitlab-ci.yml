@@ -21,7 +21,7 @@ maven_compile:
   tags:
     - maven
   script:
-    - mvn compile
+    - mvn $MAVEN_CLI_OPTS clean compile
  
 maven test:
   image: maven:3.6.0-jdk-8-alpine
@@ -29,7 +29,7 @@ maven test:
   tags: 
     - maven
   script:
-    - mvn test
+    - mvn $MAVEN_CLI_OPTS clean test
 
 maven_deploy2:
   image: maven:3.6.0-jdk-8-alpine
