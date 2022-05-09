@@ -1,5 +1,3 @@
-image: maven:3.3-jdk-8-alpine
-
 variables:
   MAVEN_CLI_OPTS: "-s config/gitlab-ci/settings.xml --batch-mode"
 
@@ -18,6 +16,7 @@ stages:
  - deploy
 
 maven_compile:
+  image: maven:3.6.0-jdk-8-alpine
   stage: compile
   tags:
     - maven
@@ -25,6 +24,7 @@ maven_compile:
     - mvn compile
  
 maven test:
+  image: maven:3.6.0-jdk-8-alpine
   stage: test
   tags: 
     - maven
@@ -36,6 +36,10 @@ maven_deploy2:
   stage: deploy
   script: 
     - mvn $MAVEN_CLI_OPTS clean deploy
+  only:
+    refs:
+      - master
+      - tags
 
 
 maven_deploy:
