@@ -33,7 +33,9 @@ public class SBMLStandardsIds {
 		c.changeMetaboliteIds(mets);
 		c.changeReactionIds(reactions);
 		c.verifyDepBetweenClass();
-		c.setBiomassId(reactions.get(container.getBiomassId()));
+		String changedId = reactions.get(container.getBiomassId());
+		if(changedId!=null)
+			c.setBiomassId(reactions.get(container.getBiomassId()));
 		
 		return c;
 	}
